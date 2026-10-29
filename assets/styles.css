@@ -480,18 +480,21 @@ summary,
 
 .module-nav-inner {
   display: flex;
-  gap: 6px;
+  gap: 5px;
   overflow-x: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+.module-nav-inner::-webkit-scrollbar {
+  display: none;
 }
 
 .module-tab {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
+  gap: 7px;
+  padding: 10px 13px;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: transparent;
