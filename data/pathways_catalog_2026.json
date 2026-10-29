@@ -1,0 +1,1406 @@
+{
+  "thresholds_fy26_27": {
+    "effective_period": "2026-07-01 to 2027-06-30 (FY 2026–27)",
+    "verified_date": "2026-10-28",
+    "csit_aud": 79423,
+    "tsmit_aud": 79423,
+    "ssit_aud": 146576,
+    "fwhit_aud": 190100,
+    "dama_concession_90pct_aud": 71481,
+    "amsr_exemption_aud": 250000,
+    "gsm_min_points": 65,
+    "gsm_work_exp_combined_cap_points": 20,
+    "saf_levy": {
+      "482_per_year_small_aud": 1200,
+      "482_per_year_large_aud": 1800,
+      "186_494_oneoff_small_aud": 3000,
+      "186_494_oneoff_large_aud": 5000,
+      "turnover_threshold_aud": 10000000,
+      "sbs_fee_aud": 420,
+      "nomination_482_aud": 330,
+      "nomination_186_aud": 540
+    },
+    "base_vac_aud": {
+      "189": 6135,
+      "190": 6140,
+      "491": 6140,
+      "191": 630,
+      "482": 4015,
+      "186": 6140,
+      "494": 6140,
+      "485": 5750,
+      "485_second": 2265,
+      "500": 2500,
+      "417": 840,
+      "417_third_ext": 1000,
+      "820_801": 11710,
+      "309_100": 11710,
+      "300": 11710,
+      "300_to_820": 1955,
+      "858": 6235,
+      "143_total_approx": 49900,
+      "173_total_approx": 33375,
+      "103_total_approx": 8665,
+      "870_3yr": 6370,
+      "870_5yr": 12440,
+      "407": 535,
+      "010_bva": 0,
+      "020_bvb": 575,
+      "art_review": 3727
+    },
+    "primary_legislative_sources": [
+      {
+        "code": "F2026L00874",
+        "title": "Home Affairs Legislation Amendment (2026 Measures No. 1) Regulations 2026 (FY26–27 VACs & CSIT/SSIT)"
+      },
+      {
+        "code": "LIN 24/089",
+        "title": "Migration (Specification of Occupations—Subclass 482 Visa) Instrument 2024 (CSOL 456 Occupations)"
+      },
+      {
+        "code": "LIN 24/093",
+        "title": "Migration (Specification of Occupations and Assessing Authorities—Subclass 186 Visa) Instrument 2024"
+      },
+      {
+        "code": "LIN 19/051",
+        "title": "Specification of Occupations and Assessing Authorities (189 / 190 / 491 / 485 PVEW)"
+      },
+      {
+        "code": "LIN 19/219 & LIN 19/260",
+        "title": "Subclass 494 SESR Occupations & Assessing Authorities"
+      },
+      {
+        "code": "LIN 25/016 / LIN 25/082 / LIN 25/089",
+        "title": "2025–2026 Official English Language Tests & Component Score Tables (Remote/Online Tests Excluded)"
+      }
+    ]
+  },
+  "english_matrix_2025_2026": [
+    {
+      "tier_id": "functional",
+      "tier_ko": "Functional English (동반성인 2차 비자비 면제 · 407 · 462)",
+      "tier_en": "Functional English (Secondary Adult VAC Waiver · 407 · 462)",
+      "ielts": "평균 4.5 이상",
+      "ielts_en": "Overall 4.5+",
+      "pte_post_aug2025": "Overall 24 이상",
+      "pte_post_aug2025_en": "Overall 24+",
+      "toefl_ibt": "총점 26 이상 ('Taking TOEFL for Australia')",
+      "toefl_ibt_en": "Total 26+ ('Taking TOEFL for Australia')",
+      "celpip": "평균 5 이상",
+      "celpip_en": "Average 5+",
+      "validity": "12개월 이내 응시 (온라인 자택 시험 전면 불인정)",
+      "validity_en": "Taken within 12 months (all remote/home tests excluded)"
+    },
+    {
+      "tier_id": "sid_50",
+      "tier_ko": "482 SID 영어 요건 (Core Skills & Specialist Skills — LIN 25/082)",
+      "tier_en": "Subclass 482 SID Requirement (Core & Specialist — LIN 25/082)",
+      "ielts": "각 영역 5.0 이상 (L/R/W/S)",
+      "ielts_en": "5.0+ in each band (L/R/W/S)",
+      "pte_post_aug2025": "L 33 / R 36 / W 29 / S 24 이상",
+      "pte_post_aug2025_en": "L 33 / R 36 / W 29 / S 24+",
+      "toefl_ibt": "L 8 / R 8 / W 9 / S 14 이상",
+      "toefl_ibt_en": "L 8 / R 8 / W 9 / S 14+",
+      "celpip": "각 영역 5 이상",
+      "celpip_en": "5+ in each band",
+      "validity": "3년 (5년 이상 영어권 중·고·대학 풀타임 학업 시 면제 가능)",
+      "validity_en": "3 years (exempt with 5+ yrs full-time secondary/tertiary study in English)"
+    },
+    {
+      "tier_id": "graduate_65",
+      "tier_ko": "485 졸업생 비자 영어 요건 (LIN 25/089 — 유효기간 12개월 주의!)",
+      "tier_en": "Subclass 485 Graduate Visa (LIN 25/089 — Strict 12-Month Validity!)",
+      "ielts": "평균 6.5 이상 (각 영역 최소 5.5)",
+      "ielts_en": "Overall 6.5+ (min 5.5 each band)",
+      "pte_post_aug2025": "Overall 55 이상 (L 40 / R 42 / W 41 / S 39)",
+      "pte_post_aug2025_en": "Overall 55+ (L 40 / R 42 / W 41 / S 39)",
+      "toefl_ibt": "총점 81 이상 (L 12 / R 12 / W 14 / S 17)",
+      "toefl_ibt_en": "Total 81+ (L 12 / R 12 / W 14 / S 17)",
+      "celpip": "평균 8 이상 (각 영역 최소 6)",
+      "celpip_en": "Average 8+ (min 6 each band)",
+      "validity": "신청일 기준 12개월 이내 성적만 인정 (3년 아님 주의!)",
+      "validity_en": "Must be taken within 12 months before lodgement (NOT 3 years!)"
+    },
+    {
+      "tier_id": "competent",
+      "tier_ko": "Competent English (189·190·491·186·494 기본 자격 — GSM 0점)",
+      "tier_en": "Competent English (189 · 190 · 491 · 186 · 494 Threshold — 0 GSM pts)",
+      "ielts": "각 영역 6.0 이상",
+      "ielts_en": "6.0+ in each band",
+      "pte_post_aug2025": "L 47 / R 48 / W 51 / S 54 이상 (구 50점 균일제에서 개편)",
+      "pte_post_aug2025_en": "L 47 / R 48 / W 51 / S 54+ (replaces flat 50)",
+      "toefl_ibt": "L 16 / R 16 / W 19 / S 19 이상",
+      "toefl_ibt_en": "L 16 / R 16 / W 19 / S 19+",
+      "celpip": "각 영역 7 이상",
+      "celpip_en": "7+ in each band",
+      "validity": "3년 (영국·미국·캐나다·뉴질랜드·아일랜드 시민권 여권 소지자 면제)",
+      "validity_en": "3 years (exempt for UK, USA, Canada, NZ & Ireland passport holders)"
+    },
+    {
+      "tier_id": "proficient",
+      "tier_ko": "Proficient English (기술이민 Schedule 6D +10점)",
+      "tier_en": "Proficient English (Schedule 6D +10 Points)",
+      "ielts": "각 영역 7.0 이상",
+      "ielts_en": "7.0+ in each band",
+      "pte_post_aug2025": "L 58 / R 59 / W 69 / S 76 이상 (Writing·Speaking 상향 주의!)",
+      "pte_post_aug2025_en": "L 58 / R 59 / W 69 / S 76+ (note higher W/S!)",
+      "toefl_ibt": "L 22 / R 22 / W 26 / S 24 이상",
+      "toefl_ibt_en": "L 22 / R 22 / W 26 / S 24+",
+      "celpip": "L 9 / R 8 / W 10 / S 8 이상",
+      "celpip_en": "L 9 / R 8 / W 10 / S 8+",
+      "validity": "초청일 기준 3년 이내 (IELTS OSR 단과목 재응시 인정)",
+      "validity_en": "Within 3 years at time of invitation (IELTS One Skill Retake accepted)"
+    },
+    {
+      "tier_id": "superior",
+      "tier_ko": "Superior English (기술이민 Schedule 6D +20점)",
+      "tier_en": "Superior English (Schedule 6D +20 Points)",
+      "ielts": "각 영역 8.0 이상",
+      "ielts_en": "8.0+ in each band",
+      "pte_post_aug2025": "L 69 / R 70 / W 85 / S 88 이상 (구 79점에서 W85/S88로 대폭 상향!)",
+      "pte_post_aug2025_en": "L 69 / R 70 / W 85 / S 88+ (raised sharply from old 79!)",
+      "toefl_ibt": "L 26 / R 27 / W 30 / S 28 이상",
+      "toefl_ibt_en": "L 26 / R 27 / W 30 / S 28+",
+      "celpip": "L 10 / R 10 / W 12 / S 10 이상",
+      "celpip_en": "L 10 / R 10 / W 12 / S 10+",
+      "validity": "초청일 기준 3년 이내 (온라인 시험 절대 불가)",
+      "validity_en": "Within 3 years at invitation (online/at-home tests strictly invalid)"
+    }
+  ],
+  "lifecycle_blueprints": [
+    {
+      "id": "gsm_points_pathway",
+      "badge": "PATHWAY 01 · INDEPENDENT & STATE SKILLED PR",
+      "title_ko": "점수제 독립·주정부 기술이민 패스웨이 (EOI → 189 · 190 · 491 → 191 영주권)",
+      "title_en": "Points-Tested Skilled Migration Lifecycle (EOI → 189 · 190 · 491 → 191 PR)",
+      "target_who_ko": "고용주 스폰서 없이 본인 직종·나이(만 45세 미만)·영어·학력·경력 점수로 정면 승부하려는 전문직·기술직 신청자",
+      "target_who_en": "Skilled professionals and tradespeople under age 45 seeking permanent residency without employer tie-in through Schedule 6D points.",
+      "stages_ko": [
+        "1단계 [직종 & 기술심사]: MLTSSL(189/190/491), STSOL(190/491), ROL(491) 등재 확인 후 관할 기관(ACS·VETASSESS·EA·TRA·ANMAC 등) 기술심사 통과",
+        "2단계 [영어 & 가점 확보]: 최소 Competent 이상 확보 (현실적 초청을 위해 Proficient +10점 / Superior +20점, NAATI CCL +5점 전략 조합)",
+        "3단계 [SkillSelect EOI & 주정부 ROI]: 최소 65점 이상 EOI 제출 (190 주정부 +5점, 491 지방 주정부/친척 +15점 반영) 및 주별 거주·취업 요건 충족",
+        "4단계 [초청 후 60일 내 본비자 접수]: 189($6,135)·190($6,140)은 즉시 영주권, 491($6,140)은 5년 임시비자 후 지방 3년 거주·세금신고(NOA 3개)만으로 191 영주권($630, 최저소득 하한 $0!) 전환"
+      ],
+      "stages_en": [
+        "Stage 1 [SOL & Skills Assessment]: Confirm listing on MLTSSL (189/190/491), STSOL (190/491), or ROL (491) and obtain a positive skills assessment (ACS, VETASSESS, EA, TRA, ANMAC, etc.).",
+        "Stage 2 [English & Points Optimisation]: Achieve at least Competent English, stacking Proficient (+10), Superior (+20), NAATI CCL (+5), or Professional Year (+5) for competitive invitations.",
+        "Stage 3 [SkillSelect EOI & State ROI]: Lodge EOI at 65+ points (including +5 for 190 or +15 for 491) and meet state-specific residency/employment ROI criteria.",
+        "Stage 4 [Visa Lodgement Within 60 Days]: 189 ($6,135) and 190 ($6,140) grant direct PR; 491 ($6,140) leads to Subclass 191 PR ($630, $0 minimum income floor) after 3 years of regional residence and 3 ATO Notices of Assessment."
+      ],
+      "critical_traps_ko": [
+        "초청 시점 만 45세 생일이 지나면 단 하루 차이로도 자격이 소멸돼요.",
+        "한국+호주 경력 합산 점수는 최대 20점(Schedule 6D Item 6D51) 상한이 적용되며, 기술심사 기관의 차감 연수(Deeming Date) 이전 경력은 점수 클레임 시 거절 위험이 커요.",
+        "싱글(10점)로 초청받은 뒤 사실혼 파트너가 있었음이 드러나면 점수 미달 및 PIC 4020 거절로 직결돼요."
+      ],
+      "critical_traps_en": [
+        "Turning 45 before receiving the official invitation extinguishes eligibility—even by a single day.",
+        "Combined Australian + overseas employment points are capped at 20 points (Schedule 6D Item 6D51); claiming pre-deeming-date experience frequently triggers refusal.",
+        "Claiming 10 single points when an undeclared de facto relationship existed at invitation risks points shortfall and PIC 4020 refusal."
+      ],
+      "key_visas": [
+        "189",
+        "190",
+        "491",
+        "191"
+      ]
+    },
+    {
+      "id": "employer_sid_ens_pathway",
+      "badge": "PATHWAY 02 · EMPLOYER SPONSORED CORE & SPECIALIST",
+      "title_ko": "고용주 스폰서 정석 패스웨이 (482 SID → 2년 근무 → 186 TRT 영주권 & 186 DE 직행)",
+      "title_en": "Employer-Sponsored Pathway (482 SID → 2-Year 186 TRT PR & 186 Direct Entry)",
+      "target_who_ko": "호주 고용주의 잡오퍼가 있거나 현재 호주 사업체에서 근무 중이며 안정적인 영주권 전환을 원하는 신청자",
+      "target_who_en": "Applicants with an Australian job offer or current onshore employment seeking predictable employer-backed permanent residency.",
+      "stages_ko": [
+        "1단계 [482 SID 진입 — 연령 제한 없음]: 최근 5년 내 관련 경력 1년 풀타임(환산 인정) + 영어 IELTS 5.0(PTE L33/R36/W29/S24) + 연봉 CSIT $79,423 이상(Specialist 스트림은 CSOL 무관 $146,576 이상, 단 기능·단순노무 Major Group 3·7·8 제외)",
+        "2단계 [Condition 8607 유연성 & 2년 경력 적립]: 이직 시 한 번에 최대 180일(전체 체류 중 365일) 유예 기간 동안 새 스폰서 노미네이션 연결 가능, 여러 스폰서 근무 기간도 186 TRT 2년 요건에 합산 인정!",
+        "3단계 [186 영주권($6,140) 완성]: ① TRT 스트림(482로 2년 풀타임 근무 후 CSOL 무관 영주권 신청, 만 45세 미만 원칙이나 FWHIT $190,100 이상 2년 고소득자는 연령 면제) 또는 ② Direct Entry 스트림(CSOL 등재 + 기술심사 + 3년 풀타임 경력으로 즉시 영주권 직행)"
+      ],
+      "stages_en": [
+        "Stage 1 [482 SID Entry — No Age Cap]: 1 year full-time (or pro-rata part-time) experience within the last 5 years + IELTS 5.0 (PTE L33/R36/W29/S24) + CSIT AUD $79,423+ (or Specialist Skills AUD $146,576+ outside ANZSCO Major Groups 3, 7 & 8).",
+        "Stage 2 [Condition 8607 Mobility & 2-Year Accrual]: Up to 180 consecutive days (365 total) to change sponsors; sponsored work across multiple employers counts toward 186 TRT.",
+        "Stage 3 [Subclass 186 PR ($6,140)]: (a) 186 TRT after 2 years on 482 regardless of CSOL changes (under 45, or age-exempt with 2 yrs at FWHIT $190,100+), or (b) 186 Direct Entry with CSOL occupation + skills assessment + 3 years full-time experience."
+      ],
+      "critical_traps_ko": [
+        "482·186 DE는 직종별 Caveat(연매출 $1M, 직원 5인, 패스트푸드·제한적 카페 제외 등)에 걸리면 노미네이션이 거절돼요.",
+        "연봉은 CSIT($79,423)뿐 아니라 호주인 시장연봉(AMSR)과 현대 노사협약(Award) 3단계를 모두 충족해야 하며, 2026년 7월 1일 이후 노미네이션부터 $79,423이 엄격 적용돼요.",
+        "고용주 노미네이션 거절이 취업 재심 사건의 86.7%를 차지하므로 스폰서 재무·조직도 검증이 필수예요."
+      ],
+      "critical_traps_en": [
+        "Occupation caveats (e.g. <$1M turnover, <5 staff, or limited-service restaurant exclusions) cause immediate nomination refusal on 482 and 186 DE.",
+        "Remuneration must satisfy all 3 tiers: CSIT ($79,423 from 1 July 2026), Annual Market Salary Rate (AMSR), and Modern Award terms.",
+        "Nomination refusals account for 86.7% of employer-sponsored tribunal disputes—audit sponsor financials and org charts upfront."
+      ],
+      "key_visas": [
+        "482",
+        "186"
+      ]
+    },
+    {
+      "id": "regional_494_dama_pathway",
+      "badge": "PATHWAY 03 · REGIONAL 494 & 13 DAMA CONCESSIONS",
+      "title_ko": "지방지역 스폰서(494→191) & 13개 DAMA 컨세션 패스웨이 (만 45~54세 · 연봉·영어 감면)",
+      "title_en": "Regional Employer (494 → 191) & 13 Regional DAMAs Concession Pathway",
+      "target_who_ko": "만 45세를 넘겼거나, 일반 SOL에 직종이 없거나(케어워커·호스피탈리티·트럭운전 등), 연봉·영어 기준 완화가 필요한 신청자",
+      "target_who_en": "Applicants aged 45–54, workers in off-list/Skill Level 4–5 occupations, or regional employers requiring salary/English concessions.",
+      "stages_ko": [
+        "트랙 A [494 SESR($6,140) → 191 PR($630)]: 시드니·멜버른·브리즈번 외 지정 지방지역 스폰서 + 650개 직종(MLTSSL+ROL) + 기술심사 + 3년 경력 + 만 45세 미만 + 연봉 $79,423(RCB 인증) → 3년 후 고용주 동의 없이 독자적으로 191 영주권 전환!",
+        "트랙 B [13개 지역 DAMA Labour Agreement]: 지역 대표기관(DAR: FNQ 케언즈, NT, WA 전주, SA, Orana 등) 승인 → 개별 Labour Agreement 체결 → 482/494($4,015/$6,140) → 2~3년 후 186/191 영주권!",
+        "DAMA 핵심 특례: ① 연령 상한 만 50세 또는 만 55세 미만까지 대폭 완화, ② CSIT 90%($71,481) 급여 감면 직종 다수, ③ 영어 점수 감면, ④ Skill Level 4~5 반숙련 직종 포함(총 781개 고유 직종)"
+      ],
+      "stages_en": [
+        "Track A [494 SESR ($6,140) → 191 PR ($630)]: Designated regional sponsor (outside Sydney/Melbourne/Brisbane) + 650 occupations (MLTSSL+ROL) + skills assessment + 3 yrs experience + under 45 + CSIT $79,423 (RCB advice) → independent 191 PR after 3 years.",
+        "Track B [13 Regional DAMAs]: DAR endorsement (FNQ, NT, WA state-wide, SA, Orana, etc.) → employer Labour Agreement → 482/494 grant → 186/191 PR after 2–3 years.",
+        "Key DAMA Concessions: (1) Age cap raised up to under 50 or under 55, (2) 90% CSIT salary concession ($71,481) on designated roles, (3) English concessions, and (4) Skill Level 4–5 occupations included."
+      ],
+      "critical_traps_ko": [
+        "DAMA는 개인이 단독 신청할 수 없고 반드시 해당 지정지역 내 실제 사업체가 DAR Endorsement와 Labour Agreement를 먼저 승인받아야 해요.",
+        "지역별 DAMA 협약마다 만 50세 vs 만 55세 기준과 186 전환 대기 연수가 다르므로 지역 선택 전 정밀 대조가 필요해요."
+      ],
+      "critical_traps_en": [
+        "Individuals cannot self-petition for a DAMA—an active regional business must first secure DAR endorsement and a Labour Agreement.",
+        "Age limits (under 50 vs under 55) and PR transition timeframes vary by DAMA region and occupation."
+      ],
+      "key_visas": [
+        "494",
+        "191",
+        "482",
+        "186"
+      ]
+    },
+    {
+      "id": "study_graduate_pathway",
+      "badge": "PATHWAY 04 · STUDENT (500) → GRADUATE (485) → PR",
+      "title_ko": "유학 후 이민 현실 패스웨이 (500 학생 → 485 졸업생 → 482 SID / 190 / 491 / 186)",
+      "title_en": "Study-to-PR Lifecycle (500 Student → 485 Graduate → 482 SID / 190 / 491 PR)",
+      "target_who_ko": "호주 학위(학사·석사·박사 또는 MLTSSL 관련 기술과정)를 통해 호주 체류권과 초기 경력을 만들어 영주권으로 연결하려는 유학생",
+      "target_who_en": "International students leveraging CRICOS degrees or MLTSSL-aligned trade qualifications to build post-study work rights and PR.",
+      "stages_ko": [
+        "1단계 [500 학생비자($2,500) & GS 심사]: 진정한 유학생 요건(GS) 통과 필수. 호주 내 관광비자(600)·졸업생비자(485) 소지자의 호주 내 500 전환(Onshore Visa Hopping)은 법으로 원천 차단됨!",
+        "2단계 [485 졸업생 비자($5,750) — 만 35세 상한 주의!]: 졸업 후 6개월 내 접수, 영어 IELTS 6.5/각 5.5(PTE 55, 유효기간 12개월!). 학사·수업석사(PHEW 2년), 연구석사·박사(3년, 만 50세 미만 허용), 기술·디플로마 과정(PVEW 18개월, 반드시 MLTSSL 직종 연계 및 기술심사 필요!)",
+        "3단계 [485 기간 중 승부처]: 485 체류 기간 동안 전공 직종 풀타임 1년 경력을 채워 482 SID로 넘어가거나, 기술심사+고득점 영어·주정부 거주 요건을 채워 190·491·189로 직행"
+      ],
+      "stages_en": [
+        "Stage 1 [500 Student ($2,500) & Genuine Student]: Pass GS scrutiny. Onshore 600 Visitor and 485 Graduate holders are legally barred from lodging Subclass 500 onshore (since 1 July 2024).",
+        "Stage 2 [485 Graduate ($5,750) — Age 35 Cap!]: Lodge within 6 months of completion with IELTS 6.5/5.5 (PTE 55, 12-month test validity!). Bachelor/Coursework Masters (PHEW 2 yrs), Masters by Research/PhD (3 yrs, under age 50), VET/Trade (PVEW 18 mos—must nominate an MLTSSL occupation!).",
+        "Stage 3 [Post-Study Conversion]: Use 485 full work rights to accrue 1 year of skilled experience for 482 SID, or stack full skills assessment + Superior English for 189/190/491."
+      ],
+      "critical_traps_ko": [
+        "만 35세를 넘기면 일반 학사·수업석사·VET 과정 졸업 후 485 비자를 받을 수 없어요(연구석사·박사만 만 50세 미만 예외).",
+        "비MLTSSL 직종(예: 일반 Cook 351411 단독 과정 등)으로 VET 유학을 하면 졸업 후 485(PVEW) 신청 자체가 막힐 수 있으니 입학 전 SOL 검증이 생명이에요."
+      ],
+      "critical_traps_en": [
+        "Applicants aged 36+ cannot access standard Bachelor, Coursework Masters, or VET Subclass 485 streams (only Research Masters/PhD allow under 50).",
+        "Enrolling in a VET course tied only to an STSOL occupation (e.g. Cook 351411 without Chef MLTSSL pathway) blocks 485 PVEW eligibility."
+      ],
+      "key_visas": [
+        "500",
+        "485",
+        "482",
+        "190",
+        "491"
+      ]
+    },
+    {
+      "id": "whm_trades_sponsor_pathway",
+      "badge": "PATHWAY 05 · WORKING HOLIDAY (417) SPRINGBOARD",
+      "title_ko": "워킹홀리데이 출발 실전 패스웨이 (417 1·2·3차 → 482 SID / 기술직 / 파트너)",
+      "title_en": "Working Holiday (417) Springboard to 482 Sponsorship, Trades or Partner PR",
+      "target_who_ko": "만 18~30세(한국 여권 기준) 청년층으로 호주 현장에서 일하며 스폰서십이나 기술·파트너 영주권 발판을 만들려는 신청자",
+      "target_who_en": "Young adults (aged 18–30 for Korean passports; 18–35 for eligible countries) using onshore work rights to secure sponsorship or skilled PR.",
+      "stages_ko": [
+        "1단계 [417 워홀($840) 입국 및 연장]: 동일 고용주 6개월 근무 제한(Condition 8547, 단 지방·핵심 산업 면제 활용 가능) 준수 및 지정지역 88일(세컨) / 6개월(써드, $1,000) 확보로 최대 3년 풀타임 체류권 확보",
+        "2단계 [경력 1년 완성 → 482 SID 직행]: 한국 경력 또는 워홀 기간 중 풀타임(또는 환산) 1년 관련 경력과 IELTS 5.0을 채우면 굳이 비싼 학생비자를 거치지 않고도 스폰서 확보 시 482 SID 바로 접수 가능!",
+        "3단계 [기능직(Trades) & 영주권 도약]: 타일·용접·목공·정비 등 MLTSSL 기능직이나 요리·호스피탈리티 경력을 체계적으로 증빙(TFN 페이슬립·슈퍼·직무기술서)하여 TRA 심사 및 186/190/491 영주권 달성"
+      ],
+      "stages_en": [
+        "Stage 1 [417 Entry ($840) & Extensions]: Comply with Condition 8547 (6-month single-employer cap unless exempt) and complete 88 days / 6 months specified work for up to 3 years onshore.",
+        "Stage 2 [1-Year Experience → Direct 482 SID]: Combine overseas or onshore WHM skilled experience (1 year full-time equivalent) + IELTS 5.0 to lodge 482 SID directly without costly student-visa detours.",
+        "Stage 3 [Trades & PR Transition]: Preserve TFN payslips, superannuation, tax returns, and duty statements across MLTSSL trades (tiling, welding, carpentry, automotive, chef) for TRA assessment and 186/190/491 PR."
+      ],
+      "critical_traps_ko": [
+        "현금 잡(Cash-in-hand)이나 세금 신고 없는 근무는 482·186·기술심사 경력으로 인정받기 매우 어렵고 추후 기록 불일치 리스크가 돼요.",
+        "Condition 8547(6개월 고용주 제한)을 승인 없이 넘기면 비자 취소 및 후속 스폰서 비자 심사에서 큰 감점 요인이 돼요."
+      ],
+      "critical_traps_en": [
+        "Unreported cash-in-hand work cannot substantiate 482/186 or TRA skilled employment and creates serious integrity risks.",
+        "Breaching Condition 8547 (working >6 months for one employer without exemption) jeopardises subsequent sponsorship applications."
+      ],
+      "key_visas": [
+        "417",
+        "482",
+        "407",
+        "190",
+        "491"
+      ]
+    }
+  ],
+  "non_skilled_and_remote_visas": [
+    {
+      "id": "partner_820_309_300",
+      "tier": "primary_family",
+      "badge": "FAMILY CORE · HIGH APPROVAL WITH PROPER EVIDENCE",
+      "subclasses": "Subclass 820/801 (호주 내) · 309/100 (해외) · 300 (약혼자)",
+      "subclasses_en": "Subclass 820/801 (Onshore) · 309/100 (Offshore) · 300 (Prospective Marriage)",
+      "title_ko": "호주 파트너·배우자·약혼자 비자",
+      "title_en": "Australian Partner, Spouse & Prospective Marriage Visas",
+      "vac_fy26_27": "$11,710 (300 취득 후 820 전환 시 $1,955)",
+      "vac_fy26_27_en": "$11,710 ($1,955 when transitioning from Subclass 300 to 820)",
+      "summary_ko": "호주 시민권자·영주권자(또는 적격 뉴질랜드 시민권자)와 법적 혼인 관계이거나 최소 12개월 이상 진정한 사실혼(De facto) 동거 관계일 때 직업군·나이·영어·점수와 무관하게 영주권으로 가는 가장 강력한 가족 패스웨이예요.",
+      "summary_en": "The strongest family permanent residence pathway for married spouses or genuine de facto partners (12+ months cohabitation) of Australian citizens, permanent residents, or eligible New Zealand citizens—with no SOL occupation, age, English, or points test.",
+      "key_criteria_ko": [
+        "4대 법정 심사 기둥(reg 1.15A): ① 재정적 공동체(공동 계좌·지출), ② 주거 형태(동거 입증), ③ 사회적 인정(가족·지인 진술 Form 888), ④ 상호 헌신과 미래 계획",
+        "사실혼 12개월 동거 면제 특례: QLD·NSW·VIC·SA·TAS·ACT 주정부에 관계등록(Relationship Registration)을 완료하면 12개월 미만 동거여도 법정 기간 요건이 면제돼요(WA·NT 제외).",
+        "주의 — 브리징 비자나 불법체류 상태에서 호주 내 820을 접수하면 Schedule 3 요건(강력한 인도적 사유 Compelling Reasons 입증 필수)이라는 높은 벽을 넘어야 해요."
+      ],
+      "key_criteria_en": [
+        "Four Statutory Pillars (reg 1.15A): (1) Financial aspects (joint accounts/shared expenses), (2) Nature of the household (cohabitation), (3) Social aspects (Form 888 witness declarations), and (4) Mutual commitment.",
+        "12-Month De Facto Exemption: Registering a civil/de facto relationship in QLD, NSW, VIC, SA, TAS, or ACT legally waives the 12-month cohabitation rule (not available in WA or NT).",
+        "Warning — Lodging Subclass 820 onshore while holding a Bridging Visa or unlawful status triggers Schedule 3 criteria requiring strict proof of Compelling Reasons."
+      ],
+      "feasibility_level": "높음 (적격 호주인 파트너 존재 시 최우선 검토)",
+      "feasibility_level_en": "High (Top priority when you have an eligible Australian partner)"
+    },
+    {
+      "id": "niv_858",
+      "tier": "remote_high_bar",
+      "badge": "ELITE INVITATION ONLY · REPLACED GTI & 188 BIIP",
+      "subclasses": "Subclass 858 (National Innovation Visa)",
+      "subclasses_en": "Subclass 858 (National Innovation Visa)",
+      "title_ko": "국가혁신비자 (구 글로벌 탤런트 GTI 및 188 사업·투자비자 통합 대체)",
+      "title_en": "National Innovation Visa (Replaced Former GTI & Subclass 188 BIIP)",
+      "vac_fy26_27": "$6,235 (즉시 영주권 PR)",
+      "vac_fy26_27_en": "$6,235 (Direct Permanent Residence)",
+      "summary_ko": "2024년 7월 구 사업·투자이민(Subclass 188 BIIP)이 전면 폐지되고 2024년 12월 출범한 최상위 초청제 영주권이에요. 일반 소규모 자영업·단순 자본 투자는 대상이 아니며, 국제적으로 검증된 탁월한 업적이 있어야 해요.",
+      "summary_en": "Following the permanent closure of the Subclass 188 BIIP in July 2024, the invitation-only Subclass 858 NIV launched in December 2024 as Australia's elite direct PR visa. Routine small businesses or passive investments do not qualify; an internationally recognised record of exceptional achievement is mandatory.",
+      "key_criteria_ko": [
+        "4대 우선 순위 트랙: ① 글로벌 최상위 연구자(석학·탑티어 논문/특허), ② 혁신 테크 기업가(주정부/기관 지지 성장 스타트업), ③ 혁신 투자자(단순 부동산·채권 아닌 딥테크·벤처 생태계 기여), ④ 세계적 스포츠인·예술가",
+        "EOI 제출 후 이민성의 초청(Invitation)을 받은 사람만 접수할 수 있으며, 해당 분야 호주 권위자/기관의 Form 1000 추천이 필수예요."
+      ],
+      "key_criteria_en": [
+        "Four Ministerial Priority Tracks: (1) Global researchers (top-tier publications/patents), (2) Innovative tech entrepreneurs (state/agency-backed scaleups), (3) Innovative investors (deep-tech/venture capital ecosystems, not passive property/bonds), and (4) Internationally acclaimed athletes & creatives.",
+        "Strictly by Departmental Invitation after lodging an EOI, backed by Form 1000 nomination from a nationally recognised Australian individual or peak body."
+      ],
+      "feasibility_level": "제한적/특수 (국제적 수상·특허·딥테크 창업·탑티어 연구 실적 보유자 한정)",
+      "feasibility_level_en": "Selective / Elite (Restricted to global awardees, patent holders, deep-tech founders & top researchers)"
+    },
+    {
+      "id": "parent_143_864_870_103",
+      "tier": "family_long_horizon",
+      "badge": "FAMILY PARENT · QUEUE & COST PLANNING ESSENTIAL",
+      "subclasses": "Subclass 143/173 (기여제) · 864/884 (노령 기여제) · 103/804 (일반) · 870 (임시 스폰서)",
+      "subclasses_en": "Subclass 143/173 (Contributory) · 864/884 (Aged Contributory) · 103/804 (Non-Contributory) · 870 (Sponsored Temporary)",
+      "title_ko": "부모님 초청 비자 (기여제 영주권 vs 870 장기 임시비자)",
+      "title_en": "Parent Visas (Contributory PR vs Subclass 870 Temporary Parent)",
+      "vac_fy26_27": "143 총액 약 $49,900 (2차 비자비 $43,600 포함) · 870 임시 $6,370(3년) / $12,440(5년)",
+      "vac_fy26_27_en": "143 Total ~$49,900 (incl. $43,600 2nd VAC) · 870 Temp $6,370 (3 yrs) / $12,440 (5 yrs)",
+      "summary_ko": "호주 시민권·영주권 자녀가 부모님을 초청하는 비자로, 영주권 트랙(143·864·103)은 대기열이 매우 길어 현실적인 비용·연령·체류 설계가 필수예요.",
+      "summary_en": "Sponsored by settled Australian citizen or PR children. Because permanent parent queues (143, 864, 103) span many years, careful financial, age, and onshore bridging design is essential.",
+      "key_criteria_ko": [
+        "가족균형테스트(Balance of Family Test): 전체 자녀 중 최소 절반(50%) 이상이 호주 영주권자/시민권자로 호주에 거주해야 영주 부모비자(143·864·103·804) 자격이 생겨요.",
+        "대기기간 현실: 기여제(143)도 신규 접수 시 수년~10년+ 대기가 발생하며, 비기여 일반 부모비자(103·804)는 30년 이상 대기열이 형성되어 있어요. (호주 내 864/804는 노령연금 연령 약 만 67세 이상 및 No 8503 조건 필요)",
+        "현실 대안 — Subclass 870 임시 부모비자: 가족균형테스트를 통과하지 못해도 스폰서 가구 소득 기준($83,454.80) 충족 시 3년 또는 5년(최장 10년) 연속 체류가 가능해요(단, 메디케어 미적용·민간보험 필수)."
+      ],
+      "key_criteria_en": [
+        "Balance of Family Test: At least 50% of all children must live permanently in Australia as citizens or PRs to qualify for permanent parent subclasses (143, 864, 103, 804).",
+        "Queue Reality: Even Contributory Parent (143) faces multi-year to 10+ year queues, while non-contributory queues (103/804) exceed 30 years. Onshore Aged visas (864/804) require pension age (~67+) and no Condition 8503.",
+        "Practical Alternative — Subclass 870 Sponsored Parent: No Balance of Family Test required; grants 3- or 5-year stays (up to 10 years) if sponsor taxable income meets $83,454.80 (private health insurance mandatory, no Medicare)."
+      ],
+      "feasibility_level": "중기/장기 (자녀 정착 후 재정·대기열 시뮬레이션 필수)",
+      "feasibility_level_en": "Medium-to-Long Horizon (Requires cost, AoS & queue modelling once child is settled)"
+    },
+    {
+      "id": "training_407",
+      "tier": "conditional_stepping_stone",
+      "badge": "STEPPING STONE · WORKPLACE STRUCTURED TRAINING",
+      "subclasses": "Subclass 407 (Training Visa)",
+      "subclasses_en": "Subclass 407 (Training Visa)",
+      "title_ko": "직무연수 비자 (482 경력 부족 시 조건부 징검다리)",
+      "title_en": "Subclass 407 Training Visa (Conditional Stepping Stone Toward 482)",
+      "vac_fy26_27": "$535 (최장 2년)",
+      "vac_fy26_27_en": "$535 (Up to 2 years)",
+      "summary_ko": "482 SID 신청을 위한 1년 풀타임 경력이 살짝 부족하거나 호주 면허·등록을 위한 현장 실습이 필요할 때 활용하는 직장 기반 체계적 연수 비자예요.",
+      "summary_en": "A structured workplace-based occupational training visa used when an applicant is slightly short of the 1-year full-time experience required for Subclass 482 SID or needs supervised clinical/licensing placement.",
+      "key_criteria_ko": [
+        "가장 많이 쓰이는 직무역량 강화 트랙(LIN 19/050 직종)은 최근 24개월 중 최소 12개월 이상의 풀타임 관련 경력 또는 관련 풀타임 학업 이력이 있어야 해요.",
+        "단순 인력 부족을 메우려는 일반 취업용으로 남용하면 ‘진정한 연수 목적(Genuine Training Plan)’ 미달로 거절율이 높으므로 정교한 주차별 연수계획서가 필수예요."
+      ],
+      "key_criteria_en": [
+        "Under the Enhancing Skills stream (LIN 19/050 occupation list), applicants must hold at least 12 months of full-time relevant experience OR full-time study within the last 24 months.",
+        "High refusal risk if used merely to fill routine labour shortages—requires an audited, individually tailored week-by-week Genuine Training Plan."
+      ],
+      "feasibility_level": "조건부 (최근 2년 내 12개월 학업/경력 보유 + 스폰서 연수 환경 충족 시)",
+      "feasibility_level_en": "Conditional (Requires 12 months study/work in last 24 months + genuine training host)"
+    },
+    {
+      "id": "child_carer_remaining_relative",
+      "tier": "remote_niche_family",
+      "badge": "NICHE FAMILY · STRICT DEPENDENCY OR LONG QUEUE",
+      "subclasses": "Subclass 101/802 (자녀) · 116/836 (간병인 Carer) · 115/835 (최후잔류가족)",
+      "subclasses_en": "Subclass 101/802 (Child) · 116/836 (Carer) · 115/835 (Remaining Relative)",
+      "title_ko": "자녀 · 간병인(Carer) · 최후잔류가족 비자",
+      "title_en": "Child, Carer & Remaining Relative Visas",
+      "vac_fy26_27": "자녀 101/802 약 $3,235+ · Carer/Remaining Relative 별도 1·2차 분납",
+      "vac_fy26_27_en": "Child 101/802 ~$3,235+ · Carer / Remaining Relative split 1st & 2nd VAC",
+      "summary_ko": "미성년/부양 자녀 초청(101/802)은 실무에서 활발히 쓰이며, 중증 질환 호주 가족을 돌볼 현지 대안이 전혀 없을 때의 간병인 비자(116/836)나 해외에 다른 가까운 혈육이 전혀 없는 최후잔류가족(115/835)은 요건이 매우 까다롭고 대기열이 수년~수십 년에 달하는 원격(Remote) 옵션이에요.",
+      "summary_en": "Dependent Child visas (101/802) are frequently used in practice, whereas Carer (116/836) and Remaining Relative (115/835) visas carry stringent statutory tests and multi-year to multi-decade queues.",
+      "key_criteria_ko": [
+        "자녀 비자(101/802): 만 18세 미만(또는 만 18~25세 전일제 학생으로서 부모에게 전적으로 재정 의존 입증 시) 가능하며 친권 동의(별거 부모 동의 또는 법원 명령)가 핵심이에요.",
+        "간병인 비자(116/836): Bupa Medical Visa Services 중증 간병 등급 판정 및 호주 내 병원·복지·친척으로부터 돌봄을 받을 수 없다는 엄격한 입증이 필요해요."
+      ],
+      "key_criteria_en": [
+        "Child Visa (101/802): Under 18 (or 18–25 full-time student wholly financially dependent on the parent), with strict parental responsibility consent or court orders.",
+        "Carer Visa (116/836): Mandatory Bupa Medical Visa Services impairment rating plus strict proof that care cannot reasonably be obtained from Australian relatives or community/health services."
+      ],
+      "feasibility_level": "자녀비자 높음 / 간병인·잔류가족은 매우 제한적(장기 대기)",
+      "feasibility_level_en": "High for Dependent Child / Narrow & Long-Queue for Carer & Remaining Relative"
+    },
+    {
+      "id": "nz_family_461_and_rrv_155",
+      "tier": "special_status",
+      "badge": "SPECIAL STATUS · NZ PARTNER & PR RETURN",
+      "subclasses": "Subclass 461 (뉴질랜드 시민권자 가족) · Subclass 155/157 (영주권자 재입국 RRV)",
+      "subclasses_en": "Subclass 461 (NZ Citizen Family Relationship) · Subclass 155/157 (Resident Return Visa)",
+      "title_ko": "뉴질랜드 시민권자 가족 비자(461) & 영주권 연장/회복 비자(155 RRV)",
+      "title_en": "NZ Citizen Family Relationship (461) & Resident Return Visa (155 RRV)",
+      "vac_fy26_27": "461: $430+ · 155 RRV: $475+",
+      "vac_fy26_27_en": "461: $430+ · 155 RRV: $475+",
+      "summary_ko": "파트너가 호주 체류 뉴질랜드 시민권자(444 소지자)인 경우 5년 단위 갱신형 461 비자를 활용할 수 있고, 과거 호주 영주권을 받았으나 5년 중 2년 거주 요건을 못 채운 분은 호주와의 실질적 유대관계(Substantial Ties: 사업·고용·가족·거주)를 입증해 155 RRV로 영주권을 되살릴 수 있어요.",
+      "summary_en": "Partners of Subclass 444 New Zealand citizens can obtain renewable 5-year Subclass 461 visas with full work rights, while former/lapsed Australian PRs who have not lived 2 of the last 5 years in Australia can restore PR travel facility via Subclass 155 by proving Substantial Ties.",
+      "key_criteria_ko": [
+        "461 비자: 영주권은 아니지만 5년간 자유로운 취업·거주가 가능하며, 파트너가 호주 시민권을 취득하면 이후 820/801 영주 파트너 비자로 전환할 수 있어요.",
+        "155 RRV: 해외 체류 기간이 길어질수록(특히 5년 이상 부재 시 Compelling Reasons 추가 요건) 변호사의 유대관계 법률 의견서 비중이 절대적이에요."
+      ],
+      "key_criteria_en": [
+        "Subclass 461: Grants 5 years of unrestricted work and residence rights; once the NZ partner acquires Australian citizenship, you can transition to permanent Partner Visa 820/801.",
+        "Subclass 155 RRV: Where onshore residence is under 2 years (and especially after 5+ years continuous absence triggering Compelling Reasons), a structured legal submission on business, employment, family, or cultural ties is pivotal."
+      ],
+      "feasibility_level": "해당 신분 보유자에게 매우 유효",
+      "feasibility_level_en": "Highly Effective for Eligible Status Holders"
+    },
+    {
+      "id": "short_activity_400_408",
+      "tier": "remote_short_stay",
+      "badge": "SHORT-TERM SPECIALIST & RESEARCH / RELIGIOUS",
+      "subclasses": "Subclass 400 (단기 고숙련 파견) · Subclass 408 (특수활동·연구·종교)",
+      "subclasses_en": "Subclass 400 (Short Stay Specialist) · Subclass 408 (Temporary Activity / Research / Religious)",
+      "title_ko": "단기 전문직 파견(400) & 특수활동·초청 연구·종교 비자(408)",
+      "title_en": "Short Stay Specialist (400) & Temporary Activity / Research / Religious (408)",
+      "vac_fy26_27": "400 / 408 약 $415~$430+",
+      "vac_fy26_27_en": "400 / 408 ~$415–$430+",
+      "summary_ko": "한국 본사 설비 셋업 등 3~6개월 미만 초단기 고숙련 비상시 업무(400)나 대학 박사후연구원(Postdoc)·종교 사역자·문화교류 초청(408) 등 특수 목적 비자예요. 직접 영주권 비자는 아니지만 호주 경력·네트워크의 첫 단추가 될 수 있어요.",
+      "summary_en": "Special-purpose temporary visas for short-term, non-ongoing highly specialised project work under 3–6 months (400) or university postdoctoral research, religious work, and invited cultural/sporting activities (408).",
+      "key_criteria_ko": [
+        "400 비자는 지속적(Ongoing) 일자리가 아닌 단기 프로젝트성 고숙련 업무여야 하며 해외 신청 전용이에요.",
+        "구 코로나 팬데믹 이벤트 408 스트림은 완전히 종료되었으며 현재는 연구·종교·스포츠·엔터테인먼트 등 본래의 엄격한 세부 스트림만 운영돼요."
+      ],
+      "key_criteria_en": [
+        "Subclass 400 must be offshore-lodged for genuinely non-ongoing, highly specialised project duties.",
+        "The former COVID-19 Pandemic Event 408 stream is permanently closed; only strict activity streams (Research, Religious Worker, Sport, Entertainment, Exchange) remain active."
+      ],
+      "feasibility_level": "특수 목적 부합 시 단기 활용",
+      "feasibility_level_en": "Short-Term Tactical Use When Special Purpose Matches"
+    },
+    {
+      "id": "art_s48_ministerial_351",
+      "tier": "crisis_remedy",
+      "badge": "LEGAL REMEDY · REFUSAL, CANCELLATION & EXCEPTIONAL RELIEF",
+      "subclasses": "ART(행정재심재판소) 재심 · Section 48 예외 접수 · 장관 탄원(s 351)",
+      "subclasses_en": "ART Merits Review · Section 48 Exempt Visas · Ministerial Intervention (s 351)",
+      "title_ko": "비자·노미네이션 거절/취소 구제, s 48 예외 및 장관 탄원(s 351)",
+      "title_en": "Visa/Nomination Refusal & Cancellation Remedies, s 48 Exceptions & Ministerial Intervention (s 351)",
+      "vac_fy26_27": "ART 이민 재심 접수비 $3,727 (인용/승소 시 50% 환급 · 경제적 곤란 감면 50%)",
+      "vac_fy26_27_en": "ART Migration Review Fee $3,727 (50% refunded upon favourable decision · 50% financial hardship reduction)",
+      "summary_ko": "이미 비자나 고용주 노미네이션이 거절되었거나 취소 통지(NOICC)를 받은 경우에도 법정 불변 기한 내 대응하면 합법 체류 유지 및 역전 승인의 길이 열려 있어요.",
+      "summary_en": "Even after a visa/nomination refusal or Notice of Intention to Consider Cancellation (NOICC), acting within strict statutory deadlines preserves lawful status and opens merits review or statutory workaround pathways.",
+      "key_criteria_ko": [
+        "법정 불변 기한 엄수: 일반 거절 28일, s 116 취소 7영업일, s 501 인성 취소 9일 — 단 하루만 지나도 재심 접수권이 영구 소멸돼요!",
+        "Section 48 Bar 우회 전략: 호주 내 거절 이력이 있어도 주정부 노미네이션(190·491), 지방 스폰서(494), 파트너(820) 등 법정 예외 비자(reg 2.12)는 호주 내 접수가 가능해요(단, BVB 출국·재입국 동선 설계 필수).",
+        "장관 탄원(s 351 Ministerial Intervention): 재심 결정 이후 호주 시민권 자녀의 최선의 이익 등 극히 이례적·공익적 사유가 있을 때 마지막으로 검토하는 최후 구제 수단이에요."
+      ],
+      "key_criteria_en": [
+        "Non-Extendable Statutory Deadlines: Standard refusal 28 calendar days, s 116 cancellation 7 working days, s 501 character decisions 9 days—missing by even 1 day permanently extinguishes review rights!",
+        "Section 48 Bar Exceptions (reg 2.12): Despite an onshore refusal, prescribed visas including Subclass 190, 491, 494, and Partner 820 remain valid onshore options (careful BVB travel planning required).",
+        "Ministerial Intervention (s 351): Discretionary public-interest remedy post-ART decision reserved for unique and exceptional circumstances (e.g., best interests of an Australian citizen child)."
+      ],
+      "feasibility_level": "위기 발생 시 즉시 전문 변호사 진단 필수 (비자응급실™ / ART Case Review™)",
+      "feasibility_level_en": "Immediate Accredited Specialist Review Essential (Visa Emergency™ / ART Case Review™)"
+    }
+  ],
+  "parkco_services": [
+    {
+      "id": "gsm_case_review",
+      "trademark": "GSM Case Review™",
+      "trademark_en": "GSM Case Review™",
+      "badge_ko": "SUBCLASS 189 · 190 · 491 접수 전 전문변호사 서류검토",
+      "badge_en": "SUBCLASS 189 · 190 · 491 PRE-LODGEMENT SPECIALIST LEGAL AUDIT",
+      "fee_ko": "$495 (GST 포함 정찰제)",
+      "fee_en": "$495 Fixed Fee (incl. GST)",
+      "title_ko": "박앤코 GSM Case Review™ (기술이민 서류 정밀 검수)",
+      "title_en": "Park & Co GSM Case Review™ (Pre-Lodgement Skilled Visa Audit)",
+      "description_ko": "혼자 기술이민을 준비하시거나 초청장을 받으신 분들을 위해 박창민 대표변호사가 직접 경력증명서 직무 부합성, EOI 점수 과다 청구(Over-claiming) 리스크, 기술심사·영어·여권 유효성(PIC 4021), Form 80 및 s 57 소명 유발 요소를 접수 전에 꼼꼼히 점검해 드려요.",
+      "description_en": "Designed for self-prepared applicants or newly invited candidates: Legal Practitioner Director & Accredited Specialist Chang Min Park personally audits reference letters against ANZSCO duties, Schedule 6D EOI over-claiming risks, skills/English/passport validity (PIC 4021), Form 80 disclosures, and s 57 triggers before you lodge.",
+      "url_ko": "https://parklawyers.com.au/case-review/gsm-case-review/?lang=ko",
+      "url_en": "https://parklawyers.com.au/case-review/gsm-case-review/",
+      "video_id": "m9xW3ZZXGQw"
+    },
+    {
+      "id": "visa_emergency",
+      "trademark": "비자응급실 / Visa Emergency™ (AU TM 2200683)",
+      "trademark_en": "Visa Emergency™ (AU Registered Trademark 2200683)",
+      "badge_ko": "100% 무료 온라인 응급 진단 · s 57 · PIC 4020 · NOICC",
+      "badge_en": "100% FREE ONLINE TRIAGE · s 57 · PIC 4020 · NOICC",
+      "fee_ko": "100% 무료 (위험 통지서 업로드 응급 처방)",
+      "fee_en": "100% Free Initial Triage (Upload Departmental Notice)",
+      "title_ko": "박앤코 비자응급실™ (이민성 소명·취소 통지서 무료 진단)",
+      "title_en": "Park & Co Visa Emergency™ (Free s 57 / PIC 4020 / NOICC Triage)",
+      "description_ko": "호주 이민성으로부터 거절 전 소명 요구(s 57 Natural Justice), 허위·위조 서류 의심(PIC 4020 — 3년/10년 입국금지), 비자 취소 예고 통지서(NOICC: s 116 / s 109 / s 501 등)를 받으셨다면 문진표에 업로드해 주세요. 박창민 대표변호사가 원인을 정밀 진단해 무료 응급 처방전을 이메일로 보내드려요.",
+      "description_en": "Received a s 57 Natural Justice letter, PIC 4020 allegation (carrying a 3- or 10-year ban), or Notice of Intention to Consider Cancellation (NOICC: s 116 / s 109 / s 501)? Upload your notice for a rapid, confidential legal triage prescription from Legal Practitioner Director Chang Min Park.",
+      "url_ko": "https://parklawyers.com.au/case-emergency/visa/?lang=ko",
+      "url_en": "https://parklawyers.com.au/case-emergency/visa/",
+      "video_id": "0__kDkczXRQ"
+    },
+    {
+      "id": "art_case_review",
+      "trademark": "ART Case Review™",
+      "trademark_en": "ART Case Review™",
+      "badge_ko": "100% 무료 재심 승산 검토 & 세컨드 오피니언 · 수임료 정찰제",
+      "badge_en": "100% FREE MERITS PROSPECT ASSESSMENT & SECOND OPINION · FIXED FEE",
+      "fee_ko": "초기 승산·결정문 검토 무료 (수임 시 정찰제)",
+      "fee_en": "Free Refusal Decision Assessment (Fixed-Fee Representation)",
+      "title_ko": "박앤코 ART Case Review™ (비자·노미네이션 거절 재심 검토)",
+      "title_en": "Park & Co ART Case Review™ (Visa & Nomination Refusal Appeals)",
+      "description_ko": "비자 거절·취소 또는 고용주 노미네이션 거절 결정문(Decision Record)을 수령하셨거나, 현재 ART(행정재심재판소) 재심 대기 중 기존 대리인의 전략이 불안하신 분께 무료로 승산과 역전 전략(세컨드 오피니언)을 진단해 드려요.",
+      "description_en": "Received a visa refusal, cancellation, or employer nomination refusal Decision Record—or seeking an independent specialist second opinion on a pending Administrative Review Tribunal (ART) appeal? Get a complimentary prospects & strategy review.",
+      "url_ko": "https://parklawyers.com.au/appealing-visa-decision/?lang=ko",
+      "url_en": "https://parklawyers.com.au/appealing-visa-decision/",
+      "video_id": "zVvzficFWqk"
+    },
+    {
+      "id": "strategy_consultation",
+      "trademark": "Park & Co 1:1 Strategy Consultation",
+      "trademark_en": "Park & Co 1:1 Strategy Consultation",
+      "badge_ko": "QLS 공인 이민법 스페셜리스트 맞춤 로드맵 설계",
+      "badge_en": "QLS ACCREDITED IMMIGRATION LAW SPECIALIST ROADMAP",
+      "fee_ko": "1:1 법률 전략 상담 (진단 브리프 사전 전달)",
+      "fee_en": "1:1 Legal Strategy Consultation (Pre-filled Diagnostic Brief)",
+      "title_ko": "박앤코 1:1 맞춤 이민 법률 상담 (진단결과 연동)",
+      "title_en": "Park & Co 1:1 Immigration Strategy Consultation (Diagnostic Brief Attached)",
+      "description_ko": "이 가이드 시스템에서 도출된 직종·점수·패스웨이·리스크 진단 브리프를 그대로 첨부해 박창민 대표변호사 및 박앤코 전담팀과 실행 가능한 최단 영주권 전략을 수립하세요.",
+      "description_en": "Attach the structured ANZSCO, Schedule 6D points, pathway, and statutory risk brief generated by this system directly to consult Legal Practitioner Director Chang Min Park and the Park & Co legal team on your fastest viable PR roadmap.",
+      "url_ko": "https://parklawyers.com.au/links/?lang=ko",
+      "url_en": "https://parklawyers.com.au/links/",
+      "inquiry_url": "https://parklawyers.com.au/links/?lang=ko",
+      "inquiry_url_en": "https://parklawyers.com.au/links/",
+      "video_id": "BWFNfi8394E"
+    }
+  ],
+  "specialist_navigators": [
+    {
+      "title_ko": "GSM 점수·139개 직종 커트라인 & 8개 주정부 진단기",
+      "title_en": "GSM Points, 139 Occupation Cut-Offs & 8 State Nominations Navigator",
+      "url": "https://changa9090.github.io/parkco-gsm-state-navigator/",
+      "tag": "189 · 190 · 491",
+      "tag_en": "189 · 190 · 491"
+    },
+    {
+      "title_ko": "SID 482 · ENS 186 3단계 연봉 & ABF 제재 스폰서 조회기",
+      "title_en": "SID 482 & ENS 186 3-Tier Salary & ABF Sanctioned Sponsor Checker",
+      "url": "https://changa9090.github.io/parkco-sid-ens-navigator/",
+      "tag": "482 · 186 · AMSR",
+      "tag_en": "482 · 186 · AMSR"
+    },
+    {
+      "title_ko": "파트너 비자(820/309/300) · Schedule 3 & 시민권 내비게이터",
+      "title_en": "Partner Visas (820/309/300), Schedule 3 & Citizenship Navigator",
+      "url": "https://changa9090.github.io/parkco-partner-graduate-navigator/",
+      "tag": "820 · 309 · 시민권",
+      "tag_en": "820 · 309 · Citizenship"
+    },
+    {
+      "title_ko": "호주 13개 DAMA 지역·직종·컨세션 통합 탐색기",
+      "title_en": "Australia 13 Regional DAMAs Occupation & Concession Explorer",
+      "url": "https://changa9090.github.io/parkco-dama-navigator/",
+      "tag": "13 DAMAs · 50/55세",
+      "tag_en": "13 DAMAs · Age 50/55"
+    },
+    {
+      "title_ko": "비자 거절·s 48·ART 재심 불변기한 & 인용률 내비게이터",
+      "title_en": "Visa Refusal, s 48 Bar & ART Appeal Deadline / Set-Aside Navigator",
+      "url": "https://changa9090.github.io/parkco-visa-crisis-navigator/",
+      "tag": "ART · s 48 · PIC 4020",
+      "tag_en": "ART · s 48 · PIC 4020"
+    },
+    {
+      "title_ko": "부모초청 비자(143·864·870) 대기열 속도 & AoS 계산기",
+      "title_en": "Parent Visas (143 · 864 · 870) Queue Velocity & AoS Calculator",
+      "url": "https://changa9090.github.io/parkco-parent-visa-navigator/",
+      "tag": "143 · 864 · 870",
+      "tag_en": "143 · 864 · 870"
+    },
+    {
+      "title_ko": "워킹홀리데이(417·462) 88/179일 & 8547 시뮬레이터",
+      "title_en": "Working Holiday (417 · 462) 88/179-Day & Condition 8547 Simulator",
+      "url": "https://changa9090.github.io/parkco-whm-navigator/",
+      "tag": "417 · 462",
+      "tag_en": "417 · 462"
+    },
+    {
+      "title_ko": "호주 비자 실시간 심사기간 & 내 대기일수(D-Day) 계산기",
+      "title_en": "Live Australian Visa Processing Times & Wait-Time (D-Day) Tracker",
+      "url": "https://changa9090.github.io/visa-global-processing-time/",
+      "tag": "74개 스트림 실시간",
+      "tag_en": "74 Live Streams"
+    }
+  ],
+  "processing_times": {
+    "100": [
+      {
+        "stream_name": "100",
+        "visa_type": "Partner",
+        "p50_raw": "9 Months",
+        "p90_raw": "21 Months",
+        "days_median": 270,
+        "days_p90": 630,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "101": [
+      {
+        "stream_name": "101",
+        "visa_type": "Child",
+        "p50_raw": "24 Months",
+        "p90_raw": "33 Months",
+        "days_median": 720,
+        "days_p90": 990,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "102": [
+      {
+        "stream_name": "102",
+        "visa_type": "Adoption",
+        "p50_raw": "8 Months",
+        "p90_raw": "19 Months",
+        "days_median": 240,
+        "days_p90": 570,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "117": [
+      {
+        "stream_name": "117",
+        "visa_type": "Orphan Relative",
+        "p50_raw": "75 Months",
+        "p90_raw": "97 Months",
+        "days_median": 2250,
+        "days_p90": 2910,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "132": [
+      {
+        "stream_name": "Significant Business History",
+        "visa_type": "Business Talent",
+        "p50_raw": "67 Months",
+        "p90_raw": "70 Months",
+        "days_median": 2010,
+        "days_p90": 2100,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "155": [
+      {
+        "stream_name": "155",
+        "visa_type": "Resident Return",
+        "p50_raw": "Less than 1 Day",
+        "p90_raw": "6 Days",
+        "days_median": 1,
+        "days_p90": 6,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "157": [
+      {
+        "stream_name": "157",
+        "visa_type": "Resident Return",
+        "p50_raw": "18 Days",
+        "p90_raw": "65 Days",
+        "days_median": 18,
+        "days_p90": 65,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "186": [
+      {
+        "stream_name": "Agreement Pathway",
+        "visa_type": "Employer Nomination",
+        "p50_raw": "50 Days",
+        "p90_raw": "12 Months",
+        "days_median": 50,
+        "days_p90": 360,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Direct Entry Pathway",
+        "visa_type": "Employer Nomination",
+        "p50_raw": "21 Months",
+        "p90_raw": "25 Months",
+        "days_median": 630,
+        "days_p90": 750,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Transition Pathway",
+        "visa_type": "Employer Nomination",
+        "p50_raw": "21 Months",
+        "p90_raw": "25 Months",
+        "days_median": 630,
+        "days_p90": 750,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "188": [
+      {
+        "stream_name": "Business Innovation Extension",
+        "visa_type": "Business Innovation",
+        "p50_raw": "6 Months",
+        "p90_raw": "11 Months",
+        "days_median": 180,
+        "days_p90": 330,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "189": [
+      {
+        "stream_name": "New Zealand",
+        "visa_type": "Skilled Independent",
+        "p50_raw": "54 Months",
+        "p90_raw": "61 Months",
+        "days_median": 1620,
+        "days_p90": 1830,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Points-Tested",
+        "visa_type": "Skilled Independent",
+        "p50_raw": "61 Days",
+        "p90_raw": "8 Months",
+        "days_median": 61,
+        "days_p90": 240,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "190": [
+      {
+        "stream_name": "190",
+        "visa_type": "Skilled Nominated",
+        "p50_raw": "4 Months",
+        "p90_raw": "16 Months",
+        "days_median": 120,
+        "days_p90": 480,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "191": [
+      {
+        "stream_name": "Regional Provisional Visa",
+        "visa_type": "Skilled Regional",
+        "p50_raw": "8 Months",
+        "p90_raw": "10 Months",
+        "days_median": 240,
+        "days_p90": 300,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "300": [
+      {
+        "stream_name": "300",
+        "visa_type": "Prospective Marriage",
+        "p50_raw": "14 Months",
+        "p90_raw": "26 Months",
+        "days_median": 420,
+        "days_p90": 780,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "309": [
+      {
+        "stream_name": "309",
+        "visa_type": "Partner",
+        "p50_raw": "21 Months",
+        "p90_raw": "32 Months",
+        "days_median": 630,
+        "days_p90": 960,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "400": [
+      {
+        "stream_name": "400",
+        "visa_type": "Temporary Work",
+        "p50_raw": "8 Days",
+        "p90_raw": "43 Days",
+        "days_median": 8,
+        "days_p90": 43,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "403": [
+      {
+        "stream_name": "Domestic Worker (Diplomatic or Consular)",
+        "visa_type": "Diplomatic",
+        "p50_raw": "27 Days",
+        "p90_raw": "78 Days",
+        "days_median": 27,
+        "days_p90": 78,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Foreign Government Agency",
+        "visa_type": "Diplomatic",
+        "p50_raw": "50 Days",
+        "p90_raw": "4 Months",
+        "days_median": 50,
+        "days_p90": 120,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Government Agreement",
+        "visa_type": "Diplomatic",
+        "p50_raw": "12 Days",
+        "p90_raw": "45 Days",
+        "days_median": 12,
+        "days_p90": 45,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Mobility Arrangement for Talented Early-professionals Scheme (MATES)",
+        "visa_type": "Diplomatic",
+        "p50_raw": "4 Months",
+        "p90_raw": "5 Months",
+        "days_median": 120,
+        "days_p90": 150,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Pacific Australia Labour Mobility Scheme",
+        "visa_type": "Diplomatic",
+        "p50_raw": "15 Days",
+        "p90_raw": "30 Days",
+        "days_median": 15,
+        "days_p90": 30,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "407": [
+      {
+        "stream_name": "407",
+        "visa_type": "Training",
+        "p50_raw": "12 Months",
+        "p90_raw": "20 Months",
+        "days_median": 360,
+        "days_p90": 600,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "408": [
+      {
+        "stream_name": "Entertainment Activities",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "23 Days",
+        "p90_raw": "47 Days",
+        "days_median": 23,
+        "days_p90": 47,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Exchange Arrangements",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "28 Days",
+        "p90_raw": "52 Days",
+        "days_median": 28,
+        "days_p90": 52,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Invited for Other Social and Cultural Activity",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "4 Days",
+        "p90_raw": "22 Days",
+        "days_median": 4,
+        "days_p90": 22,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Religious Work",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "3 Months",
+        "p90_raw": "5 Months",
+        "days_median": 90,
+        "days_p90": 150,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Research Activities",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "15 Months",
+        "p90_raw": "17 Months",
+        "days_median": 450,
+        "days_p90": 510,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Special Programs",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "31 Days",
+        "p90_raw": "56 Days",
+        "days_median": 31,
+        "days_p90": 56,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Sporting Activities",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "16 Days",
+        "p90_raw": "4 Months",
+        "days_median": 16,
+        "days_p90": 120,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Superyacht Crew",
+        "visa_type": "Temporary Activity",
+        "p50_raw": "7 Days",
+        "p90_raw": "35 Days",
+        "days_median": 7,
+        "days_p90": 35,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "417": [
+      {
+        "stream_name": "417",
+        "visa_type": "Working Holiday",
+        "p50_raw": "2 Days",
+        "p90_raw": "58 Days",
+        "days_median": 2,
+        "days_p90": 58,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "445": [
+      {
+        "stream_name": "445",
+        "visa_type": "Dependent Child",
+        "p50_raw": "25 Months",
+        "p90_raw": "32 Months",
+        "days_median": 750,
+        "days_p90": 960,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "461": [
+      {
+        "stream_name": "461",
+        "visa_type": "New Zealand Citizen Family Relationship",
+        "p50_raw": "5 Months",
+        "p90_raw": "6 Months",
+        "days_median": 150,
+        "days_p90": 180,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "462": [
+      {
+        "stream_name": "462",
+        "visa_type": "Work and Holiday",
+        "p50_raw": "3 Days",
+        "p90_raw": "44 Days",
+        "days_median": 3,
+        "days_p90": 44,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "482": [
+      {
+        "stream_name": "Core Skills",
+        "visa_type": "Skills In Demand",
+        "p50_raw": "4 Months",
+        "p90_raw": "9 Months",
+        "days_median": 120,
+        "days_p90": 270,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Labour Agreement",
+        "visa_type": "Skills In Demand",
+        "p50_raw": "5 Months",
+        "p90_raw": "9 Months",
+        "days_median": 150,
+        "days_p90": 270,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Nomination",
+        "visa_type": "Skills In Demand",
+        "p50_raw": "64 days",
+        "p90_raw": "9 months",
+        "days_median": 64,
+        "days_p90": 270,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Specialist Skills",
+        "visa_type": "Skills In Demand",
+        "p50_raw": "37 Days",
+        "p90_raw": "78 Days",
+        "days_median": 37,
+        "days_p90": 78,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Sponsorship",
+        "visa_type": "Skills In Demand",
+        "p50_raw": "11 days",
+        "p90_raw": "57 days",
+        "days_median": 11,
+        "days_p90": 57,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "485": [
+      {
+        "stream_name": "Post-Higher Education Work",
+        "visa_type": "Temporary Graduate",
+        "p50_raw": "5 Days",
+        "p90_raw": "55 Days",
+        "days_median": 5,
+        "days_p90": 55,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Post-Vocational Education Work",
+        "visa_type": "Temporary Graduate",
+        "p50_raw": "52 Days",
+        "p90_raw": "5 Months",
+        "days_median": 52,
+        "days_p90": 150,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "491": [
+      {
+        "stream_name": "Family Sponsored Regional",
+        "visa_type": "Skilled Work Regional",
+        "p50_raw": "4 Months",
+        "p90_raw": "7 Months",
+        "days_median": 120,
+        "days_p90": 210,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "State/Territory Government Nominated Regional",
+        "visa_type": "Skilled Work Regional",
+        "p50_raw": "5 Months",
+        "p90_raw": "18 Months",
+        "days_median": 150,
+        "days_p90": 540,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "494": [
+      {
+        "stream_name": "Employer Sponsored",
+        "visa_type": "Skilled Employer Sponsored Regional",
+        "p50_raw": "8 Months",
+        "p90_raw": "12 Months",
+        "days_median": 240,
+        "days_p90": 360,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Labour Agreement",
+        "visa_type": "Skilled Employer Sponsored Regional",
+        "p50_raw": "4 Months",
+        "p90_raw": "12 Months",
+        "days_median": 120,
+        "days_p90": 360,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "500": [
+      {
+        "stream_name": "Foreign Affairs or Defence Sector",
+        "visa_type": "Student",
+        "p50_raw": "3 Days",
+        "p90_raw": "22 Days",
+        "days_median": 3,
+        "days_p90": 22,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Higher Education Sector",
+        "visa_type": "Student",
+        "p50_raw": "16 Days",
+        "p90_raw": "4 Months",
+        "days_median": 16,
+        "days_p90": 120,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Independent ELICOS Sector",
+        "visa_type": "Student",
+        "p50_raw": "22 Days",
+        "p90_raw": "53 Days",
+        "days_median": 22,
+        "days_p90": 53,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Non-Award Sector",
+        "visa_type": "Student",
+        "p50_raw": "3 Days",
+        "p90_raw": "43 Days",
+        "days_median": 3,
+        "days_p90": 43,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Postgraduate Research Sector",
+        "visa_type": "Student",
+        "p50_raw": "17 Days",
+        "p90_raw": "55 Days",
+        "days_median": 17,
+        "days_p90": 55,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Schools Sector",
+        "visa_type": "Student",
+        "p50_raw": "28 Days",
+        "p90_raw": "7 Months",
+        "days_median": 28,
+        "days_p90": 210,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Vocational Education and Training Sector",
+        "visa_type": "Student",
+        "p50_raw": "53 Days",
+        "p90_raw": "7 Months",
+        "days_median": 53,
+        "days_p90": 210,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "590": [
+      {
+        "stream_name": "590",
+        "visa_type": "Student Guardian",
+        "p50_raw": "43 Days",
+        "p90_raw": "8 Months",
+        "days_median": 43,
+        "days_p90": 240,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "600": [
+      {
+        "stream_name": "Business Visitor",
+        "visa_type": "Visitor",
+        "p50_raw": "7 Days",
+        "p90_raw": "19 Days",
+        "days_median": 7,
+        "days_p90": 19,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Sponsored Family",
+        "visa_type": "Visitor",
+        "p50_raw": "40 Days",
+        "p90_raw": "3 Months",
+        "days_median": 40,
+        "days_p90": 90,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Tourist",
+        "visa_type": "Visitor",
+        "p50_raw": "21 Days",
+        "p90_raw": "33 Days",
+        "days_median": 21,
+        "days_p90": 33,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "601": [
+      {
+        "stream_name": "601",
+        "visa_type": "Electronic Travel Authority",
+        "p50_raw": "Less than 1 Day",
+        "p90_raw": "Less than 1 Day",
+        "days_median": 1,
+        "days_p90": 1,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "602": [
+      {
+        "stream_name": "602",
+        "visa_type": "Medical Treatment",
+        "p50_raw": "19 Days",
+        "p90_raw": "3 Months",
+        "days_median": 19,
+        "days_p90": 90,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "651": [
+      {
+        "stream_name": "651",
+        "visa_type": "eVisitor",
+        "p50_raw": "Less than 1 Day",
+        "p90_raw": "Less than 1 Day",
+        "days_median": 1,
+        "days_p90": 1,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "771": [
+      {
+        "stream_name": "771",
+        "visa_type": "Transit",
+        "p50_raw": "3 Days",
+        "p90_raw": "13 Days",
+        "days_median": 3,
+        "days_p90": 13,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "801": [
+      {
+        "stream_name": "801",
+        "visa_type": "Partner",
+        "p50_raw": "8 Months",
+        "p90_raw": "19 Months",
+        "days_median": 240,
+        "days_p90": 570,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "802": [
+      {
+        "stream_name": "802",
+        "visa_type": "Child",
+        "p50_raw": "21 Months",
+        "p90_raw": "31 Months",
+        "days_median": 630,
+        "days_p90": 930,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "820": [
+      {
+        "stream_name": "820",
+        "visa_type": "Partner",
+        "p50_raw": "22 Months",
+        "p90_raw": "30 Months",
+        "days_median": 660,
+        "days_p90": 900,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "858": [
+      {
+        "stream_name": "Distinguished Talent / Global Talent (Independent)",
+        "visa_type": "Global Talent",
+        "p50_raw": "16 Months",
+        "p90_raw": "24 Months",
+        "days_median": 480,
+        "days_p90": 720,
+        "official_updated": "12 October 2026"
+      },
+      {
+        "stream_name": "National Innovation",
+        "visa_type": "National Innovation",
+        "p50_raw": "6 Months",
+        "p90_raw": "7 Months",
+        "days_median": 180,
+        "days_p90": 210,
+        "official_updated": "12 October 2026"
+      }
+    ],
+    "870": [
+      {
+        "stream_name": "Sponsorship",
+        "visa_type": "Sponsored Parent",
+        "p50_raw": "89 days",
+        "p90_raw": "4 months",
+        "days_median": 89,
+        "days_p90": 120,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Visa Application",
+        "visa_type": "Sponsored Parent",
+        "p50_raw": "7 Months",
+        "p90_raw": "9 Months",
+        "days_median": 210,
+        "days_p90": 270,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "887": [
+      {
+        "stream_name": "887",
+        "visa_type": "Skilled Regional",
+        "p50_raw": "10 Months",
+        "p90_raw": "17 Months",
+        "days_median": 300,
+        "days_p90": 510,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "888": [
+      {
+        "stream_name": "Business Innovation",
+        "visa_type": "Business Innovation & Investment",
+        "p50_raw": "9 Months",
+        "p90_raw": "10 Months",
+        "days_median": 270,
+        "days_p90": 300,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Investor",
+        "visa_type": "Business Innovation & Investment",
+        "p50_raw": "5 Months",
+        "p90_raw": "6 Months",
+        "days_median": 150,
+        "days_p90": 180,
+        "official_updated": "29 September 2026"
+      },
+      {
+        "stream_name": "Significant Investor",
+        "visa_type": "Business Innovation & Investment",
+        "p50_raw": "4 Months",
+        "p90_raw": "8 Months",
+        "days_median": 120,
+        "days_p90": 240,
+        "official_updated": "29 September 2026"
+      }
+    ],
+    "988": [
+      {
+        "stream_name": "988",
+        "visa_type": "Maritime Crew",
+        "p50_raw": "Less than 1 Day",
+        "p90_raw": "3 Days",
+        "days_median": 1,
+        "days_p90": 3,
+        "official_updated": "29 September 2026"
+      }
+    ]
+  }
+}

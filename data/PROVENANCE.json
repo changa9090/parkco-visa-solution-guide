@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-10-28T13:58:34.509144+00:00",
+  "read_only_policy": "strict_zero_mutation",
+  "sources": [
+    {
+      "label": "Home Affairs Official SOL JSON (PageJSONDataHiddenField)",
+      "local_path": "/home/cp/ag/parkco-visa-solution-guide/data/upstream_snapshots/immi_sol_official_20261028.json",
+      "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list",
+      "sha256": "c3c782b878061b3dd9e29faa81a1b2a180fe84f37e81025eafe3d619e3b164e0",
+      "bytes": 1618844,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "Home Affairs Official Visa Finder Schema",
+      "local_path": "/home/cp/ag/parkco-visa-solution-guide/data/upstream_snapshots/immi_vf_official_20261028.json",
+      "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+      "sha256": "926945fbb65550d1913fa741113cde72adc337d59bacd5b68880f66fc06d7bad",
+      "bytes": 4783,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "YouTube @immispecialist Channel Scrape (209 Long-Form Videos)",
+      "local_path": "/home/cp/ag/parkco-visa-solution-guide/data/upstream_snapshots/immispecialist_videos_20261028.json",
+      "canonical_source_url": "https://www.youtube.com/@immispecialist/videos",
+      "sha256": "189ae15ee388d254ca5c41747f05f202b4d11789f8c9e08e8cf4c1792b4262e0",
+      "bytes": 75205,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "ABS ANZSCO 2022/2013 & Legislative Instrument Master (Read-Only T7)",
+      "local_path": "/mnt/T7/crossian/kimi/skilled-occupation-navigator/data/resources/dataset.json",
+      "canonical_source_url": "https://www.legislation.gov.au/F2024L01620/latest",
+      "sha256": "716b8c584b09b3b540f18d89e5f6ad433facd350a0ea99a2b4a30048421c18cf",
+      "bytes": 14723904,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "Korean Occupation Titles SQLite Read-Only Table (Read-Only T7)",
+      "local_path": "/mnt/T7/crossian/kimi/skilled-occupation-navigator/data/processed/occupations.db",
+      "canonical_source_url": "file:///mnt/T7/crossian/kimi/skilled-occupation-navigator/data/processed/occupations.db",
+      "sha256": "4d8ece117e011b66a4ec15b1842fe591f4078ab1b36239d32143fee5eb6d5e30",
+      "bytes": 5853184,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "SkillSelect 139 Occupation Cut-Offs (217 GSM Navigator)",
+      "local_path": "/home/cp/ag/gsm-state-navigator/web/data/gsm_skillselect_data.json",
+      "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds",
+      "sha256": "626b67aefd1811b7bdaf98775324be3db8a9e5b73624a8f1b255e3b8b4226633",
+      "bytes": 20736,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "Australia 13 Regional DAMAs Enriched Dataset (217 DAMA Navigator)",
+      "local_path": "/home/cp/ag/dama-navigator/data/dama_navigator_data.json",
+      "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/labour-agreements/designated-area-migration-agreements",
+      "sha256": "0130fd27bdd6a57eaeda36327e40686c42fd7442c67bc7f7e774b17d9c23282e",
+      "bytes": 8057078,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    },
+    {
+      "label": "Home Affairs Live 74-Stream Processing Times (217 Tracker)",
+      "local_path": "/home/cp/ag/visa-processing-tracker/dist/data/typed-manifest-v2.json",
+      "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times",
+      "sha256": "4cf052d2317d08657035ed6390eb9185cc250631b1db0c29703cdfe2ecb5c67d",
+      "bytes": 35595,
+      "verified_at": "2026-10-28T13:58:34.509144+00:00"
+    }
+  ]
+}

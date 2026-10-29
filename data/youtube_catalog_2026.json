@@ -1,0 +1,1253 @@
+{
+  "channel_name": "박창민 변호사의 호주이민 (@immispecialist)",
+  "channel_name_en": "Chang Min Park — Australian Immigration Law (@immispecialist)",
+  "channel_url": "https://www.youtube.com/@immispecialist/videos",
+  "captured_at": "2026-10-28",
+  "total_channel_videos": 209,
+  "categories": [
+    {
+      "id": "all",
+      "label_ko": "전체 추천 영상",
+      "label_en": "All Curated Videos"
+    },
+    {
+      "id": "diagnosis_basics",
+      "label_ko": "자가진단 · 최신 규정 · 비자 기본기",
+      "label_en": "Self-Diagnosis & Migration Basics"
+    },
+    {
+      "id": "gsm_skilled",
+      "label_ko": "점수제 기술이민 (189·190·491)",
+      "label_en": "General Skilled Migration (189·190·491)"
+    },
+    {
+      "id": "employer_dama",
+      "label_ko": "고용주 스폰서 · 만 45세+ · DAMA",
+      "label_en": "Employer Sponsored, 45+ & DAMA"
+    },
+    {
+      "id": "study_whm_trades",
+      "label_ko": "유학(500) · 졸업생(485) · 워홀(417)",
+      "label_en": "Student, Graduate & WHM Pathways"
+    },
+    {
+      "id": "partner_family_other",
+      "label_ko": "파트너(820/309) · 고숙련(858)",
+      "label_en": "Partner, Family & Innovation"
+    },
+    {
+      "id": "crisis_art_services",
+      "label_ko": "비자응급실™ · Case Review™ · ART 재심",
+      "label_en": "Visa Emergency, Case Review & ART"
+    }
+  ],
+  "videos": [
+    {
+      "id": "Bu4AUSoyNic",
+      "title": "호주 이민법이 또 바뀌었습니다｜중요한 건 ‘지금의 룰’입니다",
+      "title_en": "Australian Migration Law Changed Again — Why Only the Current Legislative Instrument Matters",
+      "duration": "9:36",
+      "published": "2주 전",
+      "published_en": "2 weeks ago",
+      "views": "6.8천",
+      "views_en": "6.8K views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all",
+        "189",
+        "190",
+        "482",
+        "186",
+        "485",
+        "500"
+      ],
+      "tags": [
+        "featured",
+        "diagnosis",
+        "latest_rule"
+      ],
+      "summary_ko": "과거 카더라나 구법이 아니라 ‘지금 현재 시행 중인 법령(Instrument)’ 기준으로 내 비자 전략을 짜야 하는 핵심 원칙을 짚어드려요.",
+      "summary_en": "Why visa strategies must be anchored in currently active legislative instruments rather than outdated rules or online rumours.",
+      "watch_url": "https://www.youtube.com/watch?v=Bu4AUSoyNic",
+      "embed_url": "https://www.youtube.com/embed/Bu4AUSoyNic",
+      "thumbnail_url": "https://i.ytimg.com/vi/Bu4AUSoyNic/hqdefault.jpg"
+    },
+    {
+      "id": "vCSWCYA41n4",
+      "title": "호주비자 완전정복 - 호주이민",
+      "title_en": "Complete Overview of Australian Visas — Finding Your Starting Point",
+      "duration": "27:46",
+      "published": "7년 전",
+      "published_en": "7 years ago",
+      "views": "조회수 1천회",
+      "views_en": "1K views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "featured",
+        "diagnosis",
+        "overview"
+      ],
+      "summary_ko": "호주 비자의 큰 갈래(기술·취업·가족·학생·임시비자)를 한눈에 정리하고 내 출발점을 잡는 입문 필독 영상이에요.",
+      "summary_en": "Essential foundation guide mapping skilled, employer-sponsored, family, student, and temporary visa streams.",
+      "watch_url": "https://www.youtube.com/watch?v=vCSWCYA41n4",
+      "embed_url": "https://www.youtube.com/embed/vCSWCYA41n4",
+      "thumbnail_url": "https://i.ytimg.com/vi/vCSWCYA41n4/hqdefault.jpg"
+    },
+    {
+      "id": "jTWsopjUZmM",
+      "title": "호주 비자 사이클 - 전면 해부",
+      "title_en": "Anatomy of the Australian Visa Lifecycle — From Temporary Entry to Permanent Residency",
+      "duration": "27:30",
+      "published": "8년 전",
+      "published_en": "8 years ago",
+      "views": "조회수 968회",
+      "views_en": "968 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "diagnosis",
+        "lifecycle"
+      ],
+      "summary_ko": "단발성 비자가 아니라 ‘임시비자 입국 → 경력·조건 충족 → 영주권 전환’으로 이어지는 호주 비자 생애주기(Cycle)를 해부해요.",
+      "summary_en": "Breaks down how temporary visas, Australian work experience, and skills assessments connect into a coherent PR lifecycle.",
+      "watch_url": "https://www.youtube.com/watch?v=jTWsopjUZmM",
+      "embed_url": "https://www.youtube.com/embed/jTWsopjUZmM",
+      "thumbnail_url": "https://i.ytimg.com/vi/jTWsopjUZmM/hqdefault.jpg"
+    },
+    {
+      "id": "2SA8Culj9ek",
+      "title": "호주 비자, 비자번호 숫자 세개의 마법을 깨보자",
+      "title_en": "Decoding 3-Digit Australian Visa Subclass Numbers (189, 482, 820 & More)",
+      "duration": "6:09",
+      "published": "3년 전",
+      "published_en": "3 years ago",
+      "views": "조회수 293회",
+      "views_en": "293 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "diagnosis",
+        "beginners"
+      ],
+      "summary_ko": "189, 482, 820처럼 복잡해 보이는 세 자리 비자 서브클래스 숫자의 체계를 쉽게 이해할 수 있어요.",
+      "summary_en": "A clear primer on how Australian visa subclass numbering works across skilled, sponsored, temporary, and family categories.",
+      "watch_url": "https://www.youtube.com/watch?v=2SA8Culj9ek",
+      "embed_url": "https://www.youtube.com/embed/2SA8Culj9ek",
+      "thumbnail_url": "https://i.ytimg.com/vi/2SA8Culj9ek/hqdefault.jpg"
+    },
+    {
+      "id": "BWFNfi8394E",
+      "title": "호주이민 - 이민법 스페셜리스트가 알려주는 이민비법 - 박앤코 이민질문지",
+      "title_en": "How an Accredited Specialist Diagnoses Your Migration Options — Inside the Park & Co Intake",
+      "duration": "7:14",
+      "published": "4년 전",
+      "published_en": "4 years ago",
+      "views": "조회수 583회",
+      "views_en": "583 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "featured",
+        "diagnosis",
+        "intake"
+      ],
+      "summary_ko": "이민법 스페셜리스트 변호사가 실제 상담 전 어떤 질문지로 의뢰인의 숨은 가능성과 리스크를 진단하는지 공개해요.",
+      "summary_en": "Reveals the structured diagnostic questions a QLS Accredited Specialist uses to uncover hidden eligibility and refusal risks.",
+      "watch_url": "https://www.youtube.com/watch?v=BWFNfi8394E",
+      "embed_url": "https://www.youtube.com/embed/BWFNfi8394E",
+      "thumbnail_url": "https://i.ytimg.com/vi/BWFNfi8394E/hqdefault.jpg"
+    },
+    {
+      "id": "5PM7UiYp688",
+      "title": "AI 답변 믿고 비자 준비해도 될까?",
+      "title_en": "Can You Trust Generic AI Answers for Your Australian Visa Application?",
+      "duration": "8:36",
+      "published": "5개월 전",
+      "published_en": "5 months ago",
+      "views": "276",
+      "views_en": "276 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "diagnosis",
+        "ai_warning"
+      ],
+      "summary_ko": "일반 생성형 AI 답변만 믿고 비자를 준비했다가 구법·할루시네이션 때문에 낭패를 보는 실제 위험 포인트를 경고해요.",
+      "summary_en": "Real-world warnings on repealed instruments, hallucinated exemptions, and refusal traps caused by generic AI advice.",
+      "watch_url": "https://www.youtube.com/watch?v=5PM7UiYp688",
+      "embed_url": "https://www.youtube.com/embed/5PM7UiYp688",
+      "thumbnail_url": "https://i.ytimg.com/vi/5PM7UiYp688/hqdefault.jpg"
+    },
+    {
+      "id": "3Jyh2JE5OQY",
+      "title": "호주 이민] 노동당 정권의 이민 정책 방향성과 비자별(482, 파트너) 심사 타임라인 현실 체크",
+      "title_en": "Australian Migration Policy Direction & Real Processing Timelines (482, Partner & Skilled)",
+      "duration": "13:52",
+      "published": "5개월 전",
+      "published_en": "5 months ago",
+      "views": "856",
+      "views_en": "856 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "482",
+        "820",
+        "189",
+        "190"
+      ],
+      "tags": [
+        "diagnosis",
+        "timeline"
+      ],
+      "summary_ko": "현 노동당 정부의 이민 정책 기조와 482·파트너 비자 등의 실제 심사 타임라인을 현실적으로 체크해요.",
+      "summary_en": "Realistic assessment of current government policy priorities and processing queues across Subclass 482, Partner, and GSM visas.",
+      "watch_url": "https://www.youtube.com/watch?v=3Jyh2JE5OQY",
+      "embed_url": "https://www.youtube.com/embed/3Jyh2JE5OQY",
+      "thumbnail_url": "https://i.ytimg.com/vi/3Jyh2JE5OQY/hqdefault.jpg"
+    },
+    {
+      "id": "LuNFJv_1vAQ",
+      "title": "내 비자 언제 나올까? 비자 처리기간 과거와 현재 비교하기 (일명, 비자심사 기간 트렌드 추적기 공개함)",
+      "title_en": "When Will My Visa Be Granted? Comparing Historical vs Live Home Affairs Processing Times",
+      "duration": "6:23",
+      "published": "13일 전",
+      "published_en": "13 days ago",
+      "views": "3.3천",
+      "views_en": "3.3K views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "processing_time",
+        "timeline"
+      ],
+      "summary_ko": "내 비자가 언제쯤 승인될지 과거 추이와 현재 이민성 심사기간 데이터를 비교해 읽는 방법을 안내해요.",
+      "summary_en": "How to interpret median (50%) and 90th-percentile Home Affairs processing time trends accurately.",
+      "watch_url": "https://www.youtube.com/watch?v=LuNFJv_1vAQ",
+      "embed_url": "https://www.youtube.com/embed/LuNFJv_1vAQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/LuNFJv_1vAQ/hqdefault.jpg"
+    },
+    {
+      "id": "nTWjZkDzOJ8",
+      "title": "내 비자에 붙은 비자컨디션 제대로 알아보는 방법 [호주 이민]",
+      "title_en": "Understanding Your Visa Conditions Properly (8105, 8503, 8547, 8607 & VEVO)",
+      "duration": "6:44",
+      "published": "7년 전",
+      "published_en": "7 years ago",
+      "views": "조회수 529회",
+      "views_en": "529 views",
+      "category": "diagnosis_basics",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "conditions",
+        "vevo"
+      ],
+      "summary_ko": "현재 소지 비자에 붙어 있는 컨디션(8105, 8503, 8547, 8607 등)을 정확히 확인해 위반을 막는 기본기예요.",
+      "summary_en": "How to check and comply with mandatory visa conditions so a minor breach never derails your future PR application.",
+      "watch_url": "https://www.youtube.com/watch?v=nTWjZkDzOJ8",
+      "embed_url": "https://www.youtube.com/embed/nTWjZkDzOJ8",
+      "thumbnail_url": "https://i.ytimg.com/vi/nTWjZkDzOJ8/hqdefault.jpg"
+    },
+    {
+      "id": "Wj68rWMAoVg",
+      "title": "2026 호주 기술이민 포인트 제도 개편 루머 뽀개기",
+      "title_en": "2026 GSM Points Test Reform Rumours vs Current Schedule 6D Law",
+      "duration": "13:50",
+      "published": "4개월 전",
+      "published_en": "4 months ago",
+      "views": "1.2천",
+      "views_en": "1.2K views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "featured",
+        "points",
+        "gsm"
+      ],
+      "summary_ko": "2026 기술이민 포인트 제도 개편 루머와 실제 현행 Schedule 6D 점수 규정을 명확히 구분해 드려요.",
+      "summary_en": "Separates points-test reform proposals from the binding Schedule 6D points rules currently in force.",
+      "watch_url": "https://www.youtube.com/watch?v=Wj68rWMAoVg",
+      "embed_url": "https://www.youtube.com/embed/Wj68rWMAoVg",
+      "thumbnail_url": "https://i.ytimg.com/vi/Wj68rWMAoVg/hqdefault.jpg"
+    },
+    {
+      "id": "_bJftrI6Q2g",
+      "title": "호주 연방 예산안으로 보는 491·190 주정부 후원 비자 동향과 '유학 후 이민' 현실 체크, 브릿징 비자 B, 왜 중요한가?",
+      "title_en": "Federal Budget Insights: 190/491 State Nomination Trends, Study-to-PR Reality & Bridging Visa B",
+      "duration": "14:50",
+      "published": "4개월 전",
+      "published_en": "4 months ago",
+      "views": "657",
+      "views_en": "657 views",
+      "category": "gsm_skilled",
+      "visas": [
+        "190",
+        "491",
+        "500",
+        "485"
+      ],
+      "tags": [
+        "featured",
+        "state_nomination",
+        "bvb"
+      ],
+      "summary_ko": "연방 예산안으로 본 190·491 주정부 노미네이션 동향, ‘유학 후 이민’ 현실 체크, 그리고 브리징 비자 B(BVB) 주의사항이에요.",
+      "summary_en": "Analyses state nomination allocations, realistic study-to-PR expectations, and why Bridging Visa B travel timing is critical.",
+      "watch_url": "https://www.youtube.com/watch?v=_bJftrI6Q2g",
+      "embed_url": "https://www.youtube.com/embed/_bJftrI6Q2g",
+      "thumbnail_url": "https://i.ytimg.com/vi/_bJftrI6Q2g/hqdefault.jpg"
+    },
+    {
+      "id": "m9xW3ZZXGQw",
+      "title": "189 초청장 받았다면: 박앤코 케이스 리뷰로 서류 미리 점검하기",
+      "title_en": "Invited for Subclass 189/190/491? Pre-Lodgement Audit to Prevent Points Over-Claiming",
+      "duration": "8:19",
+      "published": "7일 전",
+      "published_en": "7 days ago",
+      "views": "342",
+      "views_en": "342 views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "case_review",
+        "gsm",
+        "invitation"
+      ],
+      "summary_ko": "초청장을 받은 뒤 본비자 접수 전에 점수 과다 청구(Over-claiming) 실수를 막기 위해 무엇을 검증해야 하는지 다뤄요.",
+      "summary_en": "What must be audited between SkillSelect invitation and visa lodgement under Park & Co's GSM Case Review™ framework.",
+      "watch_url": "https://www.youtube.com/watch?v=m9xW3ZZXGQw",
+      "embed_url": "https://www.youtube.com/embed/m9xW3ZZXGQw",
+      "thumbnail_url": "https://i.ytimg.com/vi/m9xW3ZZXGQw/hqdefault.jpg"
+    },
+    {
+      "id": "BUxCJVNGWIM",
+      "title": "[호주 변호사 이민 토크] 기술이민, 싱글로 신청하고 초청 받은 뒤 파트너 추가가 위험한 이유, & 학생비자 재심 On-paper로 변경, 이게 뜻하는 것은?",
+      "title_en": "Why Claiming Single Points (10 pts) Then Adding a Partner Risks Refusal & On-Paper ART Student Reviews",
+      "duration": "18:50",
+      "published": "4개월 전",
+      "published_en": "4 months ago",
+      "views": "818",
+      "views_en": "818 views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491",
+        "500"
+      ],
+      "tags": [
+        "partner_points",
+        "risk",
+        "gsm"
+      ],
+      "summary_ko": "기술이민에서 싱글 10점을 받고 초청된 뒤 파트너를 추가할 때 발생하는 치명적 리스크와 학생비자 ART 서류심리 변화를 설명해요.",
+      "summary_en": "Explains severe PIC 4020 / points-shortfall risks when undeclared de facto partners surface post-invitation, plus ART student review reforms.",
+      "watch_url": "https://www.youtube.com/watch?v=BUxCJVNGWIM",
+      "embed_url": "https://www.youtube.com/embed/BUxCJVNGWIM",
+      "thumbnail_url": "https://i.ytimg.com/vi/BUxCJVNGWIM/hqdefault.jpg"
+    },
+    {
+      "id": "pCCd_vz5OZo",
+      "title": "호주 이민, 경력점수 계산, 도대체 누구 말이 맞나요? 싸움을 현명하게 정리하는 방법",
+      "title_en": "Calculating Skilled Employment Points Accurately — Deeming Dates vs Home Affairs Rules",
+      "duration": "8:19",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 1천회",
+      "views_en": "1K views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491",
+        "186"
+      ],
+      "tags": [
+        "experience",
+        "points",
+        "skills_assessment"
+      ],
+      "summary_ko": "기술심사 기관의 차감 기준일(Deeming Date)과 이민성 경력점수 산정 기준을 명쾌하게 정리해 드려요.",
+      "summary_en": "Clarifies how skills-assessment deeming dates interact with Schedule 6D Australian and overseas employment points.",
+      "watch_url": "https://www.youtube.com/watch?v=pCCd_vz5OZo",
+      "embed_url": "https://www.youtube.com/embed/pCCd_vz5OZo",
+      "thumbnail_url": "https://i.ytimg.com/vi/pCCd_vz5OZo/hqdefault.jpg"
+    },
+    {
+      "id": "ccD4FE3bmOg",
+      "title": "완벽해부 - 싱글점수? De facto 해당 여부? 나는 10점을 받을 수 있을까? - 호주 기술이민",
+      "title_en": "Single Points (10 pts) vs De Facto Partner Assessment in General Skilled Migration",
+      "duration": "19:37",
+      "published": "7년 전",
+      "published_en": "7 years ago",
+      "views": "조회수 1.3천회",
+      "views_en": "1.3K views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "partner_points",
+        "gsm"
+      ],
+      "summary_ko": "싱글 10점 및 파트너 점수(10점·5점·0점)에서 사실혼(De facto) 해당 여부가 어떻게 판단되는지 해부해요.",
+      "summary_en": "Deep dive into how Home Affairs tests de facto relationship status when auditing 10-point single or skilled-partner claims.",
+      "watch_url": "https://www.youtube.com/watch?v=ccD4FE3bmOg",
+      "embed_url": "https://www.youtube.com/embed/ccD4FE3bmOg",
+      "thumbnail_url": "https://i.ytimg.com/vi/ccD4FE3bmOg/hqdefault.jpg"
+    },
+    {
+      "id": "sP9Lv_dwJOU",
+      "title": "호주이민을 위한 기술심사 특집 - VETASSESS 특징",
+      "title_en": "Skills Assessment Deep Dive — How VETASSESS Evaluates Qualifications & Employment",
+      "duration": "19:23",
+      "published": "6년 전",
+      "published_en": "6 years ago",
+      "views": "조회수 2.1천회",
+      "views_en": "2.1K views",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491",
+        "482",
+        "186",
+        "494"
+      ],
+      "tags": [
+        "skills_assessment",
+        "vetassess"
+      ],
+      "summary_ko": "사무·전문직 최다 기술심사 기관인 VETASSESS의 학력·전공·경력 차감 구조를 알기 쉽게 풀어드려요.",
+      "summary_en": "Explains VETASSESS occupational groups, qualification relevance, and post-qualification experience deductions.",
+      "watch_url": "https://www.youtube.com/watch?v=sP9Lv_dwJOU",
+      "embed_url": "https://www.youtube.com/embed/sP9Lv_dwJOU",
+      "thumbnail_url": "https://i.ytimg.com/vi/sP9Lv_dwJOU/hqdefault.jpg"
+    },
+    {
+      "id": "rsLNoD67sx4",
+      "title": "박앤코 라이브 — 호주 기술이민(189·190·491)에 대한 모든 것",
+      "title_en": "Park & Co Live Masterclass — Everything About General Skilled Migration (189 · 190 · 491)",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "gsm_skilled",
+      "visas": [
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "live_masterclass",
+        "gsm"
+      ],
+      "summary_ko": "기술이민 전체 구조와 질의응답을 총망라한 박앤코 라이브 마스터클래스예요.",
+      "summary_en": "Comprehensive live Q&A covering EOI strategy, state nomination criteria, and skilled PR pathways.",
+      "watch_url": "https://www.youtube.com/watch?v=rsLNoD67sx4",
+      "embed_url": "https://www.youtube.com/embed/rsLNoD67sx4",
+      "thumbnail_url": "https://i.ytimg.com/vi/rsLNoD67sx4/hqdefault.jpg"
+    },
+    {
+      "id": "9JnafnJXvVw",
+      "title": "호주 취업비자 성공방정식 - 이것만 알아도 실패는 없다. TSS, ENS, 494 통합본",
+      "title_en": "The Employer-Sponsored Visa Formula — Mastering Subclass 482, 186 & 494",
+      "duration": "13:22",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 1.7천회",
+      "views_en": "1.7K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186",
+        "494"
+      ],
+      "tags": [
+        "featured",
+        "sponsor",
+        "overview"
+      ],
+      "summary_ko": "고용주 스폰서 비자(482·186·494)의 스폰서십–노미네이션–비자 3단계 핵심 성공 방정식을 통합 정리했어요.",
+      "summary_en": "Integrates the three statutory stages—Sponsorship, Nomination, and Visa—across Subclass 482, 186, and 494.",
+      "watch_url": "https://www.youtube.com/watch?v=9JnafnJXvVw",
+      "embed_url": "https://www.youtube.com/embed/9JnafnJXvVw",
+      "thumbnail_url": "https://i.ytimg.com/vi/9JnafnJXvVw/hqdefault.jpg"
+    },
+    {
+      "id": "ZNEftvtLDxw",
+      "title": "186 다이렉트 엔트리 3년 풀타임 경력, 어디까지 인정될까요?",
+      "title_en": "Subclass 186 Direct Entry: What Counts Toward the 3-Year Full-Time Experience Requirement?",
+      "duration": "16:26",
+      "published": "2주 전",
+      "published_en": "2 weeks ago",
+      "views": "1.2천",
+      "views_en": "1.2K views",
+      "category": "employer_dama",
+      "visas": [
+        "186"
+      ],
+      "tags": [
+        "featured",
+        "186_de",
+        "experience"
+      ],
+      "summary_ko": "2026년 최신 기준 186 Direct Entry 영주권의 ‘3년 풀타임 경력’ 인정 범위와 실무 쟁점을 심층 해설해요.",
+      "summary_en": "2026 legal analysis of qualifying full-time post-qualification employment for Subclass 186 Direct Entry PR.",
+      "watch_url": "https://www.youtube.com/watch?v=ZNEftvtLDxw",
+      "embed_url": "https://www.youtube.com/embed/ZNEftvtLDxw",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZNEftvtLDxw/hqdefault.jpg"
+    },
+    {
+      "id": "ryXR66hwnT8",
+      "title": "ENS 다이렉트 엔트리, 3년 풀타임 경력조건 끝판왕 해설. ABN 경력 인정돼?",
+      "title_en": "186 Direct Entry & 482 Experience Rules — Does ABN Contractor or Part-Time Work Count?",
+      "duration": "9:30",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 1.7천회",
+      "views_en": "1.7K views",
+      "category": "employer_dama",
+      "visas": [
+        "186",
+        "482",
+        "494"
+      ],
+      "tags": [
+        "abn",
+        "experience",
+        "186_de"
+      ],
+      "summary_ko": "ABN 개인사업자 형태나 파트타임으로 일한 경력이 스폰서 비자 경력으로 인정될 수 있는지 법적 기준을 짚어드려요.",
+      "summary_en": "Examines when ABN sole-trader or pro-rata part-time work can—or cannot—satisfy employer-sponsored experience rules.",
+      "watch_url": "https://www.youtube.com/watch?v=ryXR66hwnT8",
+      "embed_url": "https://www.youtube.com/embed/ryXR66hwnT8",
+      "thumbnail_url": "https://i.ytimg.com/vi/ryXR66hwnT8/hqdefault.jpg"
+    },
+    {
+      "id": "qiP4zUdte-8",
+      "title": "호주이민 절망나이, 만 45세를 넘은 할배들은 왜 TSS 임시 취업비자를 계속 활용 중인가? 4가지 유형으로 정리한다.",
+      "title_en": "Over Age 45? Four Proven Pathways to Australian PR via Subclass 482, FWHIT, DAMA & Partner",
+      "duration": "10:47",
+      "published": "1년 전",
+      "published_en": "1 year ago",
+      "views": "5.1천",
+      "views_en": "5.1K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186",
+        "494"
+      ],
+      "tags": [
+        "featured",
+        "age_45_plus",
+        "dama"
+      ],
+      "summary_ko": "만 45세를 넘긴 분들이 연령 제한 없는 482 비자와 DAMA·고소득 면제·파트너 전환 등 4가지 경로로 영주권을 설계하는 비법이에요.",
+      "summary_en": "How applicants aged 45+ lawfully transition to PR using age-exempt 482 visas, the FWHIT high-income exemption, DAMAs, or Partner visas.",
+      "watch_url": "https://www.youtube.com/watch?v=qiP4zUdte-8",
+      "embed_url": "https://www.youtube.com/embed/qiP4zUdte-8",
+      "thumbnail_url": "https://i.ytimg.com/vi/qiP4zUdte-8/hqdefault.jpg"
+    },
+    {
+      "id": "dEyJPo9ANZ8",
+      "title": "호주 취업비자, 고용주 말 한마디에만 내 미래를 걸건가? 박창민 변호사와 함께라면 여러분도 명탐정이 될 수 있습니다.",
+      "title_en": "Before Relying on an Employer's Promise — How to Vet Sponsor Viability Yourself",
+      "duration": "13:56",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 2.1천회",
+      "views_en": "2.1K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186",
+        "494"
+      ],
+      "tags": [
+        "sponsor_check",
+        "risk"
+      ],
+      "summary_ko": "고용주의 구두 약속만 믿기 전, 스폰서 기업의 매출·인력 구조·노미네이션 승인 가능성을 스스로 점검하는 방법이에요.",
+      "summary_en": "Practical checklist to assess business turnover, staffing structure, and nomination viability before committing to a sponsor.",
+      "watch_url": "https://www.youtube.com/watch?v=dEyJPo9ANZ8",
+      "embed_url": "https://www.youtube.com/embed/dEyJPo9ANZ8",
+      "thumbnail_url": "https://i.ytimg.com/vi/dEyJPo9ANZ8/hqdefault.jpg"
+    },
+    {
+      "id": "JAt7RAr23A0",
+      "title": "호주 취업비자, 대표적인 거절사유 5가지 - 이유를 알면 미리 막을 수 있잖아!",
+      "title_en": "Top 5 Employer-Sponsored Visa Refusal Grounds & How to Prevent Them",
+      "duration": "11:36",
+      "published": "4년 전",
+      "published_en": "4 years ago",
+      "views": "조회수 4천회",
+      "views_en": "4K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186",
+        "494"
+      ],
+      "tags": [
+        "refusal_prevention",
+        "sponsor"
+      ],
+      "summary_ko": "진정한 포지션(Genuine Position), 시장연봉(AMSR), LMT 등 취업비자 5대 대표 거절 사유와 사전 예방법이에요.",
+      "summary_en": "Covers Genuine Position, Annual Market Salary Rate (AMSR), Labour Market Testing (LMT), caveats, and financial capacity.",
+      "watch_url": "https://www.youtube.com/watch?v=JAt7RAr23A0",
+      "embed_url": "https://www.youtube.com/embed/JAt7RAr23A0",
+      "thumbnail_url": "https://i.ytimg.com/vi/JAt7RAr23A0/hqdefault.jpg"
+    },
+    {
+      "id": "OlvZDKi7acE",
+      "title": "속지말자! DAMA 스폰서 비자 (지방지역 스폰서 비자) 전격 해부 1편",
+      "title_en": "Inside Regional DAMA Visas — Age (50/55), Salary (90% CSIT) & English Concessions Explained",
+      "duration": "22:00",
+      "published": "7년 전",
+      "published_en": "7 years ago",
+      "views": "조회수 4.4천회",
+      "views_en": "4.4K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "494",
+        "186"
+      ],
+      "tags": [
+        "dama",
+        "regional",
+        "age_45_plus"
+      ],
+      "summary_ko": "연령(만 50·55세)·영어·연봉(CSIT 90%) 컨세션이 가능한 지방지역 DAMA 스폰서 비자의 진짜 구조와 주의사항이에요.",
+      "summary_en": "Unpacks how Designated Area Migration Agreements work for regional employers and applicants needing statutory concessions.",
+      "watch_url": "https://www.youtube.com/watch?v=OlvZDKi7acE",
+      "embed_url": "https://www.youtube.com/embed/OlvZDKi7acE",
+      "thumbnail_url": "https://i.ytimg.com/vi/OlvZDKi7acE/hqdefault.jpg"
+    },
+    {
+      "id": "TqFGiMB8_HU",
+      "title": "그래서 비자는 진짜 쉽게 많이 나오나? Aged Care Industry Labour Agreement, 누가 얼마나 많이 받고있는지 다 알려줌 #호주이민 #이민변호사 #박앤코",
+      "title_en": "Aged Care Industry Labour Agreement — Real FOI Grant Data & Entry Requirements",
+      "duration": "6:29",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 2.2천회",
+      "views_en": "2.2K views",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186"
+      ],
+      "tags": [
+        "aged_care",
+        "labour_agreement"
+      ],
+      "summary_ko": "FOI 공식 데이터로 본 Aged Care Industry Labour Agreement 실제 승인 현황과 현실적인 진입 요건이에요.",
+      "summary_en": "Data-backed review of Aged Care Labour Agreement approvals, eligible care roles, and fast-tracked PR pathways.",
+      "watch_url": "https://www.youtube.com/watch?v=TqFGiMB8_HU",
+      "embed_url": "https://www.youtube.com/embed/TqFGiMB8_HU",
+      "thumbnail_url": "https://i.ytimg.com/vi/TqFGiMB8_HU/hqdefault.jpg"
+    },
+    {
+      "id": "BMlkALM76Ew",
+      "title": "박앤코 라이브 — 취업비자에 대한 모든 것 (482 SID 비자 특집)",
+      "title_en": "Park & Co Live Masterclass — Subclass 482 Skills in Demand (SID) Special",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "186"
+      ],
+      "tags": [
+        "live_masterclass",
+        "sid_482"
+      ],
+      "summary_ko": "Skills in Demand(482 SID) 1년 경력 개편과 스트림별 조건을 다룬 특집 라이브예요.",
+      "summary_en": "Detailed breakdown of the 1-year experience rule, Core vs Specialist streams, and Condition 8607 mobility rules.",
+      "watch_url": "https://www.youtube.com/watch?v=BMlkALM76Ew",
+      "embed_url": "https://www.youtube.com/embed/BMlkALM76Ew",
+      "thumbnail_url": "https://i.ytimg.com/vi/BMlkALM76Ew/hqdefault.jpg"
+    },
+    {
+      "id": "ip89VQvzfZo",
+      "title": "박앤코 라이브 — Labour Agreements & 13개 DAMA 총정리",
+      "title_en": "Park & Co Live Masterclass — Labour Agreements & All 13 Regional DAMAs",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "employer_dama",
+      "visas": [
+        "482",
+        "494",
+        "186"
+      ],
+      "tags": [
+        "live_masterclass",
+        "dama"
+      ],
+      "summary_ko": "일반 SOL 밖 직종이나 만 45세 이상에게 돌파구가 되는 Labour Agreement 및 DAMA 실전 해설이에요.",
+      "summary_en": "Practical roadmap for off-list occupations and 45+ applicants leveraging Labour Agreements and regional DAMAs.",
+      "watch_url": "https://www.youtube.com/watch?v=ip89VQvzfZo",
+      "embed_url": "https://www.youtube.com/embed/ip89VQvzfZo",
+      "thumbnail_url": "https://i.ytimg.com/vi/ip89VQvzfZo/hqdefault.jpg"
+    },
+    {
+      "id": "URZ6deNp0Cc",
+      "title": "박앤코 라이브 — 학생비자(500) 이후 졸업생(485)·영주권 로드맵의 모든 것",
+      "title_en": "Park & Co Live Masterclass — From Student (500) to Graduate (485) & Permanent Residency",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "study_whm_trades",
+      "visas": [
+        "500",
+        "485",
+        "482",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "featured",
+        "student",
+        "graduate_485"
+      ],
+      "summary_ko": "학생비자 졸업 후 485 졸업생 비자 연령 상한(만 35세)과 그 이후 스폰서·기술이민 연결 전략을 총정리해요.",
+      "summary_en": "Covers the age-35 cap on Subclass 485, MLTSSL requirements for VET graduates, and bridging into 482/190/491 PR.",
+      "watch_url": "https://www.youtube.com/watch?v=URZ6deNp0Cc",
+      "embed_url": "https://www.youtube.com/embed/URZ6deNp0Cc",
+      "thumbnail_url": "https://i.ytimg.com/vi/URZ6deNp0Cc/hqdefault.jpg"
+    },
+    {
+      "id": "JM8LnnrMAhs",
+      "title": "RPL 취소되어서, 학위 날아가면, 내 비자는 망하는걸까? - 호주이민",
+      "title_en": "What Happens to Your Visa & Skills Assessment If an RPL Qualification Is Cancelled?",
+      "duration": "12:50",
+      "published": "4개월 전",
+      "published_en": "4 months ago",
+      "views": "537",
+      "views_en": "537 views",
+      "category": "study_whm_trades",
+      "visas": [
+        "500",
+        "485",
+        "482",
+        "186"
+      ],
+      "tags": [
+        "rpl",
+        "risk"
+      ],
+      "summary_ko": "최근 호주 내 부실 RPL 학위 직권 취소 사태가 내 비자와 기술심사에 미치는 영향과 대응책을 짚어드려요.",
+      "summary_en": "Legal risk analysis and response strategy following regulatory cancellations of substandard RPL qualifications.",
+      "watch_url": "https://www.youtube.com/watch?v=JM8LnnrMAhs",
+      "embed_url": "https://www.youtube.com/embed/JM8LnnrMAhs",
+      "thumbnail_url": "https://i.ytimg.com/vi/JM8LnnrMAhs/hqdefault.jpg"
+    },
+    {
+      "id": "LfU9ynXRWH4",
+      "title": "호주 워킹홀리데이 비자 뽀개기",
+      "title_en": "Complete Guide to the Subclass 417 Working Holiday Visa (1st, 2nd & 3rd Year Rules)",
+      "duration": "20:31",
+      "published": "1년 전",
+      "published_en": "1 year ago",
+      "views": "393",
+      "views_en": "393 views",
+      "category": "study_whm_trades",
+      "visas": [
+        "417"
+      ],
+      "tags": [
+        "featured",
+        "whm"
+      ],
+      "summary_ko": "호주 워킹홀리데이(417) 비자의 기본 조건, 세컨·써드 연장, 컨디션 주의사항을 한 편으로 끝내드려요.",
+      "summary_en": "Covers 88-day / 6-month specified work rules, Condition 8547 6-month employer limits, and extension pitfalls.",
+      "watch_url": "https://www.youtube.com/watch?v=LfU9ynXRWH4",
+      "embed_url": "https://www.youtube.com/embed/LfU9ynXRWH4",
+      "thumbnail_url": "https://i.ytimg.com/vi/LfU9ynXRWH4/hqdefault.jpg"
+    },
+    {
+      "id": "U9yX95Kn45Y",
+      "title": "호주 워홀 비법, 나라면 이렇게 한다. feat. 숨겨진 최고의 비자 공략법",
+      "title_en": "Working Holiday (417) Strategy — Skipping Unnecessary Student Visas Straight to Sponsorship",
+      "duration": "5:32",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 1.6천회",
+      "views_en": "1.6K views",
+      "category": "study_whm_trades",
+      "visas": [
+        "417",
+        "482",
+        "186"
+      ],
+      "tags": [
+        "featured",
+        "whm",
+        "sponsor"
+      ],
+      "summary_ko": "불필요한 학생비자 연장을 거치지 않고 워홀에서 곧바로 취업 스폰서·영주권으로 직행하는 실전 공략법이에요.",
+      "summary_en": "How WHM holders with 1 year of relevant experience transition directly into Subclass 482 SID and PR.",
+      "watch_url": "https://www.youtube.com/watch?v=U9yX95Kn45Y",
+      "embed_url": "https://www.youtube.com/embed/U9yX95Kn45Y",
+      "thumbnail_url": "https://i.ytimg.com/vi/U9yX95Kn45Y/hqdefault.jpg"
+    },
+    {
+      "id": "ZZNPJFbTj80",
+      "title": "타일, 용접 등 기술 및 기능직종 종사자들을 위한 호주이민 필수지식 - 워킹홀리데이 대상자들을 위한 기술직종 이민 패스웨이",
+      "title_en": "Australian PR Roadmap for Tradies (Tilers, Welders, Carpenters) on Working Holiday Visas",
+      "duration": "23:23",
+      "published": "3년 전",
+      "published_en": "3 years ago",
+      "views": "조회수 2.8천회",
+      "views_en": "2.8K views",
+      "category": "study_whm_trades",
+      "visas": [
+        "417",
+        "482",
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "trades",
+        "whm",
+        "tra"
+      ],
+      "summary_ko": "타일·용접·목수 등 건설·기술 기능직 종사자와 워홀러를 위한 TRA 기술심사 및 영주권 로드맵이에요.",
+      "summary_en": "Essential TRA skills assessment (JRP/OSAP) and TFN/superannuation evidence guide for trade occupations.",
+      "watch_url": "https://www.youtube.com/watch?v=ZZNPJFbTj80",
+      "embed_url": "https://www.youtube.com/embed/ZZNPJFbTj80",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZZNPJFbTj80/hqdefault.jpg"
+    },
+    {
+      "id": "695yZjCuFvs",
+      "title": "성공하는 호주 생활! 워홀에서 영주권까지 (feat. 영주권 취소 방어 비하인드 스토리) 법무법인 박앤코",
+      "title_en": "From Working Holiday to Permanent Residency — Real Client Case Study & Cancellation Defence",
+      "duration": "33:36",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 2.4천회",
+      "views_en": "2.4K views",
+      "category": "study_whm_trades",
+      "visas": [
+        "417",
+        "482",
+        "186"
+      ],
+      "tags": [
+        "whm",
+        "case_story"
+      ],
+      "summary_ko": "워킹홀리데이로 첫발을 디뎌 위기를 극복하고 영주권까지 취득한 실제 의뢰인의 생생한 여정이에요.",
+      "summary_en": "Real-world Park & Co case journey overcoming severe visa hurdles from Subclass 417 through to PR.",
+      "watch_url": "https://www.youtube.com/watch?v=695yZjCuFvs",
+      "embed_url": "https://www.youtube.com/embed/695yZjCuFvs",
+      "thumbnail_url": "https://i.ytimg.com/vi/695yZjCuFvs/hqdefault.jpg"
+    },
+    {
+      "id": "1ovHqId4aJQ",
+      "title": "박앤코 라이브 — 워킹홀리데이에서 영주권 가는 방법 총정리",
+      "title_en": "Park & Co Live Masterclass — Every Pathway from Working Holiday (417) to Australian PR",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "study_whm_trades",
+      "visas": [
+        "417",
+        "482",
+        "190",
+        "491",
+        "820"
+      ],
+      "tags": [
+        "live_masterclass",
+        "whm"
+      ],
+      "summary_ko": "워홀러가 호주 체류 중 선택할 수 있는 영주권 루트별 장단점과 타임라인을 정리한 라이브예요.",
+      "summary_en": "Compares timelines, costs, and evidentiary traps across sponsored, skilled, and partner pathways for WHM holders.",
+      "watch_url": "https://www.youtube.com/watch?v=1ovHqId4aJQ",
+      "embed_url": "https://www.youtube.com/embed/1ovHqId4aJQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/1ovHqId4aJQ/hqdefault.jpg"
+    },
+    {
+      "id": "kDXXvizNzpE",
+      "title": "가장 어렵다는 호주 파트너 비자 11가지, 이민법 스페셜리스트 변호사는 해결 가능할까?",
+      "title_en": "Solving the 11 Toughest Partner Visa Challenges (Four Pillars, Short Cohabitation & Schedule 3)",
+      "duration": "13:44",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 3.1천회",
+      "views_en": "3.1K views",
+      "category": "partner_family_other",
+      "visas": [
+        "820",
+        "309",
+        "300"
+      ],
+      "tags": [
+        "featured",
+        "partner"
+      ],
+      "summary_ko": "파트너 비자 4대 심사 기준(재정·주거·사회·헌신)과 동거 기간 부족·Schedule 3 등 고난도 파트너 비자 11가지 해법을 다뤄요.",
+      "summary_en": "Specialist legal solutions for complex onshore 820/801 and offshore 309/100 Partner visa matters.",
+      "watch_url": "https://www.youtube.com/watch?v=kDXXvizNzpE",
+      "embed_url": "https://www.youtube.com/embed/kDXXvizNzpE",
+      "thumbnail_url": "https://i.ytimg.com/vi/kDXXvizNzpE/hqdefault.jpg"
+    },
+    {
+      "id": "TbQZLg0_M58",
+      "title": "박앤코 라이브 — 호주 파트너·배우자·동반인 비자에 대한 모든 것",
+      "title_en": "Park & Co Live Masterclass — Complete Guide to Partner, Spouse & Dependent Visas",
+      "duration": "LIVE",
+      "published": "박앤코 라이브",
+      "published_en": "Park & Co Live",
+      "views": "",
+      "views_en": "",
+      "category": "partner_family_other",
+      "visas": [
+        "820",
+        "309",
+        "300"
+      ],
+      "tags": [
+        "live_masterclass",
+        "partner"
+      ],
+      "summary_ko": "820/801 호주 내 신청, 309/100 해외 신청, 사실혼 12개월 요건과 주정부 관계등록 면제를 총정리한 라이브예요.",
+      "summary_en": "Covers 820/801 vs 309/100, the 12-month de facto rule, state relationship registration waivers, and evidence structure.",
+      "watch_url": "https://www.youtube.com/watch?v=TbQZLg0_M58",
+      "embed_url": "https://www.youtube.com/embed/TbQZLg0_M58",
+      "thumbnail_url": "https://i.ytimg.com/vi/TbQZLg0_M58/hqdefault.jpg"
+    },
+    {
+      "id": "_Yv2TxWS6Ck",
+      "title": "이혼하면 파트너 영주권 어떻게 될까? 이혼해도 영주권 유지하는 3가지 경우는? 820/801 비자, 309/100 비자, 동반가족 비자 신청 - 호주이민은 법무법인 박앤코",
+      "title_en": "Relationship Breakdown Before 801/100 PR — Three Statutory Exceptions to Keep Permanent Residency",
+      "duration": "7:12",
+      "published": "3년 전",
+      "published_en": "3 years ago",
+      "views": "조회수 3천회",
+      "views_en": "3K views",
+      "category": "partner_family_other",
+      "visas": [
+        "820",
+        "801",
+        "309",
+        "100"
+      ],
+      "tags": [
+        "partner",
+        "family_law_crossover"
+      ],
+      "summary_ko": "파트너 비자 진행 중 별거·이혼 시 영주권을 유지할 수 있는 3가지 법정 예외(가정폭력·공동양육·사망)를 설명해요.",
+      "summary_en": "Explains family violence, shared parental responsibility for an Australian child, and death-of-sponsor exceptions.",
+      "watch_url": "https://www.youtube.com/watch?v=_Yv2TxWS6Ck",
+      "embed_url": "https://www.youtube.com/embed/_Yv2TxWS6Ck",
+      "thumbnail_url": "https://i.ytimg.com/vi/_Yv2TxWS6Ck/hqdefault.jpg"
+    },
+    {
+      "id": "001RxckT6Z8",
+      "title": "GTI 글로벌 탤런트 비자, 신청 자격은 어떻게 되나?",
+      "title_en": "High-Calibre Talent PR Philosophy — Understanding the Subclass 858 National Innovation Visa",
+      "duration": "24:09",
+      "published": "6년 전",
+      "published_en": "6 years ago",
+      "views": "조회수 928회",
+      "views_en": "928 views",
+      "category": "partner_family_other",
+      "visas": [
+        "858"
+      ],
+      "tags": [
+        "niv_858",
+        "remote_option"
+      ],
+      "summary_ko": "현행 국가혁신비자(Subclass 858 National Innovation Visa)의 전신인 고숙련 인재 영주권의 심사 철학을 이해할 수 있어요.",
+      "summary_en": "Explains the exceptional-achievement evidentiary threshold behind Australia's invitation-only Subclass 858 PR.",
+      "watch_url": "https://www.youtube.com/watch?v=001RxckT6Z8",
+      "embed_url": "https://www.youtube.com/embed/001RxckT6Z8",
+      "thumbnail_url": "https://i.ytimg.com/vi/001RxckT6Z8/hqdefault.jpg"
+    },
+    {
+      "id": "0__kDkczXRQ",
+      "title": "호주이민 비자응급실 - 복잡한 비자문제 해결의 끝판왕",
+      "title_en": "Park & Co Visa Emergency™ — Free Rapid Triage for s 57 Natural Justice, PIC 4020 & NOICC",
+      "duration": "1:39",
+      "published": "4년 전",
+      "published_en": "4 years ago",
+      "views": "조회수 386회",
+      "views_en": "386 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "featured",
+        "visa_emergency",
+        "trademark_service"
+      ],
+      "summary_ko": "s 57 소명 요구서, PIC 4020, NOICC 취소 통지서 등 긴급 위기 통지서를 무료로 진단하는 박앤코 ‘비자응급실™’ 안내 영상이에요.",
+      "summary_en": "Introduction to Park & Co's trademarked Visa Emergency™ service for time-critical departmental notices.",
+      "watch_url": "https://www.youtube.com/watch?v=0__kDkczXRQ",
+      "embed_url": "https://www.youtube.com/embed/0__kDkczXRQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/0__kDkczXRQ/hqdefault.jpg"
+    },
+    {
+      "id": "7kKRoFuw7f8",
+      "title": "박앤코 Case Review 서비스 소개",
+      "title_en": "Introducing Park & Co Case Review™ — Pre-Lodgement Legal Audit by an Accredited Specialist",
+      "duration": "6:16",
+      "published": "4년 전",
+      "published_en": "4 years ago",
+      "views": "조회수 542회",
+      "views_en": "542 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "189",
+        "190",
+        "491"
+      ],
+      "tags": [
+        "featured",
+        "case_review",
+        "trademark_service"
+      ],
+      "summary_ko": "혼자 준비한 비자 서류를 접수 전 이민법 스페셜리스트 변호사가 정밀 검수하는 박앤코 ‘Case Review™’ 소개 영상이에요.",
+      "summary_en": "How a fixed-fee pre-lodgement specialist audit prevents avoidable refusals for self-prepared visa applicants.",
+      "watch_url": "https://www.youtube.com/watch?v=7kKRoFuw7f8",
+      "embed_url": "https://www.youtube.com/embed/7kKRoFuw7f8",
+      "thumbnail_url": "https://i.ytimg.com/vi/7kKRoFuw7f8/hqdefault.jpg"
+    },
+    {
+      "id": "zVvzficFWqk",
+      "title": "호주 학생비자 거절 후 ART 재심 신청자라면 반드시 봐야 할 영상",
+      "title_en": "Must-Watch for Student Visa Refusal Appeals — Navigating On-Paper ART Merits Review",
+      "duration": "4:44",
+      "published": "4개월 전",
+      "published_en": "4 months ago",
+      "views": "448",
+      "views_en": "448 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "500",
+        "art"
+      ],
+      "tags": [
+        "featured",
+        "art_review",
+        "student"
+      ],
+      "summary_ko": "학생비자 거절 후 ART 재심이 구두 청문 없이 서류심리(On-paper) 위주로 바뀜에 따라 초기 서면 변론이 왜 결정적인지 알려드려요.",
+      "summary_en": "Why upfront written legal submissions and evidence are decisive now that student ART reviews proceed largely on the papers.",
+      "watch_url": "https://www.youtube.com/watch?v=zVvzficFWqk",
+      "embed_url": "https://www.youtube.com/embed/zVvzficFWqk",
+      "thumbnail_url": "https://i.ytimg.com/vi/zVvzficFWqk/hqdefault.jpg"
+    },
+    {
+      "id": "WS0TJpB313I",
+      "title": "호주 학생비자 거절, 가장 먼저 해야 할 일은? 이민법 스페셜리스트 박창민 변호사의 가이드라인 - 박앤코 팟캐스트",
+      "title_en": "Student Visa Refused? Immediate Action Plan Within the Strict 28-Day Statutory Deadline",
+      "duration": "9:41",
+      "published": "1년 전",
+      "published_en": "1 year ago",
+      "views": "1.6천",
+      "views_en": "1.6K views",
+      "category": "crisis_art_services",
+      "visas": [
+        "500",
+        "art"
+      ],
+      "tags": [
+        "art_review",
+        "refusal"
+      ],
+      "summary_ko": "학생비자 거절 통지서를 받은 직후 법정 기한(28일) 내에 가장 먼저 확인하고 결정해야 할 행동 지침이에요.",
+      "summary_en": "Step-by-step legal triage immediately after receiving a Subclass 500 refusal decision record.",
+      "watch_url": "https://www.youtube.com/watch?v=WS0TJpB313I",
+      "embed_url": "https://www.youtube.com/embed/WS0TJpB313I",
+      "thumbnail_url": "https://i.ytimg.com/vi/WS0TJpB313I/hqdefault.jpg"
+    },
+    {
+      "id": "iCCeOYY5xvU",
+      "title": "이민법 제48조 변경? 그래서, 뭐가 어떤 이점이 있는건데? 박창민 변호사의 총정리편",
+      "title_en": "Migration Act Section 48 Bar Explained — Which Visas Can Still Be Lodged Onshore?",
+      "duration": "16:00",
+      "published": "4년 전",
+      "published_en": "4 years ago",
+      "views": "조회수 1.1천회",
+      "views_en": "1.1K views",
+      "category": "crisis_art_services",
+      "visas": [
+        "190",
+        "491",
+        "494",
+        "820"
+      ],
+      "tags": [
+        "s48_bar",
+        "refusal"
+      ],
+      "summary_ko": "호주 내 비자 거절·취소 후 추가 접수를 막는 이민법 제48조(s 48 Bar)와 예외 신청 가능 비자(190·491·494·820)를 총정리해요.",
+      "summary_en": "Clarifies the s 48 onshore re-application bar after refusal/cancellation and key exempt visas (190, 491, 494, 820).",
+      "watch_url": "https://www.youtube.com/watch?v=iCCeOYY5xvU",
+      "embed_url": "https://www.youtube.com/embed/iCCeOYY5xvU",
+      "thumbnail_url": "https://i.ytimg.com/vi/iCCeOYY5xvU/hqdefault.jpg"
+    },
+    {
+      "id": "aLduugn-xiM",
+      "title": "신체검사 때문에 호주 영주권이 거절됐다면? Health Waiver (신체검사 면제 신청) 꼭 알아야할 것들 - 호주이민 전문로펌 박앤코",
+      "title_en": "PR Refused on Medical Grounds? Understanding PIC 4005 vs PIC 4007 Health Waivers",
+      "duration": "5:43",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 1.1천회",
+      "views_en": "1.1K views",
+      "category": "crisis_art_services",
+      "visas": [
+        "482",
+        "186",
+        "820",
+        "491",
+        "494"
+      ],
+      "tags": [
+        "health_waiver",
+        "pic_4007"
+      ],
+      "summary_ko": "신체검사 문제 발생 시 PIC 4005와 PIC 4007(Health Waiver 가능 비자)의 차이와 대응 전략을 설명해요.",
+      "summary_en": "Explains medical cost thresholds and which visa subclasses permit a compelling PIC 4007 Health Waiver.",
+      "watch_url": "https://www.youtube.com/watch?v=aLduugn-xiM",
+      "embed_url": "https://www.youtube.com/embed/aLduugn-xiM",
+      "thumbnail_url": "https://i.ytimg.com/vi/aLduugn-xiM/hqdefault.jpg"
+    },
+    {
+      "id": "Qd2JyrgRy3U",
+      "title": "범죄기록, 신원조회가 호주비자에 미치는 영향, 더 이상의 해설은 필요없다. 박창민 변호사의 끝판왕 해설",
+      "title_en": "Criminal Records, Drink Driving & Police Checks — Complete Guide to s 501 Character Assessments",
+      "duration": "27:27",
+      "published": "7년 전",
+      "published_en": "7 years ago",
+      "views": "조회수 1.1만회",
+      "views_en": "11K views",
+      "category": "crisis_art_services",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "character",
+        "s501"
+      ],
+      "summary_ko": "범죄경력·음주운전·신원조회 이슈가 호주 비자(s 501 Character Test 및 VACCU 심사)에 미치는 영향을 끝판왕 수준으로 해설해요.",
+      "summary_en": "Definitive legal guide to disclosing offences, VACCU character referrals, and s 501 risk mitigation.",
+      "watch_url": "https://www.youtube.com/watch?v=Qd2JyrgRy3U",
+      "embed_url": "https://www.youtube.com/embed/Qd2JyrgRy3U",
+      "thumbnail_url": "https://i.ytimg.com/vi/Qd2JyrgRy3U/hqdefault.jpg"
+    },
+    {
+      "id": "97_8T6HcOOM",
+      "title": "AAT 재심이란 무엇인가? 내 비자 살리기 프로젝트 - 호주 이민법 전문로펌 박앤코",
+      "title_en": "How Merits Review Works at the Administrative Review Tribunal (ART) — Saving a Refused Visa",
+      "duration": "4:00",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 408회",
+      "views_en": "408 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "art"
+      ],
+      "tags": [
+        "art_review",
+        "trademark_service"
+      ],
+      "summary_ko": "비자·노미네이션 거절 시 행정재심기구(재심) 절차가 어떻게 진행되고 어떤 사건이 뒤집힐 수 있는지 핵심만 설명해요.",
+      "summary_en": "Explains de novo merits review, statutory filing deadlines, and how refused visa/nomination cases are overturned.",
+      "watch_url": "https://www.youtube.com/watch?v=97_8T6HcOOM",
+      "embed_url": "https://www.youtube.com/embed/97_8T6HcOOM",
+      "thumbnail_url": "https://i.ytimg.com/vi/97_8T6HcOOM/hqdefault.jpg"
+    },
+    {
+      "id": "D2NtNOVuYtU",
+      "title": "이민성 장관 탄원이란 무엇인가? 내 비자 살리기 프로젝트 - 호주 이민법 전문로펌 박앤코",
+      "title_en": "Ministerial Intervention (Section 351) — Exceptional Last-Resort Relief After Tribunal Review",
+      "duration": "5:01",
+      "published": "2년 전",
+      "published_en": "2 years ago",
+      "views": "조회수 351회",
+      "views_en": "351 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "mi_351"
+      ],
+      "tags": [
+        "ministerial_intervention",
+        "remote_option"
+      ],
+      "summary_ko": "재심 기각 이후 극히 예외적인 인도적 사유가 있을 때 검토하는 장관 탄원(s 351 Ministerial Intervention)의 실체예요.",
+      "summary_en": "Realistic explanation of public-interest Ministerial Intervention powers following merits review.",
+      "watch_url": "https://www.youtube.com/watch?v=D2NtNOVuYtU",
+      "embed_url": "https://www.youtube.com/embed/D2NtNOVuYtU",
+      "thumbnail_url": "https://i.ytimg.com/vi/D2NtNOVuYtU/hqdefault.jpg"
+    },
+    {
+      "id": "9zzTLmsYgk0",
+      "title": "좋은 이민변호사라면, 당신 사건을 이렇게 살린다.",
+      "title_en": "How a Dedicated Immigration Law Specialist Rescues Complex & High-Risk Visa Cases",
+      "duration": "10:36",
+      "published": "2주 전",
+      "published_en": "2 weeks ago",
+      "views": "468",
+      "views_en": "468 views",
+      "category": "crisis_art_services",
+      "visas": [
+        "all"
+      ],
+      "tags": [
+        "case_story",
+        "specialist"
+      ],
+      "summary_ko": "복잡하게 얽힌 비자 위기 사건을 이민법 스페셜리스트 변호사가 어떤 법리와 증거 전략으로 살려내는지 보여드려요.",
+      "summary_en": "Inside the statutory reasoning and evidentiary advocacy required to turn around critical migration matters.",
+      "watch_url": "https://www.youtube.com/watch?v=9zzTLmsYgk0",
+      "embed_url": "https://www.youtube.com/embed/9zzTLmsYgk0",
+      "thumbnail_url": "https://i.ytimg.com/vi/9zzTLmsYgk0/hqdefault.jpg"
+    }
+  ]
+}
