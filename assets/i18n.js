@@ -488,6 +488,10 @@
     // Video Modal & Legal Footer
     { sel: "#btn-close-video-modal", attrs: { "aria-label": "Close video player" } },
     { sel: "#video-modal-ext-link", text: "Watch on YouTube ↗" },
+    { sel: "#vc-lbl-total", text: "Total Visits" },
+    { sel: "#vc-lbl-today", text: "Today" },
+    { sel: "#vc-lbl-visitors", text: "Visitors" },
+    { sel: "#visit-counter", attrs: { title: "Click to view 30-day daily visit chart" } },
     {
       sel: ".footer-firm-info",
       html:

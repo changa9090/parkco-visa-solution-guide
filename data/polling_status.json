@@ -1,0 +1,182 @@
+{
+  "polled_at_aest": "2026-10-29T18:13:17+10:00",
+  "polled_at_utc": "2026-10-29T08:13:17.388657+00:00",
+  "cadence": "Weekly Monday 08:02 AEST (after daily 06:55 processing-times & Monday 07:15–07:45 DAMA/SID/GSM pollers)",
+  "total_sources": 10,
+  "verified_sources": 10,
+  "overall_review_status": "verified",
+  "drift_alerts": [],
+  "new_channel_videos_detected": [
+    {
+      "id": "tE9iHGqSalw",
+      "title": "호주비자 심사기간, 제대로 확인해보자. 서비스 전면개편",
+      "published": "2026-10-28"
+    },
+    {
+      "id": "GYpK871Gqhg",
+      "title": "호주비자 심사일 계산기",
+      "published": "2026-10-28"
+    },
+    {
+      "id": "FVKJVzQNPkQ",
+      "title": "“이 집을 줄게” 약속, 헤어진 뒤에도 의미가 있을까? | 호주 판례",
+      "published": "2026-10-28"
+    },
+    {
+      "id": "NImr5PgYgcM",
+      "title": "남편 사업에 보증 섰다가 집까지? | 가르시아 판결",
+      "published": "2026-10-26"
+    },
+    {
+      "id": "-XGwBdgBVoM",
+      "title": "외주화로 미래의 노동권을 막아도 될까? | 콴타스 판결",
+      "published": "2026-10-23"
+    },
+    {
+      "id": "tJdS81J7ItQ",
+      "title": "배달원이 낸 사고, 회사도 책임질까? | 홀리스 대 바부",
+      "published": "2026-10-21"
+    },
+    {
+      "id": "j5r86ZvCtPg",
+      "title": "해고 절차를 어겨 정신질환이 생겼다면? | 엘리샤 판결",
+      "published": "2026-10-19"
+    },
+    {
+      "id": "Xz-1hWuZpbU",
+      "title": "결혼식 직전 혼전계약, 정말 자유로운 선택이었을까? | 호주 판례",
+      "published": "2026-10-16"
+    },
+    {
+      "id": "ihljDdzBtrI",
+      "title": "189 기술이민 접수 전, 전문가와 함께 하는 서류검토 서비스 어때? 박앤코의 Case Review (TM)",
+      "published": "2026-10-15"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dha_sol_json",
+      "name": "Home Affairs Official Skilled Occupation List (PageJSONDataHiddenField)",
+      "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "row_count": 714,
+      "sha256": "c3c782b878061b3dd9e29faa81a1b2a180fe84f37e81025eafe3d619e3b164e0"
+    },
+    {
+      "id": "dha_visa_finder",
+      "name": "Home Affairs Official Visa Finder Schema",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "tiles_count": 1,
+      "sha256": "926945fbb65550d1913fa741113cde72adc337d59bacd5b68880f66fc06d7bad"
+    },
+    {
+      "id": "dha_price_list_api",
+      "name": "Home Affairs Live Visa Pricing API (GetPriceList)",
+      "url": "https://immi.homeaffairs.gov.au/_layouts/15/api/data.aspx/GetPriceList",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "total_streams": 150,
+      "sha256": "0ab169e8525c9030d1815ec12767425367481ccc9d4051bbdd38f7328bf4f00f"
+    },
+    {
+      "id": "frl_migration_regs",
+      "name": "Migration Regulations 1994 (Schedule 6D / Schedule 2)",
+      "url": "https://www.legislation.gov.au/F1996B03551/latest/text",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "compilation": "289",
+      "sha256": "a964fbdacae4f71afde15126af821182da08eba3befb4e9fc1e504d631b9224e"
+    },
+    {
+      "id": "frl_csit_ssit_2026",
+      "name": "Migration (CSIT & SSIT Indexation) Instrument (F2026L00874)",
+      "url": "https://www.legislation.gov.au/F2026L00874/latest/text",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "compilation": "",
+      "sha256": "d39ffa8e1595a1fc8fb6d918f365539fa42b333486c17a111026da352930cf12"
+    },
+    {
+      "id": "frl_csol_2024",
+      "name": "Migration (Specification of Core Skills Occupations) Instrument (F2024L01620)",
+      "url": "https://www.legislation.gov.au/F2024L01620/latest/text",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "compilation": "3",
+      "sha256": "48b13fc4d15a03902a8e54b172cfe50f87cfd75e88221e123dce60374af1f4b6"
+    },
+    {
+      "id": "sibling_skillselect_cutoffs",
+      "name": "SkillSelect 139 Occupation Cut-Offs (217 Weekly Poller)",
+      "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds",
+      "local_path": "/home/cp/ag/gsm-state-navigator/web/data/gsm_skillselect_data.json",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "bytes": 20736,
+      "sha256": "626b67aefd1811b7bdaf98775324be3db8a9e5b73624a8f1b255e3b8b4226633"
+    },
+    {
+      "id": "sibling_dama_13",
+      "name": "Australia 13 Regional DAMAs Dataset (217 Weekly Poller)",
+      "url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/labour-agreements/designated-area-migration-agreements",
+      "local_path": "/home/cp/ag/dama-navigator/data/dama_navigator_data.json",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "bytes": 8057091,
+      "sha256": "1126812e2d22ad91caff5ff092d6a17bda2023f23e5a1618a0342832d0161168"
+    },
+    {
+      "id": "sibling_processing_times_74",
+      "name": "Home Affairs 74-Stream Global Processing Times (217 Daily Poller)",
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times",
+      "local_path": "/home/cp/ag/visa-processing-tracker/dist/data/typed-manifest-v2.json",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "bytes": 35595,
+      "sha256": "135e6328aebd456d196ec8e496b6ea739179f27a226e61fef311aa31da7a5f05"
+    },
+    {
+      "id": "youtube_immispecialist_atom",
+      "name": "YouTube @immispecialist Public Atom Feed",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgMv4I2ZQ0l0yeNL9vntBQQ",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
+      "ruleMatchStatus": "ok",
+      "reviewStatus": "verified",
+      "total_channel_videos": 218,
+      "new_videos_added": 9,
+      "sha256": "f565d06ad20ec1d07927eeae9d128d99e950985eff60e33b7c713a37d9eb93a2"
+    }
+  ]
+}
