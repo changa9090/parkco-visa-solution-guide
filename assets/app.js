@@ -114,6 +114,12 @@
       if (path === "/api/bootstrap") {
         return engine.getBootstrap();
       }
+      if (path === "/api/guide") {
+        return engine.getGuide({
+          q: sp.get("q") || "",
+          limit: sp.get("limit") || "",
+        });
+      }
       if (path === "/api/sol/search") {
         return engine.searchSol({
           q: sp.get("q") || "",
@@ -152,6 +158,13 @@
       }
       if (path === "/api/diagnose") {
         return engine.diagnose(payload || {});
+      }
+      if (path === "/api/calculators/evaluate") {
+        return engine.evaluateCalculator({
+          calculator: payload?.calculator || "",
+          params: payload?.params || {},
+          lang: payload?.lang || parsed.searchParams.get("lang") || state.lang,
+        });
       }
       throw new Error(`Unsupported static POST endpoint: ${path}`);
     }
@@ -204,6 +217,7 @@
 
     if (!state.bootstrap) return;
 
+    renderVideoCurationScopeNote();
     renderVideoCategories(true);
     renderVideoCards();
     if (state.openVideoId) {
@@ -236,11 +250,39 @@
       renderDiagnosisResults(state.lastDiagnosis);
       syncConsultationBrief(state.lastDiagnosis.consultation_brief);
     }
+
+    window.dispatchEvent(new CustomEvent("parkco:langchange", { detail: { lang: normalized } }));
   }
 
   /* ------------------------------------------------------------------------
-     Module Tab Switching
+     Module Tab Switching & Hash Deep-Link Activation
      ------------------------------------------------------------------------ */
+  const HASH_MODULE_ALIASES = {
+    "module-concepts": "module-concepts",
+    "module-resume": "module-resume",
+    "module-sol": "module-sol",
+    "module-diagnose": "module-diagnose",
+    "module-pathways": "module-pathways",
+    "module-consult": "module-consult",
+    "module-guide": "module-guide",
+    "sec-guide": "module-guide",
+    "sec-simulator": "module-diagnose",
+    "sec-occupations": "module-sol",
+    "sec-cv": "module-resume",
+  };
+
+  function applyHashModuleIfPresent(scrollIntoView = false) {
+    try {
+      const rawHash = String(window.location.hash || "").replace(/^#/, "").trim();
+      const targetMod = HASH_MODULE_ALIASES[rawHash];
+      if (targetMod) {
+        switchModule(targetMod, scrollIntoView);
+      }
+    } catch {
+      // Ignore URL hash errors
+    }
+  }
+
   function switchModule(moduleId, scrollIntoView = true) {
     state.activeModule = moduleId;
     qsa(".module-tab").forEach((btn) => {
@@ -262,6 +304,19 @@
   /* ------------------------------------------------------------------------
      Module 01: @immispecialist Video Hub & Modal Player
      ------------------------------------------------------------------------ */
+  function renderVideoCurationScopeNote() {
+    const noteEl = qs("#video-curation-scope-note");
+    if (!noteEl || !state.bootstrap?.youtube_catalog) return;
+    const yt = state.bootstrap.youtube_catalog;
+    const curated = (yt.videos || []).length;
+    const total = Number(yt.total_channel_videos || curated);
+    const uncurated = Math.max(0, total - curated);
+    const ui = t();
+    if (typeof ui.videoCurationScopeNote === "function") {
+      noteEl.textContent = ui.videoCurationScopeNote(total, curated, uncurated);
+    }
+  }
+
   function renderVideoCategories(forceRebuild = false) {
     const wrap = qs("#video-category-chips");
     if (!wrap || !state.bootstrap) return;
@@ -607,9 +662,11 @@
       .map((occ) => {
         const cardKey = occ.id || occ.anzsco_code_primary;
         const primaryTitle = isEn() ? occ.occupation : occ.title_ko;
-        const subLine = isEn()
-          ? `Skill Level ${occ.skill_level || "-"} · ANZSCO 2022: ${occ.anzsco_2022_code || "-"}`
-          : occ.occupation;
+        const subPartsEn = [
+          occ.skill_level ? `Skill Level ${occ.skill_level}` : "",
+          occ.anzsco_2022_code ? `ANZSCO 2022: ${occ.anzsco_2022_code}` : "",
+        ].filter(Boolean);
+        const subLine = isEn() ? subPartsEn.join(" · ") : occ.occupation;
         return `
         <button type="button" class="sol-occ-card ${cardKey === state.selectedSolId ? "is-selected" : ""}" data-sol-card="${escapeHtml(cardKey)}">
           <div>
@@ -710,9 +767,9 @@
       </div>
 
       <div class="resume-kpi-chips">
-        <span class="resume-kpi-chip">ANZSCO 2022: ${escapeHtml(occ.anzsco_2022_code || "-")}</span>
-        <span class="resume-kpi-chip">ANZSCO 2013: ${escapeHtml(occ.anzsco_2013_code || "-")}</span>
-        <span class="resume-kpi-chip">Skill Level: ${escapeHtml(occ.skill_level || "-")}</span>
+        ${occ.anzsco_2022_code ? `<span class="resume-kpi-chip">ANZSCO 2022: ${escapeHtml(occ.anzsco_2022_code)}</span>` : ""}
+        ${occ.anzsco_2013_code ? `<span class="resume-kpi-chip">ANZSCO 2013: ${escapeHtml(occ.anzsco_2013_code)}</span>` : ""}
+        ${occ.skill_level ? `<span class="resume-kpi-chip">Skill Level: ${escapeHtml(occ.skill_level)}</span>` : ""}
         <span class="resume-kpi-chip">${escapeHtml(ui.cutoff189(occ.skillselect_min_points_189))}</span>
       </div>
 
@@ -1076,9 +1133,10 @@
       </div>
 
       <div style="margin-bottom:18px;">
-        <h3 class="subsection-title">${escapeHtml(ui.riskSectionHeading(diag.risk_flags.length))}</h3>
-        ${diag.risk_flags
-          .map((f) => {
+        ${(() => {
+          const checkpoints = diag.statutory_checkpoints || (diag.risk_flags || []).filter((f) => f.severity === "P1" || f.severity === "P2");
+          const refNotes = diag.reference_notes || (diag.risk_flags || []).filter((f) => f.severity !== "P1" && f.severity !== "P2");
+          const renderFlagCard = (f) => {
             const fTitle = isEn() ? f.title_en || f.title_ko : f.title_ko;
             const fDetail = isEn() ? f.detail_en || f.detail_ko : f.detail_ko;
             return `
@@ -1086,8 +1144,13 @@
             <h4>[${escapeHtml(f.severity)}] ${escapeHtml(fTitle)}</h4>
             <p>${escapeHtml(fDetail)}</p>
           </div>`;
-          })
-          .join("")}
+          };
+          return `
+            <h3 class="subsection-title">${escapeHtml(ui.riskSectionHeading(checkpoints.length))}</h3>
+            ${checkpoints.length ? checkpoints.map(renderFlagCard).join("") : `<p class="statutory-source-note">${escapeHtml(ui.noCheckpointsHint)}</p>`}
+            ${refNotes.length ? `<h4 class="subsection-title" style="margin-top:14px;font-size:15.5px;">${escapeHtml(ui.referenceNotesHeading(refNotes.length))}</h4>${refNotes.map(renderFlagCard).join("")}` : ""}
+          `;
+        })()}
       </div>
 
       <h3 class="subsection-title">${escapeHtml(ui.rankedPathwaysHeading)}</h3>
@@ -1491,12 +1554,87 @@
     });
   }
 
+  function applyQueryPrefillIfPresent() {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      if (!sp.has("age") && !sp.has("occ")) return;
+
+      const rawAge = Number(sp.get("age"));
+      if (Number.isFinite(rawAge) && rawAge >= 18 && qs("#diag-age")) {
+        qs("#diag-age").value =
+          rawAge <= 24 ? "18_24" :
+          rawAge <= 32 ? "25_32" :
+          rawAge <= 39 ? "33_39" :
+          rawAge <= 44 ? "40_44" :
+          rawAge <= 49 ? "45_49" : "50_plus";
+      }
+
+      const rawOcc = (sp.get("occ") || "").trim();
+      if (/^\d{6}$/.test(rawOcc)) {
+        state.selectedDiagCode = rawOcc;
+        if (qs("#diag-anzsco-input")) qs("#diag-anzsco-input").value = rawOcc;
+      }
+
+      if (sp.has("study")) {
+        const isAuStudy = (sp.get("study") || "").toUpperCase() === "AU";
+        if (qs("#diag-location")) qs("#diag-location").value = isAuStudy ? "onshore" : "offshore";
+        if (qs("#diag-current-visa")) qs("#diag-current-visa").value = isAuStudy ? "graduate_485" : "none";
+        if (qs("#diag-au-study")) qs("#diag-au-study").checked = isAuStudy;
+      }
+
+      if (sp.has("deg") && qs("#diag-qual")) {
+        const d = (sp.get("deg") || "").toLowerCase();
+        qs("#diag-qual").value = d === "phd" ? "phd" : (d === "trade_diploma" ? "diploma_trade" : (d === "high_school" ? "other" : "bachelor_masters"));
+      }
+
+      if (sp.has("eng") && qs("#diag-english")) {
+        const e = (sp.get("eng") || "").toLowerCase();
+        const engMap = {
+          ielts_8_plus: "superior",
+          ielts_7: "proficient",
+          ielts_6_5: "competent",
+          ielts_6: "competent",
+          ielts_5: "vocational_482",
+          none: "below_threshold",
+        };
+        if (engMap[e]) qs("#diag-english").value = engMap[e];
+      }
+
+      if (sp.has("exp")) {
+        const yrs = Number(sp.get("exp") || 0);
+        const isAuStudy = (sp.get("study") || "").toUpperCase() === "AU";
+        if (!isAuStudy && qs("#diag-au-work")) qs("#diag-au-work").value = "0";
+        if (qs("#diag-os-work")) {
+          qs("#diag-os-work").value = yrs >= 8 ? "8+" : (yrs >= 5 ? "5_7" : (yrs >= 3 ? "3_4" : "0"));
+        }
+      }
+
+      if (sp.has("offer") && qs("#diag-has-sponsor")) {
+        const hasSponsor = sp.get("offer") === "1" || sp.get("offer") === "true";
+        qs("#diag-has-sponsor").checked = hasSponsor;
+        const sal = Number(sp.get("sal") || 0);
+        if (qs("#diag-salary")) qs("#diag-salary").value = hasSponsor && sal > 0 ? String(sal) : "";
+      }
+    } catch {
+      // Ignore query prefill errors cleanly
+    }
+  }
+
   async function init() {
     window.PARKCO_I18N?.applyStaticI18n(state.lang);
     const solCounter = qs("#sol-result-counter");
     if (solCounter && t().solLoading) solCounter.textContent = t().solLoading;
 
     bindEvents();
+    applyQueryPrefillIfPresent();
+    applyHashModuleIfPresent(Boolean(window.location.hash));
+    window.addEventListener("hashchange", () => applyHashModuleIfPresent(true));
+    window.PARKCO_APP_BRIDGE = {
+      apiGet,
+      apiPostJson,
+      getLang: () => state.lang,
+      switchModule,
+    };
     try {
       state.bootstrap = await apiGet("/api/bootstrap");
       const solStat = qs("#stat-sol-count");
@@ -1506,6 +1644,7 @@
         vidStat.textContent = `${state.bootstrap.youtube_catalog.total_channel_videos}+`;
       }
 
+      renderVideoCurationScopeNote();
       renderVideoCategories(true);
       renderVideoCards();
       renderSamplePersonas();

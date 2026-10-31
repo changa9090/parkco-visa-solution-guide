@@ -9,6 +9,10 @@ import {
   OFFICIAL_INQUIRY_URL_EN,
   runDiagnosis,
 } from "./diagnostic_engine.mjs";
+import {
+  CalculatorValidationError,
+  evaluateAuCalculator,
+} from "./au_calculators.mjs";
 import { SAMPLE_PERSONAS } from "./sample_personas.mjs";
 
 function normLang(raw) {
@@ -21,6 +25,7 @@ export function createStaticVisaGuideFromData({
   pathwaysCatalog,
   youtubeCatalog,
   provenance,
+  auMasterGuide = null,
 }) {
   const matcher = new OccupationMatcher(solMaster.occupations || [], confusionPairs || []);
 
@@ -29,10 +34,11 @@ export function createStaticVisaGuideFromData({
     getHealth() {
       return {
         status: "ok",
+        service: "parkco-visa-solution-guide",
         mode: "static-client",
         sol_count: matcher.occupations.length,
         curated_videos_count: (youtubeCatalog.videos || []).length,
-        channel_total_videos: youtubeCatalog.total_channel_videos || 209,
+        channel_total_videos: youtubeCatalog.total_channel_videos || 218,
         fy_version: pathwaysCatalog.thresholds_fy26_27.effective_period,
         official_inquiry_url: OFFICIAL_INQUIRY_URL,
         official_inquiry_url_en: OFFICIAL_INQUIRY_URL_EN,
@@ -120,6 +126,36 @@ export function createStaticVisaGuideFromData({
     diagnose(payload = {}) {
       return runDiagnosis(payload, matcher, pathwaysCatalog, youtubeCatalog);
     },
+    getGuide({ q = "", limit = "" } = {}) {
+      const base = auMasterGuide || { chapters: [] };
+      const qClean = String(q ?? "").trim();
+      if (!qClean) {
+        return base;
+      }
+      const limStr = String(limit ?? "12").trim();
+      const lim = /^\d+$/.test(limStr) ? Math.min(24, Math.max(1, parseInt(limStr, 10))) : 12;
+      const ql = qClean.toLowerCase();
+      const matched = (base.chapters || []).filter((ch) =>
+        JSON.stringify(ch).toLowerCase().includes(ql)
+      );
+      return {
+        ...base,
+        query: qClean,
+        total_matches: matched.length,
+        chapters: matched.slice(0, lim),
+      };
+    },
+    evaluateCalculator({ calculator = "", params = {}, lang = "ko" } = {}) {
+      const reqLang = normLang(lang);
+      try {
+        return evaluateAuCalculator(calculator, params);
+      } catch (err) {
+        if (err instanceof CalculatorValidationError) {
+          throw new Error(err.getMessage(reqLang));
+        }
+        throw err;
+      }
+    },
   };
 }
 
@@ -147,13 +183,15 @@ export function loadStaticVisaGuideBrowser(dataBaseUrl = null) {
       fetchJson("pathways_catalog_2026.json"),
       fetchJson("youtube_catalog_2026.json"),
       fetchJson("PROVENANCE.json"),
-    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance]) =>
+      fetchJson("au_master_guide_2026.json"),
+    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance, auMasterGuide]) =>
       createStaticVisaGuideFromData({
         solMaster,
         confusionPairs,
         pathwaysCatalog,
         youtubeCatalog,
         provenance,
+        auMasterGuide,
       })
     );
   }

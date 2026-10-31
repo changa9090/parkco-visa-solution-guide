@@ -51,6 +51,7 @@
     { sel: ".hero-section .btn-hero-primary span", text: "Start 1-Min Visa & Points Diagnosis" },
     { sel: ".hero-section .btn-hero-secondary span", text: "Upload Resume · Match Occupation" },
     { sel: ".hero-section .btn-hero-ghost span", text: "Explore 714 SOL & Caveats" },
+    { sel: "#btn-hero-master-guide span", text: "Read Complete AU Immigration Guide" },
     {
       sel: ".hero-metrics-strip .hero-metric-item:nth-child(1) .metric-label",
       text: "Official Home Affairs SOL & Verbatim Caveats",
@@ -112,6 +113,30 @@
     { sel: '[data-module-tab="module-diagnose"] .tab-label', text: "Visa & Points Simulator" },
     { sel: '[data-module-tab="module-pathways"] .tab-label', text: "Pathways & All Visas" },
     { sel: '[data-module-tab="module-consult"] .tab-label', text: "Consult & Services" },
+    { sel: '[data-module-tab="module-guide"] .tab-label', text: "Master Guide & Clocks" },
+    { sel: "#heading-guide", text: "Complete Australian Migration, Visa, Review & Citizenship Guide" },
+    {
+      sel: "#guide-section-desc",
+      html:
+        "Explore 12 primary-source-verified chapters and 4 deterministic statutory calculators grounded in the Migration Act 1958 (Comp. 172), Migration Regulations 1994 (Comp. 289), FY2026–27 salary/VAC instruments, <strong>Ministerial Direction No. 123 (eff. 31 October 2026)</strong>, and ART s 367C on-the-papers reforms.",
+    },
+    {
+      sel: "#guide-official-cta",
+      attrs: { href: "https://parklawyers.com.au/links/" },
+    },
+    { sel: "#guide-official-cta span", text: "1:1 Legal Inquiry Hub ↗" },
+    {
+      sel: "#guide-search-input",
+      attrs: {
+        placeholder: "Search statute, subclass, or keyword (e.g. Direction 123, s 48, 482, citizenship)",
+        "aria-label": "Search Australian Master Guide",
+      },
+    },
+    { sel: "#guide-calc-heading", text: "4 Deterministic Australian Statutory Deadline, Bar & Salary Calculators" },
+    {
+      sel: "#guide-calc-subdesc",
+      text: "Verify non-extendable ART/s 501 clocks, s 48 & Schedule 3 onshore rules, Citizenship s 22 / NZ 444 residence dates, and FY2026–27 CSIT/SSIT/SAF obligations.",
+    },
 
     // Module 01: Concepts & @immispecialist Video Hub
     { sel: "#heading-concepts", text: "Master the Big Picture of Australian Migration First" },
@@ -514,6 +539,8 @@
       videoPlayAria: (t) => `${t} 영상 재생`,
       videoWatchCta: "영상 보기 ↗",
       videoKrAudioPill: "",
+      videoCurationScopeNote: (total, curated, uncurated) =>
+        `채널 전체 인덱싱 ${total}편 중 호주 이민 핵심 강의 ${curated}편을 엄선해 제공하며, 큐레이션 외 인덱싱 영상 ${uncurated}편(고용법·가족법·일반 판례 등 비이민 주제 포함)은 자동 편입하지 않았어요.`,
       confusionHeading: (t) => `유사 직종 혼동 주의: ${t}`,
       dutyEmpty:
         "일치하는 SOL 직종을 찾지 못했어요. 담당 업무(예: 메뉴 기획, API 개발, 재무제표, 타일 시공)를 조금 더 구체적으로 적어 보세요.",
@@ -580,6 +607,8 @@
       tier491Label: "491 지방 주정부 (+15)",
       buildConsultBriefBtn: "이 진단 결과로 박앤코 상담 브리프 작성 →",
       riskSectionHeading: (n) => `사전 법률 리스크 & 체크포인트 (${n}건)`,
+      referenceNotesHeading: (n) => `참고 사항 (${n}건)`,
+      noCheckpointsHint: "즉시 걸리는 P1·P2 법령 결격 체크포인트는 확인되지 않았어요 (0건).",
       rankedPathwaysHeading: "유력 비자 패스웨이 판정 결과",
       blueprintTrapsLabel: "실무 핵심 주의점:",
       fyVacPrefix: (v) => `FY26–27 비자비: ${v}`,
@@ -593,6 +622,8 @@
       videoPlayAria: (t) => `Play video: ${t}`,
       videoWatchCta: "Watch Briefing ↗",
       videoKrAudioPill: "KR Audio · EN Takeaway",
+      videoCurationScopeNote: (total, curated, uncurated) =>
+        `${curated} core Australian migration briefings are curated here out of ${total} indexed channel videos; ${uncurated} indexed videos outside curation (including employment/family law & general case updates) are excluded from auto-inclusion.`,
       confusionHeading: (t) => `Occupation Confusion Alert: ${t}`,
       dutyEmpty:
         "No matching SOL occupation found. Try adding specific duties (e.g., menu costing, REST API architecture, financial reporting, ceramic tiling).",
@@ -659,6 +690,8 @@
       tier491Label: "491 Regional State (+15)",
       buildConsultBriefBtn: "Generate Consultation Brief from Results →",
       riskSectionHeading: (n) => `Pre-Lodgement Statutory Risk & Checkpoints (${n})`,
+      referenceNotesHeading: (n) => `Reference Notes (${n})`,
+      noCheckpointsHint: "No P1/P2 statutory risk checkpoints flagged on current inputs (0).",
       rankedPathwaysHeading: "Ranked Visa Pathway Assessment",
       blueprintTrapsLabel: "Critical Practical Traps:",
       fyVacPrefix: (v) => `FY26–27 VAC: ${v}`,

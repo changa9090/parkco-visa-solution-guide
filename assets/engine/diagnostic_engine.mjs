@@ -990,6 +990,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
   const recommendedServices = recServiceIds.filter((sid) => svcById.has(sid)).map((sid) => svcById.get(sid));
 
   const p1P2Flags = riskFlags.filter((f) => f.severity === "P1" || f.severity === "P2");
+  const p3Flags = riskFlags.filter((f) => f.severity !== "P1" && f.severity !== "P2");
   let conceptSummaryKo;
   let conceptSummaryEn;
   if (primaryPathways.length) {
@@ -1096,6 +1097,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     gsm_points_breakdown: points,
     occupation_summary: occSummary,
     risk_flags: riskFlags,
+    statutory_checkpoints: p1P2Flags,
+    reference_notes: p3Flags,
     primary_pathways: primaryPathways,
     alternative_comparison: alternativeComparison,
     other_and_remote_options: prioritizedOther,

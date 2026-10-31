@@ -2097,3 +2097,262 @@ html[lang="en"] .module-tab {
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* --------------------------------------------------------------------------
+   Module 07: Australian Immigration Master Guide (12 Chapters) & Calculators
+   -------------------------------------------------------------------------- */
+.btn-hero-guide {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.guide-reader-layout {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 26px;
+}
+
+.guide-toc-card {
+  position: sticky;
+  top: 76px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.guide-search-wrap {
+  margin-bottom: 12px;
+}
+
+.guide-chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.guide-toc-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  padding: 11px 13px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-line);
+  background: var(--color-white);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.guide-toc-btn:hover,
+.guide-toc-btn.is-active {
+  border-color: var(--color-burgundy);
+  background: #FFFDFB;
+}
+
+.guide-toc-btn.is-active {
+  border-left: 4px solid var(--color-burgundy);
+}
+
+.guide-toc-num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--color-burgundy);
+}
+
+.guide-toc-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-ink-deep);
+  margin: 2px 0;
+}
+
+.guide-toc-sub {
+  font-size: 0.78rem;
+  color: var(--color-charcoal-soft);
+  line-height: 1.35;
+}
+
+.guide-art-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.guide-pill-primary {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--color-burgundy);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.guide-pill-statute {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--color-ivory);
+  color: var(--color-ink-deep);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.guide-art-title {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  color: var(--color-ink-deep);
+}
+
+.guide-art-summary {
+  margin: 0 0 18px;
+  padding: 12px 15px;
+  border-radius: var(--radius-md);
+  background: var(--color-ivory);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.guide-subsec {
+  margin-bottom: 18px;
+}
+
+.guide-subsec h4 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+  color: var(--color-burgundy);
+}
+
+.guide-subsec p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+.guide-table-wrap {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+.guide-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.guide-data-table th,
+.guide-data-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.guide-data-table th {
+  background: var(--color-ivory);
+  font-weight: 800;
+  color: var(--color-ink-deep);
+}
+
+.guide-takeaways-box {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: #F6F8FA;
+  border: 1px solid var(--color-line);
+  margin-bottom: 16px;
+}
+
+.guide-takeaways-box h4 {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+}
+
+.guide-takeaways-box ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+
+.au-calculators-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.guide-calc-card {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-line-strong);
+  background: #FCFBF9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide-calc-tag {
+  align-self: flex-start;
+  font-size: 0.73rem;
+  font-weight: 800;
+  color: var(--color-burgundy);
+  background: #F9EFEF;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.guide-calc-card h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  color: var(--color-ink-deep);
+}
+
+.calc-lbl {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--color-charcoal-soft);
+}
+
+.calc-chk {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.calc-result-box {
+  margin-top: auto;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  border-left: 4px solid var(--color-burgundy);
+  border-top: 1px solid var(--color-line);
+  border-right: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  font-size: 0.87rem;
+  line-height: 1.58;
+}
+
+.calc-result-box p {
+  margin: 5px 0 0;
+}
+
+@media (max-width: 960px) {
+  .guide-reader-layout,
+  .au-calculators-grid {
+    grid-template-columns: 1fr;
+  }
+  .guide-toc-card {
+    position: static;
+    max-height: none;
+  }
+}

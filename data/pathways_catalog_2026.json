@@ -338,6 +338,7 @@
   "non_skilled_and_remote_visas": [
     {
       "id": "partner_820_309_300",
+      "employer_tied": false,
       "tier": "primary_family",
       "badge": "FAMILY CORE · HIGH APPROVAL WITH PROPER EVIDENCE",
       "subclasses": "Subclass 820/801 (호주 내) · 309/100 (해외) · 300 (약혼자)",
@@ -363,6 +364,7 @@
     },
     {
       "id": "niv_858",
+      "employer_tied": false,
       "tier": "remote_high_bar",
       "badge": "ELITE INVITATION ONLY · REPLACED GTI & 188 BIIP",
       "subclasses": "Subclass 858 (National Innovation Visa)",
@@ -386,6 +388,7 @@
     },
     {
       "id": "parent_143_864_870_103",
+      "employer_tied": false,
       "tier": "family_long_horizon",
       "badge": "FAMILY PARENT · QUEUE & COST PLANNING ESSENTIAL",
       "subclasses": "Subclass 143/173 (기여제) · 864/884 (노령 기여제) · 103/804 (일반) · 870 (임시 스폰서)",
@@ -411,6 +414,7 @@
     },
     {
       "id": "training_407",
+      "employer_tied": true,
       "tier": "conditional_stepping_stone",
       "badge": "STEPPING STONE · WORKPLACE STRUCTURED TRAINING",
       "subclasses": "Subclass 407 (Training Visa)",
@@ -434,6 +438,7 @@
     },
     {
       "id": "child_carer_remaining_relative",
+      "employer_tied": false,
       "tier": "remote_niche_family",
       "badge": "NICHE FAMILY · STRICT DEPENDENCY OR LONG QUEUE",
       "subclasses": "Subclass 101/802 (자녀) · 116/836 (간병인 Carer) · 115/835 (최후잔류가족)",
@@ -457,6 +462,7 @@
     },
     {
       "id": "nz_family_461_and_rrv_155",
+      "employer_tied": false,
       "tier": "special_status",
       "badge": "SPECIAL STATUS · NZ PARTNER & PR RETURN",
       "subclasses": "Subclass 461 (뉴질랜드 시민권자 가족) · Subclass 155/157 (영주권자 재입국 RRV)",
@@ -480,6 +486,7 @@
     },
     {
       "id": "short_activity_400_408",
+      "employer_tied": true,
       "tier": "remote_short_stay",
       "badge": "SHORT-TERM SPECIALIST & RESEARCH / RELIGIOUS",
       "subclasses": "Subclass 400 (단기 고숙련 파견) · Subclass 408 (특수활동·연구·종교)",
@@ -503,6 +510,7 @@
     },
     {
       "id": "art_s48_ministerial_351",
+      "employer_tied": false,
       "tier": "crisis_remedy",
       "badge": "LEGAL REMEDY · REFUSAL, CANCELLATION & EXCEPTIONAL RELIEF",
       "subclasses": "ART(행정재심재판소) 재심 · Section 48 예외 접수 · 장관 탄원(s 351)",
