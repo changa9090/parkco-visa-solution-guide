@@ -1,6 +1,6 @@
 {
-  "polled_at_aest": "2026-10-29T18:13:17+10:00",
-  "polled_at_utc": "2026-10-29T08:13:17.388657+00:00",
+  "polled_at_aest": "2026-11-02T08:04:52+10:00",
+  "polled_at_utc": "2026-11-01T22:04:52.549066+00:00",
   "cadence": "Weekly Monday 08:02 AEST (after daily 06:55 processing-times & Monday 07:15–07:45 DAMA/SID/GSM pollers)",
   "total_sources": 10,
   "verified_sources": 10,
@@ -8,49 +8,14 @@
   "drift_alerts": [],
   "new_channel_videos_detected": [
     {
-      "id": "tE9iHGqSalw",
-      "title": "호주비자 심사기간, 제대로 확인해보자. 서비스 전면개편",
-      "published": "2026-10-28"
+      "id": "gy_PEu_MFZI",
+      "title": "은퇴 후 어디에서 살까? 세계 은퇴지와 한달살기를 비교하는 사이트를 만들었습니다",
+      "published": "2026-10-31"
     },
     {
-      "id": "GYpK871Gqhg",
-      "title": "호주비자 심사일 계산기",
-      "published": "2026-10-28"
-    },
-    {
-      "id": "FVKJVzQNPkQ",
-      "title": "“이 집을 줄게” 약속, 헤어진 뒤에도 의미가 있을까? | 호주 판례",
-      "published": "2026-10-28"
-    },
-    {
-      "id": "NImr5PgYgcM",
-      "title": "남편 사업에 보증 섰다가 집까지? | 가르시아 판결",
-      "published": "2026-10-26"
-    },
-    {
-      "id": "-XGwBdgBVoM",
-      "title": "외주화로 미래의 노동권을 막아도 될까? | 콴타스 판결",
-      "published": "2026-10-23"
-    },
-    {
-      "id": "tJdS81J7ItQ",
-      "title": "배달원이 낸 사고, 회사도 책임질까? | 홀리스 대 바부",
-      "published": "2026-10-21"
-    },
-    {
-      "id": "j5r86ZvCtPg",
-      "title": "해고 절차를 어겨 정신질환이 생겼다면? | 엘리샤 판결",
-      "published": "2026-10-19"
-    },
-    {
-      "id": "Xz-1hWuZpbU",
-      "title": "결혼식 직전 혼전계약, 정말 자유로운 선택이었을까? | 호주 판례",
-      "published": "2026-10-16"
-    },
-    {
-      "id": "ihljDdzBtrI",
-      "title": "189 기술이민 접수 전, 전문가와 함께 하는 서류검토 서비스 어때? 박앤코의 Case Review (TM)",
-      "published": "2026-10-15"
+      "id": "pCtPXjAzGH0",
+      "title": "ANZ 연체료, 실제 손실보다 비싸면 돌려받을까? | 호주 판례",
+      "published": "2026-10-30"
     }
   ],
   "sources": [
@@ -112,7 +77,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "compilation": "",
-      "sha256": "d39ffa8e1595a1fc8fb6d918f365539fa42b333486c17a111026da352930cf12"
+      "sha256": "86eb77ac55db46d5824ee1c6e30ecafd3715b375af203f0d7ca1741f235c821c"
     },
     {
       "id": "frl_csol_2024",
@@ -137,7 +102,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 20736,
-      "sha256": "626b67aefd1811b7bdaf98775324be3db8a9e5b73624a8f1b255e3b8b4226633"
+      "sha256": "79f33c44e5740e619ccbb73149f38e468881531fbe2e3d191a3dec2548ea8f61"
     },
     {
       "id": "sibling_dama_13",
@@ -149,8 +114,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 8057091,
-      "sha256": "1126812e2d22ad91caff5ff092d6a17bda2023f23e5a1618a0342832d0161168"
+      "bytes": 8057112,
+      "sha256": "c32668a3783c4d94c3d866935ea59cebb16c4ef49ed7a5c25d71077d14d961f3"
     },
     {
       "id": "sibling_processing_times_74",
@@ -162,8 +127,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 35595,
-      "sha256": "135e6328aebd456d196ec8e496b6ea739179f27a226e61fef311aa31da7a5f05"
+      "bytes": 121430,
+      "sha256": "bfb24b220932ee05751dd87cf09bb5f632a4b345222cf016352984984cc0f497"
     },
     {
       "id": "youtube_immispecialist_atom",
@@ -174,9 +139,9 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "total_channel_videos": 218,
-      "new_videos_added": 9,
-      "sha256": "f565d06ad20ec1d07927eeae9d128d99e950985eff60e33b7c713a37d9eb93a2"
+      "total_channel_videos": 220,
+      "new_videos_added": 2,
+      "sha256": "e54cd1df59c104d08c1c7a7a7b0b4e4a6fdc23528db783a77b46b86a24234eca"
     }
   ]
 }
