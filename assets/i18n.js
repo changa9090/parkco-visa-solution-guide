@@ -519,7 +519,7 @@
       attrs: { href: "https://faq.immispecialist.com/?lang=en" },
     },
     { sel: "#eco-link-tracker", text: "Live Visa Processing Times ↗" },
-    { sel: "#eco-link-intel", text: "Legislation · FOI · Stats Hub ↗" },
+    { sel: "#eco-link-gsm", text: "8-State GSM Cut-Offs ↗" },
     { sel: "#diag-selected-occ-badge", text: "Selected Occupation: Unspecified (All Pathways)" },
     { sel: "#video-modal-ext-link", text: "Watch on YouTube ↗" },
     { sel: "#vc-lbl-total", text: "Total Visits" },
