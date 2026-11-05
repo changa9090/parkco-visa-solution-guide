@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T04:02:41.955047+00:00",
+  "generated_at": "2026-11-05T04:39:34.855117+00:00",
   "source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list",
   "count": 714,
   "occupations": [
@@ -450,7 +450,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 90,
+      "skillselect_min_points_189": 85,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -1610,7 +1610,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 7,
       "dama_concessions": {
         "regions": [
@@ -3539,7 +3539,7 @@
         "Cultural Centre Manager"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -3669,7 +3669,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 4,
       "dama_concessions": {
         "regions": [
@@ -3814,7 +3814,7 @@
         "전기기능사",
         "전기기사"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 11,
       "dama_concessions": {
         "regions": [
@@ -4022,7 +4022,7 @@
         "변호사",
         "송무변호사"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -4496,7 +4496,7 @@
         "Molecular Geneticist"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 90,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -4682,7 +4682,7 @@
         "Yacht Builder"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -5599,7 +5599,7 @@
         "주방가구",
         "캐비닛메이커"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -6225,7 +6225,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 75,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -6859,7 +6859,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -7026,7 +7026,7 @@
         "Industrial Chemist"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 80,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -7361,7 +7361,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 85,
       "dama_count": 6,
       "dama_concessions": {
         "regions": [
@@ -8240,7 +8240,7 @@
         "심리학자",
         "임상심리"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 90,
       "dama_count": 11,
       "dama_concessions": {
         "regions": [
@@ -9222,7 +9222,7 @@
         "Art Conservator"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 90,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -11174,7 +11174,7 @@
         "Exotic Dancer"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -12365,7 +12365,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 75,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -13562,7 +13562,7 @@
         "초등학교교사",
         "특수교사"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 90,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -13765,7 +13765,7 @@
         "세무자문",
         "세무회계사"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -14046,7 +14046,7 @@
         "심리학자",
         "임상심리"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -14272,7 +14272,7 @@
         "전기엔지니어",
         "전력설계"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -14363,7 +14363,7 @@
         "전기엔지니어",
         "전력설계"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 4,
       "dama_concessions": {
         "regions": [
@@ -14874,7 +14874,7 @@
         "Video Technician"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -14958,7 +14958,7 @@
         "Electronic Technician (Navy)"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -15041,7 +15041,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -15267,7 +15267,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -16087,7 +16087,7 @@
         "외부감사",
         "회계감사"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -16312,7 +16312,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -16396,7 +16396,7 @@
         "Water Quality Analyst"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -16476,7 +16476,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -18374,7 +18374,7 @@
         "Fitter Armament (Army)"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": null,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -18468,7 +18468,7 @@
         "용접사",
         "티그용접"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 80,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -18998,7 +18998,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 80,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -19081,7 +19081,7 @@
         "Soccer Player"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -19970,7 +19970,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 75,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -20060,7 +20060,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -21943,7 +21943,7 @@
         "Horse Breaker"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -23411,7 +23411,7 @@
         "클라우드",
         "해킹방어"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 100,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -24836,7 +24836,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 75,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -26009,7 +26009,7 @@
         "Asset Manager (Land and Property)"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -26844,7 +26844,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 90,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -26924,7 +26924,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 90,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -27296,7 +27296,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 65,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -28409,7 +28409,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -29085,7 +29085,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -29368,7 +29368,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 70,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -29446,7 +29446,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -29536,7 +29536,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 75,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -29987,7 +29987,7 @@
         "Vertical Borer"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 80,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -30357,7 +30357,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 90,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -30537,7 +30537,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -31431,7 +31431,7 @@
         "프로그래머",
         "프론트엔드"
       ],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 90,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -31517,7 +31517,7 @@
         "Orchestra Conductor"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -31775,7 +31775,7 @@
         "Violinist"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -31834,7 +31834,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 85,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -32196,7 +32196,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 75,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -32276,7 +32276,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -32428,7 +32428,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -32689,7 +32689,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -32956,7 +32956,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 75,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -33103,7 +33103,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 70,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -33853,7 +33853,7 @@
         "심리학자",
         "임상심리"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": null,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -33933,7 +33933,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 80,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -34770,7 +34770,7 @@
         "Paediatric Thoracic Physician"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 4,
       "dama_concessions": {
         "regions": [
@@ -35007,7 +35007,7 @@
         "플라스터러",
         "현장기술직"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 70,
       "dama_count": 6,
       "dama_concessions": {
         "regions": [
@@ -35094,7 +35094,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -35443,7 +35443,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 70,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -36270,7 +36270,7 @@
         "물리치료사",
         "재활치료"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 11,
       "dama_concessions": {
         "regions": [
@@ -36872,7 +36872,7 @@
         "Audiologists and Speech Pathologists / Therapists"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 7,
       "dama_concessions": {
         "regions": [
@@ -37696,7 +37696,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -39113,7 +39113,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -39191,7 +39191,7 @@
         "심리학자",
         "임상심리"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 80,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -39930,7 +39930,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -40576,7 +40576,7 @@
         "케어워커",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -40675,7 +40675,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -40775,7 +40775,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -40877,7 +40877,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -40976,7 +40976,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 8,
       "dama_concessions": {
         "regions": [
@@ -41073,7 +41073,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 7,
       "dama_concessions": {
         "regions": [
@@ -41175,7 +41175,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -41276,7 +41276,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -41381,7 +41381,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -41477,7 +41477,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 70,
       "dama_count": 7,
       "dama_concessions": {
         "regions": [
@@ -41577,7 +41577,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -41674,7 +41674,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -41770,7 +41770,7 @@
         "중환자실",
         "환자간호"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 11,
       "dama_concessions": {
         "regions": [
@@ -43868,7 +43868,7 @@
         "중학교교사",
         "특수교사"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 80,
       "dama_count": 11,
       "dama_concessions": {
         "regions": [
@@ -44218,7 +44218,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -44608,7 +44608,7 @@
         "카펜터",
         "형틀목수"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -45203,7 +45203,7 @@
         "소셜워커",
         "케이스매니저"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 80,
       "dama_count": 9,
       "dama_concessions": {
         "regions": [
@@ -45584,7 +45584,7 @@
         "변호사",
         "사무변호사"
       ],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -45748,7 +45748,7 @@
         "일반의",
         "전문의"
       ],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 75,
       "dama_count": 7,
       "dama_concessions": {
         "regions": [
@@ -45924,7 +45924,7 @@
         "선생님",
         "특수교사"
       ],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 80,
       "dama_count": 4,
       "dama_concessions": {
         "regions": [
@@ -46016,7 +46016,7 @@
         "선생님",
         "특수교사"
       ],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 80,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -46156,7 +46156,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 75,
       "dama_count": 5,
       "dama_concessions": {
         "regions": [
@@ -46238,7 +46238,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 85,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -46322,7 +46322,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 75,
+      "skillselect_min_points_189": 70,
       "dama_count": 10,
       "dama_concessions": {
         "regions": [
@@ -46821,7 +46821,7 @@
         "Staff login"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 90,
+      "skillselect_min_points_189": 85,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -47522,7 +47522,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 90,
       "dama_count": 4,
       "dama_concessions": {
         "regions": [
@@ -48426,7 +48426,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 70,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -48860,7 +48860,7 @@
         "Signals Officer (Army) (NZ) (S)"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 85,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -48937,7 +48937,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -49110,7 +49110,7 @@
         "정보통신",
         "클라우드"
       ],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": 85,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -49189,7 +49189,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 2,
       "dama_concessions": {
         "regions": [
@@ -49268,7 +49268,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 85,
       "dama_count": 3,
       "dama_concessions": {
         "regions": [
@@ -49583,7 +49583,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -49726,7 +49726,7 @@
         "Respiratory Physician"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 95,
+      "skillselect_min_points_189": null,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -50759,7 +50759,7 @@
       "alternative_titles": [],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 90,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -51156,7 +51156,7 @@
         "Librarians"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": 80,
+      "skillselect_min_points_189": 65,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
@@ -52531,7 +52531,7 @@
       ],
       "specialisations": [],
       "keywords_ko": [],
-      "skillselect_min_points_189": 85,
+      "skillselect_min_points_189": 65,
       "dama_count": 1,
       "dama_concessions": {
         "regions": [
@@ -53339,7 +53339,7 @@
         "Ornithologist"
       ],
       "keywords_ko": [],
-      "skillselect_min_points_189": null,
+      "skillselect_min_points_189": 95,
       "dama_count": 0,
       "dama_concessions": null,
       "instruments": [
