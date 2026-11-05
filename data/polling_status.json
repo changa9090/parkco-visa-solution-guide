@@ -95,40 +95,40 @@
       "id": "sibling_skillselect_cutoffs",
       "name": "SkillSelect 139 Occupation Cut-Offs (217 Weekly Poller)",
       "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds",
-      "local_path": "/home/cp/ag/gsm-state-navigator/web/data/gsm_skillselect_data.json",
       "http_status": 200,
       "fetchStatus": "ok",
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 20736,
-      "sha256": "79f33c44e5740e619ccbb73149f38e468881531fbe2e3d191a3dec2548ea8f61"
+      "sha256": "79f33c44e5740e619ccbb73149f38e468881531fbe2e3d191a3dec2548ea8f61",
+      "snapshot_file": "gsm_skillselect_data.json"
     },
     {
       "id": "sibling_dama_13",
       "name": "Australia 13 Regional DAMAs Dataset (217 Weekly Poller)",
       "url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/labour-agreements/designated-area-migration-agreements",
-      "local_path": "/home/cp/ag/dama-navigator/data/dama_navigator_data.json",
       "http_status": 200,
       "fetchStatus": "ok",
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 8057112,
-      "sha256": "c32668a3783c4d94c3d866935ea59cebb16c4ef49ed7a5c25d71077d14d961f3"
+      "sha256": "c32668a3783c4d94c3d866935ea59cebb16c4ef49ed7a5c25d71077d14d961f3",
+      "snapshot_file": "dama_navigator_data.json"
     },
     {
       "id": "sibling_processing_times_74",
       "name": "Home Affairs 74-Stream Global Processing Times (217 Daily Poller)",
       "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times",
-      "local_path": "/home/cp/ag/visa-processing-tracker/dist/data/typed-manifest-v2.json",
       "http_status": 200,
       "fetchStatus": "ok",
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 121430,
-      "sha256": "bfb24b220932ee05751dd87cf09bb5f632a4b345222cf016352984984cc0f497"
+      "sha256": "bfb24b220932ee05751dd87cf09bb5f632a4b345222cf016352984984cc0f497",
+      "snapshot_file": "typed-manifest-v2.json"
     },
     {
       "id": "youtube_immispecialist_atom",

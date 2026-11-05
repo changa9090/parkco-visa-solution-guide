@@ -338,7 +338,6 @@
   "non_skilled_and_remote_visas": [
     {
       "id": "partner_820_309_300",
-      "employer_tied": false,
       "tier": "primary_family",
       "badge": "FAMILY CORE · HIGH APPROVAL WITH PROPER EVIDENCE",
       "subclasses": "Subclass 820/801 (호주 내) · 309/100 (해외) · 300 (약혼자)",
@@ -360,11 +359,11 @@
         "Warning — Lodging Subclass 820 onshore while holding a Bridging Visa or unlawful status triggers Schedule 3 criteria requiring strict proof of Compelling Reasons."
       ],
       "feasibility_level": "높음 (적격 호주인 파트너 존재 시 최우선 검토)",
-      "feasibility_level_en": "High (Top priority when you have an eligible Australian partner)"
+      "feasibility_level_en": "High (Top priority when you have an eligible Australian partner)",
+      "employer_tied": false
     },
     {
       "id": "niv_858",
-      "employer_tied": false,
       "tier": "remote_high_bar",
       "badge": "ELITE INVITATION ONLY · REPLACED GTI & 188 BIIP",
       "subclasses": "Subclass 858 (National Innovation Visa)",
@@ -384,11 +383,11 @@
         "Strictly by Departmental Invitation after lodging an EOI, backed by Form 1000 nomination from a nationally recognised Australian individual or peak body."
       ],
       "feasibility_level": "제한적/특수 (국제적 수상·특허·딥테크 창업·탑티어 연구 실적 보유자 한정)",
-      "feasibility_level_en": "Selective / Elite (Restricted to global awardees, patent holders, deep-tech founders & top researchers)"
+      "feasibility_level_en": "Selective / Elite (Restricted to global awardees, patent holders, deep-tech founders & top researchers)",
+      "employer_tied": false
     },
     {
       "id": "parent_143_864_870_103",
-      "employer_tied": false,
       "tier": "family_long_horizon",
       "badge": "FAMILY PARENT · QUEUE & COST PLANNING ESSENTIAL",
       "subclasses": "Subclass 143/173 (기여제) · 864/884 (노령 기여제) · 103/804 (일반) · 870 (임시 스폰서)",
@@ -410,11 +409,11 @@
         "Practical Alternative — Subclass 870 Sponsored Parent: No Balance of Family Test required; grants 3- or 5-year stays (up to 10 years) if sponsor taxable income meets $83,454.80 (private health insurance mandatory, no Medicare)."
       ],
       "feasibility_level": "중기/장기 (자녀 정착 후 재정·대기열 시뮬레이션 필수)",
-      "feasibility_level_en": "Medium-to-Long Horizon (Requires cost, AoS & queue modelling once child is settled)"
+      "feasibility_level_en": "Medium-to-Long Horizon (Requires cost, AoS & queue modelling once child is settled)",
+      "employer_tied": false
     },
     {
       "id": "training_407",
-      "employer_tied": true,
       "tier": "conditional_stepping_stone",
       "badge": "STEPPING STONE · WORKPLACE STRUCTURED TRAINING",
       "subclasses": "Subclass 407 (Training Visa)",
@@ -434,19 +433,19 @@
         "High refusal risk if used merely to fill routine labour shortages—requires an audited, individually tailored week-by-week Genuine Training Plan."
       ],
       "feasibility_level": "조건부 (최근 2년 내 12개월 학업/경력 보유 + 스폰서 연수 환경 충족 시)",
-      "feasibility_level_en": "Conditional (Requires 12 months study/work in last 24 months + genuine training host)"
+      "feasibility_level_en": "Conditional (Requires 12 months study/work in last 24 months + genuine training host)",
+      "employer_tied": true
     },
     {
       "id": "child_carer_remaining_relative",
-      "employer_tied": false,
       "tier": "remote_niche_family",
       "badge": "NICHE FAMILY · STRICT DEPENDENCY OR LONG QUEUE",
       "subclasses": "Subclass 101/802 (자녀) · 116/836 (간병인 Carer) · 115/835 (최후잔류가족)",
       "subclasses_en": "Subclass 101/802 (Child) · 116/836 (Carer) · 115/835 (Remaining Relative)",
       "title_ko": "자녀 · 간병인(Carer) · 최후잔류가족 비자",
       "title_en": "Child, Carer & Remaining Relative Visas",
-      "vac_fy26_27": "자녀 101/802 약 $3,235+ · Carer/Remaining Relative 별도 1·2차 분납",
-      "vac_fy26_27_en": "Child 101/802 ~$3,235+ · Carer / Remaining Relative split 1st & 2nd VAC",
+      "vac_fy26_27": "자녀 101/802 $4,040 · Carer/Remaining Relative 별도 1·2차 분납",
+      "vac_fy26_27_en": "Child 101/802 $4,040 · Carer / Remaining Relative split 1st & 2nd VAC",
       "summary_ko": "미성년/부양 자녀 초청(101/802)은 실무에서 활발히 쓰이며, 중증 질환 호주 가족을 돌볼 현지 대안이 전혀 없을 때의 간병인 비자(116/836)나 해외에 다른 가까운 혈육이 전혀 없는 최후잔류가족(115/835)은 요건이 매우 까다롭고 대기열이 수년~수십 년에 달하는 원격(Remote) 옵션이에요.",
       "summary_en": "Dependent Child visas (101/802) are frequently used in practice, whereas Carer (116/836) and Remaining Relative (115/835) visas carry stringent statutory tests and multi-year to multi-decade queues.",
       "key_criteria_ko": [
@@ -458,19 +457,19 @@
         "Carer Visa (116/836): Mandatory Bupa Medical Visa Services impairment rating plus strict proof that care cannot reasonably be obtained from Australian relatives or community/health services."
       ],
       "feasibility_level": "자녀비자 높음 / 간병인·잔류가족은 매우 제한적(장기 대기)",
-      "feasibility_level_en": "High for Dependent Child / Narrow & Long-Queue for Carer & Remaining Relative"
+      "feasibility_level_en": "High for Dependent Child / Narrow & Long-Queue for Carer & Remaining Relative",
+      "employer_tied": false
     },
     {
       "id": "nz_family_461_and_rrv_155",
-      "employer_tied": false,
       "tier": "special_status",
       "badge": "SPECIAL STATUS · NZ PARTNER & PR RETURN",
       "subclasses": "Subclass 461 (뉴질랜드 시민권자 가족) · Subclass 155/157 (영주권자 재입국 RRV)",
       "subclasses_en": "Subclass 461 (NZ Citizen Family Relationship) · Subclass 155/157 (Resident Return Visa)",
       "title_ko": "뉴질랜드 시민권자 가족 비자(461) & 영주권 연장/회복 비자(155 RRV)",
       "title_en": "NZ Citizen Family Relationship (461) & Resident Return Visa (155 RRV)",
-      "vac_fy26_27": "461: $430+ · 155 RRV: $475+",
-      "vac_fy26_27_en": "461: $430+ · 155 RRV: $475+",
+      "vac_fy26_27": "461: $1,330 · 155 RRV: $1,475",
+      "vac_fy26_27_en": "461: $1,330 · 155 RRV: $1,475",
       "summary_ko": "파트너가 호주 체류 뉴질랜드 시민권자(444 소지자)인 경우 5년 단위 갱신형 461 비자를 활용할 수 있고, 과거 호주 영주권을 받았으나 5년 중 2년 거주 요건을 못 채운 분은 호주와의 실질적 유대관계(Substantial Ties: 사업·고용·가족·거주)를 입증해 155 RRV로 영주권을 되살릴 수 있어요.",
       "summary_en": "Partners of Subclass 444 New Zealand citizens can obtain renewable 5-year Subclass 461 visas with full work rights, while former/lapsed Australian PRs who have not lived 2 of the last 5 years in Australia can restore PR travel facility via Subclass 155 by proving Substantial Ties.",
       "key_criteria_ko": [
@@ -482,11 +481,11 @@
         "Subclass 155 RRV: Where onshore residence is under 2 years (and especially after 5+ years continuous absence triggering Compelling Reasons), a structured legal submission on business, employment, family, or cultural ties is pivotal."
       ],
       "feasibility_level": "해당 신분 보유자에게 매우 유효",
-      "feasibility_level_en": "Highly Effective for Eligible Status Holders"
+      "feasibility_level_en": "Highly Effective for Eligible Status Holders",
+      "employer_tied": false
     },
     {
       "id": "short_activity_400_408",
-      "employer_tied": true,
       "tier": "remote_short_stay",
       "badge": "SHORT-TERM SPECIALIST & RESEARCH / RELIGIOUS",
       "subclasses": "Subclass 400 (단기 고숙련 파견) · Subclass 408 (특수활동·연구·종교)",
@@ -506,14 +505,14 @@
         "The former COVID-19 Pandemic Event 408 stream is permanently closed; only strict activity streams (Research, Religious Worker, Sport, Entertainment, Exchange) remain active."
       ],
       "feasibility_level": "특수 목적 부합 시 단기 활용",
-      "feasibility_level_en": "Short-Term Tactical Use When Special Purpose Matches"
+      "feasibility_level_en": "Short-Term Tactical Use When Special Purpose Matches",
+      "employer_tied": true
     },
     {
       "id": "art_s48_ministerial_351",
-      "employer_tied": false,
       "tier": "crisis_remedy",
       "badge": "LEGAL REMEDY · REFUSAL, CANCELLATION & EXCEPTIONAL RELIEF",
-      "subclasses": "ART(행정재심재판소) 재심 · Section 48 예외 접수 · 장관 탄원(s 351)",
+      "subclasses": "ART(행정재심기구) 재심 · Section 48 예외 접수 · 장관 탄원(s 351)",
       "subclasses_en": "ART Merits Review · Section 48 Exempt Visas · Ministerial Intervention (s 351)",
       "title_ko": "비자·노미네이션 거절/취소 구제, s 48 예외 및 장관 탄원(s 351)",
       "title_en": "Visa/Nomination Refusal & Cancellation Remedies, s 48 Exceptions & Ministerial Intervention (s 351)",
@@ -522,17 +521,18 @@
       "summary_ko": "이미 비자나 고용주 노미네이션이 거절되었거나 취소 통지(NOICC)를 받은 경우에도 법정 불변 기한 내 대응하면 합법 체류 유지 및 역전 승인의 길이 열려 있어요.",
       "summary_en": "Even after a visa/nomination refusal or Notice of Intention to Consider Cancellation (NOICC), acting within strict statutory deadlines preserves lawful status and opens merits review or statutory workaround pathways.",
       "key_criteria_ko": [
-        "법정 불변 기한 엄수: 일반 거절 28일, s 116 취소 7영업일, s 501 인성 취소 9일 — 단 하루만 지나도 재심 접수권이 영구 소멸돼요!",
+        "법정 불변 기한 엄수: 일반 거절 28일, 온쇼어 s 116 취소 소명 5영업일(reg 2.44), s 501 인성 취소 9일 — 단 하루만 지나도 재심 접수권이 영구 소멸돼요!",
         "Section 48 Bar 우회 전략: 호주 내 거절 이력이 있어도 주정부 노미네이션(190·491), 지방 스폰서(494), 파트너(820) 등 법정 예외 비자(reg 2.12)는 호주 내 접수가 가능해요(단, BVB 출국·재입국 동선 설계 필수).",
         "장관 탄원(s 351 Ministerial Intervention): 재심 결정 이후 호주 시민권 자녀의 최선의 이익 등 극히 이례적·공익적 사유가 있을 때 마지막으로 검토하는 최후 구제 수단이에요."
       ],
       "key_criteria_en": [
-        "Non-Extendable Statutory Deadlines: Standard refusal 28 calendar days, s 116 cancellation 7 working days, s 501 character decisions 9 days—missing by even 1 day permanently extinguishes review rights!",
+        "Non-Extendable Statutory Deadlines: Standard refusal 28 calendar days, onshore s 116 NOICC 5 working days (reg 2.44), s 501 character decisions 9 days—missing by even 1 day permanently extinguishes review rights!",
         "Section 48 Bar Exceptions (reg 2.12): Despite an onshore refusal, prescribed visas including Subclass 190, 491, 494, and Partner 820 remain valid onshore options (careful BVB travel planning required).",
         "Ministerial Intervention (s 351): Discretionary public-interest remedy post-ART decision reserved for unique and exceptional circumstances (e.g., best interests of an Australian citizen child)."
       ],
       "feasibility_level": "위기 발생 시 즉시 전문 변호사 진단 필수 (비자응급실™ / ART Case Review™)",
-      "feasibility_level_en": "Immediate Accredited Specialist Review Essential (Visa Emergency™ / ART Case Review™)"
+      "feasibility_level_en": "Immediate Accredited Specialist Review Essential (Visa Emergency™ / ART Case Review™)",
+      "employer_tied": false
     }
   ],
   "parkco_services": [
@@ -578,7 +578,7 @@
       "fee_en": "Free Refusal Decision Assessment (Fixed-Fee Representation)",
       "title_ko": "박앤코 ART Case Review™ (비자·노미네이션 거절 재심 검토)",
       "title_en": "Park & Co ART Case Review™ (Visa & Nomination Refusal Appeals)",
-      "description_ko": "비자 거절·취소 또는 고용주 노미네이션 거절 결정문(Decision Record)을 수령하셨거나, 현재 ART(행정재심재판소) 재심 대기 중 기존 대리인의 전략이 불안하신 분께 무료로 승산과 역전 전략(세컨드 오피니언)을 진단해 드려요.",
+      "description_ko": "비자 거절·취소 또는 고용주 노미네이션 거절 결정문(Decision Record)을 수령하셨거나, 현재 ART(행정재심기구) 재심 대기 중 기존 대리인의 전략이 불안하신 분께 무료로 승산과 역전 전략(세컨드 오피니언)을 진단해 드려요.",
       "description_en": "Received a visa refusal, cancellation, or employer nomination refusal Decision Record—or seeking an independent specialist second opinion on a pending Administrative Review Tribunal (ART) appeal? Get a complimentary prospects & strategy review.",
       "url_ko": "https://parklawyers.com.au/appealing-visa-decision/?lang=ko",
       "url_en": "https://parklawyers.com.au/appealing-visa-decision/",
@@ -604,6 +604,14 @@
     }
   ],
   "specialist_navigators": [
+    {
+      "title_ko": "호주이민 실전 FAQ 백과사전 (48개 핵심 한·영 가이드)",
+      "title_en": "Australian Immigration FAQ Knowledge Base (48 Bilingual Guides)",
+      "url": "https://faq.immispecialist.com/?lang=ko",
+      "url_en": "https://faq.immispecialist.com/?lang=en",
+      "tag": "48개 한·영 FAQ",
+      "tag_en": "48 Bilingual FAQs"
+    },
     {
       "title_ko": "GSM 점수·139개 직종 커트라인 & 8개 주정부 진단기",
       "title_en": "GSM Points, 139 Occupation Cut-Offs & 8 State Nominations Navigator",
@@ -659,6 +667,27 @@
       "url": "https://changa9090.github.io/visa-global-processing-time/",
       "tag": "74개 스트림 실시간",
       "tag_en": "74 Live Streams"
+    },
+    {
+      "title_ko": "호주 고용법(부당해고 21일·482 스폰서 보호) 내비게이터",
+      "title_en": "Australian Employment Law (FWC 21-Day Clock & 482 Protection) Navigator",
+      "url": "https://changa9090.github.io/parkco-employment-law-navigator/",
+      "tag": "FWC · 482 이직보호",
+      "tag_en": "FWC · 482 Crossover"
+    },
+    {
+      "title_ko": "호주 가족법(이혼·재산분할·파트너비자 관계해소) 내비게이터",
+      "title_en": "Australian Family Law (Divorce, Property & Partner Visa Crossover) Navigator",
+      "url": "https://changa9090.github.io/parkco-family-law-navigator/",
+      "tag": "FCFCOA · 가족법",
+      "tag_en": "FCFCOA · Family Law"
+    },
+    {
+      "title_ko": "주별 공립학비·메디케어·정착 초기비용 비자별 비교기",
+      "title_en": "State Public School Fees, Medicare & Settlement Cost Navigator",
+      "url": "https://changa9090.github.io/parkco-settlement-cost-navigator/",
+      "tag": "학비 · 메디케어",
+      "tag_en": "Schooling · Medicare"
     }
   ],
   "processing_times": {
@@ -667,32 +696,32 @@
         "stream_name": "100",
         "visa_type": "Partner",
         "p50_raw": "9 Months",
-        "p90_raw": "21 Months",
+        "p90_raw": "18 Months",
         "days_median": 270,
-        "days_p90": 630,
-        "official_updated": "29 September 2026"
+        "days_p90": 540,
+        "official_updated": "02 November 2026"
       }
     ],
     "101": [
       {
         "stream_name": "101",
         "visa_type": "Child",
-        "p50_raw": "24 Months",
+        "p50_raw": "29 Months",
         "p90_raw": "33 Months",
-        "days_median": 720,
+        "days_median": 870,
         "days_p90": 990,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "102": [
       {
         "stream_name": "102",
         "visa_type": "Adoption",
-        "p50_raw": "8 Months",
+        "p50_raw": "10 Months",
         "p90_raw": "19 Months",
-        "days_median": 240,
+        "days_median": 300,
         "days_p90": 570,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "117": [
@@ -700,10 +729,10 @@
         "stream_name": "117",
         "visa_type": "Orphan Relative",
         "p50_raw": "75 Months",
-        "p90_raw": "97 Months",
+        "p90_raw": "96 Months",
         "days_median": 2250,
-        "days_p90": 2910,
-        "official_updated": "29 September 2026"
+        "days_p90": 2880,
+        "official_updated": "02 November 2026"
       }
     ],
     "132": [
@@ -714,7 +743,7 @@
         "p90_raw": "70 Months",
         "days_median": 2010,
         "days_p90": 2100,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "155": [
@@ -725,111 +754,111 @@
         "p90_raw": "6 Days",
         "days_median": 1,
         "days_p90": 6,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "157": [
       {
         "stream_name": "157",
         "visa_type": "Resident Return",
-        "p50_raw": "18 Days",
-        "p90_raw": "65 Days",
-        "days_median": 18,
-        "days_p90": 65,
-        "official_updated": "29 September 2026"
+        "p50_raw": "12 Days",
+        "p90_raw": "62 Days",
+        "days_median": 12,
+        "days_p90": 62,
+        "official_updated": "02 November 2026"
       }
     ],
     "186": [
       {
         "stream_name": "Agreement Pathway",
         "visa_type": "Employer Nomination",
-        "p50_raw": "50 Days",
-        "p90_raw": "12 Months",
-        "days_median": 50,
-        "days_p90": 360,
-        "official_updated": "29 September 2026"
+        "p50_raw": "44 Days",
+        "p90_raw": "13 Months",
+        "days_median": 44,
+        "days_p90": 390,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Direct Entry Pathway",
         "visa_type": "Employer Nomination",
-        "p50_raw": "21 Months",
-        "p90_raw": "25 Months",
-        "days_median": 630,
-        "days_p90": 750,
-        "official_updated": "29 September 2026"
+        "p50_raw": "22 Months",
+        "p90_raw": "24 Months",
+        "days_median": 660,
+        "days_p90": 720,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Transition Pathway",
         "visa_type": "Employer Nomination",
-        "p50_raw": "21 Months",
-        "p90_raw": "25 Months",
-        "days_median": 630,
-        "days_p90": 750,
-        "official_updated": "29 September 2026"
+        "p50_raw": "22 Months",
+        "p90_raw": "24 Months",
+        "days_median": 660,
+        "days_p90": 720,
+        "official_updated": "02 November 2026"
       }
     ],
     "188": [
       {
         "stream_name": "Business Innovation Extension",
         "visa_type": "Business Innovation",
-        "p50_raw": "6 Months",
+        "p50_raw": "7 Months",
         "p90_raw": "11 Months",
-        "days_median": 180,
+        "days_median": 210,
         "days_p90": 330,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "189": [
       {
         "stream_name": "New Zealand",
         "visa_type": "Skilled Independent",
-        "p50_raw": "54 Months",
-        "p90_raw": "61 Months",
-        "days_median": 1620,
-        "days_p90": 1830,
-        "official_updated": "29 September 2026"
+        "p50_raw": "56 Months",
+        "p90_raw": "62 Months",
+        "days_median": 1680,
+        "days_p90": 1860,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Points-Tested",
         "visa_type": "Skilled Independent",
-        "p50_raw": "61 Days",
-        "p90_raw": "8 Months",
-        "days_median": 61,
-        "days_p90": 240,
-        "official_updated": "29 September 2026"
+        "p50_raw": "90 Days",
+        "p90_raw": "9 Months",
+        "days_median": 90,
+        "days_p90": 270,
+        "official_updated": "02 November 2026"
       }
     ],
     "190": [
       {
         "stream_name": "190",
         "visa_type": "Skilled Nominated",
-        "p50_raw": "4 Months",
+        "p50_raw": "8 Months",
         "p90_raw": "16 Months",
-        "days_median": 120,
+        "days_median": 240,
         "days_p90": 480,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "191": [
       {
         "stream_name": "Regional Provisional Visa",
         "visa_type": "Skilled Regional",
-        "p50_raw": "8 Months",
-        "p90_raw": "10 Months",
-        "days_median": 240,
-        "days_p90": 300,
-        "official_updated": "29 September 2026"
+        "p50_raw": "7 Months",
+        "p90_raw": "11 Months",
+        "days_median": 210,
+        "days_p90": 330,
+        "official_updated": "02 November 2026"
       }
     ],
     "300": [
       {
         "stream_name": "300",
         "visa_type": "Prospective Marriage",
-        "p50_raw": "14 Months",
-        "p90_raw": "26 Months",
-        "days_median": 420,
-        "days_p90": 780,
-        "official_updated": "29 September 2026"
+        "p50_raw": "18 Months",
+        "p90_raw": "31 Months",
+        "days_median": 540,
+        "days_p90": 930,
+        "official_updated": "02 November 2026"
       }
     ],
     "309": [
@@ -837,79 +866,79 @@
         "stream_name": "309",
         "visa_type": "Partner",
         "p50_raw": "21 Months",
-        "p90_raw": "32 Months",
+        "p90_raw": "35 Months",
         "days_median": 630,
-        "days_p90": 960,
-        "official_updated": "29 September 2026"
+        "days_p90": 1050,
+        "official_updated": "02 November 2026"
       }
     ],
     "400": [
       {
         "stream_name": "400",
         "visa_type": "Temporary Work",
-        "p50_raw": "8 Days",
-        "p90_raw": "43 Days",
-        "days_median": 8,
-        "days_p90": 43,
-        "official_updated": "29 September 2026"
+        "p50_raw": "12 Days",
+        "p90_raw": "41 Days",
+        "days_median": 12,
+        "days_p90": 41,
+        "official_updated": "02 November 2026"
       }
     ],
     "403": [
       {
         "stream_name": "Domestic Worker (Diplomatic or Consular)",
         "visa_type": "Diplomatic",
-        "p50_raw": "27 Days",
-        "p90_raw": "78 Days",
-        "days_median": 27,
-        "days_p90": 78,
-        "official_updated": "29 September 2026"
+        "p50_raw": "14 Days",
+        "p90_raw": "3 Months",
+        "days_median": 14,
+        "days_p90": 90,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Foreign Government Agency",
         "visa_type": "Diplomatic",
-        "p50_raw": "50 Days",
+        "p50_raw": "42 Days",
         "p90_raw": "4 Months",
-        "days_median": 50,
+        "days_median": 42,
         "days_p90": 120,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Government Agreement",
         "visa_type": "Diplomatic",
-        "p50_raw": "12 Days",
-        "p90_raw": "45 Days",
-        "days_median": 12,
-        "days_p90": 45,
-        "official_updated": "29 September 2026"
+        "p50_raw": "21 Days",
+        "p90_raw": "41 Days",
+        "days_median": 21,
+        "days_p90": 41,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Mobility Arrangement for Talented Early-professionals Scheme (MATES)",
         "visa_type": "Diplomatic",
-        "p50_raw": "4 Months",
-        "p90_raw": "5 Months",
-        "days_median": 120,
-        "days_p90": 150,
-        "official_updated": "29 September 2026"
+        "p50_raw": "69 Days",
+        "p90_raw": "3 Months",
+        "days_median": 69,
+        "days_p90": 90,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Pacific Australia Labour Mobility Scheme",
         "visa_type": "Diplomatic",
         "p50_raw": "15 Days",
-        "p90_raw": "30 Days",
+        "p90_raw": "29 Days",
         "days_median": 15,
-        "days_p90": 30,
-        "official_updated": "29 September 2026"
+        "days_p90": 29,
+        "official_updated": "02 November 2026"
       }
     ],
     "407": [
       {
         "stream_name": "407",
         "visa_type": "Training",
-        "p50_raw": "12 Months",
-        "p90_raw": "20 Months",
-        "days_median": 360,
-        "days_p90": 600,
-        "official_updated": "29 September 2026"
+        "p50_raw": "15 Months",
+        "p90_raw": "19 Months",
+        "days_median": 450,
+        "days_p90": 570,
+        "official_updated": "02 November 2026"
       }
     ],
     "408": [
@@ -917,95 +946,95 @@
         "stream_name": "Entertainment Activities",
         "visa_type": "Temporary Activity",
         "p50_raw": "23 Days",
-        "p90_raw": "47 Days",
+        "p90_raw": "40 Days",
         "days_median": 23,
-        "days_p90": 47,
-        "official_updated": "29 September 2026"
+        "days_p90": 40,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Exchange Arrangements",
         "visa_type": "Temporary Activity",
-        "p50_raw": "28 Days",
-        "p90_raw": "52 Days",
-        "days_median": 28,
-        "days_p90": 52,
-        "official_updated": "29 September 2026"
+        "p50_raw": "29 Days",
+        "p90_raw": "50 Days",
+        "days_median": 29,
+        "days_p90": 50,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Invited for Other Social and Cultural Activity",
         "visa_type": "Temporary Activity",
-        "p50_raw": "4 Days",
-        "p90_raw": "22 Days",
-        "days_median": 4,
-        "days_p90": 22,
-        "official_updated": "29 September 2026"
+        "p50_raw": "6 Days",
+        "p90_raw": "34 Days",
+        "days_median": 6,
+        "days_p90": 34,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Religious Work",
         "visa_type": "Temporary Activity",
-        "p50_raw": "3 Months",
-        "p90_raw": "5 Months",
-        "days_median": 90,
-        "days_p90": 150,
-        "official_updated": "29 September 2026"
+        "p50_raw": "4 Months",
+        "p90_raw": "10 Months",
+        "days_median": 120,
+        "days_p90": 300,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Research Activities",
         "visa_type": "Temporary Activity",
-        "p50_raw": "15 Months",
-        "p90_raw": "17 Months",
-        "days_median": 450,
-        "days_p90": 510,
-        "official_updated": "29 September 2026"
+        "p50_raw": "77 Days",
+        "p90_raw": "14 Months",
+        "days_median": 77,
+        "days_p90": 420,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Special Programs",
         "visa_type": "Temporary Activity",
-        "p50_raw": "31 Days",
-        "p90_raw": "56 Days",
-        "days_median": 31,
-        "days_p90": 56,
-        "official_updated": "29 September 2026"
+        "p50_raw": "7 Days",
+        "p90_raw": "30 Days",
+        "days_median": 7,
+        "days_p90": 30,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Sporting Activities",
         "visa_type": "Temporary Activity",
-        "p50_raw": "16 Days",
-        "p90_raw": "4 Months",
-        "days_median": 16,
-        "days_p90": 120,
-        "official_updated": "29 September 2026"
+        "p50_raw": "14 Days",
+        "p90_raw": "56 Days",
+        "days_median": 14,
+        "days_p90": 56,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Superyacht Crew",
         "visa_type": "Temporary Activity",
-        "p50_raw": "7 Days",
-        "p90_raw": "35 Days",
-        "days_median": 7,
-        "days_p90": 35,
-        "official_updated": "29 September 2026"
+        "p50_raw": "8 Days",
+        "p90_raw": "15 Days",
+        "days_median": 8,
+        "days_p90": 15,
+        "official_updated": "02 November 2026"
       }
     ],
     "417": [
       {
         "stream_name": "417",
         "visa_type": "Working Holiday",
-        "p50_raw": "2 Days",
-        "p90_raw": "58 Days",
-        "days_median": 2,
-        "days_p90": 58,
-        "official_updated": "29 September 2026"
+        "p50_raw": "58 Days",
+        "p90_raw": "80 Days",
+        "days_median": 58,
+        "days_p90": 80,
+        "official_updated": "02 November 2026"
       }
     ],
     "445": [
       {
         "stream_name": "445",
         "visa_type": "Dependent Child",
-        "p50_raw": "25 Months",
-        "p90_raw": "32 Months",
-        "days_median": 750,
-        "days_p90": 960,
-        "official_updated": "29 September 2026"
+        "p50_raw": "26 Months",
+        "p90_raw": "33 Months",
+        "days_median": 780,
+        "days_p90": 990,
+        "official_updated": "02 November 2026"
       }
     ],
     "461": [
@@ -1013,88 +1042,88 @@
         "stream_name": "461",
         "visa_type": "New Zealand Citizen Family Relationship",
         "p50_raw": "5 Months",
-        "p90_raw": "6 Months",
+        "p90_raw": "7 Months",
         "days_median": 150,
-        "days_p90": 180,
-        "official_updated": "29 September 2026"
+        "days_p90": 210,
+        "official_updated": "02 November 2026"
       }
     ],
     "462": [
       {
         "stream_name": "462",
         "visa_type": "Work and Holiday",
-        "p50_raw": "3 Days",
-        "p90_raw": "44 Days",
-        "days_median": 3,
-        "days_p90": 44,
-        "official_updated": "29 September 2026"
+        "p50_raw": "7 Days",
+        "p90_raw": "74 Days",
+        "days_median": 7,
+        "days_p90": 74,
+        "official_updated": "02 November 2026"
       }
     ],
     "482": [
       {
         "stream_name": "Core Skills",
         "visa_type": "Skills In Demand",
-        "p50_raw": "4 Months",
+        "p50_raw": "6 Months",
         "p90_raw": "9 Months",
-        "days_median": 120,
+        "days_median": 180,
         "days_p90": 270,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Labour Agreement",
         "visa_type": "Skills In Demand",
-        "p50_raw": "5 Months",
-        "p90_raw": "9 Months",
-        "days_median": 150,
-        "days_p90": 270,
-        "official_updated": "29 September 2026"
+        "p50_raw": "6 Months",
+        "p90_raw": "10 Months",
+        "days_median": 180,
+        "days_p90": 300,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Nomination",
         "visa_type": "Skills In Demand",
-        "p50_raw": "64 days",
+        "p50_raw": "36 Days",
         "p90_raw": "9 months",
-        "days_median": 64,
+        "days_median": 36,
         "days_p90": 270,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Specialist Skills",
         "visa_type": "Skills In Demand",
-        "p50_raw": "37 Days",
-        "p90_raw": "78 Days",
-        "days_median": 37,
-        "days_p90": 78,
-        "official_updated": "29 September 2026"
+        "p50_raw": "59 Days",
+        "p90_raw": "3 Months",
+        "days_median": 59,
+        "days_p90": 90,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Sponsorship",
         "visa_type": "Skills In Demand",
-        "p50_raw": "11 days",
-        "p90_raw": "57 days",
-        "days_median": 11,
-        "days_p90": 57,
-        "official_updated": "29 September 2026"
+        "p50_raw": "15 Days",
+        "p90_raw": "4 months",
+        "days_median": 15,
+        "days_p90": 120,
+        "official_updated": "02 November 2026"
       }
     ],
     "485": [
       {
         "stream_name": "Post-Higher Education Work",
         "visa_type": "Temporary Graduate",
-        "p50_raw": "5 Days",
-        "p90_raw": "55 Days",
-        "days_median": 5,
-        "days_p90": 55,
-        "official_updated": "29 September 2026"
+        "p50_raw": "16 Days",
+        "p90_raw": "33 Days",
+        "days_median": 16,
+        "days_p90": 33,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Post-Vocational Education Work",
         "visa_type": "Temporary Graduate",
         "p50_raw": "52 Days",
-        "p90_raw": "5 Months",
+        "p90_raw": "4 Months",
         "days_median": 52,
-        "days_p90": 150,
-        "official_updated": "29 September 2026"
+        "days_p90": 120,
+        "official_updated": "02 November 2026"
       }
     ],
     "491": [
@@ -1105,112 +1134,112 @@
         "p90_raw": "7 Months",
         "days_median": 120,
         "days_p90": 210,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "State/Territory Government Nominated Regional",
         "visa_type": "Skilled Work Regional",
-        "p50_raw": "5 Months",
-        "p90_raw": "18 Months",
-        "days_median": 150,
-        "days_p90": 540,
-        "official_updated": "29 September 2026"
+        "p50_raw": "17 Months",
+        "p90_raw": "30 Months",
+        "days_median": 510,
+        "days_p90": 900,
+        "official_updated": "02 November 2026"
       }
     ],
     "494": [
       {
         "stream_name": "Employer Sponsored",
         "visa_type": "Skilled Employer Sponsored Regional",
-        "p50_raw": "8 Months",
-        "p90_raw": "12 Months",
-        "days_median": 240,
-        "days_p90": 360,
-        "official_updated": "29 September 2026"
+        "p50_raw": "10 Months",
+        "p90_raw": "20 Months",
+        "days_median": 300,
+        "days_p90": 600,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Labour Agreement",
         "visa_type": "Skilled Employer Sponsored Regional",
-        "p50_raw": "4 Months",
-        "p90_raw": "12 Months",
-        "days_median": 120,
-        "days_p90": 360,
-        "official_updated": "29 September 2026"
+        "p50_raw": "86 Days",
+        "p90_raw": "13 Months",
+        "days_median": 86,
+        "days_p90": 390,
+        "official_updated": "02 November 2026"
       }
     ],
     "500": [
       {
         "stream_name": "Foreign Affairs or Defence Sector",
         "visa_type": "Student",
-        "p50_raw": "3 Days",
-        "p90_raw": "22 Days",
-        "days_median": 3,
-        "days_p90": 22,
-        "official_updated": "29 September 2026"
+        "p50_raw": "1 Day",
+        "p90_raw": "25 Days",
+        "days_median": 1,
+        "days_p90": 25,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Higher Education Sector",
         "visa_type": "Student",
-        "p50_raw": "16 Days",
-        "p90_raw": "4 Months",
-        "days_median": 16,
-        "days_p90": 120,
-        "official_updated": "29 September 2026"
+        "p50_raw": "25 Days",
+        "p90_raw": "7 Months",
+        "days_median": 25,
+        "days_p90": 210,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Independent ELICOS Sector",
         "visa_type": "Student",
-        "p50_raw": "22 Days",
-        "p90_raw": "53 Days",
-        "days_median": 22,
-        "days_p90": 53,
-        "official_updated": "29 September 2026"
+        "p50_raw": "11 Days",
+        "p90_raw": "49 Days",
+        "days_median": 11,
+        "days_p90": 49,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Non-Award Sector",
         "visa_type": "Student",
-        "p50_raw": "3 Days",
-        "p90_raw": "43 Days",
-        "days_median": 3,
-        "days_p90": 43,
-        "official_updated": "29 September 2026"
+        "p50_raw": "Less than 1 Day",
+        "p90_raw": "23 Days",
+        "days_median": 1,
+        "days_p90": 23,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Postgraduate Research Sector",
         "visa_type": "Student",
-        "p50_raw": "17 Days",
-        "p90_raw": "55 Days",
-        "days_median": 17,
-        "days_p90": 55,
-        "official_updated": "29 September 2026"
+        "p50_raw": "25 Days",
+        "p90_raw": "66 Days",
+        "days_median": 25,
+        "days_p90": 66,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Schools Sector",
         "visa_type": "Student",
-        "p50_raw": "28 Days",
+        "p50_raw": "24 Days",
         "p90_raw": "7 Months",
-        "days_median": 28,
+        "days_median": 24,
         "days_p90": 210,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Vocational Education and Training Sector",
         "visa_type": "Student",
-        "p50_raw": "53 Days",
+        "p50_raw": "4 Months",
         "p90_raw": "7 Months",
-        "days_median": 53,
+        "days_median": 120,
         "days_p90": 210,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "590": [
       {
         "stream_name": "590",
         "visa_type": "Student Guardian",
-        "p50_raw": "43 Days",
+        "p50_raw": "34 Days",
         "p90_raw": "8 Months",
-        "days_median": 43,
+        "days_median": 34,
         "days_p90": 240,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "600": [
@@ -1218,28 +1247,28 @@
         "stream_name": "Business Visitor",
         "visa_type": "Visitor",
         "p50_raw": "7 Days",
-        "p90_raw": "19 Days",
+        "p90_raw": "23 Days",
         "days_median": 7,
-        "days_p90": 19,
-        "official_updated": "29 September 2026"
+        "days_p90": 23,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Sponsored Family",
         "visa_type": "Visitor",
         "p50_raw": "40 Days",
-        "p90_raw": "3 Months",
+        "p90_raw": "89 Days",
         "days_median": 40,
-        "days_p90": 90,
-        "official_updated": "29 September 2026"
+        "days_p90": 89,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Tourist",
         "visa_type": "Visitor",
         "p50_raw": "21 Days",
-        "p90_raw": "33 Days",
+        "p90_raw": "31 Days",
         "days_median": 21,
-        "days_p90": 33,
-        "official_updated": "29 September 2026"
+        "days_p90": 31,
+        "official_updated": "02 November 2026"
       }
     ],
     "601": [
@@ -1250,18 +1279,18 @@
         "p90_raw": "Less than 1 Day",
         "days_median": 1,
         "days_p90": 1,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "602": [
       {
         "stream_name": "602",
         "visa_type": "Medical Treatment",
-        "p50_raw": "19 Days",
+        "p50_raw": "21 Days",
         "p90_raw": "3 Months",
-        "days_median": 19,
+        "days_median": 21,
         "days_p90": 90,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "651": [
@@ -1272,7 +1301,7 @@
         "p90_raw": "Less than 1 Day",
         "days_median": 1,
         "days_p90": 1,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "771": [
@@ -1280,21 +1309,21 @@
         "stream_name": "771",
         "visa_type": "Transit",
         "p50_raw": "3 Days",
-        "p90_raw": "13 Days",
+        "p90_raw": "17 Days",
         "days_median": 3,
-        "days_p90": 13,
-        "official_updated": "29 September 2026"
+        "days_p90": 17,
+        "official_updated": "02 November 2026"
       }
     ],
     "801": [
       {
         "stream_name": "801",
         "visa_type": "Partner",
-        "p50_raw": "8 Months",
+        "p50_raw": "6 Months",
         "p90_raw": "19 Months",
-        "days_median": 240,
+        "days_median": 180,
         "days_p90": 570,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "802": [
@@ -1305,18 +1334,18 @@
         "p90_raw": "31 Months",
         "days_median": 630,
         "days_p90": 930,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "820": [
       {
         "stream_name": "820",
         "visa_type": "Partner",
-        "p50_raw": "22 Months",
+        "p50_raw": "21 Months",
         "p90_raw": "30 Months",
-        "days_median": 660,
+        "days_median": 630,
         "days_p90": 900,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "858": [
@@ -1327,27 +1356,27 @@
         "p90_raw": "24 Months",
         "days_median": 480,
         "days_p90": 720,
-        "official_updated": "12 October 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "National Innovation",
         "visa_type": "National Innovation",
-        "p50_raw": "6 Months",
+        "p50_raw": "78 Days",
         "p90_raw": "7 Months",
-        "days_median": 180,
+        "days_median": 78,
         "days_p90": 210,
-        "official_updated": "12 October 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "870": [
       {
         "stream_name": "Sponsorship",
         "visa_type": "Sponsored Parent",
-        "p50_raw": "89 days",
+        "p50_raw": "4 months",
         "p90_raw": "4 months",
-        "days_median": 89,
+        "days_median": 120,
         "days_p90": 120,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Visa Application",
@@ -1356,7 +1385,7 @@
         "p90_raw": "9 Months",
         "days_median": 210,
         "days_p90": 270,
-        "official_updated": "29 September 2026"
+        "official_updated": "02 November 2026"
       }
     ],
     "887": [
@@ -1364,10 +1393,10 @@
         "stream_name": "887",
         "visa_type": "Skilled Regional",
         "p50_raw": "10 Months",
-        "p90_raw": "17 Months",
+        "p90_raw": "11 Months",
         "days_median": 300,
-        "days_p90": 510,
-        "official_updated": "29 September 2026"
+        "days_p90": 330,
+        "official_updated": "02 November 2026"
       }
     ],
     "888": [
@@ -1375,28 +1404,28 @@
         "stream_name": "Business Innovation",
         "visa_type": "Business Innovation & Investment",
         "p50_raw": "9 Months",
-        "p90_raw": "10 Months",
+        "p90_raw": "11 Months",
         "days_median": 270,
-        "days_p90": 300,
-        "official_updated": "29 September 2026"
+        "days_p90": 330,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Investor",
         "visa_type": "Business Innovation & Investment",
-        "p50_raw": "5 Months",
-        "p90_raw": "6 Months",
-        "days_median": 150,
-        "days_p90": 180,
-        "official_updated": "29 September 2026"
+        "p50_raw": "6 Months",
+        "p90_raw": "9 Months",
+        "days_median": 180,
+        "days_p90": 270,
+        "official_updated": "02 November 2026"
       },
       {
         "stream_name": "Significant Investor",
         "visa_type": "Business Innovation & Investment",
         "p50_raw": "4 Months",
-        "p90_raw": "8 Months",
+        "p90_raw": "6 Months",
         "days_median": 120,
-        "days_p90": 240,
-        "official_updated": "29 September 2026"
+        "days_p90": 180,
+        "official_updated": "02 November 2026"
       }
     ],
     "988": [
@@ -1404,10 +1433,10 @@
         "stream_name": "988",
         "visa_type": "Maritime Crew",
         "p50_raw": "Less than 1 Day",
-        "p90_raw": "3 Days",
+        "p90_raw": "2 Days",
         "days_median": 1,
-        "days_p90": 3,
-        "official_updated": "29 September 2026"
+        "days_p90": 2,
+        "official_updated": "02 November 2026"
       }
     ]
   }

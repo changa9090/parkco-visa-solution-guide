@@ -512,6 +512,15 @@
 
     // Video Modal & Legal Footer
     { sel: "#btn-close-video-modal", attrs: { "aria-label": "Close video player" } },
+    { sel: "#eco-link-hub", text: "← Park & Co Legal & Visa Hub" },
+    {
+      sel: "#eco-link-faq",
+      text: "Immigration FAQ (48 Guides) ↗",
+      attrs: { href: "https://faq.immispecialist.com/?lang=en" },
+    },
+    { sel: "#eco-link-tracker", text: "Live Visa Processing Times ↗" },
+    { sel: "#eco-link-intel", text: "Legislation · FOI · Stats Hub ↗" },
+    { sel: "#diag-selected-occ-badge", text: "Selected Occupation: Unspecified (All Pathways)" },
     { sel: "#video-modal-ext-link", text: "Watch on YouTube ↗" },
     { sel: "#vc-lbl-total", text: "Total Visits" },
     { sel: "#vc-lbl-today", text: "Today" },
@@ -521,7 +530,7 @@
       sel: ".footer-firm-info",
       html:
         "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law — QLS)<br>" +
-        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener noreferrer">parklawyers.com.au/links</a>',
+        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener noreferrer">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener noreferrer">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener noreferrer">Immigration FAQ</a>',
     },
     {
       sel: ".footer-disclaimer p",

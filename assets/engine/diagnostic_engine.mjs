@@ -276,7 +276,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       detail_ko:
         "호주 입국 후 비자가 거절·취소되어 실질 비자(Substantive Visa)가 없는 상태라면 Migration Act s 48에 의해 " +
         "호주 내에서 대부분의 일반 비자(482·500·189·186 등) 재접수가 법적으로 차단돼요. " +
-        "ART(행정재심재판소, 접수비 $3,727) 재심 기한을 즉시 확인하거나, s 48 예외 비자(190 · 491 · 494 · 파트너 820) 및 출국 후 해외 접수 전략을 정밀 검토해야 해요.",
+        "ART(행정재심기구, 접수비 $3,727) 재심 기한을 즉시 확인하거나, s 48 예외 비자(190 · 491 · 494 · 파트너 820) 및 출국 후 해외 접수 전략을 정밀 검토해야 해요.",
       detail_en:
         "If you were refused or cancelled since last entering Australia and do not hold a substantive visa, Migration Act s 48 legally bars onshore lodgement of most visas (482, 500, 189, 186, etc.). " +
         "Verify your non-extendable ART merits review deadline ($3,727 fee) immediately, or assess s 48 exempt onshore visas (190, 491, 494, Partner 820) and offshore lodgement options.",

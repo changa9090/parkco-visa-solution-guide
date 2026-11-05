@@ -18,7 +18,13 @@
     try {
       const qsLang = new URLSearchParams(window.location.search).get("lang");
       if (qsLang) {
-        return qsLang.trim().toLowerCase().startsWith("en") ? "en" : "ko";
+        const detected = qsLang.trim().toLowerCase().startsWith("en") ? "en" : "ko";
+        try {
+          window.localStorage?.setItem(LANG_STORAGE_KEY, detected);
+        } catch {
+          // Ignore storage write errors
+        }
+        return detected;
       }
       const saved = window.localStorage?.getItem(LANG_STORAGE_KEY);
       if (saved === "en" || saved === "ko") return saved;
@@ -265,6 +271,8 @@
     "module-pathways": "module-pathways",
     "module-consult": "module-consult",
     "module-guide": "module-guide",
+    "guide-calculators-section": "module-guide",
+    "specialist-navigators-grid": "module-consult",
     "sec-guide": "module-guide",
     "sec-simulator": "module-diagnose",
     "sec-occupations": "module-sol",
@@ -276,14 +284,20 @@
       const rawHash = String(window.location.hash || "").replace(/^#/, "").trim();
       const targetMod = HASH_MODULE_ALIASES[rawHash];
       if (targetMod) {
-        switchModule(targetMod, scrollIntoView);
+        const innerTarget = rawHash !== targetMod ? qs(`#${CSS.escape(rawHash)}`) : null;
+        switchModule(targetMod, scrollIntoView && !innerTarget, false);
+        if (innerTarget && scrollIntoView) {
+          requestAnimationFrame(() => {
+            innerTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }
       }
     } catch {
       // Ignore URL hash errors
     }
   }
 
-  function switchModule(moduleId, scrollIntoView = true) {
+  function switchModule(moduleId, scrollIntoView = true, syncHash = true) {
     state.activeModule = moduleId;
     qsa(".module-tab").forEach((btn) => {
       const active = btn.dataset.moduleTab === moduleId;
@@ -293,6 +307,18 @@
     qsa(".workspace-module").forEach((sec) => {
       sec.classList.toggle("is-active", sec.id === moduleId);
     });
+    if (syncHash && window.history?.replaceState) {
+      try {
+        const curHash = String(window.location.hash || "").replace(/^#/, "").trim();
+        if (!curHash || HASH_MODULE_ALIASES[curHash] !== moduleId) {
+          const url = new URL(window.location.href);
+          url.hash = `#${moduleId}`;
+          window.history.replaceState({}, "", url.toString());
+        }
+      } catch {
+        // Ignore history errors
+      }
+    }
     if (scrollIntoView) {
       const rail = qs(".module-nav-rail");
       if (rail) {
@@ -1253,8 +1279,9 @@
         .map((n) => {
           const nTag = isEn() ? n.tag_en || n.tag : n.tag;
           const nTitle = isEn() ? n.title_en || n.title_ko : n.title_ko;
+          const nUrl = isEn() ? n.url_en || n.url : n.url;
           return `
-          <a href="${escapeHtml(n.url)}" target="_blank" rel="noopener noreferrer" class="nav-tool-card">
+          <a href="${escapeHtml(nUrl)}" target="_blank" rel="noopener noreferrer" class="nav-tool-card">
             <span class="nav-tool-tag">${escapeHtml(nTag)}</span>
             <span class="nav-tool-title">${escapeHtml(nTitle)} ↗</span>
           </a>`;
@@ -1609,6 +1636,12 @@
         }
       }
 
+      if (sp.has("q") && qs("#sol-search-input")) {
+        qs("#sol-search-input").value = (sp.get("q") || "").trim();
+      }
+      if (sp.has("visa") && qs("#sol-visa-filter")) {
+        qs("#sol-visa-filter").value = (sp.get("visa") || "").trim();
+      }
       if (sp.has("offer") && qs("#diag-has-sponsor")) {
         const hasSponsor = sp.get("offer") === "1" || sp.get("offer") === "true";
         qs("#diag-has-sponsor").checked = hasSponsor;

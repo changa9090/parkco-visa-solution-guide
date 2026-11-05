@@ -969,19 +969,19 @@
     {
       "number": 11,
       "id": "ch11_art_fcfcoa_judicial",
-      "title_ko": "제11장 · 행정재심재판소(ART A$3,727)·학생비자 서면심리 개편 및 연방순회·가족법원(FCFCOA)",
+      "title_ko": "제11장 · 행정재심기구(ART A$3,727)·학생비자 서면심리 개편 및 연방순회·가족법원(FCFCOA)",
       "title_en": "Chapter 11 · ART Merits Review (A$3,727), On-the-Papers Reform & FCFCOA Judicial Review",
       "subtitle_ko": "s 347(3) 28일/14일 불변기한 · s 367C/reg 4.18 구두청문 폐지 · 사법심사 및 s 351 장관 탄원",
       "subtitle_en": "s 347(3) 28d/14d Clocks · s 367C/reg 4.18 Paper Review · FCFCOA & s 351 Intervention",
-      "statutory_basis": "Migration Act 1958 ss 338, 347(3), 347(5), 351, 367C–367H, 476, 477; regs 4.13, 4.18–4.20",
+      "statutory_basis": "Migration Act 1958 ss 338, 347(3), 347(5), 351, 367C–367H, 476, 477; regs 4.13, 4.18–4.20, 4.31B",
       "summary_ko": "비자·스폰서십 거절 결정문을 받았다면 사실관계와 신규 증거까지 다시 판단받는 ART 사실심(Merits Review)과 위법성만을 다투는 법원 사법심사(Judicial Review)의 차이를 정확히 이해하고 불변기한을 사수해야 해요.",
       "summary_en": "Following a visa or nomination refusal, preserving lawful stay and reversal prospects depends on mastering non-extendable ART merits review clocks, paper-review rules, and FCFCOA judicial review.",
       "sections": [
         {
           "heading_ko": "1. ART 접수 불변기한(s 347(3): 일반 28일 · 구금 14일)과 수수료(A$3,727)",
           "heading_en": "1. Non-Extendable ART Clocks (s 347(3): 28d General / 14d Detention) & A$3,727 Fee",
-          "body_ko": "현행 Migration Act s 347(3)에 따라 일반 이민·보호비자 거절 재심은 통지일 다음 날부터 28일 이내, 통지 당일 이민구금 상태인 경우 14일 이내에 접수해야 하며, s 347(5)가 ART법상 기한 연장 조항(s 19)을 명시적으로 배제하므로 단 하루도 연장이 불가능해요. FY2026–27 일반 이민 결정 재심 수수료는 A$3,727(경제적 곤궁 승인 시 50% 감액 A$1,863.50, 승소·환송 시 납부액의 50% 환급)예요.",
-          "body_en": "Under Migration Act s 347(3), ART review must be lodged within 28 days after notification (or 14 days if in immigration detention on the notification day), with zero extension power (s 347(5)). The 1 July 2026 migration review fee is A$3,727 (50% financial hardship reduction A$1,863.50; 50% refunded upon favourable remittal/set-aside)."
+          "body_ko": "현행 Migration Act s 347(3)에 따라 일반 이민·보호비자 거절 재심은 통지일 다음 날부터 28일 이내, 통지 당일 이민구금 상태인 경우 14일 이내에 접수해야 하며, s 347(5)가 ART법상 기한 연장 조항(s 19)을 명시적으로 배제하므로 단 하루도 연장이 불가능해요. FY2026–27 일반 이민 결정 재심 수수료는 A$3,727(경제적 곤궁 승인 시 50% 감액 A$1,863.50, 승소·환송 시 납부액의 50% 환급)이며, 2026년 11월 1일 이후 접수하는 보호비자(Protection) 재심은 reg 4.31B(F2026L01448)에 따라 선납 수수료 A$1,863.50(곤궁 감면 불가 · 승소 시 전액 환급)이 적용돼요.",
+          "body_en": "Under Migration Act s 347(3), ART review must be lodged within 28 days after notification (or 14 days if in immigration detention on the notification day), with zero extension power (s 347(5)). The 1 July 2026 migration review fee is A$3,727 (50% financial hardship reduction A$1,863.50; 50% refunded upon favourable remittal/set-aside), while Protection Visa reviews lodged on or after 1 November 2026 require a mandatory upfront fee of A$1,863.50 under reg 4.31B (F2026L01448, no hardship reduction; 100% refunded if successful)."
         },
         {
           "heading_ko": "2. 학생비자 구두청문 폐지(s 367C · reg 4.18 서면심리)와 연방순회·가족법원(FCFCOA) 사법심사",
