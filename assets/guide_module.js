@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Park & Co Australian Visa Solution Guide — Module 07: Master Guide & Clocks
+   Park & Co Australian Visa Solution Guide · Module 07: Master Guide & Clocks
    ========================================================================== */
 (() => {
   "use strict";
@@ -154,7 +154,7 @@
         <label class="calc-lbl">${en ? "Decision / Notice Type" : "통지·처분 유형"}
           <select name="decision_type" class="input-control">
             <option value="general_refusal_onshore">${en ? "General Onshore Visa/Nomination Refusal (28d)" : "일반 비자·노미네이션 거절 (s 347(3)(b) 28일)"}</option>
-            <option value="student_500_refusal_onshore">${en ? "Student Subclass 500 Refusal — Paper Review (28d)" : "학생비자(500) 거절 — s 367C 서면심리 (28일)"}</option>
+            <option value="student_500_refusal_onshore">${en ? "Student Subclass 500 Refusal · Paper Review (28d)" : "학생비자(500) 거절 · s 367C 서면심리 (28일)"}</option>
             <option value="detention_refusal">${en ? "Refusal in Immigration Detention (14d)" : "이민구금(Detention) 중 통지 결정 (s 347(3)(a) 14일)"}</option>
             <option value="s501_delegate_onshore">${en ? "Onshore s 501 / s 501CA(4) Character Review (9d!)" : "호주 내 s 501 / s 501CA(4) 인성 재심 (단 9일!)"}</option>
             <option value="s501ca_mandatory_cancel">${en ? "s 501(3A) Mandatory Cancellation Revocation (28d)" : "s 501(3A) 의무취소 철회 청구 (28일)"}</option>
@@ -198,7 +198,7 @@
         <label class="calc-lbl">${en ? "Applicant Stream" : "신청자 구분"}
           <select name="applicant_stream" class="input-control">
             <option value="standard_pr">${en ? "Standard Permanent Resident" : "일반 영주권자 (189/190/186/801 등)"}</option>
-            <option value="nz_scv_444">${en ? "New Zealand Citizen (Subclass 444 SCV — CPI 20)" : "뉴질랜드 시민권자 (Subclass 444 — CPI 20 직행)"}</option>
+            <option value="nz_scv_444">${en ? "New Zealand Citizen (Subclass 444 SCV · CPI 20)" : "뉴질랜드 시민권자 (Subclass 444 · CPI 20 직행)"}</option>
           </select>
         </label>
         <div class="form-row-2">
