@@ -605,12 +605,12 @@
   ],
   "specialist_navigators": [
     {
-      "title_ko": "호주이민 실전 FAQ 백과사전 (48개 핵심 한·영 가이드)",
-      "title_en": "Australian Immigration FAQ Knowledge Base (48 Bilingual Guides)",
+      "title_ko": "호주이민 실전 FAQ 백과사전 (한·영 핵심 가이드)",
+      "title_en": "Australian Immigration FAQ Knowledge Base (Bilingual Guides)",
       "url": "https://faq.immispecialist.com/?lang=ko",
       "url_en": "https://faq.immispecialist.com/?lang=en",
-      "tag": "48개 한·영 FAQ",
-      "tag_en": "48 Bilingual FAQs"
+      "tag": "한·영 실무 FAQ",
+      "tag_en": "Bilingual FAQs"
     },
     {
       "title_ko": "GSM 점수·139개 직종 커트라인 & 8개 주정부 진단기",

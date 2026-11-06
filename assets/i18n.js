@@ -515,7 +515,7 @@
     { sel: "#eco-link-hub", text: "← Park & Co Legal & Visa Hub" },
     {
       sel: "#eco-link-faq",
-      text: "Immigration FAQ (48 Guides) ↗",
+      text: "Immigration FAQ ↗",
       attrs: { href: "https://faq.immispecialist.com/?lang=en" },
     },
     { sel: "#eco-link-tracker", text: "Live Visa Processing Times ↗" },
