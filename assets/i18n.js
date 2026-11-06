@@ -71,6 +71,10 @@
       attrs: { "aria-label": "Chang Min Park QLS Accredited Specialist Credentials" },
     },
     {
+      sel: ".specialist-card-top",
+      attrs: { href: "https://parklawyers.com.au/our-people/chang-park/" },
+    },
+    {
       sel: ".qls-specialist-badge",
       attrs: { alt: "Queensland Law Society Accredited Specialist in Immigration Law Official Badge" },
     },
