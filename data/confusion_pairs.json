@@ -9,7 +9,7 @@
       "141111"
     ],
     "distinction_ko": "Chef(351311, Skill Level 2)는 메뉴 기획·원가 관리·주방 스태프 감독이 핵심이며 MLTSSL+CSOL에 올라 189·190·491·482·186 모두 열려 있어요. 반면 Cook(351411, Skill Level 3)은 STSOL+CSOL 소속이라 189 독립기술이민은 불가하고 190·491·482·186으로 진행해야 하며, Cafe or Restaurant Manager(141111, Skill Level 2)는 STSOL 단독이라 190·491·494 또는 지역 DAMA 스폰서십 중심으로 접근해야 해요. 외식업 직종으로 482·186·494 진행 시 패스트푸드·테이크어웨이·제한적 서비스 카페(Limited Service Restaurant) 제외 Caveat이 엄격히 적용돼요.",
-    "distinction_en": "Chef (351311, Skill Level 2, MLTSSL+CSOL) requires menu planning, food costing, and kitchen supervision—unlocking 189, 190, 491, 482, and 186. Cook (351411, Skill Level 3, STSOL+CSOL) excludes 189 but allows 190/491/482/186, while Cafe or Restaurant Manager (141111, STSOL) relies on 190/491/494 or regional DAMAs. Strict Limited Service Restaurant caveats apply to sponsored hospitality roles."
+    "distinction_en": "Chef (351311, Skill Level 2, MLTSSL+CSOL) requires menu planning, food costing, and kitchen supervision, unlocking 189, 190, 491, 482, and 186. Cook (351411, Skill Level 3, STSOL+CSOL) excludes 189 but allows 190/491/482/186, while Cafe or Restaurant Manager (141111, STSOL) relies on 190/491/494 or regional DAMAs. Strict Limited Service Restaurant caveats apply to sponsored hospitality roles."
   },
   {
     "group_id": "ict_software_dev_ba",
@@ -38,7 +38,7 @@
   },
   {
     "group_id": "nursing_rn_agedcare",
-    "title_ko": "정규 간호사(RN 2544xx) vs 노인·장애인 케어워커(423111 — Aged Care Labour Agreement / DAMA)",
+    "title_ko": "정규 간호사(RN 2544xx) vs 노인·장애인 케어워커(423111 · Aged Care Labour Agreement / DAMA)",
     "title_en": "Registered Nurse (2544xx) vs Aged / Disabled Carer (Aged Care Labour Agreement & DAMA)",
     "codes": [
       "254499",
@@ -46,7 +46,7 @@
       "254418",
       "411411"
     ],
-    "distinction_ko": "Registered Nurse(2544xx)는 AHPRA 간호사 등록과 ANMAC 기술심사가 필수인 최우선 영주권 직종(MLTSSL+CSOL)이에요. 반면 Certificate III/IV 기반 Personal Care Assistant / Aged or Disabled Carer는 일반 SOL에는 없지만, Aged Care Industry Labour Agreement 또는 13개 지역 DAMA를 통해 482 → 186 영주권 패스웨이가 열려 있어요.",
+    "distinction_ko": "Registered Nurse(2544xx)는 AHPRA 간호사 등록과 ANMAC 기술심사가 필수인 최우선 영주권 직종(MLTSSL+CSOL)이에요. 반면 Certificate III/IV 기반 Personal Care Assistant / Aged or Disabled Carer는 일반 SOL에는 없지만 Aged Care Industry Labour Agreement 또는 13개 지역 DAMA로 482 → 186 영주권 패스웨이가 열려 있어요.",
     "distinction_en": "Registered Nurses (2544xx) require AHPRA registration and ANMAC skills assessment on MLTSSL+CSOL (top GSM & sponsor priority). Certificate III/IV Personal Care Workers sit outside the standard SOL but have dedicated 482 -> 186 PR pathways via the Aged Care Industry Labour Agreement or 13 regional DAMAs."
   },
   {
@@ -62,8 +62,8 @@
   },
   {
     "group_id": "trades_welder_fabricator_tiler",
-    "title_ko": "1급 용접사(322313) vs 제관사(322311) & 타일러(333411) — TRA 기술심사",
-    "title_en": "Welder (322313) vs Metal Fabricator (322311) & Wall and Floor Tiler (333411) — TRA",
+    "title_ko": "1급 용접사(322313) vs 제관사(322311) & 타일러(333411) · TRA 기술심사",
+    "title_en": "Welder (322313) vs Metal Fabricator (322311) & Wall and Floor Tiler (333411) · TRA",
     "codes": [
       "322313",
       "322311",

@@ -6,7 +6,7 @@
   "title_ko": "호주 이민제도 · 비자 심사 · 불복 · 시민권 완벽 가이드 (2026–27 현행법 판)",
   "title_en": "Complete Guide to the Australian Migration, Visa, Review & Citizenship System (FY2026–27)",
   "author_ko": "법무법인 박앤코 (Park & Co Lawyers) · 박창민 대표변호사 (QLS 공인 이민법 전문변호사)",
-  "author_en": "Park & Co Lawyers · Chang Min Park (Legal Practitioner Director · Accredited Specialist in Immigration Law — QLS)",
+  "author_en": "Park & Co Lawyers · Chang Min Park (Legal Practitioner Director · Accredited Specialist in Immigration Law · QLS)",
   "official_inquiry_url_ko": "https://parklawyers.com.au/links/?lang=ko",
   "official_inquiry_url_en": "https://parklawyers.com.au/links/",
   "calculators_catalog": [
@@ -51,12 +51,12 @@
           "heading_ko": "1. 신청 유효성(Schedule 1)과 승인 요건(Schedule 2)의 엄격한 분리",
           "heading_en": "1. Strict Separation Between Validity (Schedule 1) and Grant Criteria (Schedule 2)",
           "body_ko": "Migration Act s 46 및 Schedule 1 요건(정확한 비자비 납부, 호주 내외 위치, s 48 재접수 제한 부존재, 지정 양식)을 하나라도 놓치면 비자 신청 자체가 법적으로 무효(Invalid Application)가 되어 브릿징 비자조차 발급되지 않아요. 유효하게 접수된 뒤에야 s 65에 따라 Schedule 2 세부 승인 요건(접수 시점 Time of Application 및 결정 시점 Time of Decision 요건)을 심사해요.",
-          "body_en": "Under s 46 and Schedule 1, missing any validity requirement—correct VAC payment, onshore/offshore location, absence of a s 48 bar, or prescribed form—renders the application legally invalid with no Bridging Visa granted. Only valid applications proceed to s 65 assessment against Schedule 2 Time of Application and Time of Decision criteria."
+          "body_en": "Under s 46 and Schedule 1, missing any validity requirement (correct VAC payment, onshore/offshore location, absence of a s 48 bar, or prescribed form) renders the application legally invalid with no Bridging Visa granted. Only valid applications proceed to s 65 assessment against Schedule 2 Time of Application and Time of Decision criteria."
         },
         {
           "heading_ko": "2. Legislative Instrument(장관 고시)와 LEGENDcom 심사지침의 역할",
           "heading_en": "2. Role of Legislative Instruments and LEGENDcom Policy (PAM3)",
-          "body_ko": "직종 리스트(SOL), 최소 연봉(CSIT/SSIT), 영어 시험 점수표는 시행령 본문이 아닌 장관 고시(Legislative Instrument)로 수시 개정돼요. 이민성 내부 지침(LEGENDcom PAM3)은 심사관의 해석 기준이지만 법령 원문과 충돌할 수 없으며, 법령과 지침의 간극을 짚어내는 것이 전문변호사의 핵심 역량이에요.",
+          "body_ko": "직종 리스트(SOL), 최소 연봉(CSIT/SSIT), 영어 시험 점수표는 시행령 본문이 아닌 장관 고시(Legislative Instrument)로 수시 개정돼요. 이민성 내부 지침(LEGENDcom PAM3)은 심사관의 해석 기준이지만 법령 원문과 충돌할 수 없어요. 법령과 지침의 간극을 짚어내는 것이 전문변호사의 핵심 역량이에요.",
           "body_en": "Occupation lists, salary floors (CSIT/SSIT), and English score matrices are updated dynamically via Legislative Instruments. Departmental policy in LEGENDcom guides case officers but cannot override the statute or regulations where policy is unlawfully restrictive."
         }
       ],
@@ -138,7 +138,7 @@
       "subtitle_en": "MLTSSL · STSOL · ROL · CSOL & Assessing Authorities (ACS, VETASSESS, TRA, EA, ANMAC)",
       "statutory_basis": "Migration Regulations 1994 reg 2.26B; CSOL & Skilled Occupation Instruments (714 roles)",
       "summary_ko": "호주 기술·스폰서 이민의 첫 단추는 직함(Job Title)이 아니라 ABS ANZSCO 고유 직무(Tasks)와 일치하는 직종 선정, 기술심사 통과, 그리고 숨겨진 법령 Caveat 검증이에요.",
-      "summary_en": "Skilled and employer-sponsored migration starts with matching actual daily duties—not job titles—to ABS ANZSCO tasks, passing the relevant Skills Assessment, and clearing statutory caveats.",
+      "summary_en": "Skilled and employer-sponsored migration starts with matching actual daily duties, not job titles, to ABS ANZSCO tasks, passing the relevant Skills Assessment, and clearing statutory caveats.",
       "sections": [
         {
           "heading_ko": "1. 리스트별 열려 있는 영주권 사다리 구분",
@@ -231,7 +231,7 @@
       "subtitle_en": "SkillSelect EOI Rounds · State Nomination · Item 6D51 20-Point Employment Cap",
       "statutory_basis": "Migration Act 1958 s 93; Migration Regulations 1994 reg 2.26AC, Schedule 6D, Subclasses 189/190/491/191",
       "summary_ko": "법정 최소 점수인 65점은 EOI 등록 자격선일 뿐이며, 초청장 발부 시점(Time of Invitation)에 주장한 점수를 단 5점이라도 입증하지 못하면 비자는 반드시 거절돼요.",
-      "summary_en": "While 65 points is the statutory pool mark, failing to substantiate every point claimed at the Time of Invitation—even if still above 65—triggers mandatory refusal under s 65.",
+      "summary_en": "While 65 points is the statutory pool mark, failing to substantiate every point claimed at the Time of Invitation, even if still above 65, triggers mandatory refusal under s 65.",
       "sections": [
         {
           "heading_ko": "1. 189 · 190(+5점) · 491(+15점 → 3년 후 191 영주권) 구조",
@@ -406,7 +406,7 @@
         ]
       },
       "practitioner_alert_ko": "노미네이션(1단계)이 거절될 때 비자(2단계)를 동시에 걸어두면 호주 내 체류 중 s 48 재접수 금지 함정에 직격탄을 맞을 수 있으니 사전 승산 진단이 필수예요.",
-      "practitioner_alert_en": "If an onshore nomination fails alongside a linked visa refusal after substantive expiry, s 48 immediately locks out most re-lodgements—audit the sponsor's financials first."
+      "practitioner_alert_en": "If an onshore nomination fails alongside a linked visa refusal after substantive expiry, s 48 immediately locks out most re-lodgements, audit the sponsor's financials first."
     },
     {
       "number": 5,
@@ -416,7 +416,7 @@
       "subtitle_ko": "학생비자 A$2,500 & 온쇼어 비자 호핑 금지 · 485 만 35세 상한 · 경력 빌드업 로드맵",
       "subtitle_en": "Student VAC A$2,500 & Anti-Hopping Ban · 485 Age-35 Cap · Skilled Experience Build-Up",
       "statutory_basis": "Migration Regulations 1994 Sch 1 Item 1222 (onshore 500 bar), Subclasses 500, 485, 417, 407",
-      "summary_ko": "2024~2026년 연쇄 개편으로 임시비자를 통한 단순 체류 연장은 원천 차단되었으며, 처음부터 최종 영주권 직종·연령과 직결되는 정교한 징검다리 설계만 살아남아요.",
+      "summary_ko": "2024~2026년 연쇄 개편으로 임시비자를 통한 단순 체류 연장은 원천 차단되었고 처음부터 최종 영주권 직종·연령과 직결되는 정교한 징검다리 설계만 살아남아요.",
       "summary_en": "Successive 2024–2026 reforms abolished onshore visa hopping; temporary visas must now be engineered strictly as time-bounded bridges to skilled or sponsored PR.",
       "sections": [
         {
@@ -440,7 +440,7 @@
       "key_takeaways_en": [
         "Unlike the 3-year GSM rule, English test results for Subclass 485 are valid for only 12 months prior to lodgement!",
         "AFP National Police Check application proof and health insurance must exist BEFORE clicking submit on Subclass 485.",
-        "Subclass 407 requires a genuine, structured workplace training plan—not routine labour supplementation."
+        "Subclass 407 requires a genuine, structured workplace training plan, not routine labour supplementation."
       ],
       "data_table": {
         "headers_ko": [
@@ -509,7 +509,7 @@
       "subtitle_ko": "4대 진정성 기둥 · 사실혼(De Facto) 등록 · 가족폭력(Division 1.5) 특례 · 가족법 쟁점",
       "subtitle_en": "4 Pillars of Relationship · De Facto Registration · Family Violence & Family Law",
       "statutory_basis": "Migration Act 1958 ss 5F, 5CB; Migration Regulations 1994 reg 1.09A, Div 1.5, Subclasses 820/801, 309/100, 143, 870",
-      "summary_ko": "파트너 비자(기본 비자비 A$11,710)는 나이·직종·영어 점수 제한이 없지만, 관계의 진정성과 지속성을 4대 법정 요소로 입증해야 하며 관계 파탄·자녀 양육권 발생 시 호주 가족법과 긴밀히 맞물려요.",
+      "summary_ko": "파트너 비자(기본 비자비 A$11,710)는 나이·직종·영어 점수 제한이 없지만 관계의 진정성과 지속성을 4대 법정 요소로 입증해야 하며 관계 파탄·자녀 양육권 발생 시 호주 가족법과 긴밀히 맞물려요.",
       "summary_en": "Partner visas (base VAC A$11,710) impose no age, occupation, or points tests, but demand rigorous 4-pillar relationship evidence and intersect directly with Australian family law upon relationship breakdown.",
       "sections": [
         {
@@ -592,7 +592,7 @@
         ]
       },
       "practitioner_alert_ko": "주정부 사실혼 등록만 해두고 실제 공동 거주나 재정 결합 증거가 전무하면 '서류상 관계'로 의심받아 거절될 수 있어요. 등록증은 12개월 기간 요건만 면제해 줄 뿐 진정성 입증 자체를 면제하지 않아요.",
-      "practitioner_alert_en": "State relationship registration waives only the 12-month clock—not the substantive requirement that the couple live together (or not separately and apart on a permanent basis)."
+      "practitioner_alert_en": "State relationship registration waives only the 12-month clock, not the substantive requirement that the couple live together (or not separately and apart on a permanent basis)."
     },
     {
       "number": 7,
@@ -608,7 +608,7 @@
         {
           "heading_ko": "1. EOI 초청 전용 구조와 호주 명망 추천인(Nominator Form 1000)",
           "heading_en": "1. Invitation-Only Architecture & Form 1000 National Nominator",
-          "body_ko": "Subclass 858 NIV(기본 비자비 A$6,235)는 연령 상한이나 직업군 리스트 제한이 유연한 대신, 반드시 국제적으로 인정받는 탁월한 업적(Internationally Recognised Record of Exceptional and Outstanding Achievement)을 입증하여 호주 정부의 초청(Invitation)을 받아야 접수할 수 있으며, 동일 분야 최고 권위 기관·개인의 Form 1000 추천이 필수예요.",
+          "body_ko": "Subclass 858 NIV(기본 비자비 A$6,235)는 연령 상한이나 직업군 리스트 제한이 유연한 대신, 반드시 국제적으로 인정받는 탁월한 업적(Internationally Recognised Record of Exceptional and Outstanding Achievement)을 입증하여 호주 정부의 초청(Invitation)을 받아야 접수할 수 있고 동일 분야 최고 권위 기관·개인의 Form 1000 추천이 필수예요.",
           "body_en": "Subclass 858 NIV (base VAC A$6,235) bypasses standard SOL and GSM points gates, requiring an Expression of Interest invitation backed by an internationally recognised record of exceptional achievement and a Form 1000 nomination from an eminent Australian peer or peak body."
         },
         {
@@ -619,7 +619,7 @@
         }
       ],
       "key_takeaways_ko": [
-        "단순 현금·채권 예치형 투자이민(구 188C SIV)은 종료되었으며, 혁신 기업·벤처 생태계 기여도가 핵심 심사 척도예요.",
+        "단순 현금·채권 예치형 투자이민(구 188C SIV)은 종료되었고 혁신 기업·벤처 생태계 기여도가 핵심 심사 척도예요.",
         "박사 연구원·교수·딥테크 창업가는 호주 858 NIV와 미국 EB-1A/NIW, 뉴질랜드 SMC 6점제를 동시 비교하는 것이 유리해요.",
         "만 18세 미만 또는 만 55세 이상 신청자는 호주 공동체에 대한 '예외적 기여(Exceptional Benefit)'를 추가 입증해야 해요."
       ],
@@ -707,7 +707,7 @@
         {
           "heading_ko": "2. Section 48 재접수 금지(reg 2.12 예외)와 Schedule 3(Waensila 면제)",
           "heading_en": "2. Section 48 Bar (reg 2.12 Exceptions) & Schedule 3 Compelling Reasons",
-          "body_ko": "마지막 입국 후 비자가 거절·취소되고 실질 비자가 없다면 s 48에 의해 482·186·189·500 등의 호주 내 접수가 차단되지만, reg 2.12 예외 비자(파트너 820, 주정부 190·491, 지방 스폰서 494 등)는 호주 내 접수가 허용돼요. 다만 실질 비자 만료 후 28일(Criterion 3001)이 지난 상태에서 820을 넣을 때는 Waensila [2016] FCAFC 32 판례에 따른 '강력하고 연민할 사유(Compelling Reasons)' 소명이 필수예요.",
+          "body_ko": "마지막 입국 후 비자가 거절·취소되고 실질 비자가 없다면 s 48에 의해 482·186·189·500 등의 호주 내 접수가 차단되지만 reg 2.12 예외 비자(파트너 820, 주정부 190·491, 지방 스폰서 494 등)는 호주 내 접수가 허용돼요. 다만 실질 비자 만료 후 28일(Criterion 3001)이 지난 상태에서 820을 넣을 때는 Waensila [2016] FCAFC 32 판례에 따른 '강력하고 연민할 사유(Compelling Reasons)' 소명이 필수예요.",
           "body_en": "Under s 48, an onshore non-citizen without a substantive visa who was refused or cancelled since last entry cannot lodge 482, 186, 189, or 500 onshore, EXCEPT for reg 2.12 prescribed classes including Partner (820), State GSM (190/491), and Regional (494). Lodging 820 more than 28 days after substantive expiry triggers Schedule 3 Criterion 3001, requiring compelling reasons per Waensila [2016] FCAFC 32."
         }
       ],
@@ -789,7 +789,7 @@
       "subtitle_en": "s 107/116 Cancellation Notices · PIC 4020 3/10-Yr Bars · Health SCT A$86,000",
       "statutory_basis": "Migration Act 1958 ss 56, 57, 107–109, 116, 119; Migration Regulations 1994 regs 2.44, 2.46, PIC 4005/4007/4020",
       "summary_ko": "이민성으로부터 받은 소명 통지서(s 57 Natural Justice, NOICC, PIC 4020, MOC 건강 소견)는 첫 답변서 한 장으로 향후 3년~10년의 입국 가능 여부가 결정되는 골든타임이에요.",
-      "summary_en": "Departmental adverse notices—s 57 invitations, NOICCs, PIC 4020 fraud allegations, and MOC health opinions—have razor-thin statutory clocks where the initial legal response determines survival.",
+      "summary_en": "Departmental adverse notices (s 57 invitations, NOICCs, PIC 4020 fraud allegations, and MOC health opinions) have razor-thin statutory clocks where the initial legal response determines survival.",
       "sections": [
         {
           "heading_ko": "1. s 57 소명 · NOICC(호주 내 5영업일 · 공항 심사장 5분 규칙) · PIC 4020",
@@ -800,7 +800,7 @@
         {
           "heading_ko": "2. 건강 요건(PIC 4005 vs PIC 4007)과 유의미한 비용 기준(SCT A$86,000)",
           "heading_en": "2. Health Criteria (PIC 4005 vs PIC 4007) & Significant Cost Threshold (SCT A$86,000)",
-          "body_ko": "영주권·장기 비자 신체검사에서 향후 5년(영주권 등 기본 산정 구간) 예상 공공 의료·복지 비용이 Significant Cost Threshold(SCT, 현행 A$86,000)를 초과하면 불합격 소견(MOC Opinion)이 나와요. PIC 4005 적용 비자(189·190·186 DE 등)는 면제 조항이 없지만, PIC 4007 적용 비자(482·186 TRT·파트너 820/309 등)는 재정 부담 완화 능력과 인도적 요소로 Health Waiver 승인을 이끌어낼 수 있어요.",
+          "body_ko": "영주권·장기 비자 신체검사에서 향후 5년(영주권 등 기본 산정 구간) 예상 공공 의료·복지 비용이 Significant Cost Threshold(SCT, 현행 A$86,000)를 초과하면 불합격 소견(MOC Opinion)이 나와요. PIC 4005 적용 비자(189·190·186 DE 등)는 면제 조항이 없지만 PIC 4007 적용 비자(482·186 TRT·파트너 820/309 등)는 재정 부담 완화 능력과 인도적 요소로 Health Waiver 승인을 이끌어낼 수 있어요.",
           "body_en": "Medical Officers of the Commonwealth assess projected health and community service costs against the Significant Cost Threshold (SCT, currently A$86,000; A$500,000 triggers MHS policy escalation). Visas subject to PIC 4005 have no health waiver, whereas PIC 4007 visas (such as 482, 186 TRT, and Partner 820/309) allow a formal Health Waiver submission."
         }
       ],
@@ -881,8 +881,8 @@
       "subtitle_ko": "2026년 10월 31일 시행 Direction No. 123 (Direction No. 110 폐지) · 공동체 보호 최우선 원칙",
       "subtitle_en": "Ministerial Direction No. 123 (Commencing 31 October 2026, Revoking Direction No. 110)",
       "statutory_basis": "Migration Act 1958 ss 499, 501, 501(3A), 501CA; Ministerial Direction No. 123 (eff. 31 October 2026)",
-      "summary_ko": "형사 전과(음주운전 반복·폭행·가정폭력·마약 등)나 12개월 이상 징역형 선고는 영주권자까지 즉시 취소시킬 수 있으며, 2026년 10월 31일부로 시행되는 Ministerial Direction No. 123이 기존 Direction No. 110을 대체해 한층 강화된 심사 기준을 적용해요.",
-      "summary_en": "Criminal history or a >=12-month prison sentence threatens even long-term permanent residents, and Ministerial Direction No. 123—commencing 31 October 2026 and revoking Direction No. 110—significantly tightens character adjudication.",
+      "summary_ko": "형사 전과(음주운전 반복·폭행·가정폭력·마약 등)나 12개월 이상 징역형 선고는 영주권자까지 즉시 취소시킬 수 있어요. 특히 2026년 10월 31일부로 시행되는 Ministerial Direction No. 123이 기존 Direction No. 110을 대체해 한층 강화된 심사 기준을 적용해요.",
+      "summary_en": "Criminal history or a >=12-month prison sentence threatens even long-term permanent residents, and Ministerial Direction No. 123, commencing 31 October 2026 and revoking Direction No. 110, significantly tightens character adjudication.",
       "sections": [
         {
           "heading_ko": "1. s 501(3A) 의무적 비자 취소와 s 501CA 28일 철회 청구 불변기한",
@@ -903,7 +903,7 @@
         "심리일 최소 2영업일 전까지 제출하지 않은 서류나 증언은 ART가 법적으로 채택할 수 없어요(s 500(6H)–(6J))."
       ],
       "key_takeaways_en": [
-        "Declare all offences—including spent or fine-only convictions on Korean KNPA and AFP certificates—as non-disclosure triggers independent refusal/cancellation.",
+        "Declare all offences (including spent or fine-only convictions on Korean KNPA and AFP certificates) as non-disclosure triggers independent refusal/cancellation.",
         "Onshore ART review of a delegate's s 501 or s 501CA(4) decision must be lodged within 9 calendar days (s 500(6B)) and decided within 84 days (s 500(6L)).",
         "Under s 500(6H)–(6J), the ART is statutorily prohibited from considering documents or oral witness outlines not served on the Minister at least 2 business days before the hearing."
       ],
@@ -986,7 +986,7 @@
         {
           "heading_ko": "2. 학생비자 구두청문 폐지(s 367C · reg 4.18 서면심리)와 연방순회·가족법원(FCFCOA) 사법심사",
           "heading_en": "2. Mandatory Student Visa Review on the Papers (s 367C / reg 4.18) & FCFCOA",
-          "body_ko": "개정 s 367C 및 reg 4.18에 따라 학생비자(500) 거절 사건(PIC 4020 등 일부 예외 제외)은 구두 청문회(Hearing) 없이 오직 서면심리(Review on the Papers)로 종결돼요! ART의 서면 제출 요구(s 367F 28일 · s 367G 불리정보 14일, reg 4.20)에 현행 CoE 재학 증빙과 법리 의견서를 완벽히 내야 해요. 만약 ART 결정에 관할권 일탈의 법리 오류(Jurisdictional Error)가 있다면 35일(s 477) 이내에 호주 변호사를 통해 연방순회·가족법원(FCFCOA)에 사법심사를 제기하거나, 예외적 공익 사안은 s 351 장관 직권개입 탄원을 검토해요.",
+          "body_ko": "개정 s 367C 및 reg 4.18에 따라 학생비자(500) 거절 사건(PIC 4020 등 일부 예외 제외)은 구두 청문회(Hearing) 없이 오직 서면심리(Review on the Papers)로 종결돼요! ART의 서면 제출 요구(s 367F 28일 · s 367G 불리정보 14일, reg 4.20)에 현행 CoE 재학 증빙과 법리 의견서를 완벽히 내야 해요. 만약 ART 결정에 관할권 일탈의 법리 오류(Jurisdictional Error)가 있다면 35일(s 477) 이내에 호주 변호사를 통해 연방순회·가족법원(FCFCOA)에 사법심사를 제기하거나 예외적 공익 사안은 s 351 장관 직권개입 탄원을 검토해요.",
           "body_en": "Under s 367C and reg 4.18, Student Visa refusal reviews are determined strictly on the papers without an oral hearing (response clocks: 28 days under s 367F / 14 days under s 367G per reg 4.20). Where an ART decision is infected by jurisdictional error, an Australian Legal Practitioner may file for judicial review in the Federal Circuit and Family Court of Australia (FCFCOA) within 35 days (s 477), or pursue s 351 Ministerial Intervention in unique cases."
         }
       ],
@@ -997,7 +997,7 @@
       ],
       "key_takeaways_en": [
         "As a de novo merits tribunal, the ART stands in the Minister's shoes and can consider fresh evidence accrued up to the date of the Tribunal decision.",
-        "FCFCOA judicial review examines jurisdictional error of law—not factual merits—and carries adverse legal costs risk if unsuccessful.",
+        "FCFCOA judicial review examines jurisdictional error of law, not factual merits, and carries adverse legal costs risk if unsuccessful.",
         "Only admitted Australian Legal Practitioners hold right of audience to appear in the FCFCOA and Federal Court of Australia."
       ],
       "data_table": {
@@ -1079,7 +1079,7 @@
         {
           "heading_ko": "2. 호주 변호사(ss 276, 280) · 법률비밀특권(LPP) · QLS 공인 이민법 전문변호사",
           "heading_en": "2. Australian Legal Practitioners (ss 276, 280), Legal Professional Privilege & QLS Specialist",
-          "body_ko": "2021년 3월 22일 법 개정(Migration Act ss 276, 280) 이후 호주 변호사(Australian Legal Practitioner)는 OMARA 이중 등록 대상에서 완전히 분리되어 대법원·변호사협회 변호사 면허 하에 이민 법률 대리를 수행해요. 일반 에이전트와 달리 호주 변호사와 나눈 민감한 자문 내역은 강력한 법률비밀특권(Legal Professional Privilege)으로 법적으로 보호받으며, 특히 퀸즐랜드 변호사협회(QLS)가 엄격한 시험과 실무 검증으로 인증한 공인 이민법 전문변호사(Accredited Specialist in Immigration Law)는 이민성 초기 설계부터 ART 재심, 연방순회·가족법원(FCFCOA) 소송까지 끊김 없는 원스톱 방어선을 구축해 드려요.",
+          "body_ko": "2021년 3월 22일 법 개정(Migration Act ss 276, 280) 이후 호주 변호사(Australian Legal Practitioner)는 OMARA 이중 등록 대상에서 완전히 분리되어 대법원·변호사협회 변호사 면허 하에 이민 법률 대리를 수행해요. 일반 에이전트와 달리 호주 변호사와 나눈 민감한 자문 내역은 강력한 법률비밀특권(Legal Professional Privilege)으로 법적으로 보호받으며 특히 퀸즐랜드 변호사협회(QLS)가 엄격한 시험과 실무 검증으로 인증한 공인 이민법 전문변호사(Accredited Specialist in Immigration Law)는 이민성 초기 설계부터 ART 재심, 연방순회·가족법원(FCFCOA) 소송까지 끊김 없는 원스톱 방어선을 구축해 드려요.",
           "body_en": "Since 22 March 2021 (Migration Act ss 276, 280), Australian Legal Practitioners practise immigration law directly under State Supreme Court practising certificates rather than OMARA registration. Crucially, communications with an Australian lawyer are shielded by statutory and common-law Legal Professional Privilege, and a Queensland Law Society Accredited Specialist in Immigration Law provides seamless authority across Home Affairs, the ART, and the FCFCOA."
         }
       ],
@@ -1150,7 +1150,7 @@
         ]
       },
       "practitioner_alert_ko": "과거 비자 신청서와 시민권 신청서(Form 1300t) 상의 해외 체류 이력·가족관계·개명·경력 기재가 불일치하면 시민권 단계에서 과거 영주권 취소 검토까지 번질 수 있으니 접수 전 정합성 대조가 중요해요.",
-      "practitioner_alert_en": "Inconsistencies between Form 1300t citizenship declarations and historical visa files can trigger forensic identity or s 109 cancellation referrals—audit prior records before applying."
+      "practitioner_alert_en": "Inconsistencies between Form 1300t citizenship declarations and historical visa files can trigger forensic identity or s 109 cancellation referrals, audit prior records before applying."
     }
   ]
 }

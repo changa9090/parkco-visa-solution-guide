@@ -139,10 +139,10 @@ export function evaluateAuCalculator(calculator, params = {}) {
         hardship_fee_aud: ART_HARDSHIP_FEE_AUD,
         verdict_ko:
           `학생비자(Subclass 500) 거절 ART 재심 마감일은 ${deadlineIso}이에요. ` +
-          "개정법(s 367C · reg 4.18)에 따라 구두 청문회(Hearing) 없이 서면심리로 결정되므로, 현행 CoE 재학 증빙(reg 4.18(4))과 서면 변론서(s 367F 28일 / s 367G 14일)가 승패를 좌우해요.",
+          "개정법(s 367C · reg 4.18)에 따라 구두 청문회(Hearing) 없이 서면심리로 결정되므로 현행 CoE 재학 증빙(reg 4.18(4))과 서면 변론서(s 367F 28일 / s 367G 14일)가 승패를 좌우해요.",
         verdict_en:
           `Your Subclass 500 ART filing deadline is ${deadlineIso}. ` +
-          "Under s 367C and reg 4.18, Student Visa refusals are decided on the papers without an oral hearing—current CoE enrolment evidence (reg 4.18(4)) and written submissions (28d under s 367F / 14d under s 367G) are decisive.",
+          "Under s 367C and reg 4.18, Student Visa refusals are decided on the papers without an oral hearing; current CoE enrolment evidence (reg 4.18(4)) and written submissions (28d under s 367F / 14d under s 367G) are decisive.",
       };
     }
 
@@ -288,7 +288,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
         "Consider reg 2.12 exempt visas (190, 491, 494, Partner 820) or offshore lodgement with careful Bridging Visa travel planning.";
     } else if (sch3Crit === "3001_expired_waensila_waiver_needed") {
       vKo =
-        `Subclass 820은 reg 2.12 예외로 s 48에도 불구하고 호주 내 접수가 가능하지만, 마지막 실질 비자 만료 후 ${daysUnsub}일(>28일)이 지나 Schedule 3(Criterion 3001)가 발동돼요. ` +
+        `Subclass 820은 reg 2.12 예외로 s 48에도 불구하고 호주 내 접수가 가능하지만 마지막 실질 비자 만료 후 ${daysUnsub}일(>28일)이 지나 Schedule 3(Criterion 3001)가 발동돼요. ` +
         `Waensila [2016] FCAFC 32 판례에 따라 심사 결정 시점 기준 '강력하고 연민할 만한 사유(Compelling Reasons)' 면제 입증이 ${compelling ? "유력해요" : "필수예요"}.`;
       vEn =
         `Subclass 820 is exempt from s 48 under reg 2.12, but ${daysUnsub} days (>28d) without a substantive visa triggers Schedule 3 (Criterion 3001). ` +
@@ -408,7 +408,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
       age_45_fwhit_met: age45FwhitMet,
       fwhit_fy26_27_aud: FWHIT_FY26_27_AUD,
       verdict_ko:
-        `제시 연봉 A$${fmtComma(salary)}은 FY2026–27 최소 기준(A$${fmtComma(effFloor)} — 법정 하한 A$${fmtComma(minThresh)} 및 시장연봉 AMSR A$${fmtComma(amsr)} 중 높은 금액)을 ` +
+        `제시 연봉 A$${fmtComma(salary)}은 FY2026–27 최소 기준(A$${fmtComma(effFloor)} · 법정 하한 A$${fmtComma(minThresh)} 및 시장연봉 AMSR A$${fmtComma(amsr)} 중 높은 금액)을 ` +
         `${salaryOk ? "충족해요" : "밑돌아 노미네이션이 거절돼요"}. 고용주 부담 SAF 기금은 A$${fmtComma(safAud)}(근로자 전가 법적 금지)예요` +
         ageNoteKo,
       verdict_en:

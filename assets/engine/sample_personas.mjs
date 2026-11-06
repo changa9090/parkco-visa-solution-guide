@@ -7,10 +7,10 @@ export const SAMPLE_PERSONAS = [
     title_en: "Brisbane Full-Stack Software Engineer (Subclass 485)",
     filename: "sample_minjun_software_engineer.txt",
     resume_text:
-      "김민준 (Minjun Kim) — Full-Stack Software Engineer\n" +
+      "김민준 (Minjun Kim) · Full-Stack Software Engineer\n" +
       "Location: Brisbane QLD, Australia\n\n" +
       "Education:\n" +
-      "2018.02 - 2021.11  University of Queensland (UQ) — Bachelor of Computer Science (CRICOS)\n\n" +
+      "2018.02 - 2021.11  University of Queensland (UQ) · Bachelor of Computer Science (CRICOS)\n\n" +
       "Work Experience:\n" +
       "2022.02 - 2025.05  Software Engineer, RiverCity Cloud Pty Ltd (Brisbane QLD)\n" +
       "- Designed microservices architecture in Python and TypeScript, REST API specifications, automated testing, and AWS cloud deployment.\n" +
@@ -19,10 +19,10 @@ export const SAMPLE_PERSONAS = [
       "- PTE Academic Overall 86 (Listening 84, Reading 82, Writing 86, Speaking 88)\n" +
       "- NAATI CCL Korean passed | ACS ICT Professional Year completed",
     resume_text_en:
-      "Minjun Kim — Full-Stack Software Engineer\n" +
+      "Minjun Kim · Full-Stack Software Engineer\n" +
       "Location: Brisbane QLD, Australia\n\n" +
       "Education:\n" +
-      "2018.02 - 2021.11  University of Queensland (UQ) — Bachelor of Computer Science (CRICOS)\n\n" +
+      "2018.02 - 2021.11  University of Queensland (UQ) · Bachelor of Computer Science (CRICOS)\n\n" +
       "Work Experience:\n" +
       "2022.02 - 2025.05  Software Engineer, RiverCity Cloud Pty Ltd (Brisbane QLD)\n" +
       "- Designed microservices architecture in Python and TypeScript, REST API specifications, automated testing, and AWS cloud deployment.\n" +
@@ -39,10 +39,10 @@ export const SAMPLE_PERSONAS = [
     title_en: "Sydney Restaurant Sous Chef (TAFE + Mixed ABN/TFN)",
     filename: "sample_jihoon_sous_chef.txt",
     resume_text:
-      "박지훈 (Jihoon Park) — Sous Chef / 주방 선임 셰프\n" +
+      "박지훈 (Jihoon Park) · Sous Chef / 주방 선임 셰프\n" +
       "Location: Sydney NSW, Australia\n\n" +
       "Education:\n" +
-      "2020.07 - 2022.06  TAFE NSW — Certificate IV in Kitchen Management & Diploma of Hospitality Management\n\n" +
+      "2020.07 - 2022.06  TAFE NSW · Certificate IV in Kitchen Management & Diploma of Hospitality Management\n\n" +
       "Work Experience:\n" +
       "2022.08 - 2025.02  Sous Chef, Harbour Bistro Pty Ltd (Sydney NSW)\n" +
       "- Menu planning, seasonal dish costing, supervising kitchen cooks, ordering stock, and food hygiene control in full-service dine-in restaurant.\n" +
@@ -50,10 +50,10 @@ export const SAMPLE_PERSONAS = [
       "Language:\n" +
       "- IELTS Overall 6.5 (Listening 6.5, Reading 6.0, Writing 6.0, Speaking 6.5)",
     resume_text_en:
-      "Jihoon Park — Sous Chef (Full-Service Restaurant)\n" +
+      "Jihoon Park · Sous Chef (Full-Service Restaurant)\n" +
       "Location: Sydney NSW, Australia\n\n" +
       "Education:\n" +
-      "2020.07 - 2022.06  TAFE NSW — Certificate IV in Kitchen Management & Diploma of Hospitality Management\n\n" +
+      "2020.07 - 2022.06  TAFE NSW · Certificate IV in Kitchen Management & Diploma of Hospitality Management\n\n" +
       "Work Experience:\n" +
       "2022.08 - 2025.02  Sous Chef, Harbour Bistro Pty Ltd (Sydney NSW)\n" +
       "- Menu planning, seasonal dish costing, supervising kitchen cooks, ordering stock, and food hygiene control in full-service dine-in restaurant.\n" +
@@ -69,10 +69,10 @@ export const SAMPLE_PERSONAS = [
     title_en: "Melbourne Hospital Registered Nurse (AHPRA RN)",
     filename: "sample_sujin_registered_nurse.txt",
     resume_text:
-      "최수진 (Sujin Choi) — Registered Nurse (Acute Medical Ward)\n" +
+      "최수진 (Sujin Choi) · Registered Nurse (Acute Medical Ward)\n" +
       "Location: Melbourne VIC, Australia\n\n" +
       "Education:\n" +
-      "2019.02 - 2021.11  Monash University — Bachelor of Nursing\n\n" +
+      "2019.02 - 2021.11  Monash University · Bachelor of Nursing\n\n" +
       "Work Experience:\n" +
       "2022.03 - Present  Registered Nurse, Southern Cross Health Hospital (Melbourne VIC)\n" +
       "- Assessing patients, planning and providing clinical nursing care, administering medications, and supervising enrolled nurses in medical ward.\n\n" +
@@ -80,10 +80,10 @@ export const SAMPLE_PERSONAS = [
       "- AHPRA Registered Nurse | ANMAC Full Skills Assessment\n" +
       "- IELTS Academic Overall 7.5 (All bands above 7.0)",
     resume_text_en:
-      "Sujin Choi — Registered Nurse (Acute Medical Ward)\n" +
+      "Sujin Choi · Registered Nurse (Acute Medical Ward)\n" +
       "Location: Melbourne VIC, Australia\n\n" +
       "Education:\n" +
-      "2019.02 - 2021.11  Monash University — Bachelor of Nursing\n\n" +
+      "2019.02 - 2021.11  Monash University · Bachelor of Nursing\n\n" +
       "Work Experience:\n" +
       "2022.03 - Present  Registered Nurse, Southern Cross Health Hospital (Melbourne VIC)\n" +
       "- Assessing patients, planning and providing clinical nursing care, administering medications, and supervising enrolled nurses in medical ward.\n\n" +
@@ -99,7 +99,7 @@ export const SAMPLE_PERSONAS = [
     title_en: "Gold Coast Wall & Floor Tiler (TRA / Sponsor Check)",
     filename: "sample_seongho_tiler.txt",
     resume_text:
-      "정성호 (Seongho Jung) — Wall and Floor Tiler (타일러)\n" +
+      "정성호 (Seongho Jung) · Wall and Floor Tiler (타일러)\n" +
       "Location: Gold Coast QLD, Australia\n\n" +
       "Work Experience:\n" +
       "2021.05 - 2023.08  타일 시공 기술자, 한성 바스 리노베이션 (대한민국 서울)\n" +
@@ -109,7 +109,7 @@ export const SAMPLE_PERSONAS = [
       "Language:\n" +
       "- PTE Academic Overall 54 (Listening 49, Reading 50, Writing 52, Speaking 55)",
     resume_text_en:
-      "Seongho Jung — Wall and Floor Tiler\n" +
+      "Seongho Jung · Wall and Floor Tiler\n" +
       "Location: Gold Coast QLD, Australia\n\n" +
       "Work Experience:\n" +
       "2021.05 - 2023.08  Wall and Floor Tiler, Hansung Bath Renovation (Seoul, South Korea)\n" +

@@ -55,11 +55,11 @@
       },
       {
         "code": "LIN 24/089",
-        "title": "Migration (Specification of Occupations—Subclass 482 Visa) Instrument 2024 (CSOL 456 Occupations)"
+        "title": "Migration (Specification of Occupations - Subclass 482 Visa) Instrument 2024 (CSOL 456 Occupations)"
       },
       {
         "code": "LIN 24/093",
-        "title": "Migration (Specification of Occupations and Assessing Authorities—Subclass 186 Visa) Instrument 2024"
+        "title": "Migration (Specification of Occupations and Assessing Authorities - Subclass 186 Visa) Instrument 2024"
       },
       {
         "code": "LIN 19/051",
@@ -93,8 +93,8 @@
     },
     {
       "tier_id": "sid_50",
-      "tier_ko": "482 SID 영어 요건 (Core Skills & Specialist Skills — LIN 25/082)",
-      "tier_en": "Subclass 482 SID Requirement (Core & Specialist — LIN 25/082)",
+      "tier_ko": "482 SID 영어 요건 (Core Skills & Specialist Skills · LIN 25/082)",
+      "tier_en": "Subclass 482 SID Requirement (Core & Specialist · LIN 25/082)",
       "ielts": "각 영역 5.0 이상 (L/R/W/S)",
       "ielts_en": "5.0+ in each band (L/R/W/S)",
       "pte_post_aug2025": "L 33 / R 36 / W 29 / S 24 이상",
@@ -108,8 +108,8 @@
     },
     {
       "tier_id": "graduate_65",
-      "tier_ko": "485 졸업생 비자 영어 요건 (LIN 25/089 — 유효기간 12개월 주의!)",
-      "tier_en": "Subclass 485 Graduate Visa (LIN 25/089 — Strict 12-Month Validity!)",
+      "tier_ko": "485 졸업생 비자 영어 요건 (LIN 25/089 · 유효기간 12개월 주의!)",
+      "tier_en": "Subclass 485 Graduate Visa (LIN 25/089 · Strict 12-Month Validity!)",
       "ielts": "평균 6.5 이상 (각 영역 최소 5.5)",
       "ielts_en": "Overall 6.5+ (min 5.5 each band)",
       "pte_post_aug2025": "Overall 55 이상 (L 40 / R 42 / W 41 / S 39)",
@@ -123,8 +123,8 @@
     },
     {
       "tier_id": "competent",
-      "tier_ko": "Competent English (189·190·491·186·494 기본 자격 — GSM 0점)",
-      "tier_en": "Competent English (189 · 190 · 491 · 186 · 494 Threshold — 0 GSM pts)",
+      "tier_ko": "Competent English (189·190·491·186·494 기본 자격 · GSM 0점)",
+      "tier_en": "Competent English (189 · 190 · 491 · 186 · 494 Threshold · 0 GSM pts)",
       "ielts": "각 영역 6.0 이상",
       "ielts_en": "6.0+ in each band",
       "pte_post_aug2025": "L 47 / R 48 / W 51 / S 54 이상 (구 50점 균일제에서 개편)",
@@ -193,7 +193,7 @@
         "싱글(10점)로 초청받은 뒤 사실혼 파트너가 있었음이 드러나면 점수 미달 및 PIC 4020 거절로 직결돼요."
       ],
       "critical_traps_en": [
-        "Turning 45 before receiving the official invitation extinguishes eligibility—even by a single day.",
+        "Turning 45 before receiving the official invitation extinguishes eligibility, even by a single day.",
         "Combined Australian + overseas employment points are capped at 20 points (Schedule 6D Item 6D51); claiming pre-deeming-date experience frequently triggers refusal.",
         "Claiming 10 single points when an undeclared de facto relationship existed at invitation risks points shortfall and PIC 4020 refusal."
       ],
@@ -212,12 +212,12 @@
       "target_who_ko": "호주 고용주의 잡오퍼가 있거나 현재 호주 사업체에서 근무 중이며 안정적인 영주권 전환을 원하는 신청자",
       "target_who_en": "Applicants with an Australian job offer or current onshore employment seeking predictable employer-backed permanent residency.",
       "stages_ko": [
-        "1단계 [482 SID 진입 — 연령 제한 없음]: 최근 5년 내 관련 경력 1년 풀타임(환산 인정) + 영어 IELTS 5.0(PTE L33/R36/W29/S24) + 연봉 CSIT $79,423 이상(Specialist 스트림은 CSOL 무관 $146,576 이상, 단 기능·단순노무 Major Group 3·7·8 제외)",
+        "1단계 [482 SID 진입 · 연령 제한 없음]: 최근 5년 내 관련 경력 1년 풀타임(환산 인정) + 영어 IELTS 5.0(PTE L33/R36/W29/S24) + 연봉 CSIT $79,423 이상(Specialist 스트림은 CSOL 무관 $146,576 이상, 단 기능·단순노무 Major Group 3·7·8 제외)",
         "2단계 [Condition 8607 유연성 & 2년 경력 적립]: 이직 시 한 번에 최대 180일(전체 체류 중 365일) 유예 기간 동안 새 스폰서 노미네이션 연결 가능, 여러 스폰서 근무 기간도 186 TRT 2년 요건에 합산 인정!",
         "3단계 [186 영주권($6,140) 완성]: ① TRT 스트림(482로 2년 풀타임 근무 후 CSOL 무관 영주권 신청, 만 45세 미만 원칙이나 FWHIT $190,100 이상 2년 고소득자는 연령 면제) 또는 ② Direct Entry 스트림(CSOL 등재 + 기술심사 + 3년 풀타임 경력으로 즉시 영주권 직행)"
       ],
       "stages_en": [
-        "Stage 1 [482 SID Entry — No Age Cap]: 1 year full-time (or pro-rata part-time) experience within the last 5 years + IELTS 5.0 (PTE L33/R36/W29/S24) + CSIT AUD $79,423+ (or Specialist Skills AUD $146,576+ outside ANZSCO Major Groups 3, 7 & 8).",
+        "Stage 1 [482 SID Entry · No Age Cap]: 1 year full-time (or pro-rata part-time) experience within the last 5 years + IELTS 5.0 (PTE L33/R36/W29/S24) + CSIT AUD $79,423+ (or Specialist Skills AUD $146,576+ outside ANZSCO Major Groups 3, 7 & 8).",
         "Stage 2 [Condition 8607 Mobility & 2-Year Accrual]: Up to 180 consecutive days (365 total) to change sponsors; sponsored work across multiple employers counts toward 186 TRT.",
         "Stage 3 [Subclass 186 PR ($6,140)]: (a) 186 TRT after 2 years on 482 regardless of CSOL changes (under 45, or age-exempt with 2 yrs at FWHIT $190,100+), or (b) 186 Direct Entry with CSOL occupation + skills assessment + 3 years full-time experience."
       ],
@@ -229,7 +229,7 @@
       "critical_traps_en": [
         "Occupation caveats (e.g. <$1M turnover, <5 staff, or limited-service restaurant exclusions) cause immediate nomination refusal on 482 and 186 DE.",
         "Remuneration must satisfy all 3 tiers: CSIT ($79,423 from 1 July 2026), Annual Market Salary Rate (AMSR), and Modern Award terms.",
-        "Nomination refusals account for 86.7% of employer-sponsored tribunal disputes—audit sponsor financials and org charts upfront."
+        "Nomination refusals account for 86.7% of employer-sponsored tribunal disputes; audit sponsor financials and org charts upfront."
       ],
       "key_visas": [
         "482",
@@ -241,7 +241,7 @@
       "badge": "PATHWAY 03 · REGIONAL 494 & 13 DAMA CONCESSIONS",
       "title_ko": "지방지역 스폰서(494→191) & 13개 DAMA 컨세션 패스웨이 (만 45~54세 · 연봉·영어 감면)",
       "title_en": "Regional Employer (494 → 191) & 13 Regional DAMAs Concession Pathway",
-      "target_who_ko": "만 45세를 넘겼거나, 일반 SOL에 직종이 없거나(케어워커·호스피탈리티·트럭운전 등), 연봉·영어 기준 완화가 필요한 신청자",
+      "target_who_ko": "만 45세를 넘겼거나 일반 SOL에 직종이 없거나(케어워커·호스피탈리티·트럭운전 등), 연봉·영어 기준 완화가 필요한 신청자",
       "target_who_en": "Applicants aged 45–54, workers in off-list/Skill Level 4–5 occupations, or regional employers requiring salary/English concessions.",
       "stages_ko": [
         "트랙 A [494 SESR($6,140) → 191 PR($630)]: 시드니·멜버른·브리즈번 외 지정 지방지역 스폰서 + 650개 직종(MLTSSL+ROL) + 기술심사 + 3년 경력 + 만 45세 미만 + 연봉 $79,423(RCB 인증) → 3년 후 고용주 동의 없이 독자적으로 191 영주권 전환!",
@@ -258,7 +258,7 @@
         "지역별 DAMA 협약마다 만 50세 vs 만 55세 기준과 186 전환 대기 연수가 다르므로 지역 선택 전 정밀 대조가 필요해요."
       ],
       "critical_traps_en": [
-        "Individuals cannot self-petition for a DAMA—an active regional business must first secure DAR endorsement and a Labour Agreement.",
+        "Individuals cannot self-petition for a DAMA; an active regional business must first secure DAR endorsement and a Labour Agreement.",
         "Age limits (under 50 vs under 55) and PR transition timeframes vary by DAMA region and occupation."
       ],
       "key_visas": [
@@ -273,16 +273,16 @@
       "badge": "PATHWAY 04 · STUDENT (500) → GRADUATE (485) → PR",
       "title_ko": "유학 후 이민 현실 패스웨이 (500 학생 → 485 졸업생 → 482 SID / 190 / 491 / 186)",
       "title_en": "Study-to-PR Lifecycle (500 Student → 485 Graduate → 482 SID / 190 / 491 PR)",
-      "target_who_ko": "호주 학위(학사·석사·박사 또는 MLTSSL 관련 기술과정)를 통해 호주 체류권과 초기 경력을 만들어 영주권으로 연결하려는 유학생",
+      "target_who_ko": "호주 학위(학사·석사·박사 또는 MLTSSL 관련 기술과정)으로 호주 체류권과 초기 경력을 만들어 영주권으로 연결하려는 유학생",
       "target_who_en": "International students leveraging CRICOS degrees or MLTSSL-aligned trade qualifications to build post-study work rights and PR.",
       "stages_ko": [
         "1단계 [500 학생비자($2,500) & GS 심사]: 진정한 유학생 요건(GS) 통과 필수. 호주 내 관광비자(600)·졸업생비자(485) 소지자의 호주 내 500 전환(Onshore Visa Hopping)은 법으로 원천 차단됨!",
-        "2단계 [485 졸업생 비자($5,750) — 만 35세 상한 주의!]: 졸업 후 6개월 내 접수, 영어 IELTS 6.5/각 5.5(PTE 55, 유효기간 12개월!). 학사·수업석사(PHEW 2년), 연구석사·박사(3년, 만 50세 미만 허용), 기술·디플로마 과정(PVEW 18개월, 반드시 MLTSSL 직종 연계 및 기술심사 필요!)",
-        "3단계 [485 기간 중 승부처]: 485 체류 기간 동안 전공 직종 풀타임 1년 경력을 채워 482 SID로 넘어가거나, 기술심사+고득점 영어·주정부 거주 요건을 채워 190·491·189로 직행"
+        "2단계 [485 졸업생 비자($5,750) · 만 35세 상한 주의!]: 졸업 후 6개월 내 접수, 영어 IELTS 6.5/각 5.5(PTE 55, 유효기간 12개월!). 학사·수업석사(PHEW 2년), 연구석사·박사(3년, 만 50세 미만 허용), 기술·디플로마 과정(PVEW 18개월, 반드시 MLTSSL 직종 연계 및 기술심사 필요!)",
+        "3단계 [485 기간 중 승부처]: 485 체류 기간 동안 전공 직종 풀타임 1년 경력을 채워 482 SID로 넘어가거나 기술심사+고득점 영어·주정부 거주 요건을 채워 190·491·189로 직행"
       ],
       "stages_en": [
         "Stage 1 [500 Student ($2,500) & Genuine Student]: Pass GS scrutiny. Onshore 600 Visitor and 485 Graduate holders are legally barred from lodging Subclass 500 onshore (since 1 July 2024).",
-        "Stage 2 [485 Graduate ($5,750) — Age 35 Cap!]: Lodge within 6 months of completion with IELTS 6.5/5.5 (PTE 55, 12-month test validity!). Bachelor/Coursework Masters (PHEW 2 yrs), Masters by Research/PhD (3 yrs, under age 50), VET/Trade (PVEW 18 mos—must nominate an MLTSSL occupation!).",
+        "Stage 2 [485 Graduate ($5,750) · Age 35 Cap!]: Lodge within 6 months of completion with IELTS 6.5/5.5 (PTE 55, 12-month test validity!). Bachelor/Coursework Masters (PHEW 2 yrs), Masters by Research/PhD (3 yrs, under age 50), VET/Trade (PVEW 18 mos, must nominate an MLTSSL occupation!).",
         "Stage 3 [Post-Study Conversion]: Use 485 full work rights to accrue 1 year of skilled experience for 482 SID, or stack full skills assessment + Superior English for 189/190/491."
       ],
       "critical_traps_ko": [
@@ -347,16 +347,16 @@
       "vac_fy26_27": "$11,710 (300 취득 후 820 전환 시 $1,955)",
       "vac_fy26_27_en": "$11,710 ($1,955 when transitioning from Subclass 300 to 820)",
       "summary_ko": "호주 시민권자·영주권자(또는 적격 뉴질랜드 시민권자)와 법적 혼인 관계이거나 최소 12개월 이상 진정한 사실혼(De facto) 동거 관계일 때 직업군·나이·영어·점수와 무관하게 영주권으로 가는 가장 강력한 가족 패스웨이예요.",
-      "summary_en": "The strongest family permanent residence pathway for married spouses or genuine de facto partners (12+ months cohabitation) of Australian citizens, permanent residents, or eligible New Zealand citizens—with no SOL occupation, age, English, or points test.",
+      "summary_en": "The strongest family permanent residence pathway for married spouses or genuine de facto partners (12+ months cohabitation) of Australian citizens, permanent residents, or eligible New Zealand citizens, with no SOL occupation, age, English, or points test.",
       "key_criteria_ko": [
         "4대 법정 심사 기둥(reg 1.15A): ① 재정적 공동체(공동 계좌·지출), ② 주거 형태(동거 입증), ③ 사회적 인정(가족·지인 진술 Form 888), ④ 상호 헌신과 미래 계획",
         "사실혼 12개월 동거 면제 특례: QLD·NSW·VIC·SA·TAS·ACT 주정부에 관계등록(Relationship Registration)을 완료하면 12개월 미만 동거여도 법정 기간 요건이 면제돼요(WA·NT 제외).",
-        "주의 — 브리징 비자나 불법체류 상태에서 호주 내 820을 접수하면 Schedule 3 요건(강력한 인도적 사유 Compelling Reasons 입증 필수)이라는 높은 벽을 넘어야 해요."
+        "주의 · 브리징 비자나 불법체류 상태에서 호주 내 820을 접수하면 Schedule 3 요건(강력한 인도적 사유 Compelling Reasons 입증 필수)이라는 높은 벽을 넘어야 해요."
       ],
       "key_criteria_en": [
         "Four Statutory Pillars (reg 1.15A): (1) Financial aspects (joint accounts/shared expenses), (2) Nature of the household (cohabitation), (3) Social aspects (Form 888 witness declarations), and (4) Mutual commitment.",
         "12-Month De Facto Exemption: Registering a civil/de facto relationship in QLD, NSW, VIC, SA, TAS, or ACT legally waives the 12-month cohabitation rule (not available in WA or NT).",
-        "Warning — Lodging Subclass 820 onshore while holding a Bridging Visa or unlawful status triggers Schedule 3 criteria requiring strict proof of Compelling Reasons."
+        "Warning · Lodging Subclass 820 onshore while holding a Bridging Visa or unlawful status triggers Schedule 3 criteria requiring strict proof of Compelling Reasons."
       ],
       "feasibility_level": "높음 (적격 호주인 파트너 존재 시 최우선 검토)",
       "feasibility_level_en": "High (Top priority when you have an eligible Australian partner)",
@@ -376,7 +376,7 @@
       "summary_en": "Following the permanent closure of the Subclass 188 BIIP in July 2024, the invitation-only Subclass 858 NIV launched in December 2024 as Australia's elite direct PR visa. Routine small businesses or passive investments do not qualify; an internationally recognised record of exceptional achievement is mandatory.",
       "key_criteria_ko": [
         "4대 우선 순위 트랙: ① 글로벌 최상위 연구자(석학·탑티어 논문/특허), ② 혁신 테크 기업가(주정부/기관 지지 성장 스타트업), ③ 혁신 투자자(단순 부동산·채권 아닌 딥테크·벤처 생태계 기여), ④ 세계적 스포츠인·예술가",
-        "EOI 제출 후 이민성의 초청(Invitation)을 받은 사람만 접수할 수 있으며, 해당 분야 호주 권위자/기관의 Form 1000 추천이 필수예요."
+        "EOI 제출 후 이민성의 초청(Invitation)을 받은 사람만 접수할 수 있고 해당 분야 호주 권위자/기관의 Form 1000 추천이 필수예요."
       ],
       "key_criteria_en": [
         "Four Ministerial Priority Tracks: (1) Global researchers (top-tier publications/patents), (2) Innovative tech entrepreneurs (state/agency-backed scaleups), (3) Innovative investors (deep-tech/venture capital ecosystems, not passive property/bonds), and (4) Internationally acclaimed athletes & creatives.",
@@ -401,12 +401,12 @@
       "key_criteria_ko": [
         "가족균형테스트(Balance of Family Test): 전체 자녀 중 최소 절반(50%) 이상이 호주 영주권자/시민권자로 호주에 거주해야 영주 부모비자(143·864·103·804) 자격이 생겨요.",
         "대기기간 현실: 기여제(143)도 신규 접수 시 수년~10년+ 대기가 발생하며, 비기여 일반 부모비자(103·804)는 30년 이상 대기열이 형성되어 있어요. (호주 내 864/804는 노령연금 연령 약 만 67세 이상 및 No 8503 조건 필요)",
-        "현실 대안 — Subclass 870 임시 부모비자: 가족균형테스트를 통과하지 못해도 스폰서 가구 소득 기준($83,454.80) 충족 시 3년 또는 5년(최장 10년) 연속 체류가 가능해요(단, 메디케어 미적용·민간보험 필수)."
+        "현실 대안 · Subclass 870 임시 부모비자: 가족균형테스트를 통과하지 못해도 스폰서 가구 소득 기준($83,454.80) 충족 시 3년 또는 5년(최장 10년) 연속 체류가 가능해요(단, 메디케어 미적용·민간보험 필수)."
       ],
       "key_criteria_en": [
         "Balance of Family Test: At least 50% of all children must live permanently in Australia as citizens or PRs to qualify for permanent parent subclasses (143, 864, 103, 804).",
         "Queue Reality: Even Contributory Parent (143) faces multi-year to 10+ year queues, while non-contributory queues (103/804) exceed 30 years. Onshore Aged visas (864/804) require pension age (~67+) and no Condition 8503.",
-        "Practical Alternative — Subclass 870 Sponsored Parent: No Balance of Family Test required; grants 3- or 5-year stays (up to 10 years) if sponsor taxable income meets $83,454.80 (private health insurance mandatory, no Medicare)."
+        "Practical Alternative · Subclass 870 Sponsored Parent: No Balance of Family Test required; grants 3- or 5-year stays (up to 10 years) if sponsor taxable income meets $83,454.80 (private health insurance mandatory, no Medicare)."
       ],
       "feasibility_level": "중기/장기 (자녀 정착 후 재정·대기열 시뮬레이션 필수)",
       "feasibility_level_en": "Medium-to-Long Horizon (Requires cost, AoS & queue modelling once child is settled)",
@@ -430,7 +430,7 @@
       ],
       "key_criteria_en": [
         "Under the Enhancing Skills stream (LIN 19/050 occupation list), applicants must hold at least 12 months of full-time relevant experience OR full-time study within the last 24 months.",
-        "High refusal risk if used merely to fill routine labour shortages—requires an audited, individually tailored week-by-week Genuine Training Plan."
+        "High refusal risk if used merely to fill routine labour shortages, requires an audited, individually tailored week-by-week Genuine Training Plan."
       ],
       "feasibility_level": "조건부 (최근 2년 내 12개월 학업/경력 보유 + 스폰서 연수 환경 충족 시)",
       "feasibility_level_en": "Conditional (Requires 12 months study/work in last 24 months + genuine training host)",
@@ -521,12 +521,12 @@
       "summary_ko": "이미 비자나 고용주 노미네이션이 거절되었거나 취소 통지(NOICC)를 받은 경우에도 법정 불변 기한 내 대응하면 합법 체류 유지 및 역전 승인의 길이 열려 있어요.",
       "summary_en": "Even after a visa/nomination refusal or Notice of Intention to Consider Cancellation (NOICC), acting within strict statutory deadlines preserves lawful status and opens merits review or statutory workaround pathways.",
       "key_criteria_ko": [
-        "법정 불변 기한 엄수: 일반 거절 28일, 온쇼어 s 116 취소 소명 5영업일(reg 2.44), s 501 인성 취소 9일 — 단 하루만 지나도 재심 접수권이 영구 소멸돼요!",
+        "법정 불변 기한 엄수: 일반 거절 28일, 온쇼어 s 116 취소 소명 5영업일(reg 2.44), s 501 인성 취소 9일 · 단 하루만 지나도 재심 접수권이 영구 소멸돼요!",
         "Section 48 Bar 우회 전략: 호주 내 거절 이력이 있어도 주정부 노미네이션(190·491), 지방 스폰서(494), 파트너(820) 등 법정 예외 비자(reg 2.12)는 호주 내 접수가 가능해요(단, BVB 출국·재입국 동선 설계 필수).",
         "장관 탄원(s 351 Ministerial Intervention): 재심 결정 이후 호주 시민권 자녀의 최선의 이익 등 극히 이례적·공익적 사유가 있을 때 마지막으로 검토하는 최후 구제 수단이에요."
       ],
       "key_criteria_en": [
-        "Non-Extendable Statutory Deadlines: Standard refusal 28 calendar days, onshore s 116 NOICC 5 working days (reg 2.44), s 501 character decisions 9 days—missing by even 1 day permanently extinguishes review rights!",
+        "Non-Extendable Statutory Deadlines: Standard refusal 28 calendar days, onshore s 116 NOICC 5 working days (reg 2.44), s 501 character decisions 9 days, missing by even 1 day permanently extinguishes review rights!",
         "Section 48 Bar Exceptions (reg 2.12): Despite an onshore refusal, prescribed visas including Subclass 190, 491, 494, and Partner 820 remain valid onshore options (careful BVB travel planning required).",
         "Ministerial Intervention (s 351): Discretionary public-interest remedy post-ART decision reserved for unique and exceptional circumstances (e.g., best interests of an Australian citizen child)."
       ],
@@ -562,7 +562,7 @@
       "fee_en": "100% Free Initial Triage (Upload Departmental Notice)",
       "title_ko": "박앤코 비자응급실™ (이민성 소명·취소 통지서 무료 진단)",
       "title_en": "Park & Co Visa Emergency™ (Free s 57 / PIC 4020 / NOICC Triage)",
-      "description_ko": "호주 이민성으로부터 거절 전 소명 요구(s 57 Natural Justice), 허위·위조 서류 의심(PIC 4020 — 3년/10년 입국금지), 비자 취소 예고 통지서(NOICC: s 116 / s 109 / s 501 등)를 받으셨다면 문진표에 업로드해 주세요. 박창민 대표변호사가 원인을 정밀 진단해 무료 응급 처방전을 이메일로 보내드려요.",
+      "description_ko": "호주 이민성으로부터 거절 전 소명 요구(s 57 Natural Justice), 허위·위조 서류 의심(PIC 4020 · 3년/10년 입국금지), 비자 취소 예고 통지서(NOICC: s 116 / s 109 / s 501 등)를 받으셨다면 문진표에 업로드해 주세요. 박창민 대표변호사가 원인을 정밀 진단해 무료 응급 처방전을 이메일로 보내드려요.",
       "description_en": "Received a s 57 Natural Justice letter, PIC 4020 allegation (carrying a 3- or 10-year ban), or Notice of Intention to Consider Cancellation (NOICC: s 116 / s 109 / s 501)? Upload your notice for a rapid, confidential legal triage prescription from Legal Practitioner Director Chang Min Park.",
       "url_ko": "https://parklawyers.com.au/case-emergency/visa/?lang=ko",
       "url_en": "https://parklawyers.com.au/case-emergency/visa/",
@@ -578,8 +578,8 @@
       "fee_en": "Free Refusal Decision Assessment (Fixed-Fee Representation)",
       "title_ko": "박앤코 ART Case Review™ (비자·노미네이션 거절 재심 검토)",
       "title_en": "Park & Co ART Case Review™ (Visa & Nomination Refusal Appeals)",
-      "description_ko": "비자 거절·취소 또는 고용주 노미네이션 거절 결정문(Decision Record)을 수령하셨거나, 현재 ART(행정재심기구) 재심 대기 중 기존 대리인의 전략이 불안하신 분께 무료로 승산과 역전 전략(세컨드 오피니언)을 진단해 드려요.",
-      "description_en": "Received a visa refusal, cancellation, or employer nomination refusal Decision Record—or seeking an independent specialist second opinion on a pending Administrative Review Tribunal (ART) appeal? Get a complimentary prospects & strategy review.",
+      "description_ko": "비자 거절·취소 또는 고용주 노미네이션 거절 결정문(Decision Record)을 수령하셨거나 현재 ART(행정재심기구) 재심 대기 중 기존 대리인의 전략이 불안하신 분께 무료로 승산과 역전 전략(세컨드 오피니언)을 진단해 드려요.",
+      "description_en": "Received a visa refusal, cancellation, or employer nomination refusal Decision Record, or seeking an independent specialist second opinion on a pending Administrative Review Tribunal (ART) appeal? Get a complimentary prospects & strategy review.",
       "url_ko": "https://parklawyers.com.au/appealing-visa-decision/?lang=ko",
       "url_en": "https://parklawyers.com.au/appealing-visa-decision/",
       "video_id": "zVvzficFWqk"

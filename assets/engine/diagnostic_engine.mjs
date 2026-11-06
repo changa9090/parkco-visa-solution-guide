@@ -263,7 +263,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       detail_en:
         "If you received a s 57 invitation to comment, NOICC, or PIC 4020 allegation (bogus document or false/misleading information), " +
         "missing the statutory deadline (typically 7–28 days) triggers immediate refusal and a 3- to 10-year visa bar. " +
-        "Avoid unguided apology letters—seek immediate legal triage via Park & Co Visa Emergency™.",
+        "Avoid unguided apology letters; seek immediate legal triage via Park & Co Visa Emergency™.",
     });
   }
 
@@ -276,7 +276,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       detail_ko:
         "호주 입국 후 비자가 거절·취소되어 실질 비자(Substantive Visa)가 없는 상태라면 Migration Act s 48에 의해 " +
         "호주 내에서 대부분의 일반 비자(482·500·189·186 등) 재접수가 법적으로 차단돼요. " +
-        "ART(행정재심기구, 접수비 $3,727) 재심 기한을 즉시 확인하거나, s 48 예외 비자(190 · 491 · 494 · 파트너 820) 및 출국 후 해외 접수 전략을 정밀 검토해야 해요.",
+        "ART(행정재심기구, 접수비 $3,727) 재심 기한을 즉시 확인하거나 s 48 예외 비자(190 · 491 · 494 · 파트너 820) 및 출국 후 해외 접수 전략을 정밀 검토해야 해요.",
       detail_en:
         "If you were refused or cancelled since last entering Australia and do not hold a substantive visa, Migration Act s 48 legally bars onshore lodgement of most visas (482, 500, 189, 186, etc.). " +
         "Verify your non-extendable ART merits review deadline ($3,727 fee) immediately, or assess s 48 exempt onshore visas (190, 491, 494, Partner 820) and offshore lodgement options.",
@@ -295,7 +295,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
           "체류 연장을 목적으로 무리한 학생비자 전환을 시도해서는 안 되며, 해외 출국 후 진정한 유학생 요건(GS) 하에 접수하거나 482·190·491·파트너 비자 등 합법적 직접 경로로 설계해야 해요.",
         detail_en:
           "Since 1 July 2024, holders of Visitor (600) and Temporary Graduate (485) visas are statutorily barred from lodging a Student Visa (Subclass 500) onshore in Australia. " +
-          "Do not rely on onshore student extensions—plan direct skilled/sponsored/partner pathways (482, 190, 491, 820) or genuine offshore Student Visa lodgement.",
+          "Do not rely on onshore student extensions; plan direct skilled/sponsored/partner pathways (482, 190, 491, 820) or genuine offshore Student Visa lodgement.",
       });
     } else {
       riskFlags.push({
@@ -304,7 +304,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
         title_ko: "참고: 현재 비자(600/485) 만료 임박 시 호주 내 학생비자(500) 연장 전환은 불가해요",
         title_en: "Reminder: Current Subclass 600/485 Holders Cannot Switch to Student Visa (500) Onshore",
         detail_ko:
-          "2024년 7월 1일 시행 규정에 따라 485·600 비자 소지자는 호주 내에서 학생비자(500)로 체류를 연장할 수 없으므로, 현 비자 만료일 전에 189·190·491 초청 또는 482 스폰서 노미네이션 일정을 역산해 준비하셔야 해요.",
+          "2024년 7월 1일 시행 규정에 따라 485·600 비자 소지자는 호주 내에서 학생비자(500)로 체류를 연장할 수 없으므로 현 비자 만료일 전에 189·190·491 초청 또는 482 스폰서 노미네이션 일정을 역산해 준비하셔야 해요.",
         detail_en:
           "Under the 1 July 2024 anti-visa-hopping regulations, Subclass 485 and 600 holders cannot lodge an onshore Student Visa (500). Work backwards from your visa expiry to secure a 189/190/491 invitation or 482 nomination.",
       });
@@ -319,10 +319,10 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       title_en: "Schedule 3 Waiver Risk for Onshore Partner Visa (Subclass 820)",
       detail_ko:
         "브리징 비자 소지 또는 비자 만료(실질 비자 미소지) 상태에서 호주 내 파트너 비자(820/801)를 접수하면 Schedule 3 요건이 걸려요. " +
-        "강력하고 불가피한 사유(Compelling Reasons) 면제를 입증하지 못하면 거절될 수 있으므로, 주정부 사실혼 관계등록(Relationship Registration) 여부와 해외 309/100 접수 대안까지 변호사와 비교 후 결정하셔야 해요.",
+        "강력하고 불가피한 사유(Compelling Reasons) 면제를 입증하지 못하면 거절될 수 있으므로 주정부 사실혼 관계등록(Relationship Registration) 여부와 해외 309/100 접수 대안까지 변호사와 비교 후 결정하셔야 해요.",
       detail_en:
         "Lodging an onshore Partner Visa (820/801) while holding a Bridging Visa or without a substantive visa triggers Schedule 3 criteria. " +
-        "Without compelling reasons for a waiver, the visa will be refused—compare onshore Schedule 3 submissions against offshore Subclass 309/100 lodgement with a specialist lawyer first.",
+        "Without compelling reasons for a waiver, the visa will be refused; compare onshore Schedule 3 submissions against offshore Subclass 309/100 lodgement with a specialist lawyer first.",
     });
   }
 
@@ -361,8 +361,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       riskFlags.push({
         severity: "P2",
         code: `OCCUPATION_CAVEAT_${occ.anzsco_code_primary}`,
-        title_ko: `직종 고유 법령 제한 조건(Caveat) 존재 — ${occ.occupation} (${occ.anzsco_code_primary})`,
-        title_en: `Statutory Occupation Caveat Applies — ${occ.occupation} (${occ.anzsco_code_primary})`,
+        title_ko: `직종 고유 법령 제한 조건(Caveat) 존재 · ${occ.occupation} (${occ.anzsco_code_primary})`,
+        title_en: `Statutory Occupation Caveat Applies · ${occ.occupation} (${occ.anzsco_code_primary})`,
         detail_ko: `스폰서 비자(${scKeysJoined}) 진행 시 [${koSum}] 요건이 적용돼요. 이민성 원문: "${excerptShort}"`,
         detail_en: `Sponsored nomination under Subclass ${scKeysJoined} must satisfy [${enSum}]. Home Affairs Verbatim Text: "${excerptShort}"`,
       });
@@ -377,7 +377,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       title_en: `'${occ.occupation}' Is Excluded from Standard 482 CSOL & 189 MLTSSL`,
       detail_ko:
         "2024년 12월 CSOL(456개 직종) 개편에서 일반 482 Core 리스트에 포함되지 않아 표준 482 스폰서십 및 189 신청이 불가해요. " +
-        "주정부 후원(190/491), 지방 고용주 스폰서(494), 또는 해당 직종이 포함된 지역 DAMA 협약을 통해서만 진행할 수 있어요.",
+        "주정부 후원(190/491), 지방 고용주 스폰서(494), 또는 해당 직종이 포함된 지역 DAMA 협약으로만 진행할 수 있어요.",
       detail_en:
         "Under the December 2024 CSOL (456 occupations) reform, this occupation is unavailable for standard Subclass 482 Core Skills sponsorship or Subclass 189. " +
         "Target State Nomination (190/491), Regional Employer Sponsored (494), or an eligible regional DAMA Labour Agreement.",
@@ -421,7 +421,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       title_ko: "Schedule 6D Item 6D51 경력 점수 합산 상한(최대 20점) 자동 적용됨",
       title_en: "Schedule 6D Item 6D51 Combined Employment Cap (Max 20 Pts) Applied",
       detail_ko:
-        `호주 경력(${points.au_work_points_raw}점)과 해외 경력(${points.os_work_points_raw}점) 단순 합계는 ${points.raw_employment_points}점이지만, ` +
+        `호주 경력(${points.au_work_points_raw}점)과 해외 경력(${points.os_work_points_raw}점) 단순 합계는 ${points.raw_employment_points}점이지만 ` +
         "이민법 Schedule 6D Item 6D51 규정에 따라 국내·외 경력 합산 점수는 최대 20점까지만 인정돼요. EOI 과다 청구(Overclaim) 거절 방지를 위해 20점으로 정확히 보정했어요.",
       detail_en:
         `Your raw Australian (${points.au_work_points_raw} pts) + overseas (${points.os_work_points_raw} pts) employment score is ${points.raw_employment_points} pts, ` +
@@ -435,7 +435,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     title_ko: "2025년 8·9월 개편 영어 성적표 기준 및 온라인 시험 불인정 유의",
     title_en: "Aug/Sep 2025 English Score Reforms & Strict Exclusion of Online Home Tests",
     detail_ko:
-      "LIN 25/016 · LIN 25/082 개편으로 PTE Academic 영역별 기준(예: Competent L47/R48/W51/S54, Proficient L58/R59/W69/S76)이 달라졌으며, " +
+      "LIN 25/016 · LIN 25/082 개편으로 PTE Academic 영역별 기준(예: Competent L47/R48/W51/S54, Proficient L58/R59/W69/S76)이 달라졌어요. 또한 " +
       "IELTS Online · TOEFL Home Edition 등 모든 자택 온라인 시험은 호주 비자용으로 전면 인정되지 않아요.",
     detail_en:
       "Under LIN 25/016 and LIN 25/082, PTE Academic component thresholds changed (e.g., Competent L47/R48/W51/S54; Proficient L58/R59/W69/S76), " +
@@ -469,7 +469,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_ko:
         "직종 리스트(SOL)·연령·영어 점수 제한 없이 호주 시민권·영주권자 배우자/사실혼 관계의 진정성(4대 기둥 증빙)을 토대로 영주권까지 직결되는 가장 안정적인 가족 경로예요.",
       why_fit_en:
-        "Leads directly to permanent residency based on a genuine married or de facto relationship with an Australian citizen/PR (Four Pillars evidence)—free from SOL occupation, age, or points hurdles.",
+        "Leads directly to permanent residency based on a genuine married or de facto relationship with an Australian citizen/PR (Four Pillars evidence), free from SOL occupation, age, or points hurdles.",
       key_requirements_ko: [
         "재정 · 주거 · 사회 · 상호 헌신의 4대 기둥(Four Pillars) 객관 증빙",
         "사실혼(De facto)의 경우 12개월 동거 입증 또는 주정부 관계등록(QLD/NSW/VIC 등)",
@@ -506,8 +506,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
 
     primaryPathways.push({
       subclass: "189",
-      name_ko: "독립기술이민 영주권 (Subclass 189 — Points-tested)",
-      name_en: "Skilled Independent Visa (Subclass 189 — Direct PR)",
+      name_ko: "독립기술이민 영주권 (Subclass 189 · Points-tested)",
+      name_en: "Skilled Independent Visa (Subclass 189 · Direct PR)",
       category: "gsm",
       score: score189,
       readiness_tier: tier189,
@@ -543,8 +543,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
   if (occ && occSummary.eligible_190 && !ageOver45 && gsmEngOk && points.meets_gsm_65_190) {
     primaryPathways.push({
       subclass: "190",
-      name_ko: "주정부 후원 기술이민 영주권 (Subclass 190 — +5점 가산)",
-      name_en: "Skilled Nominated Visa (Subclass 190 — Direct PR, +5 Pts)",
+      name_ko: "주정부 후원 기술이민 영주권 (Subclass 190 · +5점 가산)",
+      name_en: "Skilled Nominated Visa (Subclass 190 · Direct PR, +5 Pts)",
       category: "gsm",
       score: points.points_190 >= 80 ? 90 : 79,
       readiness_tier: s48OnshoreBar ? "최우선 검토 (s 48 예외 가능)" : points.points_190 >= 80 ? "최우선 검토" : "유력 대안",
@@ -562,7 +562,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
         "고용주 종속 없이 곧바로 영주권(PR)을 받는 핵심 주정부 트랙이에요.",
       why_fit_en:
         `State nomination (+5 pts) brings your total to ${points.points_190} pts, unlocking direct permanent residency without employer tie-in` +
-        `${!occSummary.eligible_189 ? "—even for STSOL occupations excluded from Subclass 189" : ""}.`,
+        `${!occSummary.eligible_189 ? ", even for STSOL occupations excluded from Subclass 189" : ""}.`,
       key_requirements_ko: [
         "각 주정부(QLD/NSW/VIC/SA/WA 등)별 거주·고용·우선 직군 ROI 선발 요건 충족",
         "기술심사 완료 및 Competent 영어 이상, 초청 시점 만 45세 미만",
@@ -571,7 +571,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       key_requirements_en: [
         "Satisfy state/territory ROI criteria (residency, onshore employment, priority sector) in QLD, NSW, VIC, SA, WA, etc.",
         "Valid skills assessment, Competent+ English, and under age 45 at invitation",
-        "Prescribed s 48 exempt visa—eligible for onshore lodgement upon state nomination even after a prior refusal",
+        "Prescribed s 48 exempt visa, eligible for onshore lodgement upon state nomination even after a prior refusal",
       ],
       caveat_warning_en: null,
     });
@@ -600,7 +600,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_en:
         `Adds +15 regional points for a total of ${points.points_491} pts. After 3 years living/working in a Designated Regional Area (incl. Gold Coast, Perth, Adelaide, Canberra) and 3 ATO Notices of Assessment, transitions to Subclass 191 PR with a $0 statutory minimum income floor.`,
       key_requirements_ko: [
-        "지정 지방(Designated Regional Area — 시드니·멜버른·브리즈번 제외 전역) 거주·근무 조건 준수",
+        "지정 지방(Designated Regional Area · 시드니·멜버른·브리즈번 제외 전역) 거주·근무 조건 준수",
         "3년 보유 및 3개 과세연도 NOA 제출 후 Subclass 191($630) 영주권 전환",
       ],
       key_requirements_en: [
@@ -622,8 +622,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     let tier482En;
     let score482;
     if (s48OnshoreBar) {
-      tier482 = "조건 보완 시 가능 (s 48 제한 — 출국 접수 검토)";
-      tier482En = "Conditional (s 48 Bar — Offshore Lodgement Check)";
+      tier482 = "조건 보완 시 가능 (s 48 제한 · 출국 접수 검토)";
+      tier482En = "Conditional (s 48 Bar · Offshore Lodgement Check)";
       score482 = 66;
     } else if (!salOk) {
       tier482 = `연봉 상향($${fmtComma(thresholds.csit_aud)}+) 또는 DAMA 필요`;
@@ -645,7 +645,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
 
     const prBridgeNote = !ageOver45
       ? `2년 근무 후 만 45세 미만 186 TRT($${fmtComma(vacMap["186"])}) 전환`
-      : `만 45세 이상 연령 상한이 없으며, 2년 근무 + 고소득 면제(FWHIT $${fmtComma(thresholds.fwhit_aud)}) 또는 지역 DAMA 연령 완화(만 50~55세)를 통해 186 영주권 연결`;
+      : `만 45세 이상 연령 상한이 없고 2년 근무 + 고소득 면제(FWHIT $${fmtComma(thresholds.fwhit_aud)}) 또는 지역 DAMA 연령 완화(만 50~55세)로 186 영주권 연결`;
     const prBridgeNoteEn = !ageOver45
       ? `transitions to Subclass 186 TRT PR ($${fmtComma(vacMap["186"])}) after 2 years under age 45`
       : `has no upper age cap on 482 and bridges to 186 PR via the 2-year FWHIT ($${fmtComma(thresholds.fwhit_aud)}) high-income exemption or a regional DAMA age concession (under 50/55)`;
@@ -692,8 +692,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     let tier186En;
     let score186;
     if (s48OnshoreBar) {
-      tier186 = "조건 보완 시 가능 (s 48 제한 — 출국 접수 검토)";
-      tier186En = "Conditional (s 48 Bar — Offshore Lodgement Check)";
+      tier186 = "조건 보완 시 가능 (s 48 제한 · 출국 접수 검토)";
+      tier186En = "Conditional (s 48 Bar · Offshore Lodgement Check)";
       score186 = 65;
     } else if (!salOk) {
       tier186 = `연봉 상향($${fmtComma(thresholds.csit_aud)}+) 필요`;
@@ -727,7 +727,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_ko:
         "관련 풀타임 경력 3년 이상 + 정식 기술심사를 갖추어 482 임시비자 단계 없이 곧바로 영주권을 취득하는 스폰서 직행 경로예요.",
       why_fit_en:
-        "Bypasses temporary Subclass 482 residence—granting direct permanent residency when backed by 3+ years of full-time relevant experience and a full skills assessment.",
+        "Bypasses temporary Subclass 482 residence, granting direct permanent residency when backed by 3+ years of full-time relevant experience and a full skills assessment.",
       key_requirements_ko: [
         `정식 기술심사 승인 + 풀타임 3년 경력 + 연봉 CSIT $${fmtComma(thresholds.csit_aud)} 이상`,
         "신청 시점 만 45세 미만 및 Competent 영어 성적",
@@ -755,8 +755,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     let tierTrtEn;
     let scoreTrt;
     if (s48OnshoreBar) {
-      tierTrt = "조건 보완 시 가능 (s 48 제한 — 출국 접수 검토)";
-      tierTrtEn = "Conditional (s 48 Bar — Offshore Lodgement Check)";
+      tierTrt = "조건 보완 시 가능 (s 48 제한 · 출국 접수 검토)";
+      tierTrtEn = "Conditional (s 48 Bar · Offshore Lodgement Check)";
       scoreTrt = 67;
     } else if (!salOk) {
       tierTrt = `연봉 상향($${fmtComma(thresholds.csit_aud)}+) 필요`;
@@ -770,8 +770,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
 
     primaryPathways.push({
       subclass: "186-TRT",
-      name_ko: "현 482 보유자 고용주 스폰서 영주권 전환 (Subclass 186 TRT — 2년 근무)",
-      name_en: "Temporary Residence Transition PR for Current 482 Holders (Subclass 186 TRT — 2 Yrs)",
+      name_ko: "현 482 보유자 고용주 스폰서 영주권 전환 (Subclass 186 TRT · 2년 근무)",
+      name_en: "Temporary Residence Transition PR for Current 482 Holders (Subclass 186 TRT · 2 Yrs)",
       category: "employer_sponsored",
       score: scoreTrt,
       readiness_tier: tierTrt,
@@ -786,7 +786,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_ko:
         "현재 482 비자를 보유 중이시므로 직종이 CSOL/MLTSSL에 없더라도(구 STSOL·ROL 포함) 스폰서 고용주 소속 풀타임 2년 근무 요건 충족 시 186 TRT 영주권 전환이 가능해요.",
       why_fit_en:
-        "As a current Subclass 482 holder, you can transition to Subclass 186 TRT permanent residency after 2 years of full-time sponsored work—even if your occupation sat on legacy STSOL/ROL lists.",
+        "As a current Subclass 482 holder, you can transition to Subclass 186 TRT permanent residency after 2 years of full-time sponsored work, even if your occupation sat on legacy STSOL/ROL lists.",
       key_requirements_ko: [
         `482 보유 상태에서 최근 3년 중 최소 2년 풀타임 근무 + 연봉 CSIT $${fmtComma(thresholds.csit_aud)} 이상`,
         `신청 시점 만 45세 미만 (또는 2년간 FWHIT $${fmtComma(thresholds.fwhit_aud)}+ 고소득 면제) 및 Competent 영어`,
@@ -847,8 +847,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
   if (globalTalent) {
     primaryPathways.push({
       subclass: "858",
-      name_ko: "국가혁신비자 즉시 영주권 (Subclass 858 — National Innovation Visa)",
-      name_en: "National Innovation Visa Direct PR (Subclass 858 — Invitation Only)",
+      name_ko: "국가혁신비자 즉시 영주권 (Subclass 858 · National Innovation Visa)",
+      name_en: "National Innovation Visa Direct PR (Subclass 858 · Invitation Only)",
       category: "talent",
       score: 83,
       readiness_tier: "고급 특례 경로",
@@ -865,7 +865,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_en:
         "Replacing the closed Subclass 188 BIIP and former GTI, Subclass 858 grants direct PR by invitation for internationally recognised research, patents, deep-tech entrepreneurship, or elite achievements beyond standard age/SOL limits.",
       key_requirements_ko: [
-        "이민성 초청(Invitation Only — EOI 선접수 필수) 및 동일 분야 호주 권위자/기관 추천(Form 1000)",
+        "이민성 초청(Invitation Only · EOI 선접수 필수) 및 동일 분야 호주 권위자/기관 추천(Form 1000)",
         `국제적 성취 입증 및 통상 FWHIT($${fmtComma(thresholds.fwhit_aud)}) 수준의 고소득 잠재력 소명`,
       ],
       key_requirements_en: [
@@ -882,10 +882,10 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
   if (primaryPathways.length >= 2) {
     const [p1, p2] = primaryPathways;
     alternativeComparison = {
-      primary_title: `1순위: ${p1.subclass} — ${p1.name_ko}`,
-      primary_title_en: `#1 Primary: ${p1.subclass} — ${p1.name_en}`,
-      secondary_title: `2순위 대안: ${p2.subclass} — ${p2.name_ko}`,
-      secondary_title_en: `#2 Alternative: ${p2.subclass} — ${p2.name_en}`,
+      primary_title: `1순위: ${p1.subclass} · ${p1.name_ko}`,
+      primary_title_en: `#1 Primary: ${p1.subclass} · ${p1.name_en}`,
+      secondary_title: `2순위 대안: ${p2.subclass} · ${p2.name_ko}`,
+      secondary_title_en: `#2 Alternative: ${p2.subclass} · ${p2.name_en}`,
       rows: [
         {
           dimension_ko: "영주권 직결성",
@@ -997,7 +997,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     const topP = primaryPathways[0];
     conceptSummaryKo =
       "호주 이민은 '임시 체류/경력 확보 → 직종·기술심사·영어 검증 → 영주권(PR) 전환'의 단계별 설계가 핵심이에요. " +
-      `현재 프로필에서는 [${topP.name_ko}] 경로가 1순위로 분석되었으며, 총 ${p1P2Flags.length}건의 핵심 법령 체크포인트가 확인되었어요.`;
+      `현재 프로필에서는 [${topP.name_ko}] 경로가 1순위로 분석되었고 총 ${p1P2Flags.length}건의 핵심 법령 체크포인트가 확인되었어요.`;
     conceptSummaryEn =
       "Australian migration succeeds through structured stage-by-stage planning: Temporary Stay & Experience → ANZSCO / Skills / English Verification → Permanent Residence (PR). " +
       `Based on your profile, [${topP.name_en}] ranks #1, with ${p1P2Flags.length} statutory checkpoint(s) flagged for review.`;
@@ -1048,8 +1048,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     : "No critical statutory flags";
 
   const userNotes = String(payload.notes || "").trim();
-  const subjectKo = `[박앤코 비자 진단 상담 요청] ${applicantName} — ${occ ? occ.occupation : "호주 비자 전략"}`;
-  const subjectEn = `[Park & Co Visa Strategy Consultation] ${applicantNameEn} — ${occ ? occ.occupation : "Australian Visa Roadmap"}`;
+  const subjectKo = `[박앤코 비자 진단 상담 요청] ${applicantName} · ${occ ? occ.occupation : "호주 비자 전략"}`;
+  const subjectEn = `[Park & Co Visa Strategy Consultation] ${applicantNameEn} · ${occ ? occ.occupation : "Australian Visa Roadmap"}`;
 
   const bodyKo = [
     "안녕하세요, 법무법인 박앤코(Park & Co Lawyers) 박창민 대표변호사님 팀 앞 상담 문의드립니다.",
@@ -1072,7 +1072,7 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
   ].join("\n");
 
   const bodyEn = [
-    "Dear Chang Min Park (Legal Practitioner Director · Accredited Specialist in Immigration Law — QLS) & Park & Co Lawyers Team,",
+    "Dear Chang Min Park (Legal Practitioner Director · Accredited Specialist in Immigration Law · QLS) & Park & Co Lawyers Team,",
     "",
     "■ Applicant Profile (Park & Co Australian Visa Solution Guide Diagnostic Brief)",
     `- Name: ${applicantNameEn}`,

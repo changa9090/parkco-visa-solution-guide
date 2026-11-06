@@ -9,7 +9,7 @@ export const PRIVACY_NOTICE_KO =
   "로컬 메모리 내에서 즉시 분석 후 폐기돼요.";
 
 export const PRIVACY_NOTICE_EN =
-  "Your resume is processed strictly in ephemeral local memory—never sent to paid external AI APIs " +
+  "Your resume is processed strictly in ephemeral local memory and never sent to paid external AI APIs " +
   "or stored on server disk.";
 
 const MONTH_MAP = {
@@ -52,7 +52,7 @@ const DATE_SPAN_SOURCE =
   "|(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?\\s+(?:19|20)\\d{2}" +
   "|(?:19|20)\\d{2}년?" +
   ")" +
-  "\\s*(?:[-–—~]|to|부터)\\s*" +
+  "\\s*(?:[-–\u2014~]|to|부터)\\s*" +
   "(?<end>" +
   "(?:19|20)\\d{2}\\s*(?:[./-]|년)\\s*\\d{1,2}\\s*월?" +
   "|(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\\.?\\s+(?:19|20)\\d{2}" +
@@ -901,12 +901,12 @@ function detectEmploymentWarnings(text) {
       "ABN / 프리랜서(Contractor) 근무 이력 감지: 482·186 및 TRA/VETASSESS 심사에서는 단순 ABN 인보이스만으로 고용관계·풀타임 경력 인정이 까다로울 수 있어 계약서·세금신고(NOA)·실제 지휘감독 증빙 점검이 필요해요."
     );
     warningsEn.push(
-      "ABN / Independent Contractor History Detected: For Subclass 482/186 and TRA/VETASSESS assessments, standalone ABN invoices are scrutinised heavily—written service contracts, ATO Notices of Assessment (NOA), and day-to-day direction evidence should be audited."
+      "ABN / Independent Contractor History Detected: For Subclass 482/186 and TRA/VETASSESS assessments, standalone ABN invoices are scrutinised heavily; written service contracts, ATO Notices of Assessment (NOA), and day-to-day direction evidence should be audited."
     );
   }
   if (/(?<![\p{L}\p{N}_])(?:part[- ]time|casual)(?![\p{L}\p{N}_])|파트타임|캐주얼|알바|아르바이트/iu.test(text)) {
     warningsKo.push(
-      "파트타임·캐주얼 근무 형태 감지: 482 SID는 주 20시간 이상 파트타임의 비례 합산(Pro-rata, 예: 주 19~20시간 2년 = 풀타임 1년)이 가능하지만, 부정기 캐주얼이나 주 20시간 미만 구간은 기술심사·점수제 경력에서 제외될 수 있어요."
+      "파트타임·캐주얼 근무 형태 감지: 482 SID는 주 20시간 이상 파트타임의 비례 합산(Pro-rata, 예: 주 19~20시간 2년 = 풀타임 1년)이 가능하지만 부정기 캐주얼이나 주 20시간 미만 구간은 기술심사·점수제 경력에서 제외될 수 있어요."
     );
     warningsEn.push(
       "Part-Time / Casual Employment Detected: While Subclass 482 SID permits pro-rata counting of regular part-time work (e.g., 2 years at ~20 hrs/wk = 1 year full-time), irregular casual shifts or periods under 20 hrs/wk may be excluded from skills assessments and Schedule 6D points."
@@ -1012,7 +1012,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
         `주의(직종 Caveat): ${top.occupation} 직종으로 ${firstSc} 등 스폰서 비자 진행 시 '${cavSummary}' 제한 조건이 이민성 법령 원문에 명시되어 있어요.`
       );
       gapInsightsEn.push(
-        `Statutory Caveat Alert: Sponsoring '${top.occupation}' under Subclass ${firstSc} is subject to legislative caveat — '${cavSummaryEn}'.`
+        `Statutory Caveat Alert: Sponsoring '${top.occupation}' under Subclass ${firstSc} is subject to legislative caveat · '${cavSummaryEn}'.`
       );
     }
 
@@ -1021,7 +1021,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
         `${top.occupation} 직종은 MLTSSL이 아닌 ${(top.lists || []).join(", ")} 소속이므로 189 독립기술이민은 불가하며, 주정부 후원(190/491) 또는 고용주 스폰서(482 → 186) 중심으로 설계해야 해요.`
       );
       gapInsightsEn.push(
-        `Because '${top.occupation}' sits on ${(top.lists || []).join(", ")} (not MLTSSL), Subclass 189 Independent is unavailable—focus on State Nomination (190/491) or Employer Sponsorship (482 → 186).`
+        `Because '${top.occupation}' sits on ${(top.lists || []).join(", ")} (not MLTSSL), Subclass 189 Independent is unavailable; focus on State Nomination (190/491) or Employer Sponsorship (482 → 186).`
       );
     }
   }
@@ -1032,7 +1032,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
       `통합 산출 경력이 약 ${fmtYr(expYears)}년으로 감지되었어요. 482 SID 스폰서 비자는 최근 5년 내 최소 1년 풀타임(또는 비례 파트타임) 경력이 필수이므로 경력 산정 구간을 꼭 확인해 보세요.`
     );
     gapInsightsEn.push(
-      `De-overlapped experience totals ~${fmtYr(expYears)} yrs. Subclass 482 SID requires at least 1 year of full-time (or equivalent pro-rata part-time) experience within the last 5 years—please double-check your date ranges.`
+      `De-overlapped experience totals ~${fmtYr(expYears)} yrs. Subclass 482 SID requires at least 1 year of full-time (or equivalent pro-rata part-time) experience within the last 5 years; please double-check your date ranges.`
     );
   } else if (expYears < 2.0) {
     gapInsights.push(
