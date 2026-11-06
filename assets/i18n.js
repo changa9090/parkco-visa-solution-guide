@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Park & Co Australian Visa Solution Guide — First-Class Bilingual Engine
+   Park & Co Australian Visa Solution Guide · First-Class Bilingual Engine
    Supports instant lossless switching between 한국어 (KO) and English (EN)
    ========================================================================== */
 
@@ -19,7 +19,7 @@
     },
   };
 
-  /**
+  /*
    * Declarative selector -> English specification for static DOM nodes in index.html.
    * On first run, the original Korean text/HTML/attributes are automatically cached
    * on each element so toggling KO <-> EN is 100% lossless and instant.
@@ -80,7 +80,7 @@
     {
       sel: ".specialist-note",
       html:
-        "Built to the standards of a <strong>Queensland Law Society Accredited Specialist in Immigration Law</strong>—" +
+        "Built to the standards of a <strong>Queensland Law Society Accredited Specialist in Immigration Law</strong>, " +
         "screening real-world refusal triggers (Caveats · s 48 Bar · Schedule 3 · EOI Over-claiming) before you lodge.",
     },
     {
@@ -157,7 +157,7 @@
     {
       sel: ".concept-lifecycle-grid .concept-stage-card:nth-child(1) .stage-body",
       text:
-        "Every first visa shapes your PR timeline. Since 1 July 2024, onshore Student Visa (500) hopping from Visitor (600) or Graduate (485) visas is statutorily banned—making initial pathway selection critical.",
+        "Every first visa shapes your PR timeline. Since 1 July 2024, onshore Student Visa (500) hopping from Visitor (600) or Graduate (485) visas is statutorily banned, making initial pathway selection critical.",
     },
     {
       sel: ".concept-lifecycle-grid .concept-stage-card:nth-child(2) h3",
@@ -249,7 +249,7 @@
       sel: "#module-resume .section-desc",
       html:
         "Australian immigration assesses your <strong>actual performed duties (ABS ANZSCO Tasks)</strong>, not merely your job title. " +
-        "Search in English or Korean—or upload your CV (PDF · DOCX · TXT)—to match eligible SOL occupations and spot high-risk occupation confusion traps.",
+        "Search in English or Korean, or upload your CV (PDF · DOCX · TXT), to match eligible SOL occupations and spot high-risk occupation confusion traps.",
     },
     {
       sel: "#module-resume .dual-workspace-grid > .panel-card:nth-child(1) .panel-card-head h3",
@@ -317,10 +317,10 @@
     },
     { sel: 'label[for="sol-list-select"]', text: "Skilled Occupation List" },
     { sel: '#sol-list-select option[value=""]', text: "All Official Lists (714)" },
-    { sel: '#sol-list-select option[value="MLTSSL"]', text: "MLTSSL (Medium/Long-Term — 189 · 485 Eligible)" },
+    { sel: '#sol-list-select option[value="MLTSSL"]', text: "MLTSSL (Medium/Long-Term · 189 · 485 Eligible)" },
     { sel: '#sol-list-select option[value="CSOL"]', text: "CSOL (Core 482 SID & 186 DE)" },
-    { sel: '#sol-list-select option[value="STSOL"]', text: "STSOL (Short-Term — 190 · 491 Only, No 189)" },
-    { sel: '#sol-list-select option[value="ROL"]', text: "ROL (Regional Only — 491 · 494)" },
+    { sel: '#sol-list-select option[value="STSOL"]', text: "STSOL (Short-Term · 190 · 491 Only, No 189)" },
+    { sel: '#sol-list-select option[value="ROL"]', text: "ROL (Regional Only · 491 · 494)" },
     { sel: '#sol-list-select option[value="DAMA"]', text: "13 Regional DAMAs Eligible" },
     { sel: 'label[for="sol-visa-select"]', text: "Eligible Visa Subclass" },
     { sel: '#sol-visa-select option[value=""]', text: "All Subclasses" },
