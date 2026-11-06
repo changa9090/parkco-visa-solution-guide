@@ -431,8 +431,8 @@
     { sel: "#diag-au-partner-visa + span", text: "Have Australian Citizen / PR Spouse or Partner (820/309)" },
     { sel: "#diag-global-talent + span", text: "Exceptional Research / Patent / Founder Profile (858 NIV)" },
     { sel: "#diag-parent-visa + span", text: "Have Settled Australian Citizen / PR Child (Parent 143/870)" },
-    { sel: "#diag-s57-pic4020 + span", text: "[URGENT] Received s 57 / NOICC / PIC 4020 Notice" },
-    { sel: "#diag-prior-refusal + span", text: "[URGENT] Prior Visa Refusal / Cancellation or s 48 Bar" },
+    { sel: "#diag-s57-pic4020 + span", text: "Urgent: Received s 57 / NOICC / PIC 4020 Notice" },
+    { sel: "#diag-prior-refusal + span", text: "Urgent: Prior Visa Refusal / Cancellation or s 48 Bar" },
     { sel: "#diag-health-char + span", text: "Medical Condition or Character / Police Record" },
     { sel: '#diagnose-form .diagnose-submit-row button[type="submit"]', text: "Run Multi-Factor Visa & Legal Risk Simulation" },
 
@@ -452,7 +452,7 @@
     {
       sel: "#module-pathways .matrix-card .panel-card-head .subsection-desc",
       text:
-        "Legislative Instruments: LIN 25/016 · LIN 25/082 · LIN 25/089 — All remote/at-home tests (IELTS Online, TOEFL Home, etc.) are strictly excluded.",
+        "Legislative Instruments: LIN 25/016 · LIN 25/082 · LIN 25/089 · All remote/at-home tests (IELTS Online, TOEFL Home, etc.) are strictly excluded.",
     },
     { sel: "#english-matrix-table thead th:nth-child(1)", text: "English Tier (Applicable Visas & Points)" },
     { sel: "#english-matrix-table thead th:nth-child(2)", text: "IELTS (A/G)" },
@@ -500,7 +500,7 @@
     { sel: "#btn-print-brief span", text: "Print / Save PDF Report" },
     {
       sel: "#copy-toast-msg",
-      text: "Your diagnostic brief has been copied to the clipboard—paste it directly into the official inquiry form!",
+      text: "Your diagnostic brief has been copied to the clipboard. Paste it directly into the official inquiry form!",
     },
     { sel: ".consult-services-stack .panel-card-head h3", text: "Park & Co Official Trademark Legal Services" },
     { sel: ".navigators-panel .panel-card-head h3", text: "Park & Co Specialist Calculators & Deep-Dive Navigators" },
@@ -520,6 +520,11 @@
     },
     { sel: "#eco-link-tracker", text: "Live Visa Processing Times ↗" },
     { sel: "#eco-link-gsm", text: "8-State GSM Cut-Offs ↗" },
+    {
+      sel: "#eco-link-diy",
+      text: "DIY Visa Cost Saver ↗",
+      attrs: { href: "https://changa9090.github.io/diy-service-save-money/?lang=en" },
+    },
     { sel: "#diag-selected-occ-badge", text: "Selected Occupation: Unspecified (All Pathways)" },
     { sel: "#video-modal-ext-link", text: "Watch on YouTube ↗" },
     { sel: "#vc-lbl-total", text: "Total Visits" },
@@ -529,8 +534,8 @@
     {
       sel: ".footer-firm-info",
       html:
-        "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law — QLS)<br>" +
-        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener noreferrer">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener noreferrer">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener noreferrer">Immigration FAQ</a>',
+        "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law, QLS)<br>" +
+        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener noreferrer">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener noreferrer">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener noreferrer">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener noreferrer">DIY Visa Cost Saver</a>',
     },
     {
       sel: ".footer-disclaimer p",
@@ -549,7 +554,7 @@
       videoWatchCta: "영상 보기 ↗",
       videoKrAudioPill: "",
       videoCurationScopeNote: (total, curated, uncurated) =>
-        `채널 전체 인덱싱 ${total}편 중 호주 이민 핵심 강의 ${curated}편을 엄선해 제공하며, 큐레이션 외 인덱싱 영상 ${uncurated}편(고용법·가족법·일반 판례 등 비이민 주제 포함)은 자동 편입하지 않았어요.`,
+        `채널 전체 인덱싱 ${total}편 중 호주 이민 핵심 강의 ${curated}편을 엄선해 담았어요. 큐레이션 외 인덱싱 영상 ${uncurated}편(고용법·가족법·일반 판례 등 비이민 주제 포함)은 자동 편입하지 않았어요.`,
       confusionHeading: (t) => `유사 직종 혼동 주의: ${t}`,
       dutyEmpty:
         "일치하는 SOL 직종을 찾지 못했어요. 담당 업무(예: 메뉴 기획, API 개발, 재무제표, 타일 시공)를 조금 더 구체적으로 적어 보세요.",
@@ -557,7 +562,7 @@
       fitScore: (s) => `적합도 ${s}`,
       solDetailBtn: "SOL·Caveat 상세",
       diagThisOccBtn: "이 직종으로 진단 →",
-      resumeReportTitle: (fn) => `이력서 분석 리포트 — ${fn}`,
+      resumeReportTitle: (fn) => `이력서 분석 리포트 · ${fn}`,
       applyResumeBtn: "진단 시뮬레이터에 자동 반영 →",
       mergedExpChip: (y) => `병합 순수 경력: 약 ${y}년`,
       auExpChip: (det) => `호주 경력: ${det ? "감지됨" : "미감지"}`,
@@ -640,7 +645,7 @@
       fitScore: (s) => `Match ${s}`,
       solDetailBtn: "SOL & Caveats",
       diagThisOccBtn: "Diagnose Occupation →",
-      resumeReportTitle: (fn) => `CV Extraction Report — ${fn}`,
+      resumeReportTitle: (fn) => `CV Extraction Report · ${fn}`,
       applyResumeBtn: "Auto-Fill Simulator →",
       mergedExpChip: (y) => `De-overlapped Experience: ~${y} yrs`,
       auExpChip: (det) => `AU Work: ${det ? "Detected" : "Not Detected"}`,

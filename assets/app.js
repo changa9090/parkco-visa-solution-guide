@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Park & Co Australian Visa Solution Guide System — Interactive Client (ES2022)
+   Park & Co Australian Visa Solution Guide System · Interactive Client (ES2022)
    Full Bilingual Support: 한국어 (KO) & English (EN)
    ========================================================================== */
 
@@ -1010,7 +1010,7 @@
             <div class="pathway-result-head">
               <div>
                 <span class="pill-burgundy">#${idx + 1} · ${escapeHtml(pTier)}</span>
-                <h4 class="occ-match-title" style="margin-top:6px;">Subclass ${escapeHtml(p.subclass)} — ${escapeHtml(pName)}</h4>
+                <h4 class="occ-match-title" style="margin-top:6px;">Subclass ${escapeHtml(p.subclass)} · ${escapeHtml(pName)}</h4>
               </div>
               <span class="badge-subtle">${escapeHtml(ui.fitIndex(p.score))}</span>
             </div>
