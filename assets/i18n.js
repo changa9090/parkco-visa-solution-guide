@@ -535,7 +535,7 @@
       sel: ".footer-firm-info",
       html:
         "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law, QLS)<br>" +
-        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener noreferrer">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener noreferrer">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener noreferrer">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener noreferrer">DIY Visa Cost Saver</a>',
+        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener">DIY Visa Cost Saver</a>',
     },
     {
       sel: ".footer-disclaimer p",

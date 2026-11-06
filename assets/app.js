@@ -745,7 +745,7 @@
       ? occ.assessing_authorities
           .map((a) =>
             /^https?:\/\//i.test(a.url || "")
-              ? `<a href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer"><strong>${escapeHtml(a.code)}</strong> (${escapeHtml(a.full_name)}) ↗</a>`
+              ? `<a href="${escapeHtml(a.url)}" target="_blank" rel="noopener"><strong>${escapeHtml(a.code)}</strong> (${escapeHtml(a.full_name)}) ↗</a>`
               : `<strong>${escapeHtml(a.code)}</strong> (${escapeHtml(a.full_name)})`
           )
           .join(" · ")
@@ -1086,7 +1086,7 @@
                 <h4>${escapeHtml(sTitle)}</h4>
                 <p>${escapeHtml(sDesc)}</p>
                 <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
-                  <a href="${escapeHtml(sUrl)}" target="_blank" rel="noopener noreferrer" class="tm-link">${escapeHtml(ui.openServiceCta)}</a>
+                  <a href="${escapeHtml(sUrl)}" target="_blank" rel="noopener" class="tm-link">${escapeHtml(ui.openServiceCta)}</a>
                   ${
                     s.video_id
                       ? `<button type="button" class="btn-secondary-sm" data-open-video="${escapeHtml(s.video_id)}">${escapeHtml(ui.watchGuideVideoBtn)}</button>`
@@ -1281,7 +1281,7 @@
           const nTitle = isEn() ? n.title_en || n.title_ko : n.title_ko;
           const nUrl = isEn() ? n.url_en || n.url : n.url;
           return `
-          <a href="${escapeHtml(nUrl)}" target="_blank" rel="noopener noreferrer" class="nav-tool-card">
+          <a href="${escapeHtml(nUrl)}" target="_blank" rel="noopener" class="nav-tool-card">
             <span class="nav-tool-tag">${escapeHtml(nTag)}</span>
             <span class="nav-tool-title">${escapeHtml(nTitle)} ↗</span>
           </a>`;
@@ -1308,7 +1308,7 @@
             <h4>${escapeHtml(sTitle)}</h4>
             <p>${escapeHtml(sDesc)}</p>
             <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
-              <a href="${escapeHtml(sUrl)}" target="_blank" rel="noopener noreferrer" class="tm-link">${escapeHtml(ui.openTmServiceCta(sTm))}</a>
+              <a href="${escapeHtml(sUrl)}" target="_blank" rel="noopener" class="tm-link">${escapeHtml(ui.openTmServiceCta(sTm))}</a>
               ${
                 s.video_id
                   ? `<button type="button" class="btn-secondary-sm" data-open-video="${escapeHtml(s.video_id)}">${escapeHtml(ui.principalVideoBtn)}</button>`
