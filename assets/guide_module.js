@@ -9,6 +9,7 @@
     selectedChapterId: "ch01_legal_architecture",
     searchQuery: "",
     calcResults: {},
+    confirmedCalcs: {},
   };
 
   function isEn() {
@@ -63,7 +64,7 @@
     const en = isEn();
     const list = filteredChapters();
     if (!list.length) {
-      listEl.innerHTML = `<p class="empty-hint">${en ? "No chapters match your search keyword." : "검색어와 일치하는 장(Chapter)이 없어요."}</p>`;
+      listEl.innerHTML = `<p class="empty-hint">${en ? "No chapters match your search keyword." : "검색어와 일치하는 장(Chapter)이 없습니다."}</p>`;
       return;
     }
     if (!list.some((c) => c.id === guideState.selectedChapterId)) {
@@ -143,27 +144,73 @@
     `;
   }
 
+  function renderNeutralCalcBox(calcName) {
+    const box = document.getElementById(`calc-out-${calcName}`);
+    if (!box) return;
+    const en = isEn();
+    box.classList.add("calc-result-neutral");
+    box.innerHTML = `<strong>${en ? "Ready for Statutory Calculation" : "법정 기준 대조 대기 중"}</strong><p>${
+      en
+        ? "Enter your dates/figures above and click [Calculate] or [Try Sample] to evaluate statutory criteria objectively."
+        : "위 항목을 입력한 뒤 [법정 기준 계산하기] 또는 [예시 조건으로 체험하기]를 누르면 객관적인 법령 기준 대조 결과를 표시합니다."
+    }</p>`;
+  }
+
+  function applySampleToCalcForm(form) {
+    const calcName = form.dataset.calcForm;
+    if (calcName === "art_and_s501_deadline") {
+      form.elements.decision_type.value = "general_refusal_onshore";
+      form.elements.notification_date.value = "2026-10-30";
+    } else if (calcName === "s48_and_schedule3_check") {
+      form.elements.target_subclass.value = "820";
+      form.elements.days_since_last_substantive_visa.value = "45";
+      form.elements.holds_substantive_visa.checked = false;
+      form.elements.refused_or_cancelled_since_last_entry.checked = true;
+      form.elements.has_compelling_reasons.checked = true;
+    } else if (calcName === "citizenship_s22_residence") {
+      form.elements.applicant_stream.value = "standard_pr";
+      form.elements.lawful_start_date.value = "2022-07-01";
+      form.elements.pr_grant_date.value = "2025-07-01";
+      form.elements.absent_days_4yr.value = "95";
+      form.elements.absent_days_last_12m.value = "25";
+    } else if (calcName === "sponsor_salary_and_saf") {
+      form.elements.visa_stream.value = "482_core";
+      form.elements.applicant_age.value = "34";
+      form.elements.offered_salary_aud.value = "88000";
+      form.elements.amsr_aud.value = "84000";
+      form.elements.sponsor_turnover_ge_10m.checked = false;
+    }
+    guideState.confirmedCalcs[calcName] = true;
+    runSingleForm(form);
+  }
+
   function renderCalculatorsShell() {
     const grid = document.getElementById("au-calculators-grid");
     if (!grid) return;
     const en = isEn();
+    const calcBtnTxt = en ? "Calculate" : "법정 기준 계산하기";
+    const sampleBtnTxt = en ? "Try Sample" : "예시 조건으로 체험하기";
     grid.innerHTML = `
       <form class="guide-calc-card" data-calc-form="art_and_s501_deadline">
         <span class="guide-calc-tag">s 347(3) · s 500(6B) · reg 2.44</span>
-        <h4>${en ? "1. ART · s 501 · NOICC Deadline Clock" : "1. ART 재심 · s 501 · NOICC 불변기한 계산기"}</h4>
+        <h4>${en ? "1. ART · s 501 · NOICC Deadline Clock" : "1. 행정재심기구(ART) · s 501 · NOICC 불변기한 계산기"}</h4>
         <label class="calc-lbl">${en ? "Decision / Notice Type" : "통지·처분 유형"}
           <select name="decision_type" class="input-control">
             <option value="general_refusal_onshore">${en ? "General Onshore Visa/Nomination Refusal (28d)" : "일반 비자·노미네이션 거절 (s 347(3)(b) 28일)"}</option>
             <option value="student_500_refusal_onshore">${en ? "Student Subclass 500 Refusal · Paper Review (28d)" : "학생비자(500) 거절 · s 367C 서면심리 (28일)"}</option>
             <option value="detention_refusal">${en ? "Refusal in Immigration Detention (14d)" : "이민구금(Detention) 중 통지 결정 (s 347(3)(a) 14일)"}</option>
-            <option value="s501_delegate_onshore">${en ? "Onshore s 501 / s 501CA(4) Character Review (9d!)" : "호주 내 s 501 / s 501CA(4) 인성 재심 (단 9일!)"}</option>
+            <option value="s501_delegate_onshore">${en ? "Onshore s 501 / s 501CA(4) Character Review (9d)" : "호주 내 s 501 / s 501CA(4) 인성 재심 (9일)"}</option>
             <option value="s501ca_mandatory_cancel">${en ? "s 501(3A) Mandatory Cancellation Revocation (28d)" : "s 501(3A) 의무취소 철회 청구 (28일)"}</option>
             <option value="noicc_s116_onshore">${en ? "Onshore s 116 NOICC Cancellation Notice (5 wd)" : "호주 내 s 116 비자취소예고 NOICC (5영업일)"}</option>
           </select>
         </label>
         <label class="calc-lbl">${en ? "Notification Date" : "결정문·통지서 수령일"}
-          <input type="date" name="notification_date" value="2026-10-30" class="input-control">
+          <input type="date" name="notification_date" value="" class="input-control">
         </label>
+        <div class="calc-actions-row">
+          <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
+          <button type="button" class="btn-secondary-sm" data-calc-sample="art_and_s501_deadline">${sampleBtnTxt}</button>
+        </div>
         <div class="calc-result-box" id="calc-out-art_and_s501_deadline"></div>
       </form>
 
@@ -183,12 +230,16 @@
             </select>
           </label>
           <label class="calc-lbl">${en ? "Days Without Substantive Visa" : "실질비자 소멸 후 경과일수"}
-            <input type="number" name="days_since_last_substantive_visa" value="45" min="0" max="3650" class="input-control">
+            <input type="number" name="days_since_last_substantive_visa" value="0" min="0" max="3650" class="input-control">
           </label>
         </div>
-        <label class="calc-chk"><input type="checkbox" name="holds_substantive_visa"> <span>${en ? "Currently holds a Substantive Visa" : "현재 유효한 실질 비자(Substantive Visa) 보유 중"}</span></label>
-        <label class="calc-chk"><input type="checkbox" name="refused_or_cancelled_since_last_entry" checked> <span>${en ? "Refused or cancelled since last entry to AU" : "최근 호주 입국 후 거절·취소 이력 있음"}</span></label>
-        <label class="calc-chk"><input type="checkbox" name="has_compelling_reasons" checked> <span>${en ? "Strong compelling/compassionate waiver evidence" : "강력한 면제 사유(호주 자녀·장기혼인 등) 보유"}</span></label>
+        <label class="calc-chk"><input type="checkbox" name="holds_substantive_visa" checked> <span>${en ? "Currently holds a Substantive Visa" : "현재 유효한 실질 비자(Substantive Visa) 보유 중"}</span></label>
+        <label class="calc-chk"><input type="checkbox" name="refused_or_cancelled_since_last_entry"> <span>${en ? "Refused or cancelled since last entry to AU" : "최근 호주 입국 후 거절·취소 이력 있음"}</span></label>
+        <label class="calc-chk"><input type="checkbox" name="has_compelling_reasons"> <span>${en ? "Strong compelling/compassionate waiver evidence" : "면제 소명 사유(호주 자녀·장기혼인 등) 보유"}</span></label>
+        <div class="calc-actions-row">
+          <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
+          <button type="button" class="btn-secondary-sm" data-calc-sample="s48_and_schedule3_check">${sampleBtnTxt}</button>
+        </div>
         <div class="calc-result-box" id="calc-out-s48_and_schedule3_check"></div>
       </form>
 
@@ -203,19 +254,23 @@
         </label>
         <div class="form-row-2">
           <label class="calc-lbl">${en ? "Lawful Stay Start" : "호주 합법거주 시작일"}
-            <input type="date" name="lawful_start_date" value="2022-07-01" class="input-control">
+            <input type="date" name="lawful_start_date" value="" class="input-control">
           </label>
           <label class="calc-lbl">${en ? "PR Grant Date" : "영주권 승인일"}
-            <input type="date" name="pr_grant_date" value="2025-07-01" class="input-control">
+            <input type="date" name="pr_grant_date" value="" class="input-control">
           </label>
         </div>
         <div class="form-row-2">
           <label class="calc-lbl">${en ? "4-Yr Absences (<=365d)" : "4년 해외체류일 (<=365일)"}
-            <input type="number" name="absent_days_4yr" value="95" min="0" max="1460" class="input-control">
+            <input type="number" name="absent_days_4yr" value="0" min="0" max="1460" class="input-control">
           </label>
           <label class="calc-lbl">${en ? "12-Mo Absences (<=90d)" : "최근 12개월 결석 (<=90일)"}
-            <input type="number" name="absent_days_last_12m" value="25" min="0" max="365" class="input-control">
+            <input type="number" name="absent_days_last_12m" value="0" min="0" max="365" class="input-control">
           </label>
+        </div>
+        <div class="calc-actions-row">
+          <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
+          <button type="button" class="btn-secondary-sm" data-calc-sample="citizenship_s22_residence">${sampleBtnTxt}</button>
         </div>
         <div class="calc-result-box" id="calc-out-citizenship_s22_residence"></div>
       </form>
@@ -234,41 +289,60 @@
             </select>
           </label>
           <label class="calc-lbl">${en ? "Applicant Age" : "신청자 만 나이"}
-            <input type="number" name="applicant_age" value="34" min="18" max="70" class="input-control">
+            <input type="number" name="applicant_age" value="32" min="18" max="70" class="input-control">
           </label>
         </div>
         <div class="form-row-2">
           <label class="calc-lbl">${en ? "Offered Salary (AUD)" : "제시 기본연봉 (AUD)"}
-            <input type="number" name="offered_salary_aud" value="88000" step="1000" class="input-control">
+            <input type="number" name="offered_salary_aud" value="" placeholder="${en ? "e.g., 88000" : "예: 88000"}" step="1000" class="input-control">
           </label>
           <label class="calc-lbl">${en ? "Market Rate AMSR (AUD)" : "시장연봉 AMSR (AUD)"}
-            <input type="number" name="amsr_aud" value="84000" step="1000" class="input-control">
+            <input type="number" name="amsr_aud" value="" placeholder="${en ? "e.g., 84000" : "예: 84000"}" step="1000" class="input-control">
           </label>
         </div>
         <label class="calc-chk"><input type="checkbox" name="sponsor_turnover_ge_10m"> <span>${en ? "Sponsor annual turnover >= A$10M" : "스폰서 기업 연매출 A$1,000만 이상"}</span></label>
+        <div class="calc-actions-row">
+          <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
+          <button type="button" class="btn-secondary-sm" data-calc-sample="sponsor_salary_and_saf">${sampleBtnTxt}</button>
+        </div>
         <div class="calc-result-box" id="calc-out-sponsor_salary_and_saf"></div>
       </form>
     `;
 
     grid.querySelectorAll("[data-calc-form]").forEach((form) => {
-      form.addEventListener("change", () => runSingleForm(form));
-      form.addEventListener("input", () => runSingleForm(form));
+      const calcName = form.dataset.calcForm;
+      form.addEventListener("change", () => {
+        if (guideState.confirmedCalcs[calcName]) runSingleForm(form);
+      });
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        guideState.confirmedCalcs[calcName] = true;
         runSingleForm(form);
       });
-      runSingleForm(form);
+      form.querySelector("[data-calc-sample]")?.addEventListener("click", () => {
+        applySampleToCalcForm(form);
+      });
+      renderNeutralCalcBox(calcName);
     });
   }
 
   async function runSingleForm(form) {
     const calcName = form.dataset.calcForm;
+    const en = isEn();
     const fd = new FormData(form);
     const params = {};
     for (const [k, v] of fd.entries()) params[k] = v;
     form.querySelectorAll('input[type="checkbox"]').forEach((chk) => {
       params[chk.name] = chk.checked;
     });
+    if (calcName === "art_and_s501_deadline" && !String(params.notification_date || "").trim()) {
+      renderNeutralCalcBox(calcName);
+      return;
+    }
+    if (calcName === "citizenship_s22_residence" && (!String(params.lawful_start_date || "").trim() || !String(params.pr_grant_date || "").trim())) {
+      renderNeutralCalcBox(calcName);
+      return;
+    }
     if (calcName === "s48_and_schedule3_check") params.onshore = true;
     if (calcName === "citizenship_s22_residence") params.application_date = "2026-10-30";
     if (calcName === "sponsor_salary_and_saf") params.years_sponsored = 2;
@@ -278,7 +352,7 @@
       guideState.calcResults[calcName] = res;
       const box = document.getElementById(`calc-out-${calcName}`);
       if (box) {
-        const en = isEn();
+        box.classList.toggle("calc-result-neutral", res.status === "prompt");
         box.innerHTML = `<strong>${esc(res.deadline_date ? (en ? `Deadline: ${res.deadline_date}` : `법정 마감일: ${res.deadline_date}`) : res.statutory_basis)}</strong><p>${esc(en ? res.verdict_en : res.verdict_ko)}</p>`;
       }
     } catch (err) {

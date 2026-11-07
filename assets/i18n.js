@@ -30,13 +30,26 @@
     { sel: ".brand-lockup", attrs: { "aria-label": "Go to Park & Co Lawyers Visa Solution Guide home" } },
     { sel: ".brand-logo", attrs: { alt: "Park & Co Lawyers Logo" } },
     { sel: ".brand-ko-name", text: "Australian Visa Solution Guide" },
-    { sel: "#header-verified-pill span", text: "FY 2026–27 Legislation Verified" },
+    { sel: "#hdr-link-hub", text: "Legal & Visa Hub" },
+    { sel: "#hdr-link-steps", text: "3-Step Flow" },
+    {
+      sel: "#hdr-link-faq",
+      text: "Immi FAQ",
+      attrs: { href: "https://faq.immispecialist.com/?lang=en" },
+    },
+    { sel: "#hdr-link-tracker", text: "Processing Times" },
+    { sel: "#header-verified-pill span", text: "FY 2026–27 Verified" },
     { sel: ".lang-switch", attrs: { "aria-label": "Language switcher" } },
     {
       sel: ".btn-emergency-header",
       attrs: { href: "https://parklawyers.com.au/case-emergency/visa/" },
     },
     { sel: ".btn-emergency-header span", text: "Visa Emergency™" },
+    {
+      sel: "#hdr-official-cta",
+      attrs: { href: "https://parklawyers.com.au/links/" },
+    },
+    { sel: "#hdr-official-cta span", text: "Official Inquiry Hub ↗" },
     { sel: '.header-actions [data-nav-target="module-consult"] span', text: "Consultation Brief" },
 
     // Editorial Hero
@@ -109,15 +122,19 @@
       attrs: { href: "https://parklawyers.com.au/links/" },
     },
 
-    // Sticky 6-Module Navigation Rail
-    { sel: ".module-nav-rail", attrs: { "aria-label": "6 Core Visa Solution Modules" } },
-    { sel: '[data-module-tab="module-concepts"] .tab-label', text: "Concepts & Videos" },
-    { sel: '[data-module-tab="module-resume"] .tab-label', text: "Occupation & CV Match" },
-    { sel: '[data-module-tab="module-sol"] .tab-label', text: "SOL & Caveat Decoder" },
-    { sel: '[data-module-tab="module-diagnose"] .tab-label', text: "Visa & Points Simulator" },
+    // Sticky 3-Step + Module Navigation Rail
+    { sel: ".module-nav-rail", attrs: { "aria-label": "Core Visa Solution Steps & Modules" } },
+    { sel: '[data-module-tab="module-diagnose"] .tab-label', text: "Visa & Points Diagnosis" },
+    { sel: '[data-module-tab="module-sol"] .tab-label', text: "SOL & Caveat Match" },
+    { sel: '[data-module-tab="module-guide"] .tab-label', text: "Calculators & Master Guide" },
+    { sel: '[data-module-tab="module-resume"] .tab-step', text: "CV" },
+    { sel: '[data-module-tab="module-resume"] .tab-label', text: "CV & Duty Match" },
+    { sel: '[data-module-tab="module-pathways"] .tab-step', text: "INFO" },
     { sel: '[data-module-tab="module-pathways"] .tab-label', text: "Pathways & All Visas" },
+    { sel: '[data-module-tab="module-concepts"] .tab-step', text: "VID" },
+    { sel: '[data-module-tab="module-concepts"] .tab-label', text: "Concepts & Videos" },
+    { sel: '[data-module-tab="module-consult"] .tab-step', text: "BRIEF" },
     { sel: '[data-module-tab="module-consult"] .tab-label', text: "Consult & Services" },
-    { sel: '[data-module-tab="module-guide"] .tab-label', text: "Master Guide & Clocks" },
     { sel: "#heading-guide", text: "Complete Australian Migration, Visa, Review & Citizenship Guide" },
     {
       sel: "#guide-section-desc",
@@ -357,6 +374,8 @@
         "3. Employer Sponsorship, Family, Talent & Crisis Checkpoints",
       ],
     },
+    { sel: "#step1-cv-bridge span", text: "Unsure of your ANZSCO occupation code?" },
+    { sel: "#btn-step1-jump-cv", text: "Match via CV or Duties First →" },
     { sel: 'label[for="diag-anzsco-input"]', text: "Target Occupation (ANZSCO Code or Title)" },
     {
       sel: "#diag-anzsco-input",
@@ -438,7 +457,8 @@
     { sel: "#diag-s57-pic4020 + span", text: "Urgent: Received s 57 / NOICC / PIC 4020 Notice" },
     { sel: "#diag-prior-refusal + span", text: "Urgent: Prior Visa Refusal / Cancellation or s 48 Bar" },
     { sel: "#diag-health-char + span", text: "Medical Condition or Character / Police Record" },
-    { sel: '#diagnose-form .diagnose-submit-row button[type="submit"]', text: "Run Multi-Factor Visa & Legal Risk Simulation" },
+    { sel: '#diagnose-form .diagnose-submit-row button[type="submit"]', text: "Check Eligible Pathways & Statutory Criteria" },
+    { sel: "#btn-form-sample-diagnosis", text: "Try Sample Scenario" },
 
     // Module 05: Pathway Blueprints & Non-Skilled Panorama
     { sel: "#heading-pathways", text: "Step-by-Step Pathway Blueprints & Non-Skilled / Special Visa Panorama" },
@@ -492,6 +512,13 @@
       attrs: { placeholder: "e.g., Can we lodge Subclass 482 nomination before my 485 expires?" },
     },
     { sel: 'label[for="brief-body-textarea"]', text: "Full Consultation Brief (Feel free to edit before sending)" },
+    {
+      sel: "#brief-body-textarea",
+      attrs: {
+        placeholder:
+          "Run your Step 1 diagnosis or try a sample scenario to automatically populate a structured legal consultation brief.",
+      },
+    },
     { sel: ".brief-lang-toggle", attrs: { "aria-label": "Select Consultation Brief Language" } },
     { sel: '[data-brief-lang="ko"]', text: "Korean Brief (KO)" },
     { sel: '[data-brief-lang="en"]', text: "English Brief (EN)" },
@@ -539,7 +566,7 @@
       sel: ".footer-firm-info",
       html:
         "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law, QLS)<br>" +
-        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/" target="_blank" rel="noopener">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener">DIY Visa Cost Saver</a>',
+        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/?lang=en" target="_blank" rel="noopener">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener">DIY Visa Cost Saver</a>',
     },
     {
       sel: ".footer-disclaimer p",
@@ -551,17 +578,17 @@
 
   const UI_STRINGS = {
     ko: {
-      apiError: (status) => `요청 처리 중 오류가 발생했어요 (${status})`,
-      videoEmpty: "검색 조건에 맞는 영상이 없어요. 다른 키워드나 전체 카테고리를 선택해 보세요.",
+      apiError: (status) => `요청 처리 중 오류가 발생했습니다 (${status})`,
+      videoEmpty: "검색 조건에 맞는 영상이 없습니다. 다른 키워드나 전체 카테고리를 선택해 주십시오.",
       videoDurationFallback: "강의",
       videoPlayAria: (t) => `${t} 영상 재생`,
       videoWatchCta: "영상 보기 ↗",
       videoKrAudioPill: "",
       videoCurationScopeNote: (total, curated, uncurated) =>
-        `채널 전체 인덱싱 ${total}편 중 호주 이민 핵심 강의 ${curated}편을 엄선해 담았어요. 큐레이션 외 인덱싱 영상 ${uncurated}편(고용법·가족법·일반 판례 등 비이민 주제 포함)은 자동 편입하지 않았어요.`,
+        `채널 전체 인덱싱 ${total}편 중 호주 이민 핵심 강의 ${curated}편을 엄선해 수록했습니다. 큐레이션 외 인덱싱 영상 ${uncurated}편(고용법·가족법·일반 판례 등 비이민 주제 포함)은 자동 편입하지 않았습니다.`,
       confusionHeading: (t) => `유사 직종 혼동 주의: ${t}`,
       dutyEmpty:
-        "일치하는 SOL 직종을 찾지 못했어요. 담당 업무(예: 메뉴 기획, API 개발, 재무제표, 타일 시공)를 조금 더 구체적으로 적어 보세요.",
+        "일치하는 SOL 직종을 찾지 못했습니다. 담당 업무(예: 메뉴 기획, API 개발, 재무제표, 타일 시공)를 조금 더 구체적으로 입력해 주십시오.",
       caveatPill: "Caveat 조건 있음",
       fitScore: (s) => `적합도 ${s}`,
       solDetailBtn: "SOL·Caveat 상세",
@@ -580,20 +607,20 @@
         diploma_trade: "Diploma / 기능직 학위",
         other: "기타/미상",
       },
-      fileTooLarge: "파일 크기가 10MB를 초과했어요. 10MB 이하의 PDF, DOCX, TXT 파일을 올려 주세요.",
-      fileAnalyzeErr: "이력서 파일 분석 중 오류가 발생했어요.",
-      fileNetworkErr: "이력서 업로드 중 네트워크 오류가 발생했어요.",
+      fileTooLarge: "파일 크기가 10MB를 초과했습니다. 10MB 이하의 PDF, DOCX, TXT 파일을 올려 주십시오.",
+      fileAnalyzeErr: "이력서 파일 분석 중 오류가 발생했습니다.",
+      fileNetworkErr: "이력서 업로드 중 네트워크 오류가 발생했습니다.",
       solLoading: "공식 SOL 직종 로딩 중...",
       solCounter: (tot, shown) => `검색 조건 부합 직종: 총 ${tot}개 (상위 ${shown}개 표시 중)`,
-      solEmpty: "선택하신 필터에 해당하는 직종이 없어요. 필터 조건을 완화해 보세요.",
+      solEmpty: "선택하신 필터에 해당하는 직종이 없습니다. 필터 조건을 완화해 주십시오.",
       solSelectHint:
-        "왼쪽 목록에서 직종을 선택하시면 가능 비자, 기술심사 기관, DAMA 특례 및 이민성 법령 원문 Caveat을 상세히 판독해 드려요.",
+        "왼쪽 목록에서 직종을 선택하시면 가능 비자, 기술심사 기관, DAMA 특례 및 이민성 법령 원문 Caveat을 상세히 판독해 드립니다.",
       variesByStream: "비자 스트림별 상이",
       caveatHeading: (sc) => `Subclass ${sc} 법령 제한 조건 (Caveat)`,
       caveatSummaryLabel: "박앤코 실무 요약:",
       noCaveatTitle: "특수 직종 Caveat 없음:",
       noCaveatBody:
-        "이민성 직종 리스트상 별도의 매출·좌석·사업장 제한 Caveat이 부과되지 않는 직종이에요 (기본 비자 요건만 충족하면 돼요).",
+        "이민성 직종 리스트상 별도의 매출·좌석·사업장 제한 Caveat이 부과되지 않는 직종입니다 (기본 비자 요건 충족 여부는 별도 확인이 필요합니다).",
       damaHeading: (cnt) => `13개 지역 DAMA 특례 등재 (${cnt}개 지역):`,
       damaSub: (age, sal) =>
         `최대 만 ${age}세 미만 연령 완화 · 최소 연봉 AUD $${Number(sal).toLocaleString()} 특례 검토 가능`,
@@ -604,19 +631,31 @@
       absDefLabel: "ABS 직종 정의:",
       absTasksLabel: "ABS 공식 핵심 수행 직무 (기술심사·노미네이션 대조 기준):",
       selectedOccPrefix: "선택 직종:",
-      unselectedOccBadge: "선택 직종: 미지정 (가족·파트너·인재 등 비숙련/특례 경로 중심 진단)",
+      unselectedOccBadge: "선택 직종: 미지정 (직종을 입력하거나 예시 조건으로 체험할 수 있습니다)",
+      neutralPromptBadge: "STEP 1 · 입력 대기 상태",
+      neutralPromptTitle: "좌측 조건을 입력한 뒤 법령 기준 진단을 실행해 주십시오",
+      neutralPromptBody:
+        "입력 전 임의의 합격·거절 판정을 먼저 표시하지 않습니다. 목표 직종(ANZSCO), 체류 상태, 영어·경력 조건을 선택하고 진단을 실행하면 현행 호주 이민 법령에 따른 객관적인 자격 요건 대조 결과를 확인할 수 있습니다.",
+      neutralPromptItems: [
+        "Schedule 6D 점수 산출 및 국내·외 숙련 경력 합산 20점 상한(Item 6D51) 자동 대조",
+        "직종별 소속 리스트(MLTSSL·STSOL·CSOL·ROL) 및 법령 원문 Caveat 해당 여부 점검",
+        "FY2026–27 고용주 스폰서 최소 연봉 기준(CSIT $79,423 · SSIT $146,576) 충족 여부 확인",
+        "호주 내 학생비자 전환 제한, s 48 재접수 금지, Schedule 3 면제 요건 등 사전 체크포인트 안내",
+      ],
+      trySampleBtn: "예시 조건으로 체험하기 (261313 개발자)",
+      jumpCvBtn: "이력서·직무로 직종 먼저 찾기 →",
       compareHeading: "1순위 vs 2순위 패스웨이 전략 비교",
       compareDimCol: "비교 항목",
       fitIndex: (s) => `적합지수 ${s}`,
       baseVacLabel: (v) => `기본 비자비: ${v}`,
-      procTimeLabel: (t) => `공식 수속기간: ${t}`,
+      procTimeLabel: (t) => `공식 심사기간: ${t}`,
       noPrimaryPathwayMsg:
-        "현재 조건에서는 표준 기술·스폰서 비자 직접 요건에 제한이 있어요. 아래 리스크 경보와 05번 탭의 DAMA·파트너·가족·858 NIV 대안 경로 및 박앤코 1:1 전략 상담을 확인해 보세요.",
+        "현재 입력 조건에서는 표준 기술·스폰서 비자 기본 요건 충족 여부를 추가로 확인해야 합니다. 아래 법령 체크포인트와 패스웨이 백과의 DAMA·파트너·가족·858 NIV 대안 경로 및 박앤코 1:1 법률 자문을 함께 검토하시기 바랍니다.",
       highlightedOtherHeading: "선택하신 가족 · 인재 · 구제 조건 맞춤 경로",
       recServicesHeading: "진단 상황별 추천 박앤코 공식 법률 서비스",
       openServiceCta: "서비스 바로가기 ↗",
       watchGuideVideoBtn: "안내 영상 보기",
-      recVideosHeading: "내 진단 상황에 꼭 맞는 @immispecialist 추천 영상",
+      recVideosHeading: "진단 조건과 연관된 @immispecialist 해설 영상",
       watchShortLabel: "시청",
       cap6d51Pill: "Item 6D51 경력 20점 상한 반영됨",
       ptsUnit: (n) => `${n}점`,
@@ -626,8 +665,8 @@
       buildConsultBriefBtn: "이 진단 결과로 박앤코 상담 브리프 작성 →",
       riskSectionHeading: (n) => `사전 법률 리스크 & 체크포인트 (${n}건)`,
       referenceNotesHeading: (n) => `참고 사항 (${n}건)`,
-      noCheckpointsHint: "즉시 걸리는 P1·P2 법령 결격 체크포인트는 확인되지 않았어요 (0건).",
-      rankedPathwaysHeading: "유력 비자 패스웨이 판정 결과",
+      noCheckpointsHint: "현재 입력 조건에서 즉시 확인되는 P1·P2 법령 결격 체크포인트는 없습니다 (0건).",
+      rankedPathwaysHeading: "유력 비자 패스웨이 요건 대조 결과",
       blueprintTrapsLabel: "실무 핵심 주의점:",
       fyVacPrefix: (v) => `FY26–27 비자비: ${v}`,
       openTmServiceCta: (tm) => `${tm} 바로가기 ↗`,
@@ -687,7 +726,19 @@
       absDefLabel: "ABS ANZSCO Lead Statement:",
       absTasksLabel: "Official ABS ANZSCO Tasks (Skills Assessment & Nomination Benchmark):",
       selectedOccPrefix: "Selected Occupation:",
-      unselectedOccBadge: "Selected Occupation: None (Assessing Partner, Family & Special Pathways)",
+      unselectedOccBadge: "Selected Occupation: Unspecified (Enter an ANZSCO occupation or try a sample scenario)",
+      neutralPromptBadge: "STEP 1 · READY FOR INPUT",
+      neutralPromptTitle: "Enter your profile on the left to check statutory visa criteria",
+      neutralPromptBody:
+        "No pre-assumed pass or refusal verdict is shown before you confirm your inputs. Select your target ANZSCO occupation, visa status, and English/experience details to evaluate current Australian statutory criteria objectively.",
+      neutralPromptItems: [
+        "Schedule 6D points calculation with automatic Item 6D51 20-point combined employment cap",
+        "Official SOL list mapping (MLTSSL · STSOL · CSOL · ROL) and verbatim Home Affairs caveats",
+        "FY2026–27 sponsorship salary threshold checks (CSIT $79,423 · SSIT $146,576)",
+        "Onshore Student 500 hopping restrictions, Section 48 bars, and Schedule 3 checkpoints",
+      ],
+      trySampleBtn: "Try Sample Scenario (261313 Software Engineer)",
+      jumpCvBtn: "Match Occupation via CV / Duties →",
       compareHeading: "#1 Primary vs #2 Alternative Pathway Comparison",
       compareDimCol: "Dimension",
       fitIndex: (s) => `Fit Score ${s}`,

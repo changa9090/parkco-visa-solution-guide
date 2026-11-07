@@ -83,7 +83,7 @@ export function createStaticVisaGuideFromData({
         throw new Error(
           reqLang === "en"
             ? `No SOL occupation found for ANZSCO code '${key}'.`
-            : `ANZSCO 코드(${key})에 해당하는 SOL 직종을 찾지 못했어요.`
+            : `ANZSCO 코드(${key})에 해당하는 SOL 직종을 찾지 못했습니다.`
         );
       }
       return occ;

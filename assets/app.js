@@ -39,12 +39,13 @@
   const state = {
     lang: initialLang,
     bootstrap: null,
-    activeModule: "module-concepts",
+    activeModule: "module-diagnose",
     activeVideoCategory: "all",
     videoSearchQuery: "",
     openVideoId: null,
     selectedSolId: "351311",
-    selectedDiagCode: "261313",
+    selectedDiagCode: "",
+    hasConfirmedDiagnosis: false,
     briefLang: initialLang,
     lastDutyResponse: null,
     lastResumeData: null,
@@ -251,10 +252,12 @@
       if (solPanel && t().solSelectHint) solPanel.textContent = t().solSelectHint;
     }
 
-    if (state.lastDiagnosis) {
+    if (state.lastDiagnosis && state.hasConfirmedDiagnosis) {
       updateDiagSelectedBadge(state.lastDiagnosis.occupation_summary);
       renderDiagnosisResults(state.lastDiagnosis);
       syncConsultationBrief(state.lastDiagnosis.consultation_brief);
+    } else {
+      renderNeutralDiagnosisPrompt();
     }
 
     window.dispatchEvent(new CustomEvent("parkco:langchange", { detail: { lang: normalized } }));
@@ -879,6 +882,52 @@
     if (jumpToDiagnose) {
       switchModule("module-diagnose");
     }
+    state.hasConfirmedDiagnosis = true;
+    await submitDiagnosis();
+  }
+
+  function renderNeutralDiagnosisPrompt() {
+    const col = qs("#diagnose-results-column");
+    if (!col) return;
+    const ui = t();
+    const items = Array.isArray(ui.neutralPromptItems) ? ui.neutralPromptItems : [];
+    col.innerHTML = `
+      <div class="neutral-prompt-card">
+        <span class="pill-burgundy">${escapeHtml(ui.neutralPromptBadge || "STEP 1")}</span>
+        <h3>${escapeHtml(ui.neutralPromptTitle || "")}</h3>
+        <p>${escapeHtml(ui.neutralPromptBody || "")}</p>
+        <ul class="insight-list">
+          ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+        <div class="neutral-prompt-actions">
+          <button type="button" class="btn-primary" data-try-sample-diag="1" id="btn-try-sample-diagnosis">
+            ${escapeHtml(ui.trySampleBtn || "예시 조건으로 체험하기")}
+          </button>
+          <button type="button" class="btn-outline-burgundy" data-nav-target="module-resume">
+            ${escapeHtml(ui.jumpCvBtn || "이력서·직무로 직종 먼저 찾기 →")}
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  async function runSampleDiagnosis() {
+    if (qs("#diag-anzsco-input")) qs("#diag-anzsco-input").value = "261313";
+    state.selectedDiagCode = "261313";
+    if (qs("#diag-location")) qs("#diag-location").value = "onshore";
+    if (qs("#diag-current-visa")) qs("#diag-current-visa").value = "graduate_485";
+    if (qs("#diag-age")) qs("#diag-age").value = "25_32";
+    if (qs("#diag-planned-step")) qs("#diag-planned-step").value = "best_pr";
+    if (qs("#diag-english")) qs("#diag-english").value = "proficient";
+    if (qs("#diag-qual")) qs("#diag-qual").value = "bachelor_masters";
+    if (qs("#diag-partner-pts")) qs("#diag-partner-pts").value = "single_or_au_partner";
+    if (qs("#diag-au-work")) qs("#diag-au-work").value = "1_2";
+    if (qs("#diag-os-work")) qs("#diag-os-work").value = "0";
+    if (qs("#diag-au-study")) qs("#diag-au-study").checked = true;
+    if (qs("#diag-regional-willing")) qs("#diag-regional-willing").checked = true;
+    if (qs("#diag-has-sponsor")) qs("#diag-has-sponsor").checked = true;
+    if (qs("#diag-salary")) qs("#diag-salary").value = "88000";
+    state.hasConfirmedDiagnosis = true;
     await submitDiagnosis();
   }
 
@@ -1417,6 +1466,12 @@
         return;
       }
 
+      const sampleDiagBtn = e.target.closest("[data-try-sample-diag]");
+      if (sampleDiagBtn) {
+        runSampleDiagnosis();
+        return;
+      }
+
       const diagOccBtn = e.target.closest("[data-select-diag-occ]");
       if (diagOccBtn) {
         selectOccupationForDiagnosis(diagOccBtn.dataset.selectDiagOcc, true);
@@ -1546,15 +1601,22 @@
     });
     qs("#diagnose-form")?.addEventListener("submit", (e) => {
       e.preventDefault();
+      state.hasConfirmedDiagnosis = true;
       submitDiagnosis();
     });
     qs("#diagnose-form")?.addEventListener("change", () => {
-      submitDiagnosis();
+      if (state.hasConfirmedDiagnosis) {
+        submitDiagnosis();
+      }
     });
 
     // Consultation brief edits & actions
     ["#brief-name-input", "#brief-notes-input"].forEach((sel) => {
-      qs(sel)?.addEventListener("change", () => submitDiagnosis());
+      qs(sel)?.addEventListener("change", () => {
+        if (state.hasConfirmedDiagnosis) {
+          submitDiagnosis();
+        }
+      });
     });
     qs("#brief-body-textarea")?.addEventListener("input", updateInquiryLinkFromState);
 
@@ -1584,7 +1646,8 @@
   function applyQueryPrefillIfPresent() {
     try {
       const sp = new URLSearchParams(window.location.search);
-      if (!sp.has("age") && !sp.has("occ")) return;
+      const hasDiagQuery = ["age", "occ", "study", "deg", "eng", "exp", "offer", "sal"].some((k) => sp.has(k));
+      if (!hasDiagQuery && !sp.has("q") && !sp.has("visa")) return false;
 
       const rawAge = Number(sp.get("age"));
       if (Number.isFinite(rawAge) && rawAge >= 18 && qs("#diag-age")) {
@@ -1636,11 +1699,11 @@
         }
       }
 
-      if (sp.has("q") && qs("#sol-search-input")) {
-        qs("#sol-search-input").value = (sp.get("q") || "").trim();
+      if (sp.has("q") && qs("#sol-query-input")) {
+        qs("#sol-query-input").value = (sp.get("q") || "").trim();
       }
-      if (sp.has("visa") && qs("#sol-visa-filter")) {
-        qs("#sol-visa-filter").value = (sp.get("visa") || "").trim();
+      if (sp.has("visa") && qs("#sol-visa-select")) {
+        qs("#sol-visa-select").value = (sp.get("visa") || "").trim();
       }
       if (sp.has("offer") && qs("#diag-has-sponsor")) {
         const hasSponsor = sp.get("offer") === "1" || sp.get("offer") === "true";
@@ -1648,8 +1711,9 @@
         const sal = Number(sp.get("sal") || 0);
         if (qs("#diag-salary")) qs("#diag-salary").value = hasSponsor && sal > 0 ? String(sal) : "";
       }
+      return hasDiagQuery;
     } catch {
-      // Ignore query prefill errors cleanly
+      return false;
     }
   }
 
@@ -1659,7 +1723,12 @@
     if (solCounter && t().solLoading) solCounter.textContent = t().solLoading;
 
     bindEvents();
-    applyQueryPrefillIfPresent();
+    const hasQueryPrefill = applyQueryPrefillIfPresent();
+    if (!hasQueryPrefill) {
+      renderNeutralDiagnosisPrompt();
+    } else {
+      state.hasConfirmedDiagnosis = true;
+    }
     applyHashModuleIfPresent(Boolean(window.location.hash));
     window.addEventListener("hashchange", () => applyHashModuleIfPresent(true));
     window.PARKCO_APP_BRIDGE = {
@@ -1683,11 +1752,14 @@
       renderSamplePersonas();
       renderPathwaysEncyclopedia();
 
-      await Promise.all([
+      const bootTasks = [
         runDutySearch(isEn() ? DEFAULT_DUTY_EN : DEFAULT_DUTY_KO),
         loadSolExplorer(),
-        submitDiagnosis(),
-      ]);
+      ];
+      if (hasQueryPrefill) {
+        bootTasks.push(submitDiagnosis());
+      }
+      await Promise.all(bootTasks);
     } catch (err) {
       console.error("Bootstrap error:", err);
     }

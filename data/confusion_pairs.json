@@ -8,7 +8,7 @@
       "351411",
       "141111"
     ],
-    "distinction_ko": "Chef(351311, Skill Level 2)는 메뉴 기획·원가 관리·주방 스태프 감독이 핵심이며 MLTSSL+CSOL에 올라 189·190·491·482·186 모두 열려 있어요. 반면 Cook(351411, Skill Level 3)은 STSOL+CSOL 소속이라 189 독립기술이민은 불가하고 190·491·482·186으로 진행해야 하며, Cafe or Restaurant Manager(141111, Skill Level 2)는 STSOL 단독이라 190·491·494 또는 지역 DAMA 스폰서십 중심으로 접근해야 해요. 외식업 직종으로 482·186·494 진행 시 패스트푸드·테이크어웨이·제한적 서비스 카페(Limited Service Restaurant) 제외 Caveat이 엄격히 적용돼요.",
+    "distinction_ko": "Chef(351311, Skill Level 2)는 메뉴 기획·원가 관리·주방 스태프 감독이 핵심이며 MLTSSL+CSOL에 등재되어 189·190·491·482·186 경로가 모두 열려 있습니다. 반면 Cook(351411, Skill Level 3)은 STSOL+CSOL 소속이라 189 독립기술이민은 제외되고 190·491·482·186 중심으로 검토합니다. Cafe or Restaurant Manager(141111, Skill Level 2)는 STSOL 단독 직종이므로 190·491·494 또는 지역 DAMA 스폰서십 경로로 접근합니다. 외식업 직종으로 482·186·494 노미네이션을 진행할 때는 패스트푸드·테이크어웨이·제한적 서비스 카페(Limited Service Restaurant) 제외 조건(Caveat)이 엄격히 적용됩니다.",
     "distinction_en": "Chef (351311, Skill Level 2, MLTSSL+CSOL) requires menu planning, food costing, and kitchen supervision, unlocking 189, 190, 491, 482, and 186. Cook (351411, Skill Level 3, STSOL+CSOL) excludes 189 but allows 190/491/482/186, while Cafe or Restaurant Manager (141111, STSOL) relies on 190/491/494 or regional DAMAs. Strict Limited Service Restaurant caveats apply to sponsored hospitality roles."
   },
   {
@@ -21,7 +21,7 @@
       "261311",
       "261111"
     ],
-    "distinction_ko": "ACS 기술심사에서 직함보다 실제 경력증명서 직무 비중(65% 이상 부합)으로 직종이 갈려요. 시스템 아키텍처·설계·테스팅 전반은 Software Engineer(261313), 명세 기반 코드 구현·유지보수는 Developer Programmer(261312), 비즈니스 요구사항 도출·프로세스 모델링은 ICT Business Analyst(261111)에 해당하며 직종별 SkillSelect 초청 커트라인과 주정부 선호도가 달라요.",
+    "distinction_ko": "ACS 기술심사에서는 단순 직함보다 실제 경력증명서 직무 비중(65% 이상 부합 여부)에 따라 직종이 갈립니다. 시스템 아키텍처·설계·테스팅 전반은 Software Engineer(261313)에 해당하고 명세 기반 코드 구현·유지보수는 Developer Programmer(261312)로 분류됩니다. 비즈니스 요구사항 도출·프로세스 모델링은 ICT Business Analyst(261111)에 해당하며 직종별 SkillSelect 초청 커트라인과 주정부 선호도가 다릅니다.",
     "distinction_en": "ACS skills assessments examine actual reference-letter duties (65%+ alignment) rather than job titles: system architecture, software engineering & testing (261313) vs specification-driven implementation & maintenance (261312) vs stakeholder requirements & business process modelling (261111)."
   },
   {
@@ -33,7 +33,7 @@
       "221112",
       "221113"
     ],
-    "distinction_ko": "CAANZ·CPAA·IPA 기술심사 시 필수 이수 과목군이 조금씩 다르며, 482·186 스폰서 비자 진행 시에는 단순 기장(Bookkeeping)·급여·인보이스 처리 위주 직무이거나 연매출 AUD $1,000,000 미만 또는 직원 5인 미만 사업체 포지션은 Caveat으로 거절돼요.",
+    "distinction_ko": "CAANZ·CPAA·IPA 기술심사 시 필수 이수 과목군이 직종별로 상이합니다. 482·186 스폰서 비자 진행 시 단순 기장(Bookkeeping)·급여·인보이스 처리 위주 직무이거나 연매출 AUD $1,000,000 미만 또는 직원 5인 미만 사업체 포지션은 직종 제한 조건(Caveat)에 해당하여 노미네이션 거절 위험이 높습니다.",
     "distinction_en": "CAANZ/CPAA/IPA competency areas differ across General, Management, and Taxation Accountant. Under Subclass 482/186 caveats, positions involving predominantly bookkeeping/clerical duties, annual business turnover under AUD $1,000,000, or fewer than 5 employees are excluded."
   },
   {
@@ -46,7 +46,7 @@
       "254418",
       "411411"
     ],
-    "distinction_ko": "Registered Nurse(2544xx)는 AHPRA 간호사 등록과 ANMAC 기술심사가 필수인 최우선 영주권 직종(MLTSSL+CSOL)이에요. 반면 Certificate III/IV 기반 Personal Care Assistant / Aged or Disabled Carer는 일반 SOL에는 없지만 Aged Care Industry Labour Agreement 또는 13개 지역 DAMA로 482 → 186 영주권 패스웨이가 열려 있어요.",
+    "distinction_ko": "Registered Nurse(2544xx)는 AHPRA 간호사 등록과 ANMAC 기술심사가 필수인 우선 심사 영주권 직종(MLTSSL+CSOL)입니다. 반면 Certificate III/IV 기반 Personal Care Assistant 및 Aged or Disabled Carer는 일반 SOL에는 없으나 Aged Care Industry Labour Agreement 또는 13개 지역 DAMA를 통해 482에서 186 영주권으로 이어지는 경로가 열려 있습니다.",
     "distinction_en": "Registered Nurses (2544xx) require AHPRA registration and ANMAC skills assessment on MLTSSL+CSOL (top GSM & sponsor priority). Certificate III/IV Personal Care Workers sit outside the standard SOL but have dedicated 482 -> 186 PR pathways via the Aged Care Industry Labour Agreement or 13 regional DAMAs."
   },
   {
@@ -57,7 +57,7 @@
       "241111",
       "134111"
     ],
-    "distinction_ko": "Early Childhood Teacher(241111)는 ACECQA 기술심사 기준(학위 과정 및 영어 IELTS 7.0/7.0/8.0/8.0 또는 호주 등 학위 면제 요건)이 핵심이며 189·190·482 모두 매우 유리해요. 반면 Diploma 후 경력을 쌓는 경우 Child Care Centre Manager(134111, TRA/ACECQA)나 DAMA 내 Child Care Worker 옵션을 구분해 설계해야 해요.",
+    "distinction_ko": "Early Childhood Teacher(241111)는 ACECQA 기술심사 기준(학위 과정 및 영어 IELTS 7.0/7.0/8.0/8.0 또는 영어권 학위 면제 요건) 충족이 핵심이며 189·190·482 경로 모두에서 우선순위가 높습니다. 반면 Diploma 취득 후 현장 경력을 쌓는 경우에는 Child Care Centre Manager(134111, TRA/ACECQA)나 CSOL·DAMA 내 Child Care Worker 옵션을 구분해 설계해야 합니다.",
     "distinction_en": "Early Childhood Teacher (241111) requires degree-level ACECQA assessment (IELTS 7/7/8/8 or exempt higher-ed study) and enjoys priority 189/190/482 processing, whereas Diploma-qualified educators typically target Child Care Centre Manager (134111) or Child Care Worker (421111 on CSOL/DAMA)."
   },
   {
@@ -70,7 +70,7 @@
       "333411",
       "331212"
     ],
-    "distinction_ko": "건설·금속 기능직은 대부분 MLTSSL+CSOL에 포함되어 워홀(417) → 482 SID / 189 / 190 / 491 패스웨이가 강력해요. 다만 ABN 캐주얼 근무만으로는 스폰서십·TRA(JRP/OSAP) 경력 입증이 까다로울 수 있어 세금·페이슬립·작업 사진 등 증빙 설계를 초기에 잡아야 해요.",
+    "distinction_ko": "건설·금속 기능직은 대부분 MLTSSL+CSOL에 포함되어 워킹홀리데이(417) 이후 482 SID·189·190·491 연계 경로가 폭넓게 열려 있습니다. 다만 ABN 도급 형태만으로는 스폰서십 및 TRA(JRP/OSAP) 경력 입증이 까다로울 수 있으므로 TFN 급여명세서·연금·세금신고·작업 증빙을 초기에 체계적으로 갖추어야 합니다.",
     "distinction_en": "Construction and metal trades sit on MLTSSL+CSOL with strong 417 -> 482 SID / 189 / 190 / 491 pathways, but informal ABN subcontracting without TFN payslips, superannuation, or tax records creates major TRA (JRP/OSAP) and 482/186 evidentiary hurdles."
   },
   {
@@ -82,7 +82,7 @@
       "225111",
       "225311"
     ],
-    "distinction_ko": "Marketing Specialist(225113)는 STSOL+CSOL 직종(VETASSESS Group B)으로 189는 불가하지만 190·491·482·186이 가능해요. 다만 482·186 신청 시 연매출 $1M 미만, 직원 5인 미만, 연봉 $65k(현행 CSIT $79,423) 미만 또는 현장 판매 위주 포지션 제외 Caveat을 반드시 통과해야 해요.",
+    "distinction_ko": "Marketing Specialist(225113)는 STSOL+CSOL 직종(VETASSESS Group B)으로 189 신청은 제외되나 190·491·482·186 진행이 가능합니다. 다만 482·186 신청 시 연매출 AUD $1,000,000 미만 사업체·직원 5인 미만 사업체·현행 CSIT($79,423) 미달 급여·현장 소매 판매 위주 포지션 제외 조건(Caveat)을 모두 충족해야 합니다.",
     "distinction_en": "Marketing Specialist (225113, STSOL+CSOL, VETASSESS Group B) excludes 189 but supports 190/491/482/186. Sponsored 482/186 nominations face strict caveats excluding front-line retail settings and businesses under AUD $1M turnover or fewer than 5 employees."
   },
   {
@@ -94,7 +94,7 @@
       "312211",
       "312212"
     ],
-    "distinction_ko": "4년제 공학 학위가 있으면 Engineers Australia(Washington Accord / CDR)로 Civil Engineer(233211)를 노리고, 전문학사(Associate Degree/Diploma)나 현장 설계·시공 관리 중심이면 Civil Engineering Draftsperson(312211, MLTSSL+CSOL)이 현실적인 대안이 돼요.",
+    "distinction_ko": "4년제 공학 학위 소지자는 Engineers Australia(Washington Accord 또는 CDR) 심사를 통해 Civil Engineer(233211) 경로를 검토합니다. 전문학사(Associate Degree/Diploma) 소지자이거나 CAD 설계·시공 문서 실무 비중이 높은 경우에는 Civil Engineering Draftsperson(312211, MLTSSL+CSOL)이 현실적인 대안이 됩니다.",
     "distinction_en": "Four-year engineering graduates target Civil Engineer (233211) via Engineers Australia (Washington Accord / CDR), whereas Associate Degree/Diploma holders in CAD design or site documentation align strongly with Civil Engineering Draftsperson (312211, MLTSSL+CSOL)."
   }
 ]

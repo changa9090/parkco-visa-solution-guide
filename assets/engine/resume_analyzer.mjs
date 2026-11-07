@@ -5,8 +5,8 @@ export const MAX_DOCX_XML_BYTES = 25 * 1024 * 1024; // 25 MB uncompressed XML gu
 export const ALLOWED_EXTENSIONS = new Set([".pdf", ".docx", ".txt", ".md"]);
 
 export const PRIVACY_NOTICE_KO =
-  "업로드하신 이력서는 외부 유료 AI API로 전송되거나 서버 디스크에 저장되지 않고, " +
-  "로컬 메모리 내에서 즉시 분석 후 폐기돼요.";
+  "업로드하신 이력서는 외부 유료 AI API로 전송되거나 서버 디스크에 저장되지 않고 " +
+  "로컬 메모리 내에서 즉시 분석 후 폐기됩니다.";
 
 export const PRIVACY_NOTICE_EN =
   "Your resume is processed strictly in ephemeral local memory and never sent to paid external AI APIs " +
@@ -180,7 +180,7 @@ async function readDocxDocumentXmlBytes(u8, lang) {
 
   if (!docEntry) {
     throw new ResumeValidationError(
-      "올바른 Word(.docx) 문서 구조가 아니에요. 파일을 다시 저장하거나 텍스트 붙여넣기를 이용해 주세요.",
+      "올바른 Word(.docx) 문서 구조가 아닙니다. 파일을 다시 저장하거나 텍스트 붙여넣기를 이용해 주십시오.",
       422,
       "Invalid Word (.docx) document structure. Please re-save your file or paste your resume text directly.",
       lang
@@ -189,7 +189,7 @@ async function readDocxDocumentXmlBytes(u8, lang) {
 
   if (docEntry.uncompSize > MAX_DOCX_XML_BYTES) {
     throw new ResumeValidationError(
-      "압축 해제된 문서 크기가 허용 한도를 초과했어요.",
+      "압축 해제된 문서 크기가 허용 한도를 초과했습니다.",
       413,
       "Uncompressed document XML exceeds the maximum safety limit.",
       lang
@@ -220,7 +220,7 @@ async function readDocxDocumentXmlBytes(u8, lang) {
 
   if (xmlBytes.length > MAX_DOCX_XML_BYTES) {
     throw new ResumeValidationError(
-      "압축 해제된 문서 크기가 허용 한도를 초과했어요.",
+      "압축 해제된 문서 크기가 허용 한도를 초과했습니다.",
       413,
       "Uncompressed document XML exceeds the maximum safety limit.",
       lang
@@ -495,7 +495,7 @@ async function extractPdfBytesWithPdfJs(u8, lang) {
     pdfjs = await loadPdfJsLazy();
   } catch (err) {
     throw new ResumeValidationError(
-      "PDF 판독 엔진을 불러오지 못했어요. 잠시 후 다시 시도하거나 텍스트 붙여넣기를 이용해 주세요.",
+      "PDF 판독 엔진을 불러오지 못했습니다. 잠시 후 다시 시도하거나 텍스트 붙여넣기를 이용해 주십시오.",
       500,
       "Failed to load the local PDF reader module. Please retry or paste your resume text directly.",
       lang
@@ -539,7 +539,7 @@ async function extractPdfBytesWithPdfJs(u8, lang) {
     const joinedPdf = pagesOut.join("\n").trim();
     if (joinedPdf.replace(/\s+/g, "").length < 10) {
       throw new ResumeValidationError(
-        "스캔 이미지 전용 PDF이거나 추출 가능한 텍스트가 없어요. 텍스트 선택이 가능한 PDF·DOCX 또는 직접 붙여넣기를 이용해 주세요.",
+        "스캔 이미지 전용 PDF이거나 추출 가능한 텍스트가 없습니다. 텍스트 선택이 가능한 PDF·DOCX 또는 직접 붙여넣기를 이용해 주십시오.",
         422,
         "This PDF appears to be image-only (scanned) with no extractable text. Please upload a text-selectable PDF/DOCX or paste your text.",
         lang
@@ -556,7 +556,7 @@ async function extractPdfBytesWithPdfJs(u8, lang) {
     }
     if (err instanceof ResumeValidationError) throw err;
     throw new ResumeValidationError(
-      "손상되었거나 읽을 수 없는 PDF 파일이에요. 정상 PDF 파일 또는 텍스트 붙여넣기를 이용해 주세요.",
+      "손상되었거나 읽을 수 없는 PDF 파일입니다. 정상 PDF 파일 또는 텍스트 붙여넣기를 이용해 주십시오.",
       422,
       "Corrupted or unreadable PDF file. Please upload a valid PDF or paste your resume text directly.",
       lang
@@ -570,7 +570,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
 
   if (!ALLOWED_EXTENSIONS.has(ext)) {
     throw new ResumeValidationError(
-      `지원하지 않는 파일 형식(${ext || "확장자 없음"})이에요. PDF, DOCX, TXT, MD 파일만 업로드할 수 있어요.`,
+      `지원하지 않는 파일 형식(${ext || "확장자 없음"})입니다. PDF, DOCX, TXT, MD 파일만 업로드할 수 있습니다.`,
       400,
       `Unsupported file format (${ext || "no extension"}). Please upload a PDF, DOCX, TXT, or MD file.`,
       lang
@@ -586,7 +586,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
 
   if (u8.byteLength > MAX_UPLOAD_BYTES) {
     throw new ResumeValidationError(
-      "이력서 파일 크기가 10MB를 초과했어요. 10MB 이하의 PDF, DOCX, TXT 파일을 업로드해 주세요.",
+      "이력서 파일 크기가 10MB를 초과했습니다. 10MB 이하의 PDF, DOCX, TXT 파일을 업로드해 주십시오.",
       413,
       "The file exceeds the 10 MB size limit. Please upload a PDF, DOCX, or TXT file under 10 MB.",
       lang
@@ -595,7 +595,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
 
   if (isAllWhitespaceBytes(u8)) {
     throw new ResumeValidationError(
-      "빈 파일이 업로드되었어요. 내용이 포함된 이력서 파일이나 텍스트를 입력해 주세요.",
+      "빈 파일이 업로드되었습니다. 내용이 포함된 이력서 파일이나 텍스트를 입력해 주십시오.",
       400,
       "The uploaded file is empty. Please upload a valid resume file or paste your text directly.",
       lang
@@ -606,7 +606,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
     const decoded = decodeTextBytes(u8);
     if (decoded.replace(/\s+/g, "").length < 10) {
       throw new ResumeValidationError(
-        "텍스트 내용이 너무 짧아 직종과 경력을 판독하기 어려워요. 주요 업무와 기간을 조금 더 적어 주세요.",
+        "텍스트 내용이 너무 짧아 직종과 경력을 판독하기 어렵습니다. 주요 업무와 기간을 조금 더 기재해 주십시오.",
         422,
         "The text is too short to assess your ANZSCO occupation and experience. Please include your job title, duties, and dates.",
         lang
@@ -624,7 +624,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
     } catch (err) {
       if (err instanceof ResumeValidationError) throw err;
       throw new ResumeValidationError(
-        "손상되었거나 암호가 걸린 DOCX 파일이에요. 정상 DOCX/PDF 파일 또는 텍스트 붙여넣기를 이용해 주세요.",
+        "손상되었거나 암호가 설정된 DOCX 파일입니다. 정상 DOCX/PDF 파일 또는 텍스트 붙여넣기를 이용해 주십시오.",
         422,
         "Corrupted or password-protected DOCX file. Please upload a valid DOCX/PDF file or paste your text.",
         lang
@@ -633,7 +633,7 @@ export async function extractTextFromBytes(filename, rawBytes, lang = "ko") {
 
     if (joined.replace(/\s+/g, "").length < 10) {
       throw new ResumeValidationError(
-        "DOCX 문서에서 읽을 수 있는 본문 텍스트를 찾지 못했어요. 표나 텍스트가 포함된 이력서를 업로드해 주세요.",
+        "DOCX 문서에서 읽을 수 있는 본문 텍스트를 찾지 못했습니다. 표나 텍스트가 포함된 이력서를 업로드해 주십시오.",
         422,
         "No readable text was found inside the DOCX file. Please upload a document containing selectable text.",
         lang
@@ -898,7 +898,7 @@ function detectEmploymentWarnings(text) {
   const warningsEn = [];
   if (/(?<![\p{L}\p{N}_])abn(?![\p{L}\p{N}_])|sole\s+trader|independent\s+contractor|프리랜서|외주\s*용역/iu.test(text)) {
     warningsKo.push(
-      "ABN / 프리랜서(Contractor) 근무 이력 감지: 482·186 및 TRA/VETASSESS 심사에서는 단순 ABN 인보이스만으로 고용관계·풀타임 경력 인정이 까다로울 수 있어 계약서·세금신고(NOA)·실제 지휘감독 증빙 점검이 필요해요."
+      "ABN / 프리랜서(Contractor) 근무 이력 감지: 482·186 및 TRA/VETASSESS 심사에서는 단순 ABN 인보이스만으로 고용관계·풀타임 경력 인정이 까다로울 수 있어 계약서·세금신고(NOA)·실제 지휘감독 증빙 점검이 필요합니다."
     );
     warningsEn.push(
       "ABN / Independent Contractor History Detected: For Subclass 482/186 and TRA/VETASSESS assessments, standalone ABN invoices are scrutinised heavily; written service contracts, ATO Notices of Assessment (NOA), and day-to-day direction evidence should be audited."
@@ -906,7 +906,7 @@ function detectEmploymentWarnings(text) {
   }
   if (/(?<![\p{L}\p{N}_])(?:part[- ]time|casual)(?![\p{L}\p{N}_])|파트타임|캐주얼|알바|아르바이트/iu.test(text)) {
     warningsKo.push(
-      "파트타임·캐주얼 근무 형태 감지: 482 SID는 주 20시간 이상 파트타임의 비례 합산(Pro-rata, 예: 주 19~20시간 2년 = 풀타임 1년)이 가능하지만 부정기 캐주얼이나 주 20시간 미만 구간은 기술심사·점수제 경력에서 제외될 수 있어요."
+      "파트타임·캐주얼 근무 형태 감지: 482 SID는 주 20시간 이상 파트타임의 비례 합산(Pro-rata, 예: 주 19~20시간 2년 = 풀타임 1년)이 가능하지만 부정기 캐주얼이나 주 20시간 미만 구간은 기술심사·점수제 경력에서 제외될 수 있습니다."
     );
     warningsEn.push(
       "Part-Time / Casual Employment Detected: While Subclass 482 SID permits pro-rata counting of regular part-time work (e.g., 2 years at ~20 hrs/wk = 1 year full-time), irregular casual shifts or periods under 20 hrs/wk may be excluded from skills assessments and Schedule 6D points."
@@ -914,7 +914,7 @@ function detectEmploymentWarnings(text) {
   }
   if (/(?<![\p{L}\p{N}_])intern(?:ship)?(?![\p{L}\p{N}_])|인턴|실습생|placement/iu.test(text)) {
     warningsKo.push(
-      "인턴십·학위 실습(Placement) 이력 감지: 무급 실습이나 학점 이수용 인턴십은 대다수 기술심사 기관(ACS·VETASSESS·TRA)에서 숙련 유급 경력으로 산입되지 않아요."
+      "인턴십·학위 실습(Placement) 이력 감지: 무급 실습이나 학점 이수용 인턴십은 대다수 기술심사 기관(ACS·VETASSESS·TRA)에서 숙련 유급 경력으로 산입되지 않습니다."
     );
     warningsEn.push(
       "Internship / Clinical Placement Detected: Unpaid placements or academic credit internships generally cannot be counted as skilled remunerated employment by ACS, VETASSESS, or TRA."
@@ -942,7 +942,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
   const cleanText = String(text || "").trim();
   if (cleanText.replace(/\s+/g, "").length < 15) {
     throw new ResumeValidationError(
-      "입력된 이력서 텍스트가 너무 짧아요. 직함, 담당 직무, 근무 기간을 1~2문장 이상 입력해 주세요.",
+      "입력된 이력서 텍스트가 너무 짧습니다. 직함, 담당 직무, 근무 기간을 1~2문장 이상 입력해 주십시오.",
       400,
       "The resume text is too short. Please enter at least 1–2 sentences describing your job title, core duties, and employment dates.",
       lang
@@ -991,7 +991,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
     const authEn = authCodes || "Relevant Assessing Authority";
     const listsStr = (top.lists || []).join(" · ");
     gapInsights.push(
-      `이력서 직무 분석 결과 1순위 후보 직종은 '${top.title_ko} (${top.occupation}, ANZSCO ${top.anzsco_code_primary})'이며, 공식 리스트 [${listsStr}] 및 기술심사 기관 [${authKo}] 기준이 적용돼요.`
+      `이력서 직무 분석 결과 1순위 후보 직종은 '${top.title_ko} (${top.occupation}, ANZSCO ${top.anzsco_code_primary})'이며 공식 리스트 [${listsStr}] 및 기술심사 기관 [${authKo}] 기준이 적용됩니다.`
     );
     gapInsightsEn.push(
       `Top matched ANZSCO occupation from your duties: '${top.occupation} (ANZSCO ${top.anzsco_code_primary})', governed by official list [${listsStr}] and assessing authority [${authEn}].`
@@ -1009,7 +1009,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
       const cavSummary = firstCav.summary_ko;
       const cavSummaryEn = firstCav.summary_en || firstCav.title_en || "Statutory occupation caveat applies";
       gapInsights.push(
-        `주의(직종 Caveat): ${top.occupation} 직종으로 ${firstSc} 등 스폰서 비자 진행 시 '${cavSummary}' 제한 조건이 이민성 법령 원문에 명시되어 있어요.`
+        `주의(직종 Caveat): ${top.occupation} 직종으로 ${firstSc} 등 스폰서 비자 진행 시 '${cavSummary}' 제한 조건이 이민성 법령 원문에 명시되어 있습니다.`
       );
       gapInsightsEn.push(
         `Statutory Caveat Alert: Sponsoring '${top.occupation}' under Subclass ${firstSc} is subject to legislative caveat · '${cavSummaryEn}'.`
@@ -1018,7 +1018,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
 
     if (!(top.visas_eligible || []).includes("189")) {
       gapInsights.push(
-        `${top.occupation} 직종은 MLTSSL이 아닌 ${(top.lists || []).join(", ")} 소속이므로 189 독립기술이민은 불가하며, 주정부 후원(190/491) 또는 고용주 스폰서(482 → 186) 중심으로 설계해야 해요.`
+        `${top.occupation} 직종은 MLTSSL이 아닌 ${(top.lists || []).join(", ")} 소속이므로 189 독립기술이민은 불가하며 주정부 후원(190/491) 또는 고용주 스폰서(482 → 186) 중심으로 설계해야 합니다.`
       );
       gapInsightsEn.push(
         `Because '${top.occupation}' sits on ${(top.lists || []).join(", ")} (not MLTSSL), Subclass 189 Independent is unavailable; focus on State Nomination (190/491) or Employer Sponsorship (482 → 186).`
@@ -1029,21 +1029,21 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
   const fmtYr = (v) => (Number.isInteger(v) ? `${v}.0` : String(v));
   if (expYears < 1.0) {
     gapInsights.push(
-      `통합 산출 경력이 약 ${fmtYr(expYears)}년으로 감지되었어요. 482 SID 스폰서 비자는 최근 5년 내 최소 1년 풀타임(또는 비례 파트타임) 경력이 필수이므로 경력 산정 구간을 꼭 확인해 보세요.`
+      `통합 산출 경력이 약 ${fmtYr(expYears)}년으로 감지되었습니다. 482 SID 스폰서 비자는 최근 5년 내 최소 1년 풀타임(또는 비례 파트타임) 경력이 필수이므로 경력 산정 구간을 반드시 확인하시기 바랍니다.`
     );
     gapInsightsEn.push(
       `De-overlapped experience totals ~${fmtYr(expYears)} yrs. Subclass 482 SID requires at least 1 year of full-time (or equivalent pro-rata part-time) experience within the last 5 years; please double-check your date ranges.`
     );
   } else if (expYears < 2.0) {
     gapInsights.push(
-      `중복 기간 병합 후 총 경력이 약 ${fmtYr(expYears)}년(호주 약 ${fmtYr(auYears)}년 · 해외 약 ${fmtYr(osYears)}년)으로 계산되었어요. 482 SID 최소 기준(1년)은 충족 가능하나, 186 Direct Entry(3년 풀타임)까지는 추가 경력 축적이 필요해요.`
+      `중복 기간 병합 후 총 경력이 약 ${fmtYr(expYears)}년(호주 약 ${fmtYr(auYears)}년 · 해외 약 ${fmtYr(osYears)}년)으로 계산되었습니다. 482 SID 최소 기준(1년)은 충족 가능하나 186 Direct Entry(3년 풀타임)까지는 추가 경력 축적이 필요합니다.`
     );
     gapInsightsEn.push(
       `De-overlapped experience totals ~${fmtYr(expYears)} yrs (AU ~${fmtYr(auYears)} yrs · Overseas ~${fmtYr(osYears)} yrs). This meets the 1-year minimum for Subclass 482 SID, though Subclass 186 Direct Entry requires 3 full-time years.`
     );
   } else {
     gapInsights.push(
-      `중복 기간 병합 후 총 경력이 약 ${fmtYr(expYears)}년(호주 약 ${fmtYr(auYears)}년 · 해외 약 ${fmtYr(osYears)}년)으로 확인되어 482 SID(1년+) 및 기술이민 경력 점수 검토에 유리한 기반을 갖추고 있어요.`
+      `중복 기간 병합 후 총 경력이 약 ${fmtYr(expYears)}년(호주 약 ${fmtYr(auYears)}년 · 해외 약 ${fmtYr(osYears)}년)으로 확인되어 482 SID(1년+) 및 기술이민 경력 점수 검토에 유리한 기반을 갖추고 있습니다.`
     );
     gapInsightsEn.push(
       `De-overlapped experience totals ~${fmtYr(expYears)} yrs (AU ~${fmtYr(auYears)} yrs · Overseas ~${fmtYr(osYears)} yrs), providing a solid foundation for Subclass 482 SID (1+ yr) and Schedule 6D employment points.`
@@ -1052,7 +1052,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
 
   if (!englishClue) {
     gapInsights.push(
-      "이력서에 공인 영어 성적(IELTS / PTE Academic)이 명시되지 않았어요. 2025년 8·9월 개편된 영역별 PTE/IELTS 기준(온라인 자택 시험 전면 불인정)에 맞춰 목표 점수를 먼저 확정하시는 것을 권장해요."
+      "이력서에 공인 영어 성적(IELTS / PTE Academic)이 명시되지 않았습니다. 2025년 8·9월 개편된 영역별 PTE/IELTS 기준(온라인 자택 시험 전면 불인정)에 맞춰 목표 점수를 먼저 확정하시는 것을 권장합니다."
     );
     gapInsightsEn.push(
       "No official English test score (IELTS / PTE Academic) was detected on your resume. Confirm your target band scores under the revised Aug/Sep 2025 component rules (remote/at-home tests are strictly excluded)."

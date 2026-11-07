@@ -2,7 +2,7 @@
   "channel_name": "박창민 변호사의 호주이민 (@immispecialist)",
   "channel_name_en": "Chang Min Park · Australian Immigration Law (@immispecialist)",
   "channel_url": "https://www.youtube.com/@immispecialist/videos",
-  "captured_at": "2026-11-01",
+  "captured_at": "2026-11-06",
   "total_channel_videos": 220,
   "categories": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "id": "crisis_art_services",
-      "label_ko": "비자응급실™ · Case Review™ · ART 재심",
+      "label_ko": "비자응급실™ · Case Review™ · 행정재심기구(ART)",
       "label_en": "Visa Emergency, Case Review & ART"
     }
   ],
@@ -66,7 +66,7 @@
         "diagnosis",
         "latest_rule"
       ],
-      "summary_ko": "과거 카더라나 구법이 아니라 ‘지금 현재 시행 중인 법령(Instrument)’ 기준으로 내 비자 전략을 짜야 하는 핵심 원칙을 짚어드려요.",
+      "summary_ko": "과거 소문이나 폐지된 구법이 아니라 현재 시행 중인 하위법령(Legislative Instrument)을 기준으로 비자 전략을 수립해야 하는 원칙을 짚어봅니다.",
       "summary_en": "Why visa strategies must be anchored in currently active legislative instruments rather than outdated rules or online rumours.",
       "watch_url": "https://www.youtube.com/watch?v=Bu4AUSoyNic",
       "embed_url": "https://www.youtube.com/embed/Bu4AUSoyNic",
@@ -90,7 +90,7 @@
         "diagnosis",
         "overview"
       ],
-      "summary_ko": "호주 비자의 큰 갈래(기술·취업·가족·학생·임시비자)를 한눈에 정리하고 내 출발점을 잡는 입문 필독 영상이에요.",
+      "summary_ko": "호주 비자의 큰 갈래(기술·취업·가족·학생·임시비자)를 한눈에 정리하고 본인의 출발점을 설정하는 입문 해설 영상입니다.",
       "summary_en": "Essential foundation guide mapping skilled, employer-sponsored, family, student, and temporary visa streams.",
       "watch_url": "https://www.youtube.com/watch?v=vCSWCYA41n4",
       "embed_url": "https://www.youtube.com/embed/vCSWCYA41n4",
@@ -113,7 +113,7 @@
         "diagnosis",
         "lifecycle"
       ],
-      "summary_ko": "단발성 비자가 아니라 ‘임시비자 입국 → 경력·조건 충족 → 영주권 전환’으로 이어지는 호주 비자 생애주기(Cycle)를 해부해요.",
+      "summary_ko": "단발성 비자 신청이 아니라 임시비자 입국부터 경력·요건 충족 및 영주권 전환으로 이어지는 호주 비자 생애주기를 분석합니다.",
       "summary_en": "Breaks down how temporary visas, Australian work experience, and skills assessments connect into a coherent PR lifecycle.",
       "watch_url": "https://www.youtube.com/watch?v=jTWsopjUZmM",
       "embed_url": "https://www.youtube.com/embed/jTWsopjUZmM",
@@ -136,7 +136,7 @@
         "diagnosis",
         "beginners"
       ],
-      "summary_ko": "189, 482, 820처럼 복잡해 보이는 세 자리 비자 서브클래스 숫자의 체계를 쉽게 이해할 수 있어요.",
+      "summary_ko": "189·482·820처럼 복잡해 보이는 세 자리 비자 서브클래스 번호 체계를 구조적으로 정리합니다.",
       "summary_en": "A clear primer on how Australian visa subclass numbering works across skilled, sponsored, temporary, and family categories.",
       "watch_url": "https://www.youtube.com/watch?v=2SA8Culj9ek",
       "embed_url": "https://www.youtube.com/embed/2SA8Culj9ek",
@@ -160,7 +160,7 @@
         "diagnosis",
         "intake"
       ],
-      "summary_ko": "이민법 스페셜리스트 변호사가 실제 상담 전 어떤 질문지로 의뢰인의 숨은 가능성과 리스크를 진단하는지 공개해요.",
+      "summary_ko": "공인 이민법 스페셜리스트 변호사가 상담 전 어떤 문진 항목으로 의뢰인의 숨은 자격 요건과 거절 변수를 점검하는지 소개합니다.",
       "summary_en": "Reveals the structured diagnostic questions a QLS Accredited Specialist uses to uncover hidden eligibility and refusal risks.",
       "watch_url": "https://www.youtube.com/watch?v=BWFNfi8394E",
       "embed_url": "https://www.youtube.com/embed/BWFNfi8394E",
@@ -183,7 +183,7 @@
         "diagnosis",
         "ai_warning"
       ],
-      "summary_ko": "일반 생성형 AI 답변만 믿고 비자를 준비했다가 구법·할루시네이션 때문에 낭패를 보는 실제 위험 포인트를 경고해요.",
+      "summary_ko": "일반 생성형 AI 답변만 믿고 비자를 준비했다가 구법 인용이나 환각 정보로 거절 위기를 겪는 실무 위험 지점을 짚어봅니다.",
       "summary_en": "Real-world warnings on repealed instruments, hallucinated exemptions, and refusal traps caused by generic AI advice.",
       "watch_url": "https://www.youtube.com/watch?v=5PM7UiYp688",
       "embed_url": "https://www.youtube.com/embed/5PM7UiYp688",
@@ -209,7 +209,7 @@
         "diagnosis",
         "timeline"
       ],
-      "summary_ko": "현 노동당 정부의 이민 정책 기조와 482·파트너 비자 등의 실제 심사 타임라인을 현실적으로 체크해요.",
+      "summary_ko": "연방정부의 이민 정책 기조와 482·파트너·기술이민 비자의 실제 심사 일정을 객관적으로 점검합니다.",
       "summary_en": "Realistic assessment of current government policy priorities and processing queues across Subclass 482, Partner, and GSM visas.",
       "watch_url": "https://www.youtube.com/watch?v=3Jyh2JE5OQY",
       "embed_url": "https://www.youtube.com/embed/3Jyh2JE5OQY",
@@ -232,7 +232,7 @@
         "processing_time",
         "timeline"
       ],
-      "summary_ko": "내 비자가 언제쯤 승인될지 과거 추이와 현재 이민성 심사기간 데이터를 비교해 읽는 방법을 안내해요.",
+      "summary_ko": "과거 추이와 현재 호주 이민성 공개 심사기간 분위수(50%·90%) 데이터를 비교하여 승인 예상 시점을 읽는 방법을 안내합니다.",
       "summary_en": "How to interpret median (50%) and 90th-percentile Home Affairs processing time trends accurately.",
       "watch_url": "https://www.youtube.com/watch?v=LuNFJv_1vAQ",
       "embed_url": "https://www.youtube.com/embed/LuNFJv_1vAQ",
@@ -255,7 +255,7 @@
         "conditions",
         "vevo"
       ],
-      "summary_ko": "현재 소지 비자에 붙어 있는 컨디션(8105, 8503, 8547, 8607 등)을 정확히 확인해 위반을 막는 기본기예요.",
+      "summary_ko": "현재 소지 비자에 부여된 비자 조건(8105·8503·8547·8607 등)을 VEVO에서 확인하고 조건 위반을 예방하는 기본 수칙입니다.",
       "summary_en": "How to check and comply with mandatory visa conditions so a minor breach never derails your future PR application.",
       "watch_url": "https://www.youtube.com/watch?v=nTWjZkDzOJ8",
       "embed_url": "https://www.youtube.com/embed/nTWjZkDzOJ8",
@@ -281,7 +281,7 @@
         "points",
         "gsm"
       ],
-      "summary_ko": "2026 기술이민 포인트 제도 개편 루머와 실제 현행 Schedule 6D 점수 규정을 명확히 구분해 드려요.",
+      "summary_ko": "기술이민 점수제 개편 논의와 현재 법적 효력을 갖는 Schedule 6D 점수 산정 규정을 명확히 구분해 설명합니다.",
       "summary_en": "Separates points-test reform proposals from the binding Schedule 6D points rules currently in force.",
       "watch_url": "https://www.youtube.com/watch?v=Wj68rWMAoVg",
       "embed_url": "https://www.youtube.com/embed/Wj68rWMAoVg",
@@ -308,7 +308,7 @@
         "state_nomination",
         "bvb"
       ],
-      "summary_ko": "연방 예산안으로 본 190·491 주정부 노미네이션 동향, ‘유학 후 이민’ 현실 체크, 그리고 브리징 비자 B(BVB) 주의사항이에요.",
+      "summary_ko": "연방 예산안 기준 190·491 주정부 노미네이션 배정 동향과 유학 후 이민 현실 및 브리징 비자 B(BVB) 출국 시 유의사항을 다룹니다.",
       "summary_en": "Analyses state nomination allocations, realistic study-to-PR expectations, and why Bridging Visa B travel timing is critical.",
       "watch_url": "https://www.youtube.com/watch?v=_bJftrI6Q2g",
       "embed_url": "https://www.youtube.com/embed/_bJftrI6Q2g",
@@ -334,7 +334,7 @@
         "gsm",
         "invitation"
       ],
-      "summary_ko": "초청장을 받은 뒤 본비자 접수 전에 점수 과다 청구(Over-claiming) 실수를 막기 위해 무엇을 검증해야 하는지 다뤄요.",
+      "summary_ko": "SkillSelect 초청장 수령 후 본비자 접수 전에 점수 과다 청구(Over-claiming) 위험을 막기 위해 반드시 검증해야 할 항목을 정리합니다.",
       "summary_en": "What must be audited between SkillSelect invitation and visa lodgement under Park & Co's GSM Case Review™ framework.",
       "watch_url": "https://www.youtube.com/watch?v=m9xW3ZZXGQw",
       "embed_url": "https://www.youtube.com/embed/m9xW3ZZXGQw",
@@ -361,7 +361,7 @@
         "risk",
         "gsm"
       ],
-      "summary_ko": "기술이민에서 싱글 10점을 받고 초청된 뒤 파트너를 추가할 때 발생하는 치명적 리스크와 학생비자 ART 서류심리 변화를 설명해요.",
+      "summary_ko": "기술이민에서 싱글 10점으로 초청받은 뒤 파트너를 추가할 때 발생하는 법적 위험과 학생비자 행정재심기구(ART) 서류심리 개편을 해설합니다.",
       "summary_en": "Explains severe PIC 4020 / points-shortfall risks when undeclared de facto partners surface post-invitation, plus ART student review reforms.",
       "watch_url": "https://www.youtube.com/watch?v=BUxCJVNGWIM",
       "embed_url": "https://www.youtube.com/embed/BUxCJVNGWIM",
@@ -388,7 +388,7 @@
         "points",
         "skills_assessment"
       ],
-      "summary_ko": "기술심사 기관의 차감 기준일(Deeming Date)과 이민성 경력점수 산정 기준을 명쾌하게 정리해 드려요.",
+      "summary_ko": "기술심사 기관의 경력 차감 기준일(Deeming Date)과 이민성 경력 점수 산정 기준의 차이를 구체적으로 정리합니다.",
       "summary_en": "Clarifies how skills-assessment deeming dates interact with Schedule 6D Australian and overseas employment points.",
       "watch_url": "https://www.youtube.com/watch?v=pCCd_vz5OZo",
       "embed_url": "https://www.youtube.com/embed/pCCd_vz5OZo",
@@ -413,7 +413,7 @@
         "partner_points",
         "gsm"
       ],
-      "summary_ko": "싱글 10점 및 파트너 점수(10점·5점·0점)에서 사실혼(De facto) 해당 여부가 어떻게 판단되는지 해부해요.",
+      "summary_ko": "싱글 10점 및 배우자·파트너 점수(10점·5점·0점) 심사에서 사실혼(De facto) 성립 여부가 어떻게 판단되는지 분석합니다.",
       "summary_en": "Deep dive into how Home Affairs tests de facto relationship status when auditing 10-point single or skilled-partner claims.",
       "watch_url": "https://www.youtube.com/watch?v=ccD4FE3bmOg",
       "embed_url": "https://www.youtube.com/embed/ccD4FE3bmOg",
@@ -441,7 +441,7 @@
         "skills_assessment",
         "vetassess"
       ],
-      "summary_ko": "사무·전문직 최다 기술심사 기관인 VETASSESS의 학력·전공·경력 차감 구조를 알기 쉽게 풀어드려요.",
+      "summary_ko": "사무·전문직 최다 기술심사 기관인 VETASSESS의 직종 그룹별 학력·전공·경력 차감 구조를 상세히 해설합니다.",
       "summary_en": "Explains VETASSESS occupational groups, qualification relevance, and post-qualification experience deductions.",
       "watch_url": "https://www.youtube.com/watch?v=sP9Lv_dwJOU",
       "embed_url": "https://www.youtube.com/embed/sP9Lv_dwJOU",
@@ -466,7 +466,7 @@
         "live_masterclass",
         "gsm"
       ],
-      "summary_ko": "기술이민 전체 구조와 질의응답을 총망라한 박앤코 라이브 마스터클래스예요.",
+      "summary_ko": "점수제 기술이민의 전체 구조와 실무 질의응답을 종합 정리한 법무법인 박앤코 라이브 세미나입니다.",
       "summary_en": "Comprehensive live Q&A covering EOI strategy, state nomination criteria, and skilled PR pathways.",
       "watch_url": "https://www.youtube.com/watch?v=rsLNoD67sx4",
       "embed_url": "https://www.youtube.com/embed/rsLNoD67sx4",
@@ -492,7 +492,7 @@
         "sponsor",
         "overview"
       ],
-      "summary_ko": "고용주 스폰서 비자(482·186·494)의 스폰서십–노미네이션–비자 3단계 핵심 성공 방정식을 통합 정리했어요.",
+      "summary_ko": "고용주 스폰서 비자(482·186·494)의 스폰서십·노미네이션·비자 3단계 심사 요건을 통합 정리합니다.",
       "summary_en": "Integrates the three statutory stages (Sponsorship, Nomination, and Visa) across Subclass 482, 186, and 494.",
       "watch_url": "https://www.youtube.com/watch?v=9JnafnJXvVw",
       "embed_url": "https://www.youtube.com/embed/9JnafnJXvVw",
@@ -516,7 +516,7 @@
         "186_de",
         "experience"
       ],
-      "summary_ko": "2026년 최신 기준 186 Direct Entry 영주권의 ‘3년 풀타임 경력’ 인정 범위와 실무 쟁점을 심층 해설해요.",
+      "summary_ko": "현행 법령 기준 186 Direct Entry 영주권의 3년 풀타임 관련 경력 인정 범위와 실무 쟁점을 심층 해설합니다.",
       "summary_en": "2026 legal analysis of qualifying full-time post-qualification employment for Subclass 186 Direct Entry PR.",
       "watch_url": "https://www.youtube.com/watch?v=ZNEftvtLDxw",
       "embed_url": "https://www.youtube.com/embed/ZNEftvtLDxw",
@@ -542,7 +542,7 @@
         "experience",
         "186_de"
       ],
-      "summary_ko": "ABN 개인사업자 형태나 파트타임으로 일한 경력이 스폰서 비자 경력으로 인정될 수 있는지 법적 기준을 짚어드려요.",
+      "summary_ko": "ABN 개인사업자 계약이나 파트타임 근무 이력이 고용주 스폰서 비자 경력으로 인정될 수 있는지 법적 기준을 짚어봅니다.",
       "summary_en": "Examines when ABN sole-trader or pro-rata part-time work can or cannot satisfy employer-sponsored experience rules.",
       "watch_url": "https://www.youtube.com/watch?v=ryXR66hwnT8",
       "embed_url": "https://www.youtube.com/embed/ryXR66hwnT8",
@@ -568,7 +568,7 @@
         "age_45_plus",
         "dama"
       ],
-      "summary_ko": "만 45세를 넘긴 분들이 연령 제한 없는 482 비자와 DAMA·고소득 면제·파트너 전환 등 4가지 경로로 영주권을 설계하는 비법이에요.",
+      "summary_ko": "만 45세 이상 신청자가 연령 제한 없는 482 비자와 DAMA·고소득 면제(FWHIT)·파트너 비자 등 4가지 경로로 영주권을 설계하는 방법을 다룹니다.",
       "summary_en": "How applicants aged 45+ lawfully transition to PR using age-exempt 482 visas, the FWHIT high-income exemption, DAMAs, or Partner visas.",
       "watch_url": "https://www.youtube.com/watch?v=qiP4zUdte-8",
       "embed_url": "https://www.youtube.com/embed/qiP4zUdte-8",
@@ -593,7 +593,7 @@
         "sponsor_check",
         "risk"
       ],
-      "summary_ko": "고용주의 구두 약속만 믿기 전, 스폰서 기업의 매출·인력 구조·노미네이션 승인 가능성을 스스로 점검하는 방법이에요.",
+      "summary_ko": "고용주의 구두 약속에 의존하기 전에 스폰서 기업의 매출·인력 구조·노미네이션 요건 충족 가능성을 사전 점검하는 기준입니다.",
       "summary_en": "Practical checklist to assess business turnover, staffing structure, and nomination viability before committing to a sponsor.",
       "watch_url": "https://www.youtube.com/watch?v=dEyJPo9ANZ8",
       "embed_url": "https://www.youtube.com/embed/dEyJPo9ANZ8",
@@ -618,7 +618,7 @@
         "refusal_prevention",
         "sponsor"
       ],
-      "summary_ko": "진정한 포지션(Genuine Position), 시장연봉(AMSR), LMT 등 취업비자 5대 대표 거절 사유와 사전 예방법이에요.",
+      "summary_ko": "진정한 포지션(Genuine Position)·시장연봉(AMSR)·노동시장 테스트(LMT) 등 취업비자 5대 주요 거절 사유와 사전 대비책을 설명합니다.",
       "summary_en": "Covers Genuine Position, Annual Market Salary Rate (AMSR), Labour Market Testing (LMT), caveats, and financial capacity.",
       "watch_url": "https://www.youtube.com/watch?v=JAt7RAr23A0",
       "embed_url": "https://www.youtube.com/embed/JAt7RAr23A0",
@@ -644,7 +644,7 @@
         "regional",
         "age_45_plus"
       ],
-      "summary_ko": "연령(만 50·55세)·영어·연봉(CSIT 90%) 컨세션이 가능한 지방지역 DAMA 스폰서 비자의 진짜 구조와 주의사항이에요.",
+      "summary_ko": "연령(만 50·55세 미만)·영어·연봉(CSIT 90%) 특례가 적용되는 지방지역 DAMA 스폰서 비자의 구조와 유의사항을 정리합니다.",
       "summary_en": "Unpacks how Designated Area Migration Agreements work for regional employers and applicants needing statutory concessions.",
       "watch_url": "https://www.youtube.com/watch?v=OlvZDKi7acE",
       "embed_url": "https://www.youtube.com/embed/OlvZDKi7acE",
@@ -668,7 +668,7 @@
         "aged_care",
         "labour_agreement"
       ],
-      "summary_ko": "FOI 공식 데이터로 본 Aged Care Industry Labour Agreement 실제 승인 현황과 현실적인 진입 요건이에요.",
+      "summary_ko": "정보공개청구(FOI) 공식 통계로 확인한 Aged Care Industry Labour Agreement 승인 현황과 진입 요건을 분석합니다.",
       "summary_en": "Data-backed review of Aged Care Labour Agreement approvals, eligible care roles, and fast-tracked PR pathways.",
       "watch_url": "https://www.youtube.com/watch?v=TqFGiMB8_HU",
       "embed_url": "https://www.youtube.com/embed/TqFGiMB8_HU",
@@ -692,7 +692,7 @@
         "live_masterclass",
         "sid_482"
       ],
-      "summary_ko": "Skills in Demand(482 SID) 1년 경력 개편과 스트림별 조건을 다룬 특집 라이브예요.",
+      "summary_ko": "Skills in Demand(482 SID) 1년 경력 요건 개편과 스트림별 핵심 기준을 다룬 특집 라이브 세미나입니다.",
       "summary_en": "Detailed breakdown of the 1-year experience rule, Core vs Specialist streams, and Condition 8607 mobility rules.",
       "watch_url": "https://www.youtube.com/watch?v=BMlkALM76Ew",
       "embed_url": "https://www.youtube.com/embed/BMlkALM76Ew",
@@ -717,7 +717,7 @@
         "live_masterclass",
         "dama"
       ],
-      "summary_ko": "일반 SOL 밖 직종이나 만 45세 이상에게 돌파구가 되는 Labour Agreement 및 DAMA 실전 해설이에요.",
+      "summary_ko": "일반 SOL 외 직종 종사자나 만 45세 이상 신청자가 활용할 수 있는 Labour Agreement 및 13개 지역 DAMA 실무 해설입니다.",
       "summary_en": "Practical roadmap for off-list occupations and 45+ applicants leveraging Labour Agreements and regional DAMAs.",
       "watch_url": "https://www.youtube.com/watch?v=ip89VQvzfZo",
       "embed_url": "https://www.youtube.com/embed/ip89VQvzfZo",
@@ -745,7 +745,7 @@
         "student",
         "graduate_485"
       ],
-      "summary_ko": "학생비자 졸업 후 485 졸업생 비자 연령 상한(만 35세)과 그 이후 스폰서·기술이민 연결 전략을 총정리해요.",
+      "summary_ko": "학생비자 졸업 후 485 졸업생 비자 연령 상한(만 35세) 규정과 스폰서·기술이민 연계 전략을 종합 정리합니다.",
       "summary_en": "Covers the age-35 cap on Subclass 485, MLTSSL requirements for VET graduates, and bridging into 482/190/491 PR.",
       "watch_url": "https://www.youtube.com/watch?v=URZ6deNp0Cc",
       "embed_url": "https://www.youtube.com/embed/URZ6deNp0Cc",
@@ -771,7 +771,7 @@
         "rpl",
         "risk"
       ],
-      "summary_ko": "최근 호주 내 부실 RPL 학위 직권 취소 사태가 내 비자와 기술심사에 미치는 영향과 대응책을 짚어드려요.",
+      "summary_ko": "호주 내 부실 RPL 학위 직권 취소 조치가 소지 비자와 기술심사에 미치는 파장 및 법적 대응 방안을 설명합니다.",
       "summary_en": "Legal risk analysis and response strategy following regulatory cancellations of substandard RPL qualifications.",
       "watch_url": "https://www.youtube.com/watch?v=JM8LnnrMAhs",
       "embed_url": "https://www.youtube.com/embed/JM8LnnrMAhs",
@@ -794,7 +794,7 @@
         "featured",
         "whm"
       ],
-      "summary_ko": "호주 워킹홀리데이(417) 비자의 기본 조건, 세컨·써드 연장, 컨디션 주의사항을 한 편으로 끝내드려요.",
+      "summary_ko": "호주 워킹홀리데이(417) 비자의 기본 요건과 세컨·써드 연장 규정 및 비자 조건 준수 사항을 한 편으로 정리합니다.",
       "summary_en": "Covers 88-day / 6-month specified work rules, Condition 8547 6-month employer limits, and extension pitfalls.",
       "watch_url": "https://www.youtube.com/watch?v=LfU9ynXRWH4",
       "embed_url": "https://www.youtube.com/embed/LfU9ynXRWH4",
@@ -820,7 +820,7 @@
         "whm",
         "sponsor"
       ],
-      "summary_ko": "불필요한 학생비자 연장을 거치지 않고 워홀에서 곧바로 취업 스폰서·영주권으로 직행하는 실전 공략법이에요.",
+      "summary_ko": "불필요한 학생비자 연장을 거치지 않고 워킹홀리데이에서 곧바로 고용주 스폰서 및 영주권으로 전환하는 실무 요건을 안내합니다.",
       "summary_en": "How WHM holders with 1 year of relevant experience transition directly into Subclass 482 SID and PR.",
       "watch_url": "https://www.youtube.com/watch?v=U9yX95Kn45Y",
       "embed_url": "https://www.youtube.com/embed/U9yX95Kn45Y",
@@ -848,7 +848,7 @@
         "whm",
         "tra"
       ],
-      "summary_ko": "타일·용접·목수 등 건설·기술 기능직 종사자와 워홀러를 위한 TRA 기술심사 및 영주권 로드맵이에요.",
+      "summary_ko": "타일·용접·목공 등 건설·기술 기능직 종사자와 워킹홀리데이 체류자를 위한 TRA 기술심사 및 영주권 준비 로드맵입니다.",
       "summary_en": "Essential TRA skills assessment (JRP/OSAP) and TFN/superannuation evidence guide for trade occupations.",
       "watch_url": "https://www.youtube.com/watch?v=ZZNPJFbTj80",
       "embed_url": "https://www.youtube.com/embed/ZZNPJFbTj80",
@@ -873,7 +873,7 @@
         "whm",
         "case_story"
       ],
-      "summary_ko": "워킹홀리데이로 첫발을 디뎌 위기를 극복하고 영주권까지 취득한 실제 의뢰인의 생생한 여정이에요.",
+      "summary_ko": "워킹홀리데이로 입국한 뒤 비자 위기를 극복하고 영주권 취득까지 이른 실제 사례의 진행 과정을 소개합니다.",
       "summary_en": "Real-world Park & Co case journey overcoming severe visa hurdles from Subclass 417 through to PR.",
       "watch_url": "https://www.youtube.com/watch?v=695yZjCuFvs",
       "embed_url": "https://www.youtube.com/embed/695yZjCuFvs",
@@ -900,7 +900,7 @@
         "live_masterclass",
         "whm"
       ],
-      "summary_ko": "워홀러가 호주 체류 중 선택할 수 있는 영주권 루트별 장단점과 타임라인을 정리한 라이브예요.",
+      "summary_ko": "워킹홀리데이 소지자가 호주 체류 중 선택할 수 있는 영주권 경로별 장단점과 소요 기간을 비교한 라이브 세미나입니다.",
       "summary_en": "Compares timelines, costs, and evidentiary traps across sponsored, skilled, and partner pathways for WHM holders.",
       "watch_url": "https://www.youtube.com/watch?v=1ovHqId4aJQ",
       "embed_url": "https://www.youtube.com/embed/1ovHqId4aJQ",
@@ -925,7 +925,7 @@
         "featured",
         "partner"
       ],
-      "summary_ko": "파트너 비자 4대 심사 기준(재정·주거·사회·헌신)과 동거 기간 부족·Schedule 3 등 고난도 파트너 비자 11가지 해법을 다뤄요.",
+      "summary_ko": "파트너 비자 4대 심사 기준(재정·주거·사회·헌신)과 동거 기간 부족 및 Schedule 3 적용 등 고난도 쟁점 11가지 해법을 다룹니다.",
       "summary_en": "Specialist legal solutions for complex onshore 820/801 and offshore 309/100 Partner visa matters.",
       "watch_url": "https://www.youtube.com/watch?v=kDXXvizNzpE",
       "embed_url": "https://www.youtube.com/embed/kDXXvizNzpE",
@@ -950,7 +950,7 @@
         "live_masterclass",
         "partner"
       ],
-      "summary_ko": "820/801 호주 내 신청, 309/100 해외 신청, 사실혼 12개월 요건과 주정부 관계등록 면제를 총정리한 라이브예요.",
+      "summary_ko": "820/801 호주 내 신청과 309/100 해외 신청 비교부터 사실혼 12개월 요건 및 주정부 관계등록 면제까지 정리한 라이브 세미나입니다.",
       "summary_en": "Covers 820/801 vs 309/100, the 12-month de facto rule, state relationship registration waivers, and evidence structure.",
       "watch_url": "https://www.youtube.com/watch?v=TbQZLg0_M58",
       "embed_url": "https://www.youtube.com/embed/TbQZLg0_M58",
@@ -976,7 +976,7 @@
         "partner",
         "family_law_crossover"
       ],
-      "summary_ko": "파트너 비자 진행 중 별거·이혼 시 영주권을 유지할 수 있는 3가지 법정 예외(가정폭력·공동양육·사망)를 설명해요.",
+      "summary_ko": "파트너 비자 심사 중 관계 해소·이혼이 발생했을 때 영주권 심사를 이어갈 수 있는 3가지 법정 예외(가족폭력·공동양육·사망)를 설명합니다.",
       "summary_en": "Explains family violence, shared parental responsibility for an Australian child, and death-of-sponsor exceptions.",
       "watch_url": "https://www.youtube.com/watch?v=_Yv2TxWS6Ck",
       "embed_url": "https://www.youtube.com/embed/_Yv2TxWS6Ck",
@@ -999,7 +999,7 @@
         "niv_858",
         "remote_option"
       ],
-      "summary_ko": "현행 국가혁신비자(Subclass 858 National Innovation Visa)의 전신인 고숙련 인재 영주권의 심사 철학을 이해할 수 있어요.",
+      "summary_ko": "초청제 국가혁신비자(Subclass 858 National Innovation Visa)가 요구하는 국제적 성취 입증 기준과 심사 구조를 해설합니다.",
       "summary_en": "Explains the exceptional-achievement evidentiary threshold behind Australia's invitation-only Subclass 858 PR.",
       "watch_url": "https://www.youtube.com/watch?v=001RxckT6Z8",
       "embed_url": "https://www.youtube.com/embed/001RxckT6Z8",
@@ -1023,7 +1023,7 @@
         "visa_emergency",
         "trademark_service"
       ],
-      "summary_ko": "s 57 소명 요구서, PIC 4020, NOICC 취소 통지서 등 긴급 위기 통지서를 무료로 진단하는 박앤코 ‘비자응급실™’ 안내 영상이에요.",
+      "summary_ko": "s 57 소명 요구서·PIC 4020·NOICC 취소 예고 통지서 등 긴급 위기 통지서를 무료로 초기 진단하는 법무법인 박앤코 비자응급실™ 안내 영상입니다.",
       "summary_en": "Introduction to Park & Co's trademarked Visa Emergency™ service for time-critical departmental notices.",
       "watch_url": "https://www.youtube.com/watch?v=0__kDkczXRQ",
       "embed_url": "https://www.youtube.com/embed/0__kDkczXRQ",
@@ -1049,7 +1049,7 @@
         "case_review",
         "trademark_service"
       ],
-      "summary_ko": "혼자 준비한 비자 서류를 접수 전 이민법 스페셜리스트 변호사가 정밀 검수하는 박앤코 ‘Case Review™’ 소개 영상이에요.",
+      "summary_ko": "직접 준비한 비자 신청 서류를 접수 전 공인 이민법 스페셜리스트 변호사가 정밀 검수하는 박앤코 Case Review™ 소개 영상입니다.",
       "summary_en": "How a fixed-fee pre-lodgement specialist audit prevents avoidable refusals for self-prepared visa applicants.",
       "watch_url": "https://www.youtube.com/watch?v=7kKRoFuw7f8",
       "embed_url": "https://www.youtube.com/embed/7kKRoFuw7f8",
@@ -1074,7 +1074,7 @@
         "art_review",
         "student"
       ],
-      "summary_ko": "학생비자 거절 후 ART 재심이 구두 청문 없이 서류심리(On-paper) 위주로 바뀜에 따라 초기 서면 변론이 왜 결정적인지 알려드려요.",
+      "summary_ko": "학생비자 거절 후 행정재심기구(ART) 재심이 구두 청문 없이 서류심리 위주로 전환됨에 따라 초기 서면 변론이 갖는 중요성을 설명합니다.",
       "summary_en": "Why upfront written legal submissions and evidence are decisive now that student ART reviews proceed largely on the papers.",
       "watch_url": "https://www.youtube.com/watch?v=zVvzficFWqk",
       "embed_url": "https://www.youtube.com/embed/zVvzficFWqk",
@@ -1098,7 +1098,7 @@
         "art_review",
         "refusal"
       ],
-      "summary_ko": "학생비자 거절 통지서를 받은 직후 법정 기한(28일) 내에 가장 먼저 확인하고 결정해야 할 행동 지침이에요.",
+      "summary_ko": "학생비자 거절 결정문을 수령한 직후 법정 불변기한(28일) 이내에 우선 확인하고 결정해야 할 실무 대응 지침입니다.",
       "summary_en": "Step-by-step legal triage immediately after receiving a Subclass 500 refusal decision record.",
       "watch_url": "https://www.youtube.com/watch?v=WS0TJpB313I",
       "embed_url": "https://www.youtube.com/embed/WS0TJpB313I",
@@ -1124,7 +1124,7 @@
         "s48_bar",
         "refusal"
       ],
-      "summary_ko": "호주 내 비자 거절·취소 후 추가 접수를 막는 이민법 제48조(s 48 Bar)와 예외 신청 가능 비자(190·491·494·820)를 총정리해요.",
+      "summary_ko": "호주 내 비자 거절·취소 후 추가 비자 접수를 제한하는 이민법 제48조(s 48 Bar)와 예외 신청 가능 비자(190·491·494·820)를 정리합니다.",
       "summary_en": "Clarifies the s 48 onshore re-application bar after refusal/cancellation and key exempt visas (190, 491, 494, 820).",
       "watch_url": "https://www.youtube.com/watch?v=iCCeOYY5xvU",
       "embed_url": "https://www.youtube.com/embed/iCCeOYY5xvU",
@@ -1151,7 +1151,7 @@
         "health_waiver",
         "pic_4007"
       ],
-      "summary_ko": "신체검사 문제 발생 시 PIC 4005와 PIC 4007(Health Waiver 가능 비자)의 차이와 대응 전략을 설명해요.",
+      "summary_ko": "신체검사 비용 추산 이슈 발생 시 PIC 4005와 PIC 4007(Health Waiver 가능 비자)의 차이 및 소명 전략을 설명합니다.",
       "summary_en": "Explains medical cost thresholds and which visa subclasses permit a compelling PIC 4007 Health Waiver.",
       "watch_url": "https://www.youtube.com/watch?v=aLduugn-xiM",
       "embed_url": "https://www.youtube.com/embed/aLduugn-xiM",
@@ -1174,7 +1174,7 @@
         "character",
         "s501"
       ],
-      "summary_ko": "범죄경력·음주운전·신원조회 이슈가 호주 비자(s 501 Character Test 및 VACCU 심사)에 미치는 영향을 끝판왕 수준으로 해설해요.",
+      "summary_ko": "범죄경력·음주운전·신원조회 이력이 호주 비자 인성 심사(s 501 Character Test 및 VACCU 회부)에 미치는 영향과 소명 원칙을 해설합니다.",
       "summary_en": "Definitive legal guide to disclosing offences, VACCU character referrals, and s 501 risk mitigation.",
       "watch_url": "https://www.youtube.com/watch?v=Qd2JyrgRy3U",
       "embed_url": "https://www.youtube.com/embed/Qd2JyrgRy3U",
@@ -1197,7 +1197,7 @@
         "art_review",
         "trademark_service"
       ],
-      "summary_ko": "비자·노미네이션 거절 시 행정재심기구(재심) 절차가 어떻게 진행되고 어떤 사건이 뒤집힐 수 있는지 핵심만 설명해요.",
+      "summary_ko": "비자·노미네이션 거절 시 행정재심기구(ART) 재심 절차가 어떻게 진행되며 어떤 법리·증거 보완으로 인용 결정을 받는지 설명합니다.",
       "summary_en": "Explains de novo merits review, statutory filing deadlines, and how refused visa/nomination cases are overturned.",
       "watch_url": "https://www.youtube.com/watch?v=97_8T6HcOOM",
       "embed_url": "https://www.youtube.com/embed/97_8T6HcOOM",
@@ -1220,7 +1220,7 @@
         "ministerial_intervention",
         "remote_option"
       ],
-      "summary_ko": "재심 기각 이후 극히 예외적인 인도적 사유가 있을 때 검토하는 장관 탄원(s 351 Ministerial Intervention)의 실체예요.",
+      "summary_ko": "재심 결정 이후 예외적인 공익적·인도적 사유가 있을 때 검토하는 장관 직권개입 탄원(s 351 Ministerial Intervention) 요건을 안내합니다.",
       "summary_en": "Realistic explanation of public-interest Ministerial Intervention powers following merits review.",
       "watch_url": "https://www.youtube.com/watch?v=D2NtNOVuYtU",
       "embed_url": "https://www.youtube.com/embed/D2NtNOVuYtU",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": "9zzTLmsYgk0",
-      "title": "좋은 이민변호사라면 당신 사건을 이렇게 살린다.",
+      "title": "좋은 이민변호사라면, 당신 사건을 이렇게 살린다.",
       "title_en": "How a Dedicated Immigration Law Specialist Rescues Complex & High-Risk Visa Cases",
       "duration": "10:36",
       "published": "2주 전",
@@ -1243,7 +1243,7 @@
         "case_story",
         "specialist"
       ],
-      "summary_ko": "복잡하게 얽힌 비자 위기 사건을 이민법 스페셜리스트 변호사가 어떤 법리와 증거 전략으로 살려내는지 보여드려요.",
+      "summary_ko": "복합적인 비자 위기 사건을 공인 이민법 스페셜리스트 변호사가 어떤 법리 분석과 입증 구조로 해결하는지 소개합니다.",
       "summary_en": "Inside the statutory reasoning and evidentiary advocacy required to turn around critical migration matters.",
       "watch_url": "https://www.youtube.com/watch?v=9zzTLmsYgk0",
       "embed_url": "https://www.youtube.com/embed/9zzTLmsYgk0",
