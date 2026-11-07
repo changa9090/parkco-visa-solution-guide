@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T07:28:41.014670+00:00",
+  "generated_at": "2026-11-07T09:18:37.034082+00:00",
   "read_only_policy": "strict_zero_mutation",
   "sources": [
     {
@@ -8,7 +8,7 @@
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list",
       "sha256": "c3c782b878061b3dd9e29faa81a1b2a180fe84f37e81025eafe3d619e3b164e0",
       "bytes": 1618844,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "Home Affairs Official Visa Finder Schema",
@@ -16,15 +16,15 @@
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
       "sha256": "926945fbb65550d1913fa741113cde72adc337d59bacd5b68880f66fc06d7bad",
       "bytes": 4783,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "YouTube @immispecialist Channel Official Video Catalog",
       "snapshot_file": "immispecialist_videos_latest.json",
       "canonical_source_url": "https://www.youtube.com/@immispecialist/videos",
-      "sha256": "8b7b55b2a10844c5d877e766bb1a6d8998500c7bff3b5292f3de834562fa0a15",
-      "bytes": 78797,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "sha256": "bc90ffb1a54b42f37274df8337148a9958396f7382ab89aaa0993b24eabe91ad",
+      "bytes": 80165,
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "ABS ANZSCO 2022/2013 & Legislative Instrument Master",
@@ -32,7 +32,7 @@
       "canonical_source_url": "https://www.legislation.gov.au/F2024L01620/latest",
       "sha256": "716b8c584b09b3b540f18d89e5f6ad433facd350a0ea99a2b4a30048421c18cf",
       "bytes": 14723904,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "Korean & English ANZSCO Occupation Title Mapping",
@@ -40,7 +40,7 @@
       "canonical_source_url": "https://www.abs.gov.au/statistics/classifications/anzsco-australian-and-new-zealand-standard-classification-occupations",
       "sha256": "4d8ece117e011b66a4ec15b1842fe591f4078ab1b36239d32143fee5eb6d5e30",
       "bytes": 5853184,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "SkillSelect 139 Occupation Cut-Offs (GSM Navigator Feed)",
@@ -48,23 +48,23 @@
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds",
       "sha256": "12b3fa41e6c9320bbee7ba8426ada5904b55a61284c521c12723abc5f5858548",
       "bytes": 24250,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "Australia 13 Regional DAMAs Enriched Dataset (DAMA Navigator Feed)",
       "snapshot_file": "dama_navigator_data.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/labour-agreements/designated-area-migration-agreements",
-      "sha256": "e7291a1b9c1afdbc24145e9917245330a765dd622964d79ad1dafaeb93715171",
-      "bytes": 8055091,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "sha256": "ce9b6d1b8ad8e3d3f17816ea9594051294af1264321468bd72256c6292619cd5",
+      "bytes": 8055080,
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     },
     {
       "label": "Home Affairs Live 74-Stream Processing Times (Tracker Feed)",
       "snapshot_file": "typed-manifest-v2.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times",
-      "sha256": "fd6add612e72250c46f996ef2b49549d90911d279ea1ef8d0db7725d3c76aa66",
+      "sha256": "1e3467b488968585a6cae9d1afaff0c2e1d8e58225a0adcb3d7f95c7674dc54c",
       "bytes": 118395,
-      "verified_at": "2026-11-07T07:28:41.014670+00:00"
+      "verified_at": "2026-11-07T09:18:37.034082+00:00"
     }
   ]
 }

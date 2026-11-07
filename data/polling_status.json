@@ -1,12 +1,33 @@
 {
-  "polled_at_aest": "2026-11-05T14:39:36+10:00",
-  "polled_at_utc": "2026-11-05T04:39:36.100854+00:00",
+  "polled_at_aest": "2026-11-07T19:18:39+10:00",
+  "polled_at_utc": "2026-11-07T09:18:39.170240+00:00",
   "cadence": "Weekly Monday 08:02 AEST (after daily 06:55 processing-times & Monday 07:15–07:45 DAMA/SID/GSM pollers)",
   "total_sources": 10,
-  "verified_sources": 9,
+  "verified_sources": 10,
   "overall_review_status": "verified",
   "drift_alerts": [],
-  "new_channel_videos_detected": [],
+  "new_channel_videos_detected": [
+    {
+      "id": "E6Y3QX7pTsA",
+      "title": "해외 기사로 명예가 훼손됐다면, 호주에서 소송할까? | 거트닉 판결",
+      "published": "2026-11-06"
+    },
+    {
+      "id": "7h1P3P3mEMM",
+      "title": "정자 제공자도 아이의 해외 이주에 의견을 낼 수 있을까? | 호주 판례",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "-ghpk-RnYLY",
+      "title": "수천 건의 이민 문의를 47가지 답으로｜FAQ Immigration 공개 (호주 이민법 스페셜리스트 박창민 변호사)",
+      "published": "2026-11-04"
+    },
+    {
+      "id": "Tbt5x-UZveE",
+      "title": "망친 휴가의 실망도 배상될까? | 호주 크루즈 판결",
+      "published": "2026-11-02"
+    }
+  ],
   "sources": [
     {
       "id": "dha_sol_json",
@@ -103,8 +124,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 8057112,
-      "sha256": "c32668a3783c4d94c3d866935ea59cebb16c4ef49ed7a5c25d71077d14d961f3"
+      "bytes": 8055080,
+      "sha256": "ce9b6d1b8ad8e3d3f17816ea9594051294af1264321468bd72256c6292619cd5"
     },
     {
       "id": "sibling_processing_times_74",
@@ -116,17 +137,21 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 118635,
-      "sha256": "4a23fbbea8d47db7fc5c24646d49f5f418b695da46a3e373bd6ca333f0bec34c"
+      "bytes": 118395,
+      "sha256": "1e3467b488968585a6cae9d1afaff0c2e1d8e58225a0adcb3d7f95c7674dc54c"
     },
     {
       "id": "youtube_immispecialist_atom",
       "name": "YouTube @immispecialist Public Atom Feed",
-      "fetchStatus": "degraded_cached",
-      "contentCheckStatus": "cached_verified",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgMv4I2ZQ0l0yeNL9vntBQQ",
+      "http_status": 200,
+      "fetchStatus": "ok",
+      "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "error": "HTTP Error 404: Not Found"
+      "total_channel_videos": 224,
+      "new_videos_added": 4,
+      "sha256": "bc90ffb1a54b42f37274df8337148a9958396f7382ab89aaa0993b24eabe91ad"
     }
   ]
 }
