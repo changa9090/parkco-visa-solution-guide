@@ -1,33 +1,12 @@
 {
-  "polled_at_aest": "2026-11-07T19:18:39+10:00",
-  "polled_at_utc": "2026-11-07T09:18:39.170240+00:00",
+  "polled_at_aest": "2026-11-09T08:02:32+10:00",
+  "polled_at_utc": "2026-11-08T22:02:32.566322+00:00",
   "cadence": "Weekly Monday 08:02 AEST (after daily 06:55 processing-times & Monday 07:15–07:45 DAMA/SID/GSM pollers)",
   "total_sources": 10,
   "verified_sources": 10,
   "overall_review_status": "verified",
   "drift_alerts": [],
-  "new_channel_videos_detected": [
-    {
-      "id": "E6Y3QX7pTsA",
-      "title": "해외 기사로 명예가 훼손됐다면, 호주에서 소송할까? | 거트닉 판결",
-      "published": "2026-11-06"
-    },
-    {
-      "id": "7h1P3P3mEMM",
-      "title": "정자 제공자도 아이의 해외 이주에 의견을 낼 수 있을까? | 호주 판례",
-      "published": "2026-11-04"
-    },
-    {
-      "id": "-ghpk-RnYLY",
-      "title": "수천 건의 이민 문의를 47가지 답으로｜FAQ Immigration 공개 (호주 이민법 스페셜리스트 박창민 변호사)",
-      "published": "2026-11-04"
-    },
-    {
-      "id": "Tbt5x-UZveE",
-      "title": "망친 휴가의 실망도 배상될까? | 호주 크루즈 판결",
-      "published": "2026-11-02"
-    }
-  ],
+  "new_channel_videos_detected": [],
   "sources": [
     {
       "id": "dha_sol_json",
@@ -87,7 +66,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "compilation": "",
-      "sha256": "86eb77ac55db46d5824ee1c6e30ecafd3715b375af203f0d7ca1741f235c821c"
+      "sha256": "dc7de1eb9ef86e7e2f697931d54be03a32de2ea08557094687d14052d002bb49"
     },
     {
       "id": "frl_csol_2024",
@@ -112,7 +91,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 24250,
-      "sha256": "12b3fa41e6c9320bbee7ba8426ada5904b55a61284c521c12723abc5f5858548"
+      "sha256": "39161802dfa09579bf391155b3104eb24408ae34e0baff6fc1b4a2b521641cc1"
     },
     {
       "id": "sibling_dama_13",
@@ -124,8 +103,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 8055080,
-      "sha256": "ce9b6d1b8ad8e3d3f17816ea9594051294af1264321468bd72256c6292619cd5"
+      "bytes": 8055089,
+      "sha256": "b4e978b38cbb5b963f6c6a8786293484491c8737e6d99335f50c1d0cb0f2df6e"
     },
     {
       "id": "sibling_processing_times_74",
@@ -138,7 +117,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "bytes": 118395,
-      "sha256": "1e3467b488968585a6cae9d1afaff0c2e1d8e58225a0adcb3d7f95c7674dc54c"
+      "sha256": "814fbe039cba72052dc4e1cff7cce9a49003b27c12e300bb2eb3694d24303299"
     },
     {
       "id": "youtube_immispecialist_atom",
@@ -150,7 +129,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "total_channel_videos": 224,
-      "new_videos_added": 4,
+      "new_videos_added": 0,
       "sha256": "bc90ffb1a54b42f37274df8337148a9958396f7382ab89aaa0993b24eabe91ad"
     }
   ]
