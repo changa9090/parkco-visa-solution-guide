@@ -26,8 +26,27 @@ export function createStaticVisaGuideFromData({
   youtubeCatalog,
   provenance,
   auMasterGuide = null,
+  pollingStatus = null,
 }) {
   const matcher = new OccupationMatcher(solMaster.occupations || [], confusionPairs || []);
+  const effectiveCatalog = {
+    ...pathwaysCatalog,
+    thresholds_fy26_27: {
+      ...(pathwaysCatalog.thresholds_fy26_27 || {}),
+      base_vac_aud: { ...((pathwaysCatalog.thresholds_fy26_27 || {}).base_vac_aud || {}) },
+    },
+  };
+  if (pollingStatus && Array.isArray(pollingStatus.sources)) {
+    const priceEntry = pollingStatus.sources.find((s) => s && s.id === "dha_price_list_api");
+    if (priceEntry && priceEntry.observed_base_vacs && typeof priceEntry.observed_base_vacs === "object") {
+      for (const [k, v] of Object.entries(priceEntry.observed_base_vacs)) {
+        const num = Number(v);
+        if (Number.isFinite(num) && num > 0) {
+          effectiveCatalog.thresholds_fy26_27.base_vac_aud[String(k)] = num;
+        }
+      }
+    }
+  }
 
   return {
     matcher,
@@ -39,7 +58,7 @@ export function createStaticVisaGuideFromData({
         sol_count: matcher.occupations.length,
         curated_videos_count: (youtubeCatalog.videos || []).length,
         channel_total_videos: youtubeCatalog.total_channel_videos || 218,
-        fy_version: pathwaysCatalog.thresholds_fy26_27.effective_period,
+        fy_version: effectiveCatalog.thresholds_fy26_27.effective_period,
         official_inquiry_url: OFFICIAL_INQUIRY_URL,
         official_inquiry_url_en: OFFICIAL_INQUIRY_URL_EN,
         provenance_sources: (provenance?.sources || []).length,
@@ -48,16 +67,17 @@ export function createStaticVisaGuideFromData({
     getBootstrap() {
       const popular = matcher.search({ query: "", limit: 12 }).results;
       return {
-        thresholds_fy26_27: pathwaysCatalog.thresholds_fy26_27,
-        english_matrix_2025_2026: pathwaysCatalog.english_matrix_2025_2026,
-        lifecycle_blueprints: pathwaysCatalog.lifecycle_blueprints,
-        non_skilled_and_remote_visas: pathwaysCatalog.non_skilled_and_remote_visas,
-        parkco_services: pathwaysCatalog.parkco_services,
-        specialist_navigators: pathwaysCatalog.specialist_navigators,
+        thresholds_fy26_27: effectiveCatalog.thresholds_fy26_27,
+        english_matrix_2025_2026: effectiveCatalog.english_matrix_2025_2026,
+        lifecycle_blueprints: effectiveCatalog.lifecycle_blueprints,
+        non_skilled_and_remote_visas: effectiveCatalog.non_skilled_and_remote_visas,
+        parkco_services: effectiveCatalog.parkco_services,
+        specialist_navigators: effectiveCatalog.specialist_navigators,
         youtube_catalog: youtubeCatalog,
         confusion_pairs: matcher.confusionPairs,
         popular_occupations: popular,
         sample_personas: SAMPLE_PERSONAS,
+        polling_status: pollingStatus || {},
       };
     },
     searchSol({ q = "", list = "", visa = "", skill_level = "", limit = 24 } = {}) {
@@ -124,7 +144,7 @@ export function createStaticVisaGuideFromData({
       }
     },
     diagnose(payload = {}) {
-      return runDiagnosis(payload, matcher, pathwaysCatalog, youtubeCatalog);
+      return runDiagnosis(payload, matcher, effectiveCatalog, youtubeCatalog);
     },
     getGuide({ q = "", limit = "" } = {}) {
       const base = auMasterGuide || { chapters: [] };
@@ -184,7 +204,8 @@ export function loadStaticVisaGuideBrowser(dataBaseUrl = null) {
       fetchJson("youtube_catalog_2026.json"),
       fetchJson("PROVENANCE.json"),
       fetchJson("au_master_guide_2026.json"),
-    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance, auMasterGuide]) =>
+      fetchJson("polling_status.json").catch(() => null),
+    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance, auMasterGuide, pollingStatus]) =>
       createStaticVisaGuideFromData({
         solMaster,
         confusionPairs,
@@ -192,6 +213,7 @@ export function loadStaticVisaGuideBrowser(dataBaseUrl = null) {
         youtubeCatalog,
         provenance,
         auMasterGuide,
+        pollingStatus,
       })
     );
   }
