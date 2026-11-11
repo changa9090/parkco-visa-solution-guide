@@ -283,7 +283,20 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     });
   }
 
-  if (location === "onshore" && (currentVisa === "visitor_600" || currentVisa === "graduate_485")) {
+  const item1222Visas = new Set([
+    "visitor_600",
+    "graduate_485",
+    "special_403_426_771_988",
+    "485",
+    "600",
+    "601",
+    "651",
+    "403",
+    "426",
+    "771",
+    "988",
+  ]);
+  if (location === "onshore" && item1222Visas.has(currentVisa)) {
     if (plannedNextStep === "student_500") {
       riskFlags.push({
         severity: "P1",
@@ -291,22 +304,22 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
         title_ko: "호주 내 학생비자(Subclass 500) 비자 호핑 원천 금지 경보",
         title_en: "Statutory Ban on Onshore Student Visa (Subclass 500) Hopping",
         detail_ko:
-          "2024년 7월 1일 법 개정 이후 방문비자(600) 및 졸업생비자(485) 소지자는 호주 내(Onshore)에서 학생비자(500)를 신청할 수 없습니다. " +
+          "2024년 7월 1일 시행 Schedule 1 Item 1222 개정 이후 졸업생비자(485), 방문·전자여행비자(600·601·651), 임시특수비자(403·426·771·988) 소지자는 호주 내(Onshore)에서 학생비자(500)를 신청할 수 없습니다. " +
           "체류 연장을 목적으로 무리한 학생비자 전환을 시도해서는 안 되며 해외 출국 후 진정한 유학생 요건(GS) 하에 접수하거나 482·190·491·파트너 비자 등 합법적 직접 경로로 설계해야 합니다.",
         detail_en:
-          "Since 1 July 2024, holders of Visitor (600) and Temporary Graduate (485) visas are statutorily barred from lodging a Student Visa (Subclass 500) onshore in Australia. " +
+          "Since 1 July 2024 under Schedule 1 Item 1222, holders of Subclass 485, 600, 601, 651, 403, 426, 771, and 988 visas are statutorily barred from lodging a Student Visa (Subclass 500) onshore in Australia. " +
           "Do not rely on onshore student extensions; plan direct skilled/sponsored/partner pathways (482, 190, 491, 820) or genuine offshore Student Visa lodgement.",
       });
     } else {
       riskFlags.push({
         severity: "P3",
         code: "ONSHORE_STUDENT_500_HOPPING_REMINDER",
-        title_ko: "참고: 현재 비자(600/485) 만료 임박 시 호주 내 학생비자(500) 연장 전환 불가",
-        title_en: "Reminder: Current Subclass 600/485 Holders Cannot Switch to Student Visa (500) Onshore",
+        title_ko: "참고: 현재 비자(485·600·601·651·403·426·771·988) 만료 시 호주 내 학생비자(500) 전환 불가",
+        title_en: "Reminder: Subclass 485/600/601/651/403/426/771/988 Holders Cannot Switch to Student Visa (500) Onshore",
         detail_ko:
-          "2024년 7월 1일 시행 규정에 따라 485·600 비자 소지자는 호주 내에서 학생비자(500)로 체류를 연장할 수 없으므로 현 비자 만료일 전에 189·190·491 초청 또는 482 스폰서 노미네이션 일정을 역산해 준비하시기 바랍니다.",
+          "2024년 7월 1일 시행 Schedule 1 Item 1222 규정에 따라 485·600·601·651·403·426·771·988 비자 소지자는 호주 내에서 학생비자(500)로 체류를 연장할 수 없으므로 현 비자 만료일 전에 189·190·491 초청 또는 482 스폰서 노미네이션 일정을 역산해 준비하시기 바랍니다.",
         detail_en:
-          "Under the 1 July 2024 anti-visa-hopping regulations, Subclass 485 and 600 holders cannot lodge an onshore Student Visa (500). Work backwards from your visa expiry to secure a 189/190/491 invitation or 482 nomination.",
+          "Under the 1 July 2024 Schedule 1 Item 1222 anti-visa-hopping regulations, Subclass 485, 600, 601, 651, 403, 426, 771, and 988 holders cannot lodge an onshore Student Visa (500). Work backwards from your visa expiry to secure a 189/190/491 invitation or 482 nomination.",
       });
     }
   }
