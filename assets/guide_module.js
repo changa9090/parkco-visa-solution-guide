@@ -161,8 +161,10 @@
     if (calcName === "art_and_s501_deadline") {
       form.elements.decision_type.value = "general_refusal_onshore";
       form.elements.notification_date.value = "2026-10-30";
+      if (form.elements.state) form.elements.state.value = "QLD";
     } else if (calcName === "s48_and_schedule3_check") {
       form.elements.target_subclass.value = "820";
+      if (form.elements.current_visa_subclass) form.elements.current_visa_subclass.value = "010";
       form.elements.days_since_last_substantive_visa.value = "45";
       form.elements.holds_substantive_visa.checked = false;
       form.elements.refused_or_cancelled_since_last_entry.checked = true;
@@ -204,9 +206,23 @@
             <option value="noicc_s116_onshore">${en ? "Onshore s 116 NOICC Cancellation Notice (5 wd)" : "호주 내 s 116 비자취소예고 NOICC (5영업일)"}</option>
           </select>
         </label>
-        <label class="calc-lbl">${en ? "Notification Date" : "결정문·통지서 수령일"}
-          <input type="date" name="notification_date" value="" class="input-control">
-        </label>
+        <div class="form-row-2">
+          <label class="calc-lbl">${en ? "Notification Date" : "결정문·통지서 수령일"}
+            <input type="date" name="notification_date" value="" class="input-control">
+          </label>
+          <label class="calc-lbl">${en ? "State / Territory (Public Holidays)" : "관할 주·준주 (공휴일 반영)"}
+            <select name="state" class="input-control">
+              <option value="QLD">QLD (Brisbane)</option>
+              <option value="NSW">NSW (Sydney)</option>
+              <option value="VIC">VIC (Melbourne)</option>
+              <option value="WA">WA (Perth)</option>
+              <option value="SA">SA (Adelaide)</option>
+              <option value="TAS">TAS (Hobart)</option>
+              <option value="ACT">ACT (Canberra)</option>
+              <option value="NT">NT (Darwin)</option>
+            </select>
+          </label>
+        </div>
         <div class="calc-actions-row">
           <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
           <button type="button" class="btn-secondary-sm" data-calc-sample="art_and_s501_deadline">${sampleBtnTxt}</button>
@@ -215,8 +231,8 @@
       </form>
 
       <form class="guide-calc-card" data-calc-form="s48_and_schedule3_check">
-        <span class="guide-calc-tag">s 48 · reg 2.12 · Schedule 3</span>
-        <h4>${en ? "2. Section 48 Bar & Schedule 3 Checker" : "2. s 48 재접수 금지 · Schedule 3 판독기"}</h4>
+        <span class="guide-calc-tag">s 48 · reg 2.12 · Item 1240/1222 · Sch 3</span>
+        <h4>${en ? "2. Section 48 Bar, Item 1240/1222 & Schedule 3 Checker" : "2. s 48 · Item 1240/1222 · Schedule 3 판독기"}</h4>
         <div class="form-row-2">
           <label class="calc-lbl">${en ? "Target Visa" : "목표 비자"}
             <select name="target_subclass" class="input-control">
@@ -224,15 +240,30 @@
               <option value="190">GSM State 190 (s 48 Exempt)</option>
               <option value="491">Regional 491 (s 48 Exempt)</option>
               <option value="494">Regional Sponsor 494 (Exempt)</option>
-              <option value="482">SID 482 (Subject to s 48)</option>
+              <option value="482">SID 482 (Item 1240 BVA/B/C)</option>
               <option value="186">ENS 186 (Subject to s 48)</option>
-              <option value="500">Student 500 (Subject to s 48)</option>
+              <option value="500">Student 500 (Item 1222 Check)</option>
             </select>
           </label>
-          <label class="calc-lbl">${en ? "Days Without Substantive Visa" : "실질비자 소멸 후 경과일수"}
-            <input type="number" name="days_since_last_substantive_visa" value="0" min="0" max="3650" class="input-control">
+          <label class="calc-lbl">${en ? "Current Visa Status" : "현재 체류·비자 상태"}
+            <select name="current_visa_subclass" class="input-control">
+              <option value="substantive">${en ? "Substantive Visa (Other)" : "일반 유효 실질비자 (500/417 등)"}</option>
+              <option value="485">${en ? "Subclass 485 (Graduate)" : "Subclass 485 (졸업생비자)"}</option>
+              <option value="600">${en ? "Subclass 600 (Visitor)" : "Subclass 600 (방문비자)"}</option>
+              <option value="601">${en ? "Subclass 601 (ETA)" : "Subclass 601 (ETA 전자여행)"}</option>
+              <option value="651">${en ? "Subclass 651 (eVisitor)" : "Subclass 651 (eVisitor)"}</option>
+              <option value="403">${en ? "Subclass 403 / 426 / 771 / 988" : "임시특수비자 (403/426/771/988)"}</option>
+              <option value="010">${en ? "Bridging Visa A (010)" : "브리징 비자 A (BVA 010)"}</option>
+              <option value="020">${en ? "Bridging Visa B (020)" : "브리징 비자 B (BVB 020)"}</option>
+              <option value="030">${en ? "Bridging Visa C (030)" : "브리징 비자 C (BVC 030)"}</option>
+              <option value="050">${en ? "Bridging Visa E (050/051)" : "브리징 비자 E (BVE 050/051)"}</option>
+              <option value="unlawful">${en ? "Unlawful / Expired Visa" : "비자 만료·미보유 (Unlawful)"}</option>
+            </select>
           </label>
         </div>
+        <label class="calc-lbl">${en ? "Days Without Substantive Visa" : "실질비자 소멸 후 경과일수"}
+          <input type="number" name="days_since_last_substantive_visa" value="0" min="0" max="3650" class="input-control">
+        </label>
         <label class="calc-chk"><input type="checkbox" name="holds_substantive_visa" checked> <span>${en ? "Currently holds a Substantive Visa" : "현재 유효한 실질 비자(Substantive Visa) 보유 중"}</span></label>
         <label class="calc-chk"><input type="checkbox" name="refused_or_cancelled_since_last_entry"> <span>${en ? "Refused or cancelled since last entry to AU" : "최근 호주 입국 후 거절·취소 이력 있음"}</span></label>
         <label class="calc-chk"><input type="checkbox" name="has_compelling_reasons"> <span>${en ? "Strong compelling/compassionate waiver evidence" : "면제 소명 사유(호주 자녀·장기혼인 등) 보유"}</span></label>
@@ -311,7 +342,19 @@
 
     grid.querySelectorAll("[data-calc-form]").forEach((form) => {
       const calcName = form.dataset.calcForm;
-      form.addEventListener("change", () => {
+      form.addEventListener("change", (ev) => {
+        if (calcName === "s48_and_schedule3_check") {
+          const nonSubSet = new Set(["010", "020", "030", "050", "051", "unlawful"]);
+          if (ev.target?.name === "current_visa_subclass" && form.elements.holds_substantive_visa) {
+            form.elements.holds_substantive_visa.checked = !nonSubSet.has(ev.target.value);
+          } else if (ev.target?.name === "holds_substantive_visa" && form.elements.current_visa_subclass) {
+            if (ev.target.checked && nonSubSet.has(form.elements.current_visa_subclass.value)) {
+              form.elements.current_visa_subclass.value = "substantive";
+            } else if (!ev.target.checked && !nonSubSet.has(form.elements.current_visa_subclass.value)) {
+              form.elements.current_visa_subclass.value = "010";
+            }
+          }
+        }
         if (guideState.confirmedCalcs[calcName]) runSingleForm(form);
       });
       form.addEventListener("submit", (e) => {
@@ -324,6 +367,54 @@
       });
       renderNeutralCalcBox(calcName);
     });
+  }
+
+  function buildCalcHandoffHtml(calcName, params, en) {
+    const langQ = en ? "&lang=en" : "";
+    if (calcName === "art_and_s501_deadline") {
+      const tool = params.decision_type === "noicc_s116_onshore" ? "noicc" : "deadline";
+      const label = en
+        ? "Open Statutory Deadline Crisis Navigator ↗"
+        : "비자 위기·기한 내비게이터에서 기한 정밀 계산 ↗";
+      return `<div class="handoff-links-row"><a href="https://changa9090.github.io/parkco-visa-crisis-navigator/?tool=${tool}${langQ}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${esc(label)}</a></div>`;
+    }
+    if (calcName === "s48_and_schedule3_check") {
+      const links = [
+        `<a href="https://changa9090.github.io/parkco-visa-crisis-navigator/?tool=s48${langQ}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${esc(
+          en ? "Open s 48 & Schedule 3 Crisis Navigator ↗" : "비자 위기 내비게이터에서 s 48·대안 점검 ↗"
+        )}</a>`,
+      ];
+      const tgt = String(params.target_subclass || "");
+      const rawAnzsco = (document.getElementById("diag-anzsco-input")?.value || "").trim();
+      const anzscoQ = /^\d{6}$/.test(rawAnzsco) ? `anzsco=${encodeURIComponent(rawAnzsco)}&` : "";
+      if (["482", "186", "494"].includes(tgt)) {
+        links.push(
+          `<a href="https://changa9090.github.io/parkco-sid-ens-navigator/?${anzscoQ}visa=${encodeURIComponent(tgt)}${langQ}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${esc(
+            en ? "Send to 482/186 Sponsor Navigator ↗" : "482·186 스폰서 내비게이터 열기 ↗"
+          )}</a>`
+        );
+      } else if (["190", "491"].includes(tgt)) {
+        links.push(
+          `<a href="https://changa9090.github.io/parkco-gsm-state-navigator/?${anzscoQ}visa=${encodeURIComponent(tgt)}${langQ}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${esc(
+            en ? "Send to 8-State GSM Navigator ↗" : "8개 주 GSM 커트라인 내비게이터 열기 ↗"
+          )}</a>`
+        );
+      }
+      return `<div class="handoff-links-row">${links.join("")}</div>`;
+    }
+    if (calcName === "sponsor_salary_and_saf") {
+      const sp = new URLSearchParams();
+      const rawAnzsco = (document.getElementById("diag-anzsco-input")?.value || "").trim();
+      if (/^\d{6}$/.test(rawAnzsco)) sp.set("anzsco", rawAnzsco);
+      if (params.applicant_age) sp.set("age", String(params.applicant_age));
+      if (params.offered_salary_aud) sp.set("salary", String(params.offered_salary_aud));
+      if (en) sp.set("lang", "en");
+      const label = en
+        ? "Send Inputs to 482/186 Sponsor Navigator ↗"
+        : "482·186 스폰서 내비게이터로 연봉·연령 전달 ↗";
+      return `<div class="handoff-links-row"><a href="https://changa9090.github.io/parkco-sid-ens-navigator/?${sp.toString()}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${esc(label)}</a></div>`;
+    }
+    return "";
   }
 
   async function runSingleForm(form) {
@@ -353,7 +444,8 @@
       const box = document.getElementById(`calc-out-${calcName}`);
       if (box) {
         box.classList.toggle("calc-result-neutral", res.status === "prompt");
-        box.innerHTML = `<strong>${esc(res.deadline_date ? (en ? `Deadline: ${res.deadline_date}` : `법정 마감일: ${res.deadline_date}`) : res.statutory_basis)}</strong><p>${esc(en ? res.verdict_en : res.verdict_ko)}</p>`;
+        const handoffHtml = res.status === "prompt" ? "" : buildCalcHandoffHtml(calcName, params, en);
+        box.innerHTML = `<strong>${esc(res.deadline_date ? (en ? `Deadline: ${res.deadline_date}` : `법정 마감일: ${res.deadline_date}`) : res.statutory_basis)}</strong><p>${esc(en ? res.verdict_en : res.verdict_ko)}</p>${handoffHtml}`;
       }
     } catch (err) {
       const box = document.getElementById(`calc-out-${calcName}`);

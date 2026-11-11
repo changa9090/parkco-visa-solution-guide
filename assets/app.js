@@ -224,6 +224,7 @@
 
     if (!state.bootstrap) return;
 
+    syncLiveStatutoryVacKpi();
     renderVideoCurationScopeNote();
     renderVideoCategories(true);
     renderVideoCards();
@@ -1004,6 +1005,86 @@
     syncConsultationBrief(diag.consultation_brief);
   }
 
+  function syncLiveStatutoryVacKpi() {
+    const vacMap = state.bootstrap?.thresholds_fy26_27?.base_vac_aud;
+    if (!vacMap) return;
+    const fmtAud = (v, fb) => `$${Number(v ?? fb).toLocaleString("en-AU")}`;
+    const mainEl = qs("#stat-kpi-vac-main");
+    const subEl = qs("#stat-kpi-vac-sub");
+    if (mainEl) {
+      mainEl.textContent = `482 ${fmtAud(vacMap["482"], 4015)} · PR ${fmtAud(vacMap["190"], 6140)}`;
+    }
+    if (subEl) {
+      subEl.textContent = isEn()
+        ? `Partner ${fmtAud(vacMap["820_309"], 11710)} · 858 NIV ${fmtAud(vacMap["858"], 6235)} · 485 ${fmtAud(vacMap["485"], 5750)} · 500 ${fmtAud(vacMap["500"], 2500)}`
+        : `파트너 ${fmtAud(vacMap["820_309"], 11710)} · 858 NIV ${fmtAud(vacMap["858"], 6235)} · 485 ${fmtAud(vacMap["485"], 5750)} · 500 ${fmtAud(vacMap["500"], 2500)}`;
+    }
+  }
+
+  function buildHandoffUserQuery() {
+    const ageMidMap = {
+      "18_24": 22,
+      "25_32": 29,
+      "33_39": 35,
+      "40_44": 42,
+      "45_49": 46,
+      "50_plus": 51,
+    };
+    const rawOcc = (qs("#diag-anzsco-input")?.value || state.selectedDiagCode || "").trim();
+    const anzsco = /^\d{6}$/.test(rawOcc)
+      ? rawOcc
+      : state.lastDiagnosis?.occupation_summary?.anzsco_code || "";
+    const age = ageMidMap[qs("#diag-age")?.value || "25_32"] || 29;
+    const salaryRaw = Number(qs("#diag-salary")?.value || 0);
+    const sp = new URLSearchParams();
+    if (anzsco) sp.set("anzsco", anzsco);
+    sp.set("age", String(age));
+    if (salaryRaw > 0) sp.set("salary", String(Math.round(salaryRaw)));
+    if (isEn()) sp.set("lang", "en");
+    return sp.toString();
+  }
+
+  function buildPathwayHandoffHtml(subclassStr, ui) {
+    const sc = String(subclassStr || "");
+    const q = buildHandoffUserQuery();
+    const links = [];
+    if (/\b(482|186|494)\b/.test(sc) || sc.includes("482") || sc.includes("186") || sc.includes("494")) {
+      links.push({
+        href: `https://changa9090.github.io/parkco-sid-ens-navigator/?${q}`,
+        label: ui.handoffSidBtn || (isEn() ? "Send Inputs to 482/186 Sponsor Navigator ↗" : "482·186 스폰서 내비게이터로 조건 전달 ↗"),
+      });
+    }
+    if (/\b(189|190|491)\b/.test(sc) || sc.includes("189") || sc.includes("190") || sc.includes("491")) {
+      links.push({
+        href: `https://changa9090.github.io/parkco-gsm-state-navigator/?${q}`,
+        label: ui.handoffGsmBtn || (isEn() ? "Send Inputs to 8-State GSM Navigator ↗" : "8개 주 GSM 커트라인 내비게이터로 조건 전달 ↗"),
+      });
+    }
+    if (!links.length) return "";
+    return `<div class="handoff-links-row">${links
+      .map(
+        (lnk) =>
+          `<a href="${escapeHtml(lnk.href)}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${escapeHtml(lnk.label)}</a>`
+      )
+      .join("")}</div>`;
+  }
+
+  function buildRiskFlagHandoffHtml(flag, ui) {
+    const code = String(flag?.code || "");
+    const langSuffix = isEn() ? "&lang=en" : "";
+    if (code === "SECTION_48_BAR_AND_ART" || code === "PARTNER_SCHEDULE_3_RISK") {
+      const href = `https://changa9090.github.io/parkco-visa-crisis-navigator/?tool=s48${langSuffix}`;
+      const label = ui.handoffCrisisS48Btn || (isEn() ? "Open s 48 & Schedule 3 Crisis Navigator ↗" : "비자 위기 내비게이터에서 s 48·대안 점검 ↗");
+      return `<div class="handoff-links-row"><a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${escapeHtml(label)}</a></div>`;
+    }
+    if (code === "CRISIS_S57_PIC4020") {
+      const href = `https://changa9090.github.io/parkco-visa-crisis-navigator/?tool=deadline${langSuffix}`;
+      const label = ui.handoffCrisisDeadlineBtn || (isEn() ? "Open Statutory Deadline Crisis Navigator ↗" : "비자 위기·기한 내비게이터에서 기한 정밀 계산 ↗");
+      return `<div class="handoff-links-row"><a href="${escapeHtml(href)}" target="_blank" rel="noopener" class="btn-handoff-link" data-handoff-link="1">${escapeHtml(label)}</a></div>`;
+    }
+    return "";
+  }
+
   function renderDiagnosisResults(diag) {
     const col = qs("#diagnose-results-column");
     if (!col) return;
@@ -1071,6 +1152,7 @@
             <ul class="insight-list">
               ${pReqs.map((req) => `<li>${escapeHtml(req)}</li>`).join("")}
             </ul>
+            ${buildPathwayHandoffHtml(p.subclass, ui)}
           </article>`;
           })
           .join("")
@@ -1218,6 +1300,7 @@
           <div class="risk-card risk-${escapeHtml(f.severity)}">
             <h4>[${escapeHtml(f.severity)}] ${escapeHtml(fTitle)}</h4>
             <p>${escapeHtml(fDetail)}</p>
+            ${buildRiskFlagHandoffHtml(f, ui)}
           </div>`;
           };
           return `
@@ -1646,7 +1729,7 @@
   function applyQueryPrefillIfPresent() {
     try {
       const sp = new URLSearchParams(window.location.search);
-      const hasDiagQuery = ["age", "occ", "study", "deg", "eng", "exp", "offer", "sal"].some((k) => sp.has(k));
+      const hasDiagQuery = ["age", "occ", "anzsco", "study", "deg", "eng", "exp", "offer", "sal", "salary"].some((k) => sp.has(k));
       if (!hasDiagQuery && !sp.has("q") && !sp.has("visa")) return false;
 
       const rawAge = Number(sp.get("age"));
@@ -1659,7 +1742,7 @@
           rawAge <= 49 ? "45_49" : "50_plus";
       }
 
-      const rawOcc = (sp.get("occ") || "").trim();
+      const rawOcc = (sp.get("occ") || sp.get("anzsco") || "").trim();
       if (/^\d{6}$/.test(rawOcc)) {
         state.selectedDiagCode = rawOcc;
         if (qs("#diag-anzsco-input")) qs("#diag-anzsco-input").value = rawOcc;
@@ -1705,11 +1788,13 @@
       if (sp.has("visa") && qs("#sol-visa-select")) {
         qs("#sol-visa-select").value = (sp.get("visa") || "").trim();
       }
-      if (sp.has("offer") && qs("#diag-has-sponsor")) {
-        const hasSponsor = sp.get("offer") === "1" || sp.get("offer") === "true";
+      if ((sp.has("offer") || sp.has("sal") || sp.has("salary")) && qs("#diag-has-sponsor")) {
+        const sal = Number(sp.get("sal") || sp.get("salary") || 0);
+        const hasSponsor = sp.has("offer")
+          ? sp.get("offer") === "1" || sp.get("offer") === "true"
+          : sal > 0;
         qs("#diag-has-sponsor").checked = hasSponsor;
-        const sal = Number(sp.get("sal") || 0);
-        if (qs("#diag-salary")) qs("#diag-salary").value = hasSponsor && sal > 0 ? String(sal) : "";
+        if (qs("#diag-salary")) qs("#diag-salary").value = sal > 0 ? String(sal) : "";
       }
       return hasDiagQuery;
     } catch {
@@ -1746,6 +1831,7 @@
         vidStat.textContent = `${state.bootstrap.youtube_catalog.total_channel_videos}+`;
       }
 
+      syncLiveStatutoryVacKpi();
       renderVideoCurationScopeNote();
       renderVideoCategories(true);
       renderVideoCards();

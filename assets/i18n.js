@@ -115,7 +115,10 @@
       text: "ART Case Review™",
       attrs: { href: "https://parklawyers.com.au/appealing-visa-decision/" },
     },
-    { sel: ".specialist-contact-bar span", text: "Official Legal Inquiry" },
+    {
+      sel: ".specialist-contact-bar span",
+      html: "Official Legal Inquiry · <code>enquiry@parkcolawyers.com</code>",
+    },
     {
       sel: ".specialist-email-link",
       text: "Official Inquiry Hub ↗",
@@ -246,7 +249,7 @@
     { sel: "#statutory-kpi-grid .stat-kpi:nth-child(4) .stat-kpi-val", text: "482 $4,015 · PR $6,140" },
     {
       sel: "#statutory-kpi-grid .stat-kpi:nth-child(4) .stat-kpi-sub",
-      text: "Partner $11,710 · 485 $5,750 · 500 $2,500",
+      text: "Partner $11,710 · 858 NIV $6,235 · 485 $5,750 · 500 $2,500",
     },
     {
       sel: ".video-hub-top .subsection-title",
@@ -391,6 +394,10 @@
     { sel: '#diag-current-visa option[value="whm_417"]', text: "Working Holiday (Subclass 417/462)" },
     { sel: '#diag-current-visa option[value="sponsored_482"]', text: "Employer Sponsored (Subclass 482)" },
     { sel: '#diag-current-visa option[value="visitor_600"]', text: "Visitor / ETA (Subclass 600/601/651)" },
+    {
+      sel: '#diag-current-visa option[value="special_403_426_771_988"]',
+      text: "Special Temporary Visa (Subclass 403/426/771/988)",
+    },
     { sel: '#diag-current-visa option[value="bridging_or_expired"]', text: "Bridging Visa / Expired Substantive Visa" },
     { sel: '#diag-current-visa option[value="none"]', text: "Offshore (No Australian Visa)" },
     { sel: 'label[for="diag-age"]', text: "Age Bracket (At Invitation / Lodgement)" },
@@ -500,7 +507,7 @@
       sel: "#module-consult .section-desc",
       html:
         "Your occupation match, Schedule 6D points, ranked pathways, and statutory risk flags have been compiled into a structured legal brief. " +
-        "Copy the brief into the <strong>official inquiry link (parklawyers.com.au/links)</strong> or launch the dedicated Park &amp; Co trademark service for your matter.",
+        "Copy the brief into the <strong>official inquiry link (parklawyers.com.au/links)</strong> or official email (<code>enquiry@parkcolawyers.com</code>), or launch the dedicated Park &amp; Co trademark service for your matter.",
     },
     { sel: ".consult-brief-card .panel-card-head h3", text: "Tailored Diagnostic Consultation Brief (Editable)" },
     { sel: ".consult-brief-card .panel-card-head .pill-burgundy", text: "Official Inquiry Hub Linked" },
@@ -566,7 +573,7 @@
       sel: ".footer-firm-info",
       html:
         "<strong>Park &amp; Co Lawyers</strong> · Legal Practitioner Director Chang Min Park (Accredited Specialist in Immigration Law, QLS)<br>" +
-        'Underwood QLD, Australia · Official Inquiry: <a href="https://parklawyers.com.au/links/?lang=en" target="_blank" rel="noopener">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener">DIY Visa Cost Saver</a>',
+        'Underwood QLD, Australia · Email: <code>enquiry@parkcolawyers.com</code> · Official Inquiry: <a href="https://parklawyers.com.au/links/?lang=en" target="_blank" rel="noopener">parklawyers.com.au/links</a> · <a href="https://changa9090.github.io/" target="_blank" rel="noopener">Legal &amp; Visa Hub</a> · <a href="https://faq.immispecialist.com/?lang=en" target="_blank" rel="noopener">Immigration FAQ</a> · <a href="https://changa9090.github.io/diy-service-save-money/?lang=en" target="_blank" rel="noopener">DIY Visa Cost Saver</a>',
     },
     {
       sel: ".footer-disclaimer p",
@@ -671,6 +678,10 @@
       fyVacPrefix: (v) => `FY26–27 비자비: ${v}`,
       openTmServiceCta: (tm) => `${tm} 바로가기 ↗`,
       principalVideoBtn: "대표변호사 안내 영상",
+      handoffSidBtn: "482·186 스폰서 내비게이터로 조건 전달 ↗",
+      handoffGsmBtn: "8개 주 GSM 커트라인 내비게이터로 조건 전달 ↗",
+      handoffCrisisDeadlineBtn: "비자 위기·기한 내비게이터에서 기한 정밀 계산 ↗",
+      handoffCrisisS48Btn: "비자 위기 내비게이터에서 s 48·대안 점검 ↗",
     },
     en: {
       apiError: (status) => `Request failed (HTTP ${status})`,
@@ -766,6 +777,10 @@
       fyVacPrefix: (v) => `FY26–27 VAC: ${v}`,
       openTmServiceCta: (tm) => `Open ${tm} ↗`,
       principalVideoBtn: "Legal Practitioner Director Briefing",
+      handoffSidBtn: "Send Inputs to 482/186 Sponsor Navigator ↗",
+      handoffGsmBtn: "Send Inputs to 8-State GSM Navigator ↗",
+      handoffCrisisDeadlineBtn: "Open Statutory Deadline Crisis Navigator ↗",
+      handoffCrisisS48Btn: "Open s 48 & Schedule 3 Crisis Navigator ↗",
     },
   };
 
