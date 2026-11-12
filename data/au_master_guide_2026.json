@@ -435,12 +435,12 @@
       "key_takeaways_ko": [
         "485 비자 영어 성적표 유효기간은 일반 비자(3년)와 달리 접수일 기준 1년 이내 응시분만 인정됩니다.",
         "485 신청 시 AFP 연방경찰 신원조회 신청 영수증과 건강보험 증빙이 접수 시점(Time of Application) 필수 요건입니다.",
-        "훈련비자(407)는 구조화된 주간 단위 Training Plan이 핵심이며 2026년 3월 11일 개정(F2026L01449)으로 주신청자 해외(Offshore) 체류 및 승인된 스폰서·노미네이션 선결 요건(Item 1238(3A)·(3B))이 강화되었습니다."
+        "훈련비자(407)는 구조화된 주간 단위 Training Plan이 핵심이며 2026년 3월 11일부 승인 스폰서·노미네이션 선결 요건(Item 1238(3A)·(3B)) 및 2026년 11월 12일부 주신청자 해외(Offshore) 접수·승인 원칙(F2026L01449)이 시행되었습니다."
       ],
       "key_takeaways_en": [
         "Unlike the 3-year GSM rule, English test results for Subclass 485 are valid for only 12 months prior to lodgement!",
         "AFP National Police Check application proof and health insurance must exist BEFORE clicking submit on Subclass 485.",
-        "Subclass 407 requires a genuine, structured workplace training plan and, from 11 March 2026 (F2026L01449), enforces an offshore location rule and upfront sponsor/nomination requirements under Item 1238(3A)–(3B)."
+        "Subclass 407 requires a genuine, structured workplace training plan, upfront sponsor/nomination requirements (Item 1238(3A)–(3B), eff. 11 Mar 2026), and an offshore application/grant location rule (F2026L01449, eff. 12 Nov 2026)."
       ],
       "data_table": {
         "headers_ko": [
@@ -472,7 +472,7 @@
           [
             "Subclass 407 (직무훈련)",
             "A$535 (스폰서십·노미네이션 선결)",
-            "최근 24개월 중 12개월 관련 학업/경력 + 2026.03.11부 해외(Offshore) 접수 원칙(F2026L01449)"
+            "최근 24개월 중 12개월 관련 학업/경력 + 2026.11.12부 해외(Offshore) 접수·승인 원칙(F2026L01449)"
           ]
         ],
         "rows_en": [
@@ -494,7 +494,7 @@
           [
             "Subclass 407 (Training)",
             "A$535 (Approved Sponsor/Nom)",
-            "12 mos relevant study/work in last 24 mos + offshore primary applicant rule eff. 11 Mar 2026 (F2026L01449)"
+            "12 mos relevant study/work in last 24 mos + offshore location rule eff. 12 Nov 2026 (F2026L01449)"
           ]
         ]
       },
