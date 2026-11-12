@@ -1543,6 +1543,78 @@ html[lang="en"] .module-tab {
   flex: 1;
 }
 
+.diag-occ-candidates {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--color-paper);
+  border: 1px solid var(--color-line-strong);
+}
+.diag-occ-candidates[hidden] {
+  display: none !important;
+}
+.diag-occ-candidates-header {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--color-charcoal-soft);
+  margin-bottom: 7px;
+}
+.diag-occ-candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.diag-occ-candidate-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: var(--color-white);
+  border: 1px solid var(--color-line-strong);
+  cursor: pointer;
+  transition: border-color 0.14s ease, background 0.14s ease, box-shadow 0.14s ease;
+}
+.diag-occ-candidate-chip:hover {
+  border-color: var(--color-burgundy);
+  background: #FFFDFB;
+}
+.diag-occ-candidate-chip.is-active {
+  border-color: var(--color-burgundy);
+  border-width: 2px;
+  background: #FFFDFB;
+  box-shadow: var(--shadow-1);
+}
+.diag-occ-cand-code {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--color-ivory);
+  color: var(--color-burgundy);
+  flex-shrink: 0;
+}
+.diag-occ-candidate-chip.is-active .diag-occ-cand-code {
+  background: var(--color-burgundy);
+  color: var(--color-white);
+}
+.diag-occ-cand-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-ink-deep);
+  flex: 1;
+  min-width: 140px;
+}
+.diag-occ-cand-meta {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--color-charcoal-soft);
+}
+
 .selected-occ-pill {
   margin-top: 7px;
   padding: 6px 11px;

@@ -45,6 +45,8 @@
     openVideoId: null,
     selectedSolId: "351311",
     selectedDiagCode: "",
+    diagCandidates: [],
+    diagCandidateQuery: "",
     hasConfirmedDiagnosis: false,
     briefLang: initialLang,
     lastDutyResponse: null,
@@ -58,6 +60,7 @@
     solReqSeq: 0,
     solDetailReqSeq: 0,
     diagReqSeq: 0,
+    diagCandReqSeq: 0,
   };
 
   function isEn() {
@@ -251,6 +254,10 @@
     } else {
       const solPanel = qs("#sol-detail-panel .empty-hint");
       if (solPanel && t().solSelectHint) solPanel.textContent = t().solSelectHint;
+    }
+
+    if (state.diagCandidates?.length) {
+      renderDiagOccupationCandidates(state.diagCandidates, state.selectedDiagCode, state.diagCandidateQuery);
     }
 
     if (state.lastDiagnosis && state.hasConfirmedDiagnosis) {
@@ -854,16 +861,98 @@
     }
   }
 
-  async function selectOccupationForDiagnosis(code, jumpToDiagnose = true) {
+  function renderDiagOccupationCandidates(
+    candidates = state.diagCandidates,
+    activeCode = state.selectedDiagCode,
+    queryLabel = state.diagCandidateQuery
+  ) {
+    const box = qs("#diag-occ-candidates");
+    if (!box) return;
+    if (!Array.isArray(candidates) || candidates.length === 0) {
+      box.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    const headerText = isEn()
+      ? queryLabel
+        ? `Matching occupations for "${queryLabel}" (${candidates.length}) — click to select/switch:`
+        : `Matching occupations (${candidates.length}) — click to select/switch:`
+      : queryLabel
+        ? `"${queryLabel}" 검색 연관 직종 (${candidates.length}건) — 클릭하여 직종 전환:`
+        : `연관 직종 후보 (${candidates.length}건) — 클릭하여 직종 전환:`;
+
+    box.hidden = false;
+    box.innerHTML = `
+      <div class="diag-occ-candidates-header">${escapeHtml(headerText)}</div>
+      <div class="diag-occ-candidates-list">
+        ${candidates
+          .map((c) => {
+            const code = c.anzsco_code_primary || c.anzsco_code || "";
+            const isActive = Boolean(activeCode && code === activeCode);
+            const title = formatOccDisplay(c.title_ko, c.occupation);
+            const lists = (c.lists || []).join("/");
+            const authority = c.assessing_authority ? ` · ${c.assessing_authority}` : "";
+            return `
+              <button
+                type="button"
+                class="diag-occ-candidate-chip ${isActive ? "is-active" : ""}"
+                data-diag-cand-code="${escapeHtml(code)}"
+                aria-pressed="${isActive ? "true" : "false"}"
+              >
+                <span class="diag-occ-cand-code">${escapeHtml(code)}</span>
+                <span class="diag-occ-cand-title">${escapeHtml(title)}</span>
+                <span class="diag-occ-cand-meta">${escapeHtml(lists + authority)}</span>
+              </button>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  async function previewDiagOccupationCandidates(rawQuery) {
+    const clean = (rawQuery || "").trim();
+    const seq = ++state.diagCandReqSeq;
+    if (!clean) {
+      state.diagCandidates = [];
+      state.diagCandidateQuery = "";
+      renderDiagOccupationCandidates([], "", "");
+      return;
+    }
+    if (/^\d{6}$/.test(clean)) {
+      if (state.diagCandidates.some((c) => (c.anzsco_code_primary || c.anzsco_code) === clean)) {
+        renderDiagOccupationCandidates(state.diagCandidates, clean, state.diagCandidateQuery);
+      }
+      return;
+    }
+    try {
+      const res = await apiGet(`/api/sol/search?q=${encodeURIComponent(clean)}&limit=6`);
+      if (seq !== state.diagCandReqSeq) return;
+      state.diagCandidates = res.results || [];
+      state.diagCandidateQuery = clean;
+      renderDiagOccupationCandidates(state.diagCandidates, state.selectedDiagCode, clean);
+    } catch {
+      // Ignore transient autocomplete errors
+    }
+  }
+
+  async function selectOccupationForDiagnosis(code, jumpToDiagnose = true, keepCandidates = false) {
     const clean = (code || "").trim();
     if (!clean) return;
     try {
       let occ = null;
       if (/^\d{6}$/.test(clean)) {
         occ = await apiGet(`/api/sol/occupation/${encodeURIComponent(clean)}?lang=${encodeURIComponent(state.lang)}`);
+        if (!keepCandidates && !state.diagCandidates.some((c) => (c.anzsco_code_primary || c.anzsco_code) === clean)) {
+          state.diagCandidates = [];
+          state.diagCandidateQuery = "";
+        }
       } else {
-        const res = await apiGet(`/api/sol/search?q=${encodeURIComponent(clean)}&limit=1`);
-        occ = res.results?.[0] || null;
+        const res = await apiGet(`/api/sol/search?q=${encodeURIComponent(clean)}&limit=6`);
+        const list = res.results || [];
+        state.diagCandidates = list;
+        state.diagCandidateQuery = clean;
+        occ = list[0] || null;
       }
       if (occ) {
         state.selectedDiagCode = occ.anzsco_code_primary;
@@ -876,6 +965,7 @@
           anzsco_code: occ.anzsco_code_primary,
           lists: occ.lists,
         });
+        renderDiagOccupationCandidates(state.diagCandidates, occ.anzsco_code_primary, state.diagCandidateQuery);
       }
     } catch {
       state.selectedDiagCode = "";
@@ -996,11 +1086,26 @@
   async function submitDiagnosis() {
     const seq = ++state.diagReqSeq;
     const payload = collectDiagnosisPayload();
+    if (payload.occupation_query && state.diagCandidateQuery !== payload.occupation_query) {
+      try {
+        const searchRes = await apiGet(`/api/sol/search?q=${encodeURIComponent(payload.occupation_query)}&limit=6`);
+        state.diagCandidates = searchRes.results || [];
+        state.diagCandidateQuery = payload.occupation_query;
+      } catch {
+        // Ignore candidate fetch error
+      }
+    }
     const diag = await apiPostJson(`/api/diagnose?lang=${encodeURIComponent(state.lang)}`, payload);
     if (seq !== state.diagReqSeq) return;
     state.lastDiagnosis = diag;
 
+    if (diag.occupation_summary?.selected && diag.occupation_summary?.anzsco_code) {
+      state.selectedDiagCode = diag.occupation_summary.anzsco_code;
+    }
     updateDiagSelectedBadge(diag.occupation_summary);
+    if (state.diagCandidates?.length) {
+      renderDiagOccupationCandidates(state.diagCandidates, state.selectedDiagCode, state.diagCandidateQuery);
+    }
     renderDiagnosisResults(diag);
     syncConsultationBrief(diag.consultation_brief);
   }
@@ -1557,7 +1662,13 @@
 
       const diagOccBtn = e.target.closest("[data-select-diag-occ]");
       if (diagOccBtn) {
-        selectOccupationForDiagnosis(diagOccBtn.dataset.selectDiagOcc, true);
+        selectOccupationForDiagnosis(diagOccBtn.dataset.selectDiagOcc, true, false);
+        return;
+      }
+
+      const diagCandBtn = e.target.closest("[data-diag-cand-code]");
+      if (diagCandBtn) {
+        selectOccupationForDiagnosis(diagCandBtn.dataset.diagCandCode, false, true);
         return;
       }
 
@@ -1652,7 +1763,24 @@
     });
 
     // Diagnose simulator
+    let diagOccTimer = null;
+    qs("#diag-anzsco-input")?.addEventListener("input", () => {
+      clearTimeout(diagOccTimer);
+      const raw = qs("#diag-anzsco-input")?.value || "";
+      diagOccTimer = setTimeout(() => {
+        previewDiagOccupationCandidates(raw);
+      }, 160);
+    });
+    qs("#diag-anzsco-input")?.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        clearTimeout(diagOccTimer);
+        const raw = qs("#diag-anzsco-input")?.value || "";
+        selectOccupationForDiagnosis(raw, false);
+      }
+    });
     qs("#btn-diag-lookup-occ")?.addEventListener("click", () => {
+      clearTimeout(diagOccTimer);
       const raw = qs("#diag-anzsco-input")?.value || "";
       selectOccupationForDiagnosis(raw, false);
     });
@@ -1687,7 +1815,8 @@
       state.hasConfirmedDiagnosis = true;
       submitDiagnosis();
     });
-    qs("#diagnose-form")?.addEventListener("change", () => {
+    qs("#diagnose-form")?.addEventListener("change", (e) => {
+      if (e.target?.id === "diag-anzsco-input") return;
       if (state.hasConfirmedDiagnosis) {
         submitDiagnosis();
       }
