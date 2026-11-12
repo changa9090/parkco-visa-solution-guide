@@ -96,5 +96,17 @@
     ],
     "distinction_ko": "4년제 공학 학위 소지자는 Engineers Australia(Washington Accord 또는 CDR) 심사를 통해 Civil Engineer(233211) 경로를 검토합니다. 전문학사(Associate Degree/Diploma) 소지자이거나 CAD 설계·시공 문서 실무 비중이 높은 경우에는 Civil Engineering Draftsperson(312211, MLTSSL+CSOL)이 현실적인 대안이 됩니다.",
     "distinction_en": "Four-year engineering graduates target Civil Engineer (233211) via Engineers Australia (Washington Accord / CDR), whereas Associate Degree/Diploma holders in CAD design or site documentation align strongly with Civil Engineering Draftsperson (312211, MLTSSL+CSOL)."
+  },
+  {
+    "group_id": "legal_solicitor_barrister",
+    "title_ko": "사무 변호사(Solicitor 271311) vs 법정 변호사(Barrister 271111) vs 지식재산권 변호사(271214)",
+    "title_en": "Solicitor (271311) vs Barrister (271111) vs Intellectual Property Lawyer (271214)",
+    "codes": [
+      "271311",
+      "271111",
+      "271214"
+    ],
+    "distinction_ko": "호주 법률 실무는 의뢰인 자문·계약·소송 준비를 전담하는 사무변호사(Solicitor 271311, MLTSSL+CSOL)와 법정 변론 중심의 법정변호사(Barrister 271111, MLTSSL+CSOL)로 구분됩니다. Solicitor와 Barrister 모두 각 주 법원 변호사 등록(SLAA)을 통해 기술심사를 진행하며 189·190·491·482·186 전 경로가 열려 있습니다. 반면 지식재산권·특허 전문 변호사인 Intellectual Property Lawyer(271214, STSOL+CSOL, VETASSESS)는 189 독립기술이민 대상에서 제외됩니다.",
+    "distinction_en": "Australian legal practice distinguishes between Solicitors (271311, MLTSSL+CSOL) who advise clients and manage transactions/litigation and Barristers (271111, MLTSSL+CSOL) who specialise in courtroom advocacy; both require State Legal Admissions Authority (SLAA) admission and unlock 189/190/491/482/186. Intellectual Property Lawyer (271214, STSOL+CSOL, VETASSESS) excludes 189."
   }
 ]
