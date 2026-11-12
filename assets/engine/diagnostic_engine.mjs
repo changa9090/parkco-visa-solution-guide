@@ -681,13 +681,13 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       why_fit_ko: `${occ.occupation} 직종은 CSOL(456개 직종)에 포함되어 최근 5년 내 1년 풀타임 경력으로 신청 요건을 검토할 수 있으며 ${prBridgeNote}이 주요 장점입니다.`,
       why_fit_en: `'${occ.occupation}' sits on the 456-occupation CSOL requiring just 1 year of full-time experience in the last 5 years, and ${prBridgeNoteEn}.`,
       key_requirements_ko: [
-        `스폰서 연봉 FY2026–27 CSIT AUD $${fmtComma(thresholds.csit_aud)}+ (또는 SSIT $${fmtComma(thresholds.ssit_aud)}+ Specialist Stream)`,
+        `스폰서 연봉 FY2026–27 CSIT AUD $${fmtComma(thresholds.csit_aud)}+ (또는 SSIT $${fmtComma(thresholds.ssit_aud)}+ Specialist Stream · ANZSCO Major Group 1·2·4·5·6 한정)`,
         "최근 5년 내 관련 직종 최소 1년 풀타임(또는 비례 파트타임) 경력 및 노동시장 테스트(LMT)",
         "482 영어 기준 충족 (IELTS 5.0 / 개편 PTE L33·R36·W29·S24)",
         ...(cav482.length ? [`직종 Caveat 필수 통과: ${cav482[0].summary_ko}`] : []),
       ],
       key_requirements_en: [
-        `Base salary meeting FY2026–27 CSIT AUD $${fmtComma(thresholds.csit_aud)}+ (or SSIT $${fmtComma(thresholds.ssit_aud)}+ Specialist Stream)`,
+        `Base salary meeting FY2026–27 CSIT AUD $${fmtComma(thresholds.csit_aud)}+ (or SSIT $${fmtComma(thresholds.ssit_aud)}+ Specialist Stream for ANZSCO Major Groups 1·2·4·5·6)`,
         "At least 1 year of full-time (or equivalent pro-rata part-time) experience in the last 5 years + Labour Market Testing (LMT)",
         "Subclass 482 English threshold (IELTS 5.0 each band / Revised PTE L33·R36·W29·S24)",
         ...(cavSumEn ? [`Must satisfy statutory caveat: ${cavSumEn}`] : []),

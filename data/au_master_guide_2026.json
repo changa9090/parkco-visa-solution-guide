@@ -329,8 +329,8 @@
         {
           "heading_ko": "1. 2026년 7월 1일 인상된 소득 기준(CSIT·SSIT·FWHIT)과 AMSR 이중 검증",
           "heading_en": "1. 1 July 2026 Indexed Salary Thresholds (CSIT, SSIT, FWHIT) & Dual AMSR Check",
-          "body_ko": "FY2026–27 기준 일반 숙련 트랙(482 Core Skills · 186 · 494) 법정 최저연봉(CSIT/TSMIT)은 A$79,423(연금 Super 별도)이며 고숙련 직행 트랙(482 Specialist Skills, 기능직 제외)은 A$146,576입니다. 동시에 호주 현지 시장연봉(AMSR) 이상을 지급해야 하며 만 45세 이상이 186 TRT 고소득 연령면제를 받으려면 2년간 FWHIT(A$190,100) 이상을 충족해야 합니다.",
-          "body_en": "Effective 1 July 2026 (F2026L00874), CSIT/TSMIT for 482 Core, 186, and 494 is A$79,423 (excluding superannuation), while 482 Specialist Skills requires A$146,576. Sponsors must also match the Australian Market Salary Rate (AMSR), and the 186 age-45 high-income exemption requires FWHIT (A$190,100)."
+          "body_ko": "FY2026–27 기준 일반 숙련 트랙(482 Core Skills · 186 · 494) 법정 최저연봉(CSIT/TSMIT)은 A$79,423(연금 Super 별도)이며 고숙련 직행 트랙(482 Specialist Skills, ANZSCO Major Group 1·2·4·5·6만 해당하며 Group 3 기능직 및 7·8 노무직 제외, reg 2.72(8A))은 A$146,576입니다. 동시에 호주 현지 시장연봉(AMSR) 이상을 지급해야 하며 만 45세 이상이 186 TRT 고소득 연령면제를 받으려면 2년간 FWHIT(A$190,100) 이상을 충족해야 합니다.",
+          "body_en": "Effective 1 July 2026 (F2026L00874), CSIT/TSMIT for 482 Core, 186, and 494 is A$79,423 (excluding superannuation), while 482 Specialist Skills requires A$146,576 and is restricted to ANZSCO Major Groups 1, 2, 4, 5, and 6 (excluding Group 3 trades and Groups 7–8 under reg 2.72(8A)). Sponsors must also match the Australian Market Salary Rate (AMSR), and the 186 age-45 high-income exemption requires FWHIT (A$190,100)."
         },
         {
           "heading_ko": "2. 482 이직 유예 180일 확대 및 13개 지역 DAMA 특례",
@@ -405,8 +405,8 @@
           ]
         ]
       },
-      "practitioner_alert_ko": "호주 내 체류 중 실질 비자 만료 이후 노미네이션(1단계)과 비자(2단계)가 연쇄 거절되면 s 48 재접수 제한이 발동하므로 접수 전 스폰서 재무·조직 적격성 점검이 필수입니다.",
-      "practitioner_alert_en": "If an onshore nomination fails alongside a linked visa refusal after substantive expiry, s 48 immediately locks out most re-lodgements, audit the sponsor's financials first."
+      "practitioner_alert_ko": "호주 내 체류 중 실질 비자 만료 이후 노미네이션(1단계)과 비자(2단계)가 연쇄 거절되면 s 48 재접수 제한이 발동하며 482·186·494는 reg 2.12 면제 비자가 아니므로 호주 내 재접수가 차단됩니다.",
+      "practitioner_alert_en": "Because Subclasses 482, 186, and 494 are not prescribed s 48 exempt visas under reg 2.12, an onshore refusal after substantive visa expiry bars onshore re-lodgement, audit the sponsor's financials first."
     },
     {
       "number": 5,
@@ -435,12 +435,12 @@
       "key_takeaways_ko": [
         "485 비자 영어 성적표 유효기간은 일반 비자(3년)와 달리 접수일 기준 1년 이내 응시분만 인정됩니다.",
         "485 신청 시 AFP 연방경찰 신원조회 신청 영수증과 건강보험 증빙이 접수 시점(Time of Application) 필수 요건입니다.",
-        "훈련비자(407)는 단순 인력 대체 수단이 아니라 직무역량 향상을 위한 구조화된 주간 단위 Training Plan이 핵심입니다."
+        "훈련비자(407)는 구조화된 주간 단위 Training Plan이 핵심이며 2026년 3월 11일 개정(F2026L01449)으로 주신청자 해외(Offshore) 체류 및 승인된 스폰서·노미네이션 선결 요건(Item 1238(3A)·(3B))이 강화되었습니다."
       ],
       "key_takeaways_en": [
         "Unlike the 3-year GSM rule, English test results for Subclass 485 are valid for only 12 months prior to lodgement!",
         "AFP National Police Check application proof and health insurance must exist BEFORE clicking submit on Subclass 485.",
-        "Subclass 407 requires a genuine, structured workplace training plan, not routine labour supplementation."
+        "Subclass 407 requires a genuine, structured workplace training plan and, from 11 March 2026 (F2026L01449), enforces an offshore location rule and upfront sponsor/nomination requirements under Item 1238(3A)–(3B)."
       ],
       "data_table": {
         "headers_ko": [
@@ -471,8 +471,8 @@
           ],
           [
             "Subclass 407 (직무훈련)",
-            "고용주 스폰서십 필요",
-            "최근 24개월 중 12개월 관련 학업/경력 + 구조화 훈련계획"
+            "A$535 (스폰서십·노미네이션 선결)",
+            "최근 24개월 중 12개월 관련 학업/경력 + 2026.03.11부 해외(Offshore) 접수 원칙(F2026L01449)"
           ]
         ],
         "rows_en": [
@@ -493,8 +493,8 @@
           ],
           [
             "Subclass 407 (Training)",
-            "Approved Sponsor Required",
-            "12 mos relevant study/work in last 24 mos + structured training plan"
+            "A$535 (Approved Sponsor/Nom)",
+            "12 mos relevant study/work in last 24 mos + offshore primary applicant rule eff. 11 Mar 2026 (F2026L01449)"
           ]
         ]
       },
