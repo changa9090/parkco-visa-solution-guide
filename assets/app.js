@@ -875,11 +875,11 @@
     }
     const headerText = isEn()
       ? queryLabel
-        ? `Matching occupations for "${queryLabel}" (${candidates.length}) — click to select/switch:`
-        : `Matching occupations (${candidates.length}) — click to select/switch:`
+        ? `Matching occupations for "${queryLabel}" (${candidates.length}) · click to select/switch:`
+        : `Matching occupations (${candidates.length}) · click to select/switch:`
       : queryLabel
-        ? `"${queryLabel}" 검색 연관 직종 (${candidates.length}건) — 클릭하여 직종 전환:`
-        : `연관 직종 후보 (${candidates.length}건) — 클릭하여 직종 전환:`;
+        ? `"${queryLabel}" 검색 연관 직종 (${candidates.length}건) · 클릭하여 직종 전환:`
+        : `연관 직종 후보 (${candidates.length}건) · 클릭하여 직종 전환:`;
 
     box.hidden = false;
     box.innerHTML = `

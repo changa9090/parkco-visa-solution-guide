@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://changa9090.github.io/shared/fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://changa9090.github.io/shared/fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://changa9090.github.io/shared/fonts/Manrope-VF.ttf") format("truetype");
+}
+
 /* Park & Co 2026 brand fonts, self-hosted from ./fonts (all SIL OFL 1.1).
    Import with a path relative to the consuming file, or use the absolute file:// form:
    @import url('file:///home/chang/design-sandbox/assets/_reference/parkco-2026/fonts.css'); */
@@ -6,14 +28,6 @@
   font-family: 'Manrope';
   src: url('fonts/Manrope-VF.ttf') format('truetype');
   font-weight: 200 800;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('fonts/CormorantGaramond-VF.ttf') format('truetype');
-  font-weight: 300 700;
   font-style: normal;
   font-display: block;
 }

@@ -23,9 +23,9 @@
   --color-practice-immigration: #1F5A5E;
   --color-practice-employment: #6B4A1F;
   --color-practice-family: #4A3A5A;
-  --font-display-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display-serif: "Pretendard Variable", "Pretendard", "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-sans: 'Manrope', system-ui, sans-serif;
-  --font-ko-serif: 'Gowun Batang', serif;
+  --font-ko-serif: "Pretendard Variable", "Pretendard", "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-ko-sans: 'Pretendard', 'Manrope', system-ui, sans-serif;
   --space-1: 4px;
   --space-2: 8px;
