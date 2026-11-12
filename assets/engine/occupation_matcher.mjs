@@ -1,121 +1,196 @@
 export const BILINGUAL_SIGNAL_MAP = {
   // ICT & Software
-  "개발자": ["software", "developer", "programmer", "code", "applications", "testing"],
-  "프로그래머": ["programmer", "developer", "software", "code", "programs"],
-  "풀스택": ["software", "developer", "programmer", "web", "applications", "design"],
-  "백엔드": ["software", "developer", "programmer", "systems", "database", "architecture"],
-  "프론트엔드": ["web", "developer", "software", "user", "interface", "applications"],
-  "소프트웨어": ["software", "engineer", "developer", "programmer", "systems"],
-  "아키텍처": ["architecture", "software", "systems", "design", "specifications"],
-  "설계": ["design", "designing", "specifications", "architecture", "planning"],
-  "테스트": ["testing", "debugging", "diagnosing", "quality"],
-  "테스팅": ["testing", "debugging", "quality"],
-  "데이터": ["data", "database", "analytics", "analyst", "scientist", "statistical"],
-  "데브옵스": ["devops", "cloud", "software", "systems", "engineer"],
-  "사이버보안": ["cyber", "security", "ict", "specialist", "engineer"],
-  "정보보안": ["cyber", "security", "ict", "specialist"],
-  "보안": ["cyber", "security", "network", "ict"],
-  "클라우드": ["cloud", "devops", "systems", "network", "software"],
-  "네트워크": ["network", "systems", "telecommunications", "ict"],
-  "비즈니스분석": ["business", "analyst", "ict", "systems", "requirements"],
-  react: ["software", "developer", "programmer", "web", "applications", "code"],
-  python: ["software", "developer", "programmer", "data", "code", "testing"],
-  typescript: ["software", "developer", "programmer", "web", "code"],
-  javascript: ["software", "developer", "programmer", "web", "code"],
-  java: ["software", "developer", "programmer", "applications", "code"],
-  golang: ["software", "developer", "programmer", "systems"],
-  aws: ["software", "systems", "cloud", "devops", "engineer"],
-  kubernetes: ["devops", "software", "systems", "engineer"],
-  api: ["software", "developer", "programmer", "applications", "systems", "design"],
+  "개발자": ["software", "developer", "programmer", "code:0.75", "applications:0.75", "testing:0.5"],
+  "프로그래머": ["programmer", "developer", "software", "code:0.75", "programs:0.75"],
+  "풀스택": ["software", "developer", "programmer", "web", "applications:0.75", "design:0.5"],
+  "백엔드": ["software", "developer", "programmer", "systems:0.75", "database:0.75", "architecture:0.75"],
+  "프론트엔드": ["web", "developer", "software", "user:0.5", "interface:0.75", "applications:0.75"],
+  "소프트웨어": ["software", "engineer", "developer", "programmer", "systems:0.75"],
+  "소프트웨어엔지니어": ["software", "engineer", "developer:0.75", "systems:0.75"],
+  "아키텍처": ["architecture", "software", "systems:0.75", "design:0.75", "specifications:0.75"],
+  "설계": ["design", "specifications:0.75", "architecture:0.75", "planning:0.5"],
+  "테스트": ["testing", "tester:0.75", "debugging:0.75", "diagnosing:0.75", "quality:0.75"],
+  "테스팅": ["testing", "tester:0.75", "debugging:0.75", "quality:0.75"],
+  "데이터": ["data", "database:0.75", "analytics:0.75", "analyst:0.75", "scientist:0.75", "statistical:0.75"],
+  "데브옵스": ["devops", "cloud:0.75", "software:0.75", "systems:0.75", "engineer:0.75"],
+  "화이트해커": ["penetration", "tester", "cyber:0.75", "security:0.75"],
+  "모의해킹": ["penetration", "tester", "cyber:0.75", "security:0.75"],
+  "사이버보안": ["cyber", "security", "ict:0.75", "specialist:0.75", "engineer:0.75", "analyst:0.75"],
+  "정보보안": ["cyber", "security", "ict:0.75", "specialist:0.75"],
+  "보안": ["cyber", "security", "network:0.75", "ict:0.75"],
+  "클라우드": ["cloud", "devops:0.75", "systems:0.75", "network:0.75", "software:0.75"],
+  "네트워크": ["network", "systems:0.75", "telecommunications:0.75", "ict:0.75"],
+  "비즈니스분석": ["business", "analyst", "ict:0.75", "systems:0.75", "requirements:0.75"],
+  react: ["software", "developer", "programmer", "web", "applications:0.75", "code:0.75"],
+  python: ["software", "developer", "programmer", "data:0.75", "code:0.75", "testing:0.5"],
+  typescript: ["software", "developer", "programmer", "web", "code:0.75"],
+  javascript: ["software", "developer", "programmer", "web", "code:0.75"],
+  java: ["software", "developer", "programmer", "applications:0.75", "code:0.75"],
+  golang: ["software", "developer", "programmer", "systems:0.75"],
+  aws: ["software", "systems:0.75", "cloud", "devops", "engineer:0.75"],
+  kubernetes: ["devops", "software:0.75", "systems:0.75", "engineer:0.75"],
+  api: ["software", "developer", "programmer", "applications:0.75", "systems:0.75", "design:0.5"],
   // Hospitality
-  "셰프": ["chef", "menu", "kitchen", "cooks", "food", "cost"],
-  "주방장": ["chef", "kitchen", "menu", "supervising", "cooks"],
-  "요리사": ["chef", "cook", "food", "dishes", "kitchen", "menus"],
-  "조리사": ["cook", "chef", "food", "preparing", "cooking", "kitchen"],
-  "쿡": ["cook", "preparing", "cooking", "food", "seasoning"],
-  "주방": ["kitchen", "chef", "cook", "food", "hygiene"],
-  "메뉴": ["menus", "menu", "planning", "chef", "food"],
-  "제빵": ["baker", "bread", "baking", "dough"],
-  "베이커": ["baker", "bread", "baking"],
-  "파티시에": ["pastrycook", "pastry", "cakes", "desserts"],
-  "제과": ["pastrycook", "pastry", "cakes"],
-  "카페": ["cafe", "restaurant", "manager", "hospitality"],
-  "레스토랑": ["restaurant", "cafe", "chef", "cook", "hospitality"],
-  "바리스타": ["cafe", "restaurant", "hospitality"],
-  "점장": ["cafe", "restaurant", "retail", "manager"],
+  "셰프": ["chef", "cook:0.75", "menu:0.75", "kitchen:0.75", "food:0.5", "cost:0.5"],
+  "주방장": ["chef", "cook:0.5", "kitchen:0.75", "menu:0.75", "supervising:0.5"],
+  "요리사": ["chef", "cook", "food:0.5", "dishes:0.5", "kitchen:0.5", "menu:0.5"],
+  "조리사": ["cook", "chef:0.75", "food:0.5", "dishes:0.5", "kitchen:0.5", "seasoning:0.5"],
+  "쿡": ["cook", "chef:0.75", "food:0.5", "dishes:0.5", "seasoning:0.5"],
+  "주방": ["kitchen", "chef:0.75", "cook:0.75", "food:0.5", "hygiene:0.5"],
+  "메뉴": ["menu", "planning:0.5", "chef:0.75", "food:0.5"],
+  "제빵": ["baker", "bread:0.75", "baking:0.75", "dough:0.75"],
+  "제빵사": ["baker", "pastrycook:0.75", "bread:0.75", "baking:0.75"],
+  "베이커": ["baker", "bread:0.75", "baking:0.75"],
+  "파티시에": ["pastrycook", "pastry:0.75", "cakes:0.75", "desserts:0.75", "baker:0.5"],
+  "제과": ["pastrycook", "pastry:0.75", "cakes:0.75", "baker:0.5"],
+  "제과사": ["pastrycook", "pastry:0.75", "cakes:0.75", "baker:0.5"],
+  "정육": ["butcher", "smallgoods:0.75", "meat:0.75"],
+  "정육사": ["butcher", "smallgoods:0.75", "meat:0.75"],
+  "카페": ["cafe", "restaurant:0.75", "manager:0.75", "hospitality:0.5"],
+  "레스토랑": ["restaurant", "cafe:0.75", "chef:0.75", "cook:0.75", "hospitality:0.5"],
+  "바리스타": ["cafe", "restaurant:0.75", "hospitality:0.5"],
+  "점장": ["cafe:0.75", "restaurant:0.75", "retail:0.75", "manager"],
   // Accounting & Finance
-  "회계사": ["accountant", "accounting", "financial", "statements", "budget"],
-  "회계": ["accountant", "accounting", "financial", "statements", "budget"],
-  "세무사": ["taxation", "accountant", "tax", "returns"],
-  "세무": ["taxation", "accountant", "tax", "returns"],
-  "재무제표": ["financial", "statements", "accountant", "accounting", "reporting"],
-  "결산": ["financial", "statements", "accountant", "budget", "audits"],
-  "감사": ["auditor", "audit", "audits", "financial", "internal", "external"],
-  "기장": ["accountant", "accounting", "financial"],
+  "회계사": ["accountant", "accounting:0.75", "financial:0.5", "statements:0.5", "taxation:0.75", "management:0.5"],
+  "회계": ["accountant", "accounting:0.75", "financial:0.5", "statements:0.5", "budget:0.5"],
+  "세무사": ["taxation", "accountant:0.75", "tax:0.75", "returns:0.75"],
+  "세무": ["taxation", "accountant:0.75", "tax:0.75", "returns:0.75"],
+  "재무제표": ["financial:0.75", "statements:0.75", "accountant", "accounting:0.75", "reporting:0.5"],
+  "결산": ["financial:0.75", "statements:0.75", "accountant:0.75", "budget:0.5", "audit:0.5"],
+  "감사": ["auditor", "audit:0.75", "financial:0.5", "internal:0.75", "external:0.75"],
+  "기장": ["accountant", "accounting:0.75", "financial:0.5"],
+  "보험계리사": ["actuary", "actuarial:0.75"],
   // Trades & Construction
-  "타일": ["tiler", "tiles", "wall", "floor", "waterproofing", "laying"],
-  "타일러": ["tiler", "wall", "floor", "tiles"],
-  "방수": ["waterproofing", "tiler", "tiles", "surfaces", "cement"],
-  "욕실": ["tiler", "tiles", "plumber", "wall", "floor"],
-  "리노베이션": ["tiler", "carpenter", "renovation", "wall", "floor"],
-  "용접사": ["welder", "first", "class", "welding", "metal"],
-  "용접": ["welder", "welding", "metal", "fabricator", "joints"],
-  "웰더": ["welder", "welding", "metal"],
-  "제관": ["metal", "fabricator", "structural", "steel", "welding"],
-  "목수": ["carpenter", "joiner", "timber", "framing", "wood"],
-  "카펜터": ["carpenter", "timber", "wood"],
-  "배관공": ["plumber", "plumbing", "pipes", "drainage"],
-  "배관": ["plumber", "plumbing", "pipes", "drainage", "gas"],
-  "플러머": ["plumber", "pipes", "drainage"],
-  "전기기사": ["electrician", "electrical", "wiring", "circuits"],
-  "전기": ["electrician", "electrical", "wiring", "circuits"],
-  "일렉트리션": ["electrician", "electrical", "wiring"],
-  "정비": ["mechanic", "motor", "engine", "vehicle", "diesel", "repairing"],
-  "미케닉": ["mechanic", "motor", "vehicle", "engine"],
-  "조적": ["bricklayer", "bricks", "mortar"],
-  "미장": ["plasterer", "plaster", "plasterboard"],
-  "도장": ["painter", "painting", "surfaces"],
-  "페인터": ["painter", "painting"],
-  "토목": ["civil", "engineer", "engineering", "structural", "construction"],
-  "적산": ["quantity", "surveyor", "cost", "construction", "estimates"],
-  "건축": ["architect", "architectural", "construction", "building"],
-  "현장소장": ["construction", "project", "manager", "building", "site"],
-  // Healthcare, Education, Legal & Social
-  "간호사": ["registered", "nurse", "nurses", "nursing", "patient", "care"],
-  "정규간호사": ["registered", "nurse", "nurses", "nursing"],
-  rn: ["registered", "nurse", "nurses", "nursing", "patient"],
-  "임상병리사": ["medical", "laboratory", "scientist", "technician", "pathology"],
-  "임상병리": ["medical", "laboratory", "scientist", "pathology"],
-  "병동": ["nurse", "nurses", "nursing", "patients", "hospital", "ward", "clinical"],
-  "환자": ["patients", "patient", "nursing", "care", "treatment", "assessing"],
-  "케어": ["care", "nursing", "patients", "aged", "disabled"],
-  "노인요양": ["aged", "care", "nurse", "nursing", "personal"],
-  "에이지드케어": ["aged", "care", "nurse"],
-  "유아교사": ["early", "childhood", "pre-primary", "teacher", "children"],
-  "유치원": ["early", "childhood", "pre-primary", "teacher", "children"],
-  "어린이집": ["child", "care", "worker", "early", "childhood", "children"],
-  "보육교사": ["child", "care", "worker", "early", "childhood", "teacher"],
-  "보육": ["child", "care", "worker", "early", "childhood", "children"],
-  "중등교사": ["secondary", "school", "teacher", "teaching"],
-  "초등교사": ["primary", "school", "teacher", "teaching"],
-  "교사": ["teacher", "school", "secondary", "primary", "early", "teaching"],
-  "사회복지": ["social", "worker", "welfare", "community"],
-  "심리상담사": ["clinical", "psychologist", "counsellor", "psychological"],
-  "물리치료": ["physiotherapist", "physical", "rehabilitation"],
-  "작업치료": ["occupational", "therapist", "rehabilitation"],
-  "약사": ["pharmacist", "hospital", "retail", "medications"],
-  "변호사": ["solicitor", "barrister", "legal", "law"],
-  // Business, Marketing & Design
-  "마케터": ["marketing", "specialist", "advertising", "campaigns", "market"],
-  "마케팅": ["marketing", "specialist", "market", "campaigns", "brand"],
-  "광고기획": ["advertising", "specialist", "campaigns", "marketing"],
-  "홍보": ["public", "relations", "communications", "media"],
-  "그래픽": ["graphic", "designer", "visual", "design", "multimedia"],
-  "디자이너": ["designer", "graphic", "web", "industrial", "interior"],
-  "인사": ["human", "resource", "recruitment", "workplace"],
-  "경영컨설턴트": ["management", "consultant", "organisation"],
-  "물류": ["supply", "distribution", "procurement", "logistics"],
-  "미용사": ["hairdresser", "hair", "cutting", "colouring"],
+  "타일": ["tiler", "tile:0.75", "wall:0.75", "floor:0.75", "waterproofing:0.75", "laying:0.5"],
+  "타일러": ["tiler", "wall:0.75", "floor:0.75", "tile:0.75"],
+  "방수": ["waterproofing", "tiler:0.75", "tile:0.75", "surfaces:0.5", "cement:0.5"],
+  "욕실": ["tiler:0.75", "tile:0.75", "plumber:0.75", "wall:0.75", "floor:0.75"],
+  "리노베이션": ["tiler:0.75", "carpenter:0.75", "renovation:0.75", "wall:0.5", "floor:0.5"],
+  "용접사": ["welder", "first:0.75", "class:0.75", "welding:0.75", "metal:0.75", "fabricator:0.75"],
+  "용접": ["welder", "welding:0.75", "metal:0.75", "fabricator:0.75", "joints:0.5"],
+  "웰더": ["welder", "welding:0.75", "metal:0.75"],
+  "제관": ["metal", "fabricator", "structural:0.75", "steel:0.75", "welding:0.75"],
+  "제관사": ["metal", "fabricator", "welder:0.75"],
+  "피터": ["fitter", "turner:0.75", "machinist:0.75", "metal:0.5"],
+  "판금": ["panelbeater", "sheetmetal", "metal:0.5", "vehicle:0.5"],
+  "패널비터": ["panelbeater", "vehicle:0.75", "body:0.75"],
+  "목수": ["carpenter", "joiner:0.75", "timber:0.75", "framing:0.75", "wood:0.5"],
+  "카펜터": ["carpenter", "joiner:0.75", "timber:0.75", "wood:0.5"],
+  "캐비닛메이커": ["cabinetmaker", "cabinet:0.75", "furniture:0.75"],
+  "가구제작": ["cabinetmaker", "furniture", "cabinet:0.75", "wood:0.5"],
+  "배관공": ["plumber", "plumbing:0.75", "pipe:0.75", "drainage:0.75", "gasfitter:0.75"],
+  "배관": ["plumber", "plumbing:0.75", "pipe:0.75", "drainage:0.75", "gas:0.5"],
+  "플러머": ["plumber", "pipe:0.75", "drainage:0.75"],
+  "전기기사": ["electrician", "electrical:0.75", "wiring:0.75", "circuit:0.75"],
+  "전기": ["electrician", "electrical:0.75", "wiring:0.75", "circuit:0.75"],
+  "일렉트리션": ["electrician", "electrical:0.75", "wiring:0.75"],
+  "에어컨": ["airconditioning", "refrigeration", "mechanic:0.75", "plumber:0.5"],
+  "냉동공조": ["airconditioning", "refrigeration", "mechanic:0.75"],
+  "정비": ["mechanic", "motor:0.75", "engine:0.75", "vehicle:0.75", "diesel:0.75", "repairing:0.5"],
+  "자동차정비사": ["motor", "mechanic", "diesel:0.75", "automotive:0.75", "vehicle:0.75"],
+  "미케닉": ["mechanic", "motor:0.75", "vehicle:0.75", "engine:0.75"],
+  "항공정비사": ["aircraft", "maintenance", "engineer:0.75", "avionics:0.75"],
+  "조적": ["bricklayer", "brick:0.75", "mortar:0.75"],
+  "벽돌공": ["bricklayer", "brick:0.75"],
+  "미장": ["plasterer", "plaster:0.75", "plasterboard:0.75", "renderer:0.75"],
+  "도장": ["painter", "painting:0.75", "vehicle:0.5", "surface:0.5"],
+  "페인터": ["painter", "painting:0.75"],
+  "토목": ["civil", "engineer:0.75", "engineering:0.75", "structural:0.75", "construction:0.5"],
+  "적산": ["quantity", "surveyor", "cost:0.75", "construction:0.5", "estimate:0.75"],
+  "적산사": ["quantity", "surveyor", "estimator:0.75"],
+  "측량사": ["surveyor", "surveying:0.75", "spatial:0.75"],
+  "건축": ["architect", "architectural:0.75", "construction:0.5", "building:0.5"],
+  "건축가": ["architect", "landscape:0.75", "architectural:0.75"],
+  "제도사": ["draftsperson", "architectural:0.75", "civil:0.75", "mechanical:0.75", "electrical:0.75"],
+  "현장소장": ["construction", "project", "manager", "building:0.75", "site:0.5"],
+  // Healthcare, Medical, Education, Legal & Social
+  "의사": ["practitioner", "physician:0.75", "resident:0.75", "surgeon:0.75", "medical:0.75", "specialist:0.5"],
+  "일반의": ["general", "practitioner", "medical:0.75", "physician:0.75"],
+  "전공의": ["resident", "medical", "officer"],
+  "전문의": ["specialist", "physician", "surgeon:0.75", "medical:0.75"],
+  "외과의사": ["surgeon", "surgical:0.75"],
+  "내과의사": ["physician", "practitioner:0.75", "internal:0.75"],
+  "소아과의사": ["paediatrician", "paediatric:0.75"],
+  "정신과의사": ["psychiatrist", "psychiatric:0.75"],
+  "산부인과의사": ["obstetrician", "gynaecologist"],
+  "안과의사": ["ophthalmologist", "eye:0.75"],
+  "피부과의사": ["dermatologist", "skin:0.75"],
+  "마취과의사": ["anaesthetist", "anaesthetic:0.75"],
+  "치과의사": ["dentist", "dental:0.75"],
+  "치과": ["dentist", "dental"],
+  "치위생사": ["dental", "hygienist"],
+  "치기공사": ["dental", "technician", "prosthetist:0.75"],
+  "수의사": ["veterinarian", "veterinary:0.75"],
+  "한의사": ["traditional", "chinese", "medicine", "acupuncturist:0.75"],
+  "침구사": ["acupuncturist", "traditional:0.75", "chinese:0.75"],
+  "간호사": ["registered", "nurse", "nursing:0.75", "enrolled:0.75", "patient:0.5", "care:0.5"],
+  "정규간호사": ["registered", "nurse", "nursing:0.75"],
+  rn: ["registered", "nurse", "nursing:0.75", "patient:0.5"],
+  "준간호사": ["enrolled", "nurse", "nursing:0.75"],
+  "조산사": ["midwife", "midwifery:0.75"],
+  "임상병리사": ["medical", "laboratory", "scientist", "technician:0.75", "pathology:0.75"],
+  "임상병리": ["medical", "laboratory", "scientist", "technician:0.75", "pathology:0.75"],
+  "방사선사": ["radiographer", "diagnostic:0.75", "radiation:0.75", "medical:0.5"],
+  "초음파사": ["sonographer", "ultrasound:0.75"],
+  "검안사": ["optometrist", "orthoptist:0.75"],
+  "안경사": ["optical", "dispenser", "optometrist:0.75"],
+  "병동": ["nurse", "nursing:0.75", "patient:0.5", "hospital:0.5", "ward:0.75", "clinical:0.5"],
+  "환자": ["patient:0.75", "nursing:0.75", "care:0.5", "treatment:0.5", "assessing:0.5"],
+  "케어": ["care:0.75", "nursing:0.75", "patient:0.5", "aged:0.75", "disabled:0.75"],
+  "노인요양": ["aged", "care:0.75", "nurse:0.75", "nursing:0.75", "disabled:0.5"],
+  "에이지드케어": ["aged", "care:0.75", "nurse:0.75"],
+  "유아교사": ["early", "childhood", "pre-primary:0.75", "teacher", "children:0.5"],
+  "유아교육교사": ["early", "childhood", "pre-primary:0.75", "teacher"],
+  "유치원": ["early", "childhood", "pre-primary:0.75", "teacher", "children:0.5"],
+  "어린이집": ["child", "care", "worker:0.75", "centre:0.75", "early:0.75", "childhood:0.75"],
+  "보육교사": ["child", "care", "worker", "early:0.75", "childhood:0.75", "teacher:0.75"],
+  "보육": ["child", "care", "worker:0.75", "early:0.75", "childhood:0.75", "children:0.5"],
+  "중등교사": ["secondary", "school", "teacher", "middle:0.75", "teaching:0.5"],
+  "초등교사": ["primary", "school", "teacher", "teaching:0.5"],
+  "특수교사": ["special", "needs", "education", "teacher"],
+  "교사": ["teacher", "school:0.75", "secondary:0.75", "primary:0.75", "early:0.75", "teaching:0.5"],
+  "사회복지": ["social", "worker", "welfare:0.75", "community:0.75"],
+  "사회복지사": ["social", "worker", "welfare:0.75", "community:0.75"],
+  "상담사": ["counsellor", "psychologist:0.75", "psychotherapist:0.75"],
+  "심리상담사": ["clinical", "psychologist", "counsellor:0.75", "psychotherapist:0.75"],
+  "물리치료": ["physiotherapist", "physical:0.75", "rehabilitation:0.5"],
+  "물리치료사": ["physiotherapist", "rehabilitation:0.5"],
+  "작업치료": ["occupational", "therapist", "rehabilitation:0.5"],
+  "작업치료사": ["occupational", "therapist", "rehabilitation:0.5"],
+  "언어치료사": ["speech", "pathologist"],
+  "카이로프랙터": ["chiropractor", "osteopath:0.75"],
+  "약사": ["pharmacist", "hospital:0.75", "retail:0.75", "industrial:0.5", "medication:0.5"],
+  "변호사": ["solicitor", "barrister:0.75", "lawyer:0.75", "legal:0.5", "law:0.5"],
+  "사무변호사": ["solicitor", "legal:0.5", "law:0.5"],
+  "솔리시터": ["solicitor", "legal:0.5"],
+  "법정변호사": ["barrister", "court:0.5", "legal:0.5"],
+  "배리스터": ["barrister", "court:0.5", "legal:0.5"],
+  "특허변호사": ["intellectual", "property", "lawyer", "patent:0.75"],
+  "지식재산권변호사": ["intellectual", "property", "lawyer", "patent:0.75"],
+  "이민법무사": ["migration", "agent", "immigration:0.75"],
+  "통역사": ["interpreter", "translator:0.75"],
+  "번역가": ["translator", "interpreter:0.75"],
+  "번역사": ["translator", "interpreter:0.75"],
+  // Business, Marketing, Design & Other
+  "마케터": ["marketing", "specialist", "advertising:0.75", "campaign:0.5", "market:0.5"],
+  "마케팅": ["marketing", "specialist", "market:0.75", "campaign:0.5", "brand:0.5"],
+  "광고기획": ["advertising", "specialist", "campaign:0.75", "marketing:0.75"],
+  "홍보": ["public", "relations", "communication:0.5", "media:0.5"],
+  "그래픽": ["graphic", "designer", "visual:0.75", "design:0.75", "multimedia:0.75"],
+  "디자이너": ["designer", "graphic:0.75", "web:0.75", "industrial:0.75", "interior:0.75", "fashion:0.75"],
+  "인테리어": ["interior", "designer", "decorator:0.75"],
+  "인사": ["human", "resource", "recruitment:0.75", "workplace:0.75"],
+  "채용": ["recruitment", "consultant", "human:0.75", "resource:0.75"],
+  "경영컨설턴트": ["management", "consultant", "organisation:0.75"],
+  "물류": ["supply", "distribution", "procurement:0.75", "logistics:0.75", "chain:0.75"],
+  "미용사": ["hairdresser", "beauty:0.75", "hair:0.75", "cutting:0.5"],
+  "피부관리사": ["beauty", "therapist", "skin:0.75"],
+  "뷰티테라피스트": ["beauty", "therapist"],
+  "조경": ["landscape", "gardener", "architect:0.75", "arborist:0.75"],
+  "가드너": ["gardener", "landscape:0.75", "nurseryperson:0.5"],
+  "플로리스트": ["florist", "flower:0.75"],
+  "공인중개사": ["real", "estate", "agent", "principal:0.75", "property:0.75"],
+  "부동산": ["real", "estate", "property", "manager:0.75", "agent:0.75", "conveyancer:0.75"],
 };
 
 export const STOPWORDS_EN = new Set([
@@ -132,6 +207,14 @@ export const POPULAR_PRIORITY_CODES = [
   "341111", "334111", "321211", "271311",
 ];
 export const POPULAR_PRIORITY_SET = new Set(POPULAR_PRIORITY_CODES);
+
+function parseSignalTerm(rawEntry) {
+  const idx = rawEntry.indexOf(":");
+  if (idx !== -1) {
+    return [rawEntry.slice(0, idx), Number(rawEntry.slice(idx + 1))];
+  }
+  return [rawEntry, 1.0];
+}
 
 function escapeRegex(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -159,15 +242,16 @@ export function pyRound1(val) {
 const KO_SIGNAL_TRIGGERS = [];
 const ASCII_SIGNAL_TRIGGERS = [];
 for (const [trig, mapped] of Object.entries(BILINGUAL_SIGNAL_MAP)) {
+  const parsedList = mapped.map(parseSignalTerm);
   if (/[가-힣]/.test(trig)) {
-    KO_SIGNAL_TRIGGERS.push([trig, mapped]);
+    KO_SIGNAL_TRIGGERS.push([trig, parsedList]);
   } else {
-    ASCII_SIGNAL_TRIGGERS.push([trig, unicodeWordBoundedRegex(escapeRegex(trig)), mapped]);
+    ASCII_SIGNAL_TRIGGERS.push([trig, unicodeWordBoundedRegex(escapeRegex(trig)), parsedList]);
   }
 }
 
 export function tokenize(text) {
-  const raw = String(text || "").toLowerCase().match(/[0-9]{4,6}|[a-zA-Z][a-zA-Z0-9+#.-]{1,}|[가-힣]{2,}/g) || [];
+  const raw = String(text || "").toLowerCase().match(/[0-9]{4,6}|[a-zA-Z][a-zA-Z0-9+#.-]{1,}|[가-힣]{2,}|쿡/g) || [];
   const out = [];
   for (let tok of raw) {
     if (STOPWORDS_EN.has(tok)) continue;
@@ -265,6 +349,13 @@ export class OccupationMatcher {
       }
 
       const occEnLow = occ.occupation.toLowerCase();
+      const occKoLow = String(occ.title_ko || "").toLowerCase();
+      const occKoNoSpace = occKoLow.replace(/\s+/g, "");
+      const occKoParts = occKoLow
+        .split(/[()/·,]/)
+        .map((p) => p.replace(/\s+/g, ""))
+        .filter(Boolean);
+      const occKoPrimary = occKoParts.length > 0 ? occKoParts[0] : occKoNoSpace;
       const cleanOccPhrase = occEnLow.replace(/\s*\([^)]*\)\s*/g, " ").trim();
       const codeSet = new Set(
         [
@@ -277,7 +368,10 @@ export class OccupationMatcher {
       const meta = {
         codes: codeSet,
         occEnLow,
-        occKoLow: String(occ.title_ko || "").toLowerCase(),
+        occKoLow,
+        occKoNoSpace,
+        occKoParts,
+        occKoPrimary,
         altLow: [...(occ.alternative_titles || []), ...(occ.specialisations || [])].join(" | ").toLowerCase(),
         ugLow: String(occ.unit_group_title || "").toLowerCase(),
         descLow: String(occ.abs_description || "").toLowerCase(),
@@ -391,6 +485,8 @@ export class OccupationMatcher {
       };
     }
 
+    const qNoSpace = qLower.replace(/\s+/g, "");
+    const hasKoQuery = /[가-힣]/.test(qLower);
     const tokens = tokenize(qClean);
     const koTokens = tokens.filter((t) => /[가-힣]/.test(t));
     const expandedEn = new Map();
@@ -403,29 +499,33 @@ export class OccupationMatcher {
       if (/^[a-z0-9+#.-]+$/.test(tok)) {
         setMaxWeight(tok, 1.0);
         if (Object.prototype.hasOwnProperty.call(BILINGUAL_SIGNAL_MAP, tok)) {
-          for (const enTerm of BILINGUAL_SIGNAL_MAP[tok]) {
-            setMaxWeight(enTerm, 1.0);
+          for (const rawEntry of BILINGUAL_SIGNAL_MAP[tok]) {
+            const [enTerm, w] = parseSignalTerm(rawEntry);
+            setMaxWeight(enTerm, w);
           }
         }
       } else {
         for (const [trigger, mappedList] of KO_SIGNAL_TRIGGERS) {
           if (tok === trigger) {
-            for (const enTerm of mappedList) setMaxWeight(enTerm, 1.0);
-          } else if (tok.length >= 3 && trigger.length >= 3 && (tok.includes(trigger) || trigger.includes(tok))) {
-            for (const enTerm of mappedList) setMaxWeight(enTerm, 0.75);
+            for (const [enTerm, w] of mappedList) setMaxWeight(enTerm, w);
+          } else if (tok.length >= 3 && trigger.length >= 3 && tok.includes(trigger)) {
+            for (const [enTerm, w] of mappedList) {
+              const subW = w >= 1.0 ? 0.75 : 0.5;
+              setMaxWeight(enTerm, subW);
+            }
           }
         }
       }
     }
 
     for (const [trigger, mappedList] of KO_SIGNAL_TRIGGERS) {
-      if (trigger.length >= 3 && qLower.includes(trigger)) {
-        for (const enTerm of mappedList) setMaxWeight(enTerm, 1.0);
+      if (trigger.length >= 3 && (qLower.includes(trigger) || qNoSpace.includes(trigger))) {
+        for (const [enTerm, w] of mappedList) setMaxWeight(enTerm, w);
       }
     }
     for (const [_trigger, trigRe, mappedList] of ASCII_SIGNAL_TRIGGERS) {
       if (trigRe.test(qLower)) {
-        for (const enTerm of mappedList) setMaxWeight(enTerm, 1.0);
+        for (const [enTerm, w] of mappedList) setMaxWeight(enTerm, w);
       }
     }
 
@@ -458,8 +558,26 @@ export class OccupationMatcher {
         }
       }
 
-      if (qLower.length >= 2 && (qLower === meta.occEnLow || qLower === meta.occKoLow)) {
+      let koTitleContains = false;
+      if (hasKoQuery && qNoSpace.length >= 2) {
+        if (qNoSpace === "의사") {
+          koTitleContains = /(?<![가-힣])의사/.test(meta.occKoLow);
+        } else {
+          koTitleContains = meta.occKoLow.includes(qLower) || meta.occKoNoSpace.includes(qNoSpace);
+        }
+      }
+
+      if (
+        qLower.length >= 2 &&
+        (qLower === meta.occEnLow ||
+          qLower === meta.occKoLow ||
+          (hasKoQuery && qNoSpace === meta.occKoPrimary))
+      ) {
         score += 95.0;
+        reasons.push("공식 영문/국문 직종명 완전 일치");
+        reasonsEn.push("Exact official occupation title match");
+      } else if (hasKoQuery && qNoSpace.length >= 1 && meta.occKoParts.includes(qNoSpace)) {
+        score += 80.0;
         reasons.push("공식 영문/국문 직종명 완전 일치");
         reasonsEn.push("Exact official occupation title match");
       } else if (
@@ -470,7 +588,7 @@ export class OccupationMatcher {
         score += 72.0;
         reasons.push("공식 영문 직종명 직접 일치");
         reasonsEn.push("Direct official occupation title match");
-      } else if (qLower.length >= 2 && (meta.occEnLow.includes(qLower) || meta.occKoLow.includes(qLower))) {
+      } else if (qLower.length >= 2 && (meta.occEnLow.includes(qLower) || koTitleContains)) {
         score += 55.0;
         reasons.push("직종명 직접 포함");
         reasonsEn.push("Occupation title contains search term");
@@ -478,7 +596,11 @@ export class OccupationMatcher {
 
       const koHits = [];
       for (const tok of koTokens) {
-        if (meta.occKoLow.includes(tok)) {
+        const tokInKoTitle =
+          tok === "의사"
+            ? /(?<![가-힣])의사/.test(meta.occKoLow)
+            : meta.occKoLow.includes(tok) || meta.occKoNoSpace.includes(tok);
+        if (tokInKoTitle) {
           score += 42.0;
           koHits.push(tok);
         } else if (
