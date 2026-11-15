@@ -1834,6 +1834,7 @@
 
     qs("#btn-copy-and-book")?.addEventListener("click", async () => {
       const text = qs("#brief-body-textarea")?.value || "";
+      const clientName = qs("#brief-name-input")?.value?.trim() || "";
       try {
         if (navigator.clipboard?.writeText) {
           await navigator.clipboard.writeText(text);
@@ -1843,11 +1844,20 @@
       }
       const toast = qs("#copy-toast-msg");
       if (toast) toast.hidden = false;
-      const bookUrl =
-        isEn() || state.briefLang === "en"
-          ? state.lastDiagnosis?.consultation_brief?.booking_url_en || OFFICIAL_BOOKING_URL_EN
-          : state.lastDiagnosis?.consultation_brief?.booking_url || OFFICIAL_BOOKING_URL;
-      window.open(bookUrl, "_blank", "noopener,noreferrer");
+      const enMode = isEn() || state.briefLang === "en";
+      if (window.ParkCoHandoff && typeof window.ParkCoHandoff.openPrefilledJotform === "function") {
+        window.ParkCoHandoff.openPrefilledJotform({
+          lang: enMode ? "en" : "ko",
+          toolId: "parkco-visa-solution-guide",
+          briefText: text,
+          fields: clientName ? { name: clientName } : {},
+        });
+        return;
+      }
+      const jfUrl = enMode
+        ? `https://form.jotform.com/262833157380863?whatQuestions35=${encodeURIComponent(text.slice(0, 3500))}`
+        : `https://form.jotform.com/212498518526868?q10_textarea10=${encodeURIComponent(text.slice(0, 3500))}`;
+      window.open(jfUrl, "_blank", "noopener,noreferrer");
     });
 
     qs("#btn-print-brief")?.addEventListener("click", () => {
