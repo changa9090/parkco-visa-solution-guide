@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-12T15:16:40.208553+00:00",
+  "generated_at": "2026-11-15T22:02:13.956753+00:00",
   "read_only_policy": "strict_zero_mutation",
   "sources": [
     {
       "label": "Home Affairs Official SOL JSON (PageJSONDataHiddenField)",
       "snapshot_file": "immi_sol_official_latest.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skill-occupation-list",
-      "sha256": "c3c782b878061b3dd9e29faa81a1b2a180fe84f37e81025eafe3d619e3b164e0",
-      "bytes": 1618844,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "sha256": "98793863674b8c6c345ae3c28fceb457f7de9eecfa5f5c2c042f275fd9150548",
+      "bytes": 1618990,
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "Home Affairs Official Visa Finder Schema",
@@ -16,15 +16,15 @@
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-finder",
       "sha256": "926945fbb65550d1913fa741113cde72adc337d59bacd5b68880f66fc06d7bad",
       "bytes": 4783,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "YouTube @immispecialist Channel Official Video Catalog",
       "snapshot_file": "immispecialist_videos_latest.json",
       "canonical_source_url": "https://www.youtube.com/@immispecialist/videos",
-      "sha256": "bc90ffb1a54b42f37274df8337148a9958396f7382ab89aaa0993b24eabe91ad",
-      "bytes": 80165,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "sha256": "176908127a63fc47e30c678d8407c56e6f8e3df618d2e6ee13ffff7973cddc37",
+      "bytes": 80518,
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "ABS ANZSCO 2022/2013 & Legislative Instrument Master",
@@ -32,7 +32,7 @@
       "canonical_source_url": "https://www.legislation.gov.au/F2024L01620/latest",
       "sha256": "716b8c584b09b3b540f18d89e5f6ad433facd350a0ea99a2b4a30048421c18cf",
       "bytes": 14723904,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "Korean & English ANZSCO Occupation Title Mapping",
@@ -40,31 +40,31 @@
       "canonical_source_url": "https://www.abs.gov.au/statistics/classifications/anzsco-australian-and-new-zealand-standard-classification-occupations",
       "sha256": "4d8ece117e011b66a4ec15b1842fe591f4078ab1b36239d32143fee5eb6d5e30",
       "bytes": 5853184,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "SkillSelect 139 Occupation Cut-Offs (GSM Navigator Feed)",
       "snapshot_file": "gsm_skillselect_data.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/invitation-rounds",
-      "sha256": "39161802dfa09579bf391155b3104eb24408ae34e0baff6fc1b4a2b521641cc1",
-      "bytes": 24250,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "sha256": "bf475ba6a472827aba4f40048f1518ff6cfdea47366256831e6fa24d5968be8a",
+      "bytes": 24124,
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "Australia 13 Regional DAMAs Enriched Dataset (DAMA Navigator Feed)",
       "snapshot_file": "dama_navigator_data.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/labour-agreements/designated-area-migration-agreements",
-      "sha256": "98b9ec78218f6e6cd5407450b7d6f579049cf61f48d57015fdce98e29801c948",
-      "bytes": 8062120,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "sha256": "71cf27b294bdf65de6c882bc80e49a3110ec8a6ce5a414732a9ff4f228980018",
+      "bytes": 8062233,
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     },
     {
       "label": "Home Affairs Live 74-Stream Processing Times (Tracker Feed)",
       "snapshot_file": "typed-manifest-v2.json",
       "canonical_source_url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-processing-times/global-visa-processing-times",
-      "sha256": "e8ce8a229976b9a7e542a9d19091a242a2ae30c37910abcd0038b855d40d3f06",
-      "bytes": 118430,
-      "verified_at": "2026-11-12T15:16:40.208553+00:00"
+      "sha256": "5f245e0b5becacb003bd634364dd0333ae352709aaf66ef35af9c4ddec0f9a24",
+      "bytes": 118377,
+      "verified_at": "2026-11-15T22:02:13.956753+00:00"
     }
   ]
 }

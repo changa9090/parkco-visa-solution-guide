@@ -1,12 +1,18 @@
 {
-  "polled_at_aest": "2026-11-09T08:02:32+10:00",
-  "polled_at_utc": "2026-11-08T22:02:32.566322+00:00",
+  "polled_at_aest": "2026-11-16T08:02:16+10:00",
+  "polled_at_utc": "2026-11-15T22:02:16.691038+00:00",
   "cadence": "Weekly Monday 08:02 AEST (after daily 06:55 processing-times & Monday 07:15–07:45 DAMA/SID/GSM pollers)",
   "total_sources": 10,
   "verified_sources": 10,
   "overall_review_status": "verified",
   "drift_alerts": [],
-  "new_channel_videos_detected": [],
+  "new_channel_videos_detected": [
+    {
+      "id": "t6ig4Bk9id0",
+      "title": "큰 거 왔다. 자칭, 호주이민 대백과 사전. 세상에 없던 호주 이민 최종판 매뉴얼",
+      "published": "2026-11-09"
+    }
+  ],
   "sources": [
     {
       "id": "dha_sol_json",
@@ -18,7 +24,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "row_count": 714,
-      "sha256": "c3c782b878061b3dd9e29faa81a1b2a180fe84f37e81025eafe3d619e3b164e0"
+      "sha256": "98793863674b8c6c345ae3c28fceb457f7de9eecfa5f5c2c042f275fd9150548"
     },
     {
       "id": "dha_visa_finder",
@@ -42,17 +48,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "total_streams": 150,
-      "observed_base_vacs": {
-        "189": 6135,
-        "190": 6140,
-        "491": 6140,
-        "186": 6140,
-        "482": 4015,
-        "485": 5750,
-        "500": 2500,
-        "820": 11710,
-        "858": 6235
-      },
+      "observed_base_vacs": {},
       "sha256": "0ab169e8525c9030d1815ec12767425367481ccc9d4051bbdd38f7328bf4f00f"
     },
     {
@@ -64,8 +60,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "compilation": "289",
-      "sha256": "a964fbdacae4f71afde15126af821182da08eba3befb4e9fc1e504d631b9224e"
+      "compilation": "290",
+      "sha256": "ae1a559eefb18f8838ce2389c05cf2c8e92660e14613316e547420eae697f59a"
     },
     {
       "id": "frl_csit_ssit_2026",
@@ -77,7 +73,7 @@
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
       "compilation": "",
-      "sha256": "dc7de1eb9ef86e7e2f697931d54be03a32de2ea08557094687d14052d002bb49"
+      "sha256": "bd6fd5d92bc81fbe5dd9f555b6cc91083f1d1b217a359c6fc3d7b753b328d66b"
     },
     {
       "id": "frl_csol_2024",
@@ -101,8 +97,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 24250,
-      "sha256": "39161802dfa09579bf391155b3104eb24408ae34e0baff6fc1b4a2b521641cc1"
+      "bytes": 24124,
+      "sha256": "bf475ba6a472827aba4f40048f1518ff6cfdea47366256831e6fa24d5968be8a"
     },
     {
       "id": "sibling_dama_13",
@@ -114,8 +110,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 8055089,
-      "sha256": "b4e978b38cbb5b963f6c6a8786293484491c8737e6d99335f50c1d0cb0f2df6e"
+      "bytes": 8062233,
+      "sha256": "71cf27b294bdf65de6c882bc80e49a3110ec8a6ce5a414732a9ff4f228980018"
     },
     {
       "id": "sibling_processing_times_74",
@@ -127,8 +123,8 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "bytes": 118395,
-      "sha256": "814fbe039cba72052dc4e1cff7cce9a49003b27c12e300bb2eb3694d24303299"
+      "bytes": 118377,
+      "sha256": "5f245e0b5becacb003bd634364dd0333ae352709aaf66ef35af9c4ddec0f9a24"
     },
     {
       "id": "youtube_immispecialist_atom",
@@ -139,9 +135,9 @@
       "contentCheckStatus": "ok",
       "ruleMatchStatus": "ok",
       "reviewStatus": "verified",
-      "total_channel_videos": 224,
-      "new_videos_added": 0,
-      "sha256": "bc90ffb1a54b42f37274df8337148a9958396f7382ab89aaa0993b24eabe91ad"
+      "total_channel_videos": 225,
+      "new_videos_added": 1,
+      "sha256": "176908127a63fc47e30c678d8407c56e6f8e3df618d2e6ee13ffff7973cddc37"
     }
   ]
 }
