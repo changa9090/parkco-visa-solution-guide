@@ -44,6 +44,8 @@
     videoSearchQuery: "",
     openVideoId: null,
     selectedSolId: "351311",
+    solViewLocation: "onshore",
+    solViewAge: "under45",
     selectedDiagCode: "",
     diagCandidates: [],
     diagCandidateQuery: "",
@@ -747,6 +749,334 @@
     }
   }
 
+  function buildDeltaMatrixAndStateHtml(occ) {
+    const en = isEn();
+    const loc = state.solViewLocation === "offshore" ? "offshore" : "onshore";
+    const isOffshore = loc === "offshore";
+    const isAge45Plus = state.solViewAge === "45_plus";
+    const code = String(occ.anzsco_code_primary || "").trim();
+    const lists = occ.lists || [];
+    const visas = occ.visas_eligible || [];
+    const isDamaOnly = Boolean(occ.is_dama_only);
+    const hasDama = (occ.dama_count || 0) > 0;
+    const dcon = occ.dama_concessions || {};
+    const dMaxAge = dcon.max_age || 55;
+    const dMinSal = dcon.min_salary_aud || 71481;
+    const stNoms = occ.state_nominations || {};
+    const polStates = state.bootstrap?.state_matrix_meta?.policy_states || {};
+    const langQ = en ? "&lang=en" : "";
+    const ageNum = isAge45Plus ? 47 : 32;
+
+    const gsmUrl = `https://changa9090.github.io/parkco-gsm-state-navigator/?anzsco=${encodeURIComponent(code)}&loc=${loc}&age=${ageNum}${langQ}`;
+    const damaUrl = `https://changa9090.github.io/parkco-dama-navigator/?anzsco=${encodeURIComponent(code)}&age=${ageNum}${langQ}`;
+    const sidUrl = `https://changa9090.github.io/parkco-sid-ens-navigator/?anzsco=${encodeURIComponent(code)}&age=${ageNum}${langQ}`;
+
+    const mkBadge = (tone, label) => `<span class="matrix-badge matrix-badge--${tone}">${escapeHtml(label)}</span>`;
+
+    // 1. 189 Independent
+    const elig189 = !isDamaOnly && lists.includes("MLTSSL") && visas.includes("189");
+    let st189 = mkBadge("no", en ? "Not Listed" : "리스트 미등재");
+    let note189 = en ? "Not on Federal MLTSSL 189" : "연방 MLTSSL 미등재 직종";
+    if (elig189 && isAge45Plus) {
+      st189 = mkBadge("no", en ? "Ineligible (45+)" : "불가 (만 45세+)");
+      note189 = en ? "Under-45 statutory age cap applies" : "초청 시점 만 45세 미만 상한 초과";
+    } else if (elig189) {
+      st189 = mkBadge("ok", en ? "Eligible" : "신청 가능");
+      note189 = occ.skillselect_min_points_189
+        ? (en ? `Latest round cut-off: ${occ.skillselect_min_points_189} pts (Points Test)` : `최근 라운드 컷오프 ${occ.skillselect_min_points_189}점 · 점수제 경쟁`)
+        : (en ? "MLTSSL eligible (Invitation cut-offs apply)" : "MLTSSL 해당 (초청 라운드별 컷오프 적용)");
+    }
+
+    // State match summary for 190 & 491
+    const qSubs = isOffshore ? (stNoms.qld_off || []) : (stNoms.qld_on || []);
+    const sSubs = isOffshore ? (stNoms.sa_off || []) : (stNoms.sa_on || []);
+    const wSubs = stNoms.wa || [];
+    const aSubs = stNoms.act || [];
+    const open190States = [];
+    const open491States = [];
+    if (qSubs.includes("190")) open190States.push("QLD");
+    if (qSubs.includes("491")) open491States.push("QLD");
+    if (wSubs.includes("190")) open190States.push("WA");
+    if (wSubs.includes("491")) open491States.push("WA");
+    if (sSubs.includes("190")) open190States.push("SA");
+    if (sSubs.includes("491")) open491States.push("SA");
+    if (aSubs.includes("190")) open190States.push("ACT");
+    if (aSubs.includes("491")) open190States.push("ACT");
+
+    // 2. 190 State Nominated
+    const elig190 = !isDamaOnly && visas.includes("190");
+    let st190 = mkBadge("no", en ? "Not Listed" : "미등재");
+    let note190 = en ? "Excluded from Subclass 190 SOL" : "190 주정부 리스트 비대상";
+    if (elig190 && isAge45Plus) {
+      st190 = mkBadge("no", en ? "Ineligible (45+)" : "불가 (만 45세+)");
+      note190 = en ? "Under-45 statutory age cap applies" : "만 45세 미만 법정 상한 초과";
+    } else if (elig190) {
+      const listNames190 = [...open190States, ...(stNoms.nsw_ug ? ["NSW*"] : []), "VIC"];
+      st190 = mkBadge("ok", en ? "State List / VIC" : "주별 조건부 가능");
+      note190 = en
+        ? `${isOffshore ? "Offshore" : "Onshore"} direct lists: ${open190States.length ? open190States.join(", ") : "Check VIC/NSW"} · +5 pts Direct PR`
+        : `${isOffshore ? "해외" : "온쇼어"} 직접 등재: ${listNames190.join("·")} (+5점 · Direct PR)`;
+    }
+
+    // 3. 491 Regional State
+    const elig491 = !isDamaOnly && visas.includes("491");
+    let st491 = mkBadge("no", en ? "Not Listed" : "미등재");
+    let note491 = en ? "Excluded from Subclass 491 SOL" : "491 지방 리스트 비대상";
+    if (elig491 && isAge45Plus) {
+      st491 = mkBadge("no", en ? "Ineligible (45+)" : "불가 (만 45세+)");
+      note491 = en ? "Under-45 statutory age cap applies" : "만 45세 미만 법정 상한 초과";
+    } else if (elig491) {
+      const listNames491 = [...open491States, ...(stNoms.nsw_ug ? ["NSW*"] : [])];
+      st491 = mkBadge("ok", en ? "Regional State" : "지방 조건부 가능");
+      note491 = en
+        ? `${isOffshore ? "Offshore" : "Onshore"}: ${listNames491.length ? listNames491.join(", ") : "Check state criteria"} (+15 pts → 191 PR after 3 yrs)`
+        : `${isOffshore ? "해외" : "온쇼어"}: ${listNames491.length ? listNames491.join("·") : "개별 주 기준 확인"} (+15점 → 3년 후 191 PR)`;
+    }
+
+    // 4. 482 SID
+    const isCore482 = !isDamaOnly && (lists.includes("CSOL") || visas.includes("482"));
+    const mgDigit = code.charAt(0);
+    const ssitEligibleMg = ["1", "2", "4", "5", "6"].includes(mgDigit);
+    let st482 = mkBadge("no", en ? "DAMA Only" : "일반 불가 (DAMA만)");
+    let note482 = en ? "Requires DAMA Labour Agreement (see DAMA row below)" : "일반 CSOL 미등재 (하단 DAMA 협약으로만 스폰서 가능)";
+    if (isCore482) {
+      st482 = occ.has_caveats
+        ? mkBadge("warn", en ? "Eligible (Caveat)" : "가능 (Caveat 주의)")
+        : mkBadge("ok", en ? "Core Skills" : "Core Skills 가능");
+      note482 = en
+        ? `No age limit · CSIT $79,423+ & AMSR · ${occ.has_caveats ? "Check verbatim caveat below" : "No caveat"}`
+        : `연령 상한 없음 · CSIT $79,423+ & AMSR · ${occ.has_caveats ? "하단 Caveat 확인 필수" : "직종 Caveat 없음"}`;
+    } else if (!isDamaOnly && ssitEligibleMg) {
+      st482 = mkBadge("warn", en ? "Specialist $146,576+" : "고소득 전문 SSIT만");
+      note482 = en
+        ? "Not on CSOL; Specialist Skills requires AUD $146,576+"
+        : "CSOL 미등재 · 연봉 AUD $146,576+(SSIT) 이상 시 Specialist 스트림 가능";
+    }
+
+    // 5. 186 ENS
+    const isDe186 = !isDamaOnly && (lists.includes("CSOL") || visas.includes("186"));
+    let st186 = mkBadge("no", en ? "DAMA / N/A" : "표준 불가 (DAMA 검토)");
+    let note186 = en ? "Standard Direct Entry/TRT unavailable outside SOL/DAMA" : "표준 직접/TRT 불가 (DAMA 노동협약 전환 검토)";
+    if (isDe186) {
+      st186 = isAge45Plus
+        ? mkBadge("warn", en ? "Age Exemption Req" : "만 45세+ 면제 필요")
+        : mkBadge("ok", en ? "DE + TRT Eligible" : "직접이민·TRT 가능");
+      note186 = isAge45Plus
+        ? (en ? "FWHIT $190,100+ 2-yr exemption or DAMA age concession needed" : "FWHIT $190,100+ 2년 면제 또는 DAMA 연령 완화 검토 필요")
+        : (en ? "CSOL 186 Direct Entry (3 yrs exp) or 2-yr 482 TRT" : "186 직접이민(CSOL · 경력 3년) 또는 482 후 2년 TRT 전환");
+    } else if (!isDamaOnly && isCore482) {
+      st186 = isAge45Plus ? mkBadge("warn", en ? "TRT (Age Exempt Req)" : "TRT (연령 면제 필요)") : mkBadge("ok", en ? "482 → 186 TRT" : "482 후 2년 TRT 가능");
+      note186 = en ? "2 years full-time on 482 with sponsor → 186 TRT" : "482 승인 후 2년 근무 시 186 TRT 전환 가능";
+    }
+
+    // 6. 494 / DAMA
+    let stDama = mkBadge("no", en ? "Check Standard 494" : "일반 494만");
+    let noteDama = en ? "Not listed on the 13 Regional DAMAs" : "13개 지역 DAMA 리스트 미등재 직종";
+    if (hasDama) {
+      stDama = mkBadge("ok", en ? `DAMA (${occ.dama_count} Regions)` : `DAMA ${occ.dama_count}개 지역`);
+      noteDama = en
+        ? `Age up to <${dMaxAge} · Min salary from $${Number(dMinSal).toLocaleString()} · PR via 186/494→191`
+        : `최대 만 ${dMaxAge}세 미만 완화 · 연봉 $${Number(dMinSal).toLocaleString()}+ 특례 · 186/191 영주권 연계`;
+    } else if (!isDamaOnly && visas.includes("494")) {
+      stDama = isAge45Plus ? mkBadge("no", en ? "494 Blocked (45+)" : "일반 494 불가 (45+)") : mkBadge("ok", en ? "Standard 494" : "일반 494 가능");
+      noteDama = en ? "Regional employer sponsorship ($0 nomination fee; reg 2.73B) → 191 PR" : "지방 고용주 스폰서(노미 수수료 $0 · reg 2.73B) → 3년 후 191 PR";
+    }
+
+    // 8-State Occupation Chips (respects Onshore vs Offshore toggle)
+    const stateChips = [
+      (() => {
+        const hasAnyQld = (stNoms.qld_on?.length || 0) > 0 || (stNoms.qld_off?.length || 0) > 0;
+        const ok = qSubs.length > 0;
+        const cTag = !isOffshore && stNoms.qld_const ? (en ? " · 3m Const" : " · 건설 3개월") : "";
+        return {
+          code: "QLD",
+          tone: ok ? "yes" : "no",
+          headline: ok
+            ? `${isOffshore ? (en ? "Offshore QSOL" : "해외 QSOL") : (en ? "Onshore QSOL" : "온쇼어 QSOL")}: ${qSubs.join("/")}${cTag}`
+            : (hasAnyQld
+              ? (en ? `Not on ${isOffshore ? "Offshore" : "Onshore"} QSOL` : `${isOffshore ? "해외" : "온쇼어"} QSOL 미포함`)
+              : (en ? "Not on QLD QSOL" : "QLD QSOL 미등재")),
+          sub: en ? "Verified live QSOL" : "QSOL 원문 대조",
+        };
+      })(),
+      (() => {
+        const ok = wSubs.length > 0;
+        return {
+          code: "WA",
+          tone: ok ? "yes" : "no",
+          headline: ok
+            ? `WA ${wSubs.join("/")}${stNoms.wa_priority ? (en ? " · Priority" : " · 우선직종") : ""}`
+            : (en ? "Not on WASMOL/Grad" : "WA 리스트 미등재"),
+          sub: ok
+            ? `${(stNoms.wa_streams || []).slice(0, 2).join(", ")} (2026-11-17)`
+            : (en ? "Verified snapshot 2026-11-17" : "서호주 스냅샷 2026-11-17"),
+        };
+      })(),
+      (() => {
+        const ok = sSubs.length > 0;
+        const hasAnySa = (stNoms.sa_on?.length || 0) > 0 || (stNoms.sa_off?.length || 0) > 0;
+        return {
+          code: "SA",
+          tone: ok ? "yes" : "no",
+          headline: ok
+            ? `SA ${isOffshore ? (en ? "Offshore" : "해외") : (en ? "Onshore" : "온쇼어")}: ${sSubs.join("/")}`
+            : (hasAnySa
+              ? (en ? `SA ${isOffshore ? "Onshore Only" : "Offshore Unavailable"}` : `SA ${isOffshore ? "해외 불가(온쇼어만)" : "온쇼어 미제공"}`)
+              : (en ? "Not on SA List" : "SA 리스트 미등재")),
+          sub: en ? "SA snapshot 2026-11-17" : "남호주 스냅샷 2026-11-17",
+        };
+      })(),
+      (() => {
+        const ok = aSubs.length > 0;
+        return {
+          code: "ACT",
+          tone: ok ? "yes" : "no",
+          headline: ok ? `ACT Critical: ${aSubs.join("/")}` : (en ? "Not on ACT List" : "ACT 리스트 미등재"),
+          sub: stNoms.act_note || (en ? "ACT Critical Skills List" : "ACT Critical List 대조"),
+        };
+      })(),
+      (() => {
+        const hasUg = Boolean(stNoms.nsw_ug);
+        return {
+          code: "NSW",
+          tone: hasUg ? "warn" : "no",
+          headline: hasUg
+            ? (en ? `Unit Group ${code.slice(0, 4)} Match` : `유닛그룹 ${code.slice(0, 4)} 일치`)
+            : (en ? "Unit Group Not Listed" : "NSW 유닛그룹 미등재"),
+          sub: hasUg
+            ? (en ? `${stNoms.nsw_ug} (Check 6-digit inclusion)` : `${stNoms.nsw_ug} (세부 6자리 최종 확인)`)
+            : (en ? "NSW 78 Skills unit groups" : "NSW 78개 4자리 유닛그룹"),
+        };
+      })(),
+      (() => {
+        const vicOk = !isDamaOnly;
+        return {
+          code: "VIC",
+          tone: vicOk ? "warn" : "no",
+          headline: vicOk
+            ? (en ? "SOL-Wide · 190 Open / 491 Closed" : "SOL 전체 · 190 개방 / 491 중단")
+            : (en ? "Not on Federal SOL" : "연방 SOL 미등재 (비대상)"),
+          sub: vicOk
+            ? (en ? "VIC ROI selection required (900 places)" : "별도 직종표 없음 · 190 ROI 900석 선발")
+            : (en ? "VIC follows Federal SOL" : "VIC는 연방 SOL 기준 따름"),
+        };
+      })(),
+      (() => ({
+        code: "NT",
+        tone: isOffshore ? "no" : "warn",
+        headline: isOffshore
+          ? (en ? "190 & Offshore Closed" : "190 · 해외 전면 중단")
+          : (en ? "190 Closed · 491 Exception Only" : "190 중단 · 491 예외만 접수"),
+        sub: en ? (polStates.NT?.summary_en || "Deadline <30 Sep 2027 exceptions only") : (polStates.NT?.summary_ko || "2027-09-30 전 예외 대상만"),
+      }))(),
+      (() => ({
+        code: "TAS",
+        tone: "warn",
+        headline: isOffshore
+          ? (en ? "No 491 OSOP · Check Portal" : "해외 491 미실시 · 포털 확인")
+          : (en ? "Verify TOSOL Portal" : "태즈메이니아 포털 직접 확인"),
+        sub: `<a href="${escapeHtml(polStates.TAS?.url || "https://www.migration.tas.gov.au/skilled_migrants")}" target="_blank" rel="noopener" style="color:#7A1F2B;font-weight:700;text-decoration:underline;">${en ? "Migration TAS ↗" : "TAS 공식 포털 ↗"}</a>`,
+      }))(),
+    ];
+
+    const chipsHtml = stateChips
+      .map(
+        (c) => `
+      <div class="sol-state-chip sol-state-chip--${c.tone}">
+        <div style="font-weight:800;color:#1A1211;">${escapeHtml(c.code)} · ${escapeHtml(c.headline)}</div>
+        <div style="font-size:11px;color:#47433E;margin-top:2px;">${c.code === "TAS" ? c.sub : escapeHtml(c.sub)}</div>
+      </div>`
+      )
+      .join("");
+
+    return `
+      <div class="sol-command-matrix" id="sol-command-matrix">
+        <div class="sol-context-bar">
+          <strong style="font-size:13.5px;color:#0E3A3E;">
+            🧭 ${en ? "At-a-Glance Visa & 8-State Command Matrix" : "비자별 자격 · 8개 주정부 한눈에 비교 매트릭스"}
+          </strong>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <div class="sol-pill-switch" role="group" aria-label="Location context">
+              <button type="button" class="sol-pill-btn ${!isOffshore ? "is-active" : ""}" data-sol-loc="onshore">${en ? "📍 Onshore (AU)" : "📍 호주 내 (Onshore)"}</button>
+              <button type="button" class="sol-pill-btn ${isOffshore ? "is-active" : ""}" data-sol-loc="offshore">${en ? "🌏 Offshore" : "🌏 호주 외 (Offshore)"}</button>
+            </div>
+            <div class="sol-pill-switch" role="group" aria-label="Age context">
+              <button type="button" class="sol-pill-btn ${!isAge45Plus ? "is-active" : ""}" data-sol-age="under45">${en ? "Under 45" : "만 45세 미만"}</button>
+              <button type="button" class="sol-pill-btn ${isAge45Plus ? "is-active" : ""}" data-sol-age="45_plus">${en ? "Age 45–54" : "만 45~54세"}</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-scroll">
+          <table class="sol-visa-matrix-table">
+            <thead>
+              <tr>
+                <th>${en ? "Visa" : "비자"}</th>
+                <th>${en ? "Status" : "가능 여부"}</th>
+                <th>${en ? "Key Statutory Conditions & Notes" : "핵심 요건 · 커트라인 · Caveat"}</th>
+                <th>${en ? "Tool" : "정밀 계산"}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>189</strong></td>
+                <td>${st189}</td>
+                <td>${escapeHtml(note189)}</td>
+                <td><a href="${escapeHtml(gsmUrl)}" target="_blank" rel="noopener">${en ? "Points ↗" : "점수 ↗"}</a></td>
+              </tr>
+              <tr>
+                <td><strong>190</strong></td>
+                <td>${st190}</td>
+                <td>${escapeHtml(note190)}</td>
+                <td><a href="${escapeHtml(gsmUrl)}" target="_blank" rel="noopener">${en ? "States ↗" : "주별 ↗"}</a></td>
+              </tr>
+              <tr>
+                <td><strong>491</strong></td>
+                <td>${st491}</td>
+                <td>${escapeHtml(note491)}</td>
+                <td><a href="${escapeHtml(gsmUrl)}" target="_blank" rel="noopener">${en ? "States ↗" : "주별 ↗"}</a></td>
+              </tr>
+              <tr>
+                <td><strong>482 SID</strong></td>
+                <td>${st482}</td>
+                <td>${escapeHtml(note482)}</td>
+                <td><a href="${escapeHtml(sidUrl)}" target="_blank" rel="noopener">${en ? "Salary ↗" : "연봉 ↗"}</a></td>
+              </tr>
+              <tr>
+                <td><strong>186 ENS</strong></td>
+                <td>${st186}</td>
+                <td>${escapeHtml(note186)}</td>
+                <td><a href="${escapeHtml(sidUrl)}" target="_blank" rel="noopener">${en ? "186 TRT/DE ↗" : "186 ↗"}</a></td>
+              </tr>
+              <tr>
+                <td><strong>494 / DAMA</strong></td>
+                <td>${stDama}</td>
+                <td>${escapeHtml(noteDama)}</td>
+                <td>${hasDama ? `<a href="${escapeHtml(damaUrl)}" target="_blank" rel="noopener">${en ? "DAMA ↗" : "DAMA ↗"}</a>` : `<a href="${escapeHtml(sidUrl)}" target="_blank" rel="noopener">${en ? "494 ↗" : "494 ↗"}</a>`}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sol-states-strip">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
+            <strong style="font-size:12.5px;color:#1A1211;">
+              🏛️ ${en ? `8-State Occupation Nomination Check (${isOffshore ? "Offshore" : "Onshore"})` : `8개 주정부 직종 노미네이션 대조 (${isOffshore ? "해외 Offshore" : "호주 내 Onshore"} 기준)`}
+            </strong>
+            <span style="font-size:11px;color:#525866;">${en ? "NSW* = 4-digit unit group match · WA/SA verified 2026-11-17" : "NSW* = 4자리 유닛그룹 대조 · WA/SA 2026-11-17 검증"}</span>
+          </div>
+          <div class="sol-states-grid">${chipsHtml}</div>
+        </div>
+
+        <div class="handoff-links-row" style="margin-top:10px;">
+          <a href="${escapeHtml(gsmUrl)}" target="_blank" rel="noopener" class="btn-handoff-link">🏛️ ${en ? "Compare All 8 States & Cut-Offs ↗" : "8개 주 커트라인 · 요건 정밀 대조 ↗"}</a>
+          ${hasDama ? `<a href="${escapeHtml(damaUrl)}" target="_blank" rel="noopener" class="btn-handoff-link">🗺️ ${en ? `Explore ${occ.dama_count} DAMA Concessions & Postcodes ↗` : `${occ.dama_count}개 DAMA 연령·연봉·우편번호 조회 ↗`}</a>` : ""}
+          <a href="${escapeHtml(sidUrl)}" target="_blank" rel="noopener" class="btn-handoff-link">💼 ${en ? "Compare 482 / 186 Salary & AMSR ↗" : "482 SID · 186 연봉(CSIT/AMSR) 검증 ↗"}</a>
+        </div>
+      </div>
+    `;
+  }
+
   function renderSolDetailDom(occ) {
     const panel = qs("#sol-detail-panel");
     if (!panel || !occ) return;
@@ -807,8 +1137,10 @@
         ${occ.anzsco_2022_code ? `<span class="resume-kpi-chip">ANZSCO 2022: ${escapeHtml(occ.anzsco_2022_code)}</span>` : ""}
         ${occ.anzsco_2013_code ? `<span class="resume-kpi-chip">ANZSCO 2013: ${escapeHtml(occ.anzsco_2013_code)}</span>` : ""}
         ${occ.skill_level ? `<span class="resume-kpi-chip">Skill Level: ${escapeHtml(occ.skill_level)}</span>` : ""}
-        <span class="resume-kpi-chip">${escapeHtml(ui.cutoff189(occ.skillselect_min_points_189))}</span>
+        <span class="resume-kpi-chip">${escapeHtml(occ.is_dama_only ? (isEn() ? "DAMA-Only Occupation (Outside SOL)" : "DAMA 전용 직군 (표준 SOL 미등재)") : ui.cutoff189(occ.skillselect_min_points_189))}</span>
       </div>
+
+      ${buildDeltaMatrixAndStateHtml(occ)}
 
       <p><strong>${escapeHtml(ui.assessingAuthLabel)}</strong> ${authHtml}</p>
       <p><strong>${escapeHtml(ui.eligibleStreamsLabel)}</strong><br>${(occ.visa_streams_detail || []).map((s) => `<span class="visa-mini-tag" style="margin:2px 4px 2px 0;display:inline-block;">${escapeHtml(s)}</span>`).join("")}</p>
@@ -1141,9 +1473,11 @@
       : state.lastDiagnosis?.occupation_summary?.anzsco_code || "";
     const age = ageMidMap[qs("#diag-age")?.value || "25_32"] || 29;
     const salaryRaw = Number(qs("#diag-salary")?.value || 0);
+    const locVal = qs("#diag-location")?.value || "";
     const sp = new URLSearchParams();
     if (anzsco) sp.set("anzsco", anzsco);
     sp.set("age", String(age));
+    if (locVal === "offshore" || locVal === "onshore") sp.set("loc", locVal);
     if (salaryRaw > 0) sp.set("salary", String(Math.round(salaryRaw)));
     if (isEn()) sp.set("lang", "en");
     return sp.toString();
@@ -1153,13 +1487,19 @@
     const sc = String(subclassStr || "");
     const q = buildHandoffUserQuery();
     const links = [];
+    if (sc.includes("DAMA")) {
+      links.push({
+        href: `https://changa9090.github.io/parkco-dama-navigator/?${q}`,
+        label: ui.handoffDamaBtn || (isEn() ? "Send Inputs to 13-Region DAMA Navigator ↗" : "13개 DAMA 지역·완화 내비게이터로 조건 전달 ↗"),
+      });
+    }
     if (/\b(482|186|494)\b/.test(sc) || sc.includes("482") || sc.includes("186") || sc.includes("494")) {
       links.push({
         href: `https://changa9090.github.io/parkco-sid-ens-navigator/?${q}`,
         label: ui.handoffSidBtn || (isEn() ? "Send Inputs to 482/186 Sponsor Navigator ↗" : "482·186 스폰서 내비게이터로 조건 전달 ↗"),
       });
     }
-    if (/\b(189|190|491)\b/.test(sc) || sc.includes("189") || sc.includes("190") || sc.includes("491")) {
+    if (!sc.includes("DAMA") && (/\b(189|190|491)\b/.test(sc) || sc.includes("189") || sc.includes("190") || sc.includes("491"))) {
       links.push({
         href: `https://changa9090.github.io/parkco-gsm-state-navigator/?${q}`,
         label: ui.handoffGsmBtn || (isEn() ? "Send Inputs to 8-State GSM Navigator ↗" : "8개 주 GSM 커트라인 내비게이터로 조건 전달 ↗"),
@@ -1654,6 +1994,20 @@
         return;
       }
 
+      const solLocBtn = e.target.closest("[data-sol-loc]");
+      if (solLocBtn) {
+        state.solViewLocation = solLocBtn.dataset.solLoc === "offshore" ? "offshore" : "onshore";
+        if (state.lastSolDetailOcc) renderSolDetailDom(state.lastSolDetailOcc);
+        return;
+      }
+
+      const solAgeBtn = e.target.closest("[data-sol-age]");
+      if (solAgeBtn) {
+        state.solViewAge = solAgeBtn.dataset.solAge === "45_plus" ? "45_plus" : "under45";
+        if (state.lastSolDetailOcc) renderSolDetailDom(state.lastSolDetailOcc);
+        return;
+      }
+
       const sampleDiagBtn = e.target.closest("[data-try-sample-diag]");
       if (sampleDiagBtn) {
         runSampleDiagnosis();
@@ -1879,12 +2233,21 @@
           rawAge <= 39 ? "33_39" :
           rawAge <= 44 ? "40_44" :
           rawAge <= 49 ? "45_49" : "50_plus";
+        state.solViewAge = rawAge >= 45 ? "45_plus" : "under45";
+      }
+
+      const rawLoc = (sp.get("loc") || "").trim().toLowerCase();
+      if (rawLoc === "offshore" || rawLoc === "onshore") {
+        state.solViewLocation = rawLoc;
+        if (qs("#diag-location")) qs("#diag-location").value = rawLoc;
       }
 
       const rawOcc = (sp.get("occ") || sp.get("anzsco") || "").trim();
       if (/^\d{6}$/.test(rawOcc)) {
         state.selectedDiagCode = rawOcc;
+        state.selectedSolId = rawOcc;
         if (qs("#diag-anzsco-input")) qs("#diag-anzsco-input").value = rawOcc;
+        if (qs("#sol-query-input") && !sp.has("q")) qs("#sol-query-input").value = rawOcc;
       }
 
       if (sp.has("study")) {
