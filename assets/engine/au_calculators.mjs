@@ -37,8 +37,14 @@ const ITEM_1240_ELIGIBLE_BV_SUBCLASSES = new Set(["010", "020", "030"]);
 
 const ITEM_1222_STUDENT_500_BARRED_SUBCLASSES = new Set([
   "485",
+  "417",
+  "462",
+  "482",
+  "407",
+  "400",
   "600",
   "601",
+  "602",
   "651",
   "403",
   "426",
@@ -674,11 +680,11 @@ export function evaluateAuCalculator(calculator, params = {}) {
       vEn = "Outside Australia (offshore), neither s 48 nor Schedule 3 applies (verify PIC 4013/4014 exclusion periods separately if previously cancelled or unlawful).";
     } else if (item1222Barred) {
       vKo =
-        `2024년 7월 1일 시행 Schedule 1 Item 1222 개정 규정에 따라 현재 Subclass ${curSub} 비자 소지자는 호주 내(Onshore)에서 학생비자(Subclass 500)를 유효하게 접수할 수 없습니다` +
-        "(485 · 600 · 601 · 651 · 403 · 426 · 771 · 988 호주 내 전환 법적 원천 금지). 해외 출국 후 접수 또는 482 · 190 · 491 · 820 등 합법적 직접 경로를 검토하시기 바랍니다.";
+        `Schedule 1 Item 1222 및 2026년 10월 2일 시행 개편(F2026L01347 · LIN 26/102) 규정에 따라 현재 Subclass ${curSub} 비자 소지자는 호주 내(Onshore)에서 학생비자(Subclass 500)를 유효하게 접수할 수 없습니다` +
+        "(417 · 462 · 485 · 482 · 407 · 400 · 600 · 601 · 602 · 651 · 403(해당 스트림) · 426 · 771 · 988 호주 내 전환 제한). 해외 출국 후 접수 또는 482 · 190 · 491 · 820 등 합법적 직접 경로를 검토하시기 바랍니다.";
       vEn =
-        `Under Migration Regulations 1994 Schedule 1 Item 1222 (effective 1 July 2024), holders of Subclass ${curSub} are statutorily barred from making a valid onshore Subclass 500 Student visa application ` +
-        "(applies to Subclasses 485, 600, 601, 651, 403, 426, 771, and 988). Consider direct skilled/sponsored/partner pathways or genuine offshore lodgement.";
+        `Under Migration Regulations 1994 Schedule 1 Item 1222 and LIN 26/102 (effective 2 October 2026), holders of Subclass ${curSub} are statutorily barred from making a valid onshore Subclass 500 Student visa application ` +
+        "(applies to Subclasses 417, 462, 485, 482, 407, 400, 600, 601, 602, 651, 403 (specified stream), 426, 771, and 988). Consider direct skilled/sponsored/partner pathways or genuine offshore lodgement.";
     } else if (item1240IneligibleBvOrUnlawful && !s48Applies) {
       vKo =
         `Schedule 1 Item 1240(3)(b)에 따라 호주 내 Subclass 482(SID) 접수는 실질 비자 또는 브리징 비자 A(010)·B(020)·C(030) 소지자에게만 허용되므로 현재 상태(${curSub})에서는 호주 내 유효 접수가 불가합니다` +

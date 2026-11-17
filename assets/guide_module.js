@@ -247,8 +247,10 @@
           </label>
           <label class="calc-lbl">${en ? "Current Visa Status" : "현재 체류·비자 상태"}
             <select name="current_visa_subclass" class="input-control">
-              <option value="substantive">${en ? "Substantive Visa (Other)" : "일반 유효 실질비자 (500/417 등)"}</option>
+              <option value="substantive">${en ? "Substantive Visa (Other Exempt)" : "기타 면제 유효 실질비자"}</option>
+              <option value="417">${en ? "Subclass 417 / 462 (WHM)" : "Subclass 417 / 462 (워홀)"}</option>
               <option value="485">${en ? "Subclass 485 (Graduate)" : "Subclass 485 (졸업생비자)"}</option>
+              <option value="482">${en ? "Subclass 482 / 407 / 400" : "Subclass 482 / 407 / 400 (취업·연수)"}</option>
               <option value="600">${en ? "Subclass 600 (Visitor)" : "Subclass 600 (방문비자)"}</option>
               <option value="601">${en ? "Subclass 601 (ETA)" : "Subclass 601 (ETA 전자여행)"}</option>
               <option value="651">${en ? "Subclass 651 (eVisitor)" : "Subclass 651 (eVisitor)"}</option>
