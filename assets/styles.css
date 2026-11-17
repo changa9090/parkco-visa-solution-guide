@@ -2732,3 +2732,113 @@ html[lang="en"] .header-actions .btn-primary-sm {
   background: var(--color-burgundy);
   color: var(--color-white);
 }
+
+/* Delta 2.0 Command View Matrix & 8-State Grid inside Step 2 (#sol-detail-panel) */
+.sol-command-matrix {
+  margin: 14px 0 16px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #DED6C8;
+  background: #FAF8F4;
+}
+.sol-context-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.sol-pill-switch {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: #EFE9DE;
+  padding: 3px;
+  border-radius: 8px;
+}
+.sol-pill-btn {
+  border: 0;
+  background: transparent;
+  padding: 4px 10px;
+  font-size: 11.8px;
+  font-weight: 700;
+  color: #47433E;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sol-pill-btn.is-active {
+  background: var(--color-burgundy);
+  color: #FFFFFF;
+}
+.sol-visa-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  background: #FFFFFF;
+  border: 1px solid #E5DFD3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.sol-visa-matrix-table th,
+.sol-visa-matrix-table td {
+  padding: 7px 9px;
+  border-bottom: 1px solid #EFEAE0;
+  text-align: left;
+  vertical-align: top;
+}
+.sol-visa-matrix-table th {
+  background: #F4EFE6;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #1A1211;
+}
+.matrix-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.matrix-badge--ok {
+  background: #DCFCE7;
+  color: #166534;
+}
+.matrix-badge--warn {
+  background: #FEF3C7;
+  color: #92400E;
+}
+.matrix-badge--no {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+.sol-states-strip {
+  margin-top: 12px;
+}
+.sol-states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr));
+  gap: 7px;
+  margin-top: 7px;
+}
+.sol-state-chip {
+  border: 1px solid #DED6C8;
+  border-radius: 8px;
+  padding: 7px 9px;
+  background: #FFFFFF;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+.sol-state-chip--yes {
+  background: #F0FDF4;
+  border-color: #86EFAC;
+}
+.sol-state-chip--warn {
+  background: #FFFBEB;
+  border-color: #FCD34D;
+}
+.sol-state-chip--no {
+  background: #FEF2F2;
+  border-color: #FECACA;
+}
