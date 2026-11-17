@@ -246,6 +246,8 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
     skillselect_min_points_189: occ ? occ.skillselect_min_points_189 ?? null : null,
     dama_count: occ ? occ.dama_count ?? 0 : 0,
     dama_concessions: occ ? occ.dama_concessions ?? null : null,
+    is_dama_only: Boolean(occ && occ.is_dama_only),
+    state_nominations: occ ? occ.state_nominations ?? {} : {},
   };
 
   const riskFlags = [];
@@ -837,9 +839,9 @@ export function runDiagnosis(payload = {}, matcher, pathwaysCatalog, youtubeCata
       name_ko: `지역 DAMA 노동협약 특례 트랙 (${occSummary.dama_count}개 협약 지역 등재 → 186 PR)`,
       name_en: `Regional DAMA Labour Agreement Pathway (${occSummary.dama_count} Active Regions → 186 PR)`,
       category: "dama",
-      score: ageOver45 || !occSummary.eligible_482 || !salOk ? 86 : 73,
-      readiness_tier: "핵심 특례 대안",
-      readiness_tier_en: "Key Concession Pathway",
+      score: occSummary.is_dama_only ? 88 : (ageOver45 || !occSummary.eligible_482 || !salOk ? 86 : 73),
+      readiness_tier: occSummary.is_dama_only ? "DAMA 전용 특례" : "핵심 특례 대안",
+      readiness_tier_en: occSummary.is_dama_only ? "DAMA-Only Pathway" : "Key Concession Pathway",
       direct_pr: false,
       employer_tied: true,
       vac_aud: vacMap["482"],

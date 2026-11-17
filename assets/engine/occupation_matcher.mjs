@@ -48,8 +48,21 @@ export const BILINGUAL_SIGNAL_MAP = {
   "정육사": ["butcher", "smallgoods:0.75", "meat:0.75"],
   "카페": ["cafe", "restaurant:0.75", "manager:0.75", "hospitality:0.5"],
   "레스토랑": ["restaurant", "cafe:0.75", "chef:0.75", "cook:0.75", "hospitality:0.5"],
-  "바리스타": ["cafe", "restaurant:0.75", "hospitality:0.5"],
+  "바리스타": ["cafe", "restaurant:0.75", "hospitality:0.5", "barista:0.75"],
+  "웨이터": ["waiter", "restaurant:0.75", "cafe:0.5", "hospitality:0.5"],
   "점장": ["cafe:0.75", "restaurant:0.75", "retail:0.75", "manager"],
+  // DAMA-Specific Care, Agriculture, Logistics & Hospitality
+  "노인요양": ["aged", "carer", "disabled:0.75", "care:0.75"],
+  "요양보호사": ["aged", "carer", "disabled:0.75", "care:0.75"],
+  "간병인": ["carer", "aged", "disabled:0.75", "care:0.75"],
+  "장애인돌봄": ["disabled", "carer", "aged:0.75", "care:0.75"],
+  "농장": ["farm", "farmer", "agricultural:0.75", "horticulture:0.75", "dairy:0.5"],
+  "축산": ["cattle", "livestock", "farm:0.75", "sheep:0.5", "dairy:0.5"],
+  "지게차": ["forklift", "driver:0.75"],
+  "트럭운전": ["truck", "driver:0.75"],
+  "청소원": ["cleaner", "commercial:0.75", "housekeeper:0.5"],
+  "하우스키퍼": ["housekeeper", "cleaner:0.5"],
+  "북키퍼": ["bookkeeper", "accounting:0.75"],
   // Accounting & Finance
   "회계사": ["accountant", "accounting:0.75", "financial:0.5", "statements:0.5", "taxation:0.75", "management:0.5"],
   "회계": ["accountant", "accounting:0.75", "financial:0.5", "statements:0.5", "budget:0.5"],
@@ -325,14 +338,15 @@ export function mergeDuplicateOccupationRecords(existing, incoming) {
 }
 
 export class OccupationMatcher {
-  constructor(occupations, confusionPairs = []) {
+  constructor(occupations, confusionPairs = [], supplementaryOccupations = []) {
     this.occupations = occupations || [];
+    this.supplementaryOccupations = supplementaryOccupations || [];
     this.confusionPairs = confusionPairs || [];
     this._byId = new Map();
     this._byCode = new Map();
     this._indexed = [];
 
-    for (const occ of this.occupations) {
+    for (const occ of [...this.occupations, ...this.supplementaryOccupations]) {
       const occId = String(occ.id || "").trim();
       if (occId) {
         this._byId.set(occId, occ);
@@ -404,10 +418,15 @@ export class OccupationMatcher {
     return this._byCode.get(clean) ?? null;
   }
 
-  _matchesFilters(occ, listFilter, visaFilter, skillLevel) {
+  _matchesFilters(occ, listFilter, visaFilter, skillLevel, allowSupplementary = true) {
+    if (!allowSupplementary && occ.is_dama_only) {
+      return false;
+    }
     if (listFilter) {
       const lf = String(listFilter).trim().toUpperCase();
-      if (lf === "DAMA") {
+      if (lf === "DAMA-ONLY") {
+        if (!occ.is_dama_only) return false;
+      } else if (lf === "DAMA") {
         if ((occ.dama_count || 0) <= 0) return false;
       } else {
         const upLists = (occ.lists || []).map((x) => String(x).toUpperCase());
@@ -447,9 +466,11 @@ export class OccupationMatcher {
 
     const qClean = String(query || "").trim();
     const qLower = qClean.toLowerCase();
+    const lfUpper = String(list_filter || "").trim().toUpperCase();
+    const allowSup = Boolean(qClean || lfUpper === "DAMA" || lfUpper === "DAMA-ONLY" || String(visa_filter || "").trim());
 
     const filteredPairs = this._indexed.filter(([occ]) =>
-      this._matchesFilters(occ, list_filter, visa_filter, skill_level)
+      this._matchesFilters(occ, list_filter, visa_filter, skill_level, allowSup)
     );
 
     if (!qClean) {

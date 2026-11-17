@@ -27,8 +27,13 @@ export function createStaticVisaGuideFromData({
   provenance,
   auMasterGuide = null,
   pollingStatus = null,
+  damaOnly = null,
 }) {
-  const matcher = new OccupationMatcher(solMaster.occupations || [], confusionPairs || []);
+  const matcher = new OccupationMatcher(
+    solMaster.occupations || [],
+    confusionPairs || [],
+    (damaOnly && damaOnly.occupations) || []
+  );
   const effectiveCatalog = {
     ...pathwaysCatalog,
     thresholds_fy26_27: {
@@ -56,6 +61,7 @@ export function createStaticVisaGuideFromData({
         service: "parkco-visa-solution-guide",
         mode: "static-client",
         sol_count: matcher.occupations.length,
+        dama_only_count: matcher.supplementaryOccupations.length,
         curated_videos_count: (youtubeCatalog.videos || []).length,
         channel_total_videos: youtubeCatalog.total_channel_videos || 218,
         fy_version: effectiveCatalog.thresholds_fy26_27.effective_period,
@@ -74,6 +80,7 @@ export function createStaticVisaGuideFromData({
         parkco_services: effectiveCatalog.parkco_services,
         specialist_navigators: effectiveCatalog.specialist_navigators,
         youtube_catalog: youtubeCatalog,
+        state_matrix_meta: solMaster.state_matrix_meta || null,
         confusion_pairs: matcher.confusionPairs,
         popular_occupations: popular,
         sample_personas: SAMPLE_PERSONAS,
@@ -205,7 +212,8 @@ export function loadStaticVisaGuideBrowser(dataBaseUrl = null) {
       fetchJson("PROVENANCE.json"),
       fetchJson("au_master_guide_2026.json"),
       fetchJson("polling_status.json").catch(() => null),
-    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance, auMasterGuide, pollingStatus]) =>
+      fetchJson("dama_only_2026.json").catch(() => null),
+    ]).then(([solMaster, confusionPairs, pathwaysCatalog, youtubeCatalog, provenance, auMasterGuide, pollingStatus, damaOnly]) =>
       createStaticVisaGuideFromData({
         solMaster,
         confusionPairs,
@@ -214,6 +222,7 @@ export function loadStaticVisaGuideBrowser(dataBaseUrl = null) {
         provenance,
         auMasterGuide,
         pollingStatus,
+        damaOnly,
       })
     );
   }
