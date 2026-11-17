@@ -156,11 +156,15 @@
     }</p>`;
   }
 
+  function brisbaneTodayIso() {
+    return new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Brisbane" }).format(new Date());
+  }
+
   function applySampleToCalcForm(form) {
     const calcName = form.dataset.calcForm;
     if (calcName === "art_and_s501_deadline") {
       form.elements.decision_type.value = "general_refusal_onshore";
-      form.elements.notification_date.value = "2026-10-30";
+      form.elements.notification_date.value = brisbaneTodayIso();
       if (form.elements.state) form.elements.state.value = "QLD";
     } else if (calcName === "s48_and_schedule3_check") {
       form.elements.target_subclass.value = "820";
@@ -173,6 +177,7 @@
       form.elements.applicant_stream.value = "standard_pr";
       form.elements.lawful_start_date.value = "2022-07-01";
       form.elements.pr_grant_date.value = "2025-07-01";
+      if (form.elements.application_date) form.elements.application_date.value = brisbaneTodayIso();
       form.elements.absent_days_4yr.value = "95";
       form.elements.absent_days_last_12m.value = "25";
     } else if (calcName === "sponsor_salary_and_saf") {
@@ -180,6 +185,7 @@
       form.elements.applicant_age.value = "34";
       form.elements.offered_salary_aud.value = "88000";
       form.elements.amsr_aud.value = "84000";
+      if (form.elements.years_sponsored) form.elements.years_sponsored.value = "2";
       form.elements.sponsor_turnover_ge_10m.checked = false;
     }
     guideState.confirmedCalcs[calcName] = true;
@@ -237,11 +243,12 @@
           <label class="calc-lbl">${en ? "Target Visa" : "목표 비자"}
             <select name="target_subclass" class="input-control">
               <option value="820">Partner 820 (s 48 Exempt)</option>
-              <option value="190">GSM State 190 (s 48 Exempt)</option>
-              <option value="491">Regional 491 (s 48 Exempt)</option>
-              <option value="494">Regional Sponsor 494 (Exempt)</option>
+              <option value="190">GSM State 190 (s 48 Exempt · Item 1138)</option>
+              <option value="491">Regional 491 (s 48 Exempt · Item 1241)</option>
+              <option value="494">Regional Sponsor 494 (Exempt · Item 1242)</option>
               <option value="482">SID 482 (Item 1240 BVA/B/C)</option>
-              <option value="186">ENS 186 (Subject to s 48)</option>
+              <option value="186">ENS 186 (s 48 &amp; Item 1114B)</option>
+              <option value="189">GSM Independent 189 (s 48 &amp; Item 1137)</option>
               <option value="500">Student 500 (Item 1222 Check)</option>
             </select>
           </label>
@@ -259,6 +266,7 @@
               <option value="020">${en ? "Bridging Visa B (020)" : "브리징 비자 B (BVB 020)"}</option>
               <option value="030">${en ? "Bridging Visa C (030)" : "브리징 비자 C (BVC 030)"}</option>
               <option value="050">${en ? "Bridging Visa E (050/051)" : "브리징 비자 E (BVE 050/051)"}</option>
+              <option value="060">${en ? "Bridging Visa F / R (060/070)" : "브리징 비자 F / R (BVF/BVR 060/070)"}</option>
               <option value="unlawful">${en ? "Unlawful / Expired Visa" : "비자 만료·미보유 (Unlawful)"}</option>
             </select>
           </label>
@@ -293,6 +301,9 @@
             <input type="date" name="pr_grant_date" value="" class="input-control">
           </label>
         </div>
+        <label class="calc-lbl">${en ? "Application Date (Brisbane)" : "시민권 신청 기준일 (브리즈번 기준)"}
+          <input type="date" name="application_date" value="${brisbaneTodayIso()}" class="input-control">
+        </label>
         <div class="form-row-2">
           <label class="calc-lbl">${en ? "4-Yr Absences (<=365d)" : "4년 해외체류일 (<=365일)"}
             <input type="number" name="absent_days_4yr" value="0" min="0" max="1460" class="input-control">
@@ -317,7 +328,8 @@
               <option value="482_core">482 Core Skills ($79,423)</option>
               <option value="482_specialist">482 Specialist ($146,576)</option>
               <option value="482_dama">482 DAMA 90% ($71,481)</option>
-              <option value="186_ens">186 ENS Direct/TRT ($79,423)</option>
+              <option value="186_trt">${en ? "186 ENS TRT ($79,423 · FWHIT 45+ Exempt)" : "186 ENS TRT 전환 ($79,423 · FWHIT 연령면제 대상)"}</option>
+              <option value="186_de">${en ? "186 ENS Direct Entry ($79,423 · No FWHIT 45+)" : "186 ENS Direct Entry ($79,423 · FWHIT 면제 불가)"}</option>
               <option value="494_sesr">494 Regional ($79,423)</option>
             </select>
           </label>
@@ -333,6 +345,14 @@
             <input type="number" name="amsr_aud" value="" placeholder="${en ? "e.g., 84000" : "예: 84000"}" step="1000" class="input-control">
           </label>
         </div>
+        <label class="calc-lbl">${en ? "482 Sponsored Term (SAF Years)" : "482 스폰서 기간 (SAF 산정 연수)"}
+          <select name="years_sponsored" class="input-control">
+            <option value="1">${en ? "1 Year" : "1년"}</option>
+            <option value="2" selected>${en ? "2 Years" : "2년"}</option>
+            <option value="3">${en ? "3 Years" : "3년"}</option>
+            <option value="4">${en ? "4 Years" : "4년"}</option>
+          </select>
+        </label>
         <label class="calc-chk"><input type="checkbox" name="sponsor_turnover_ge_10m"> <span>${en ? "Sponsor annual turnover >= A$10M" : "스폰서 기업 연매출 A$1,000만 이상"}</span></label>
         <div class="calc-actions-row">
           <button type="submit" class="btn-primary-sm">${calcBtnTxt}</button>
@@ -346,7 +366,7 @@
       const calcName = form.dataset.calcForm;
       form.addEventListener("change", (ev) => {
         if (calcName === "s48_and_schedule3_check") {
-          const nonSubSet = new Set(["010", "020", "030", "050", "051", "unlawful"]);
+          const nonSubSet = new Set(["010", "020", "030", "050", "051", "060", "070", "unlawful"]);
           if (ev.target?.name === "current_visa_subclass" && form.elements.holds_substantive_visa) {
             form.elements.holds_substantive_visa.checked = !nonSubSet.has(ev.target.value);
           } else if (ev.target?.name === "holds_substantive_visa" && form.elements.current_visa_subclass) {
@@ -437,8 +457,12 @@
       return;
     }
     if (calcName === "s48_and_schedule3_check") params.onshore = true;
-    if (calcName === "citizenship_s22_residence") params.application_date = "2026-10-30";
-    if (calcName === "sponsor_salary_and_saf") params.years_sponsored = 2;
+    if (calcName === "citizenship_s22_residence") {
+      params.application_date = String(params.application_date || "").trim() || brisbaneTodayIso();
+    }
+    if (calcName === "sponsor_salary_and_saf") {
+      params.years_sponsored = Math.min(4, Math.max(1, parseInt(params.years_sponsored || "2", 10) || 2));
+    }
 
     try {
       const res = await postCalc(calcName, params);

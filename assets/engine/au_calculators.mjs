@@ -30,10 +30,21 @@ const NON_SUBSTANTIVE_SUBCLASSES = new Set([
   "041",
   "050",
   "051",
+  "060",
+  "070",
   "unlawful",
 ]);
 
 const ITEM_1240_ELIGIBLE_BV_SUBCLASSES = new Set(["010", "020", "030"]);
+
+const SCHEDULE1_SUBSTANTIVE_OR_ABC_ITEMS = {
+  "482": "Schedule 1 Item 1240(3)(b)",
+  "186": "Schedule 1 Item 1114B(3)(d)",
+  "189": "Schedule 1 Item 1137(4B)(c)",
+  "190": "Schedule 1 Item 1138(3)(c)",
+  "491": "Schedule 1 Item 1241(3)(c)",
+  "494": "Schedule 1 Item 1242(3)(c)",
+};
 
 const ITEM_1222_STUDENT_500_BARRED_SUBCLASSES = new Set([
   "485",
@@ -61,6 +72,10 @@ const SUBCLASS_ALIASES = {
   bridging_c: "030",
   bve: "050",
   bridging_e: "050",
+  bvf: "060",
+  bridging_f: "060",
+  bvr: "070",
+  bridging_r: "070",
   none: "unlawful",
   expired: "unlawful",
 };
@@ -110,40 +125,37 @@ export const STATE_HOLIDAYS = {
     "2026-04-05": "Easter Sunday",
     "2026-04-25": "Anzac Day",
     "2026-05-04": "Labour Day (QLD)",
-    "2026-08-12": "Royal Queensland Show (Brisbane)",
     "2026-10-05": "King's Birthday (QLD)",
     "2027-03-27": "Easter Saturday",
     "2027-03-28": "Easter Sunday",
     "2027-04-25": "Anzac Day",
     "2027-04-26": "Anzac Day (Observed QLD)",
     "2027-05-03": "Labour Day (QLD)",
-    "2027-08-11": "Royal Queensland Show (Brisbane)",
     "2027-10-04": "King's Birthday (QLD)",
     "2028-04-15": "Easter Saturday",
     "2028-04-16": "Easter Sunday",
     "2028-05-01": "Labour Day (QLD)",
-    "2028-08-16": "Royal Queensland Show (Brisbane)",
     "2028-10-02": "King's Birthday (QLD)",
     "2029-03-31": "Easter Saturday",
     "2029-04-01": "Easter Sunday",
     "2029-05-07": "Labour Day (QLD)",
-    "2029-08-15": "Royal Queensland Show (Brisbane)",
     "2029-10-01": "King's Birthday (QLD)",
     "2030-04-20": "Easter Saturday",
     "2030-04-21": "Easter Sunday",
     "2030-05-06": "Labour Day (QLD)",
-    "2030-08-14": "Royal Queensland Show (Brisbane)",
     "2030-10-07": "King's Birthday (QLD)",
   },
   NSW: {
     "2026-04-04": "Easter Saturday",
     "2026-04-05": "Easter Sunday",
     "2026-04-25": "Anzac Day",
+    "2026-04-27": "Anzac Day (Additional Day NSW)",
     "2026-06-08": "King's Birthday (NSW)",
     "2026-10-05": "Labour Day (NSW)",
     "2027-03-27": "Easter Saturday",
     "2027-03-28": "Easter Sunday",
     "2027-04-25": "Anzac Day",
+    "2027-04-26": "Anzac Day (Additional Day NSW)",
     "2027-06-14": "King's Birthday (NSW)",
     "2027-10-04": "Labour Day (NSW)",
     "2028-04-15": "Easter Saturday",
@@ -227,7 +239,6 @@ export const STATE_HOLIDAYS = {
     "2026-10-05": "Labour Day (SA)",
     "2027-03-08": "Adelaide Cup Day (SA)",
     "2027-03-27": "Easter Saturday",
-    "2027-04-26": "Anzac Day (Observed SA)",
     "2027-06-14": "King's Birthday (SA)",
     "2027-10-04": "Labour Day (SA)",
     "2028-03-13": "Adelaide Cup Day (SA)",
@@ -245,21 +256,16 @@ export const STATE_HOLIDAYS = {
   },
   TAS: {
     "2026-03-09": "Eight Hours Day (TAS)",
-    "2026-04-07": "Easter Tuesday (TAS Public Service)",
     "2026-04-25": "Anzac Day",
     "2026-06-08": "King's Birthday (TAS)",
     "2027-03-08": "Eight Hours Day (TAS)",
-    "2027-03-30": "Easter Tuesday (TAS Public Service)",
     "2027-04-25": "Anzac Day",
     "2027-06-14": "King's Birthday (TAS)",
     "2028-03-13": "Eight Hours Day (TAS)",
-    "2028-04-18": "Easter Tuesday (TAS Public Service)",
     "2028-06-12": "King's Birthday (TAS)",
     "2029-03-12": "Eight Hours Day (TAS)",
-    "2029-04-03": "Easter Tuesday (TAS Public Service)",
     "2029-06-11": "King's Birthday (TAS)",
     "2030-03-11": "Eight Hours Day (TAS)",
-    "2030-04-23": "Easter Tuesday (TAS Public Service)",
     "2030-06-10": "King's Birthday (TAS)",
   },
   ACT: {
@@ -641,6 +647,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
     const s48Applies = onshore && !holdsSub && priorRef;
     const exempt = REG_212_S48_EXEMPT_SUBCLASSES.has(target);
 
+    const sch1Item = SCHEDULE1_SUBSTANTIVE_OR_ABC_ITEMS[target] || "";
     const item1240Eligible = Boolean(
       onshore &&
         target === "482" &&
@@ -648,9 +655,9 @@ export function evaluateAuCalculator(calculator, params = {}) {
         ITEM_1240_ELIGIBLE_BV_SUBCLASSES.has(curSub) &&
         !s48Applies
     );
-    const item1240IneligibleBvOrUnlawful = Boolean(
+    const schedule1IneligibleBvOrUnlawful = Boolean(
       onshore &&
-        target === "482" &&
+        Boolean(sch1Item) &&
         !holdsSub &&
         !ITEM_1240_ELIGIBLE_BV_SUBCLASSES.has(curSub)
     );
@@ -661,7 +668,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
     );
 
     let onshoreAllowed = !onshore || !s48Applies || exempt;
-    if (item1240IneligibleBvOrUnlawful || item1222Barred) {
+    if (schedule1IneligibleBvOrUnlawful || item1222Barred) {
       onshoreAllowed = false;
     }
 
@@ -685,13 +692,15 @@ export function evaluateAuCalculator(calculator, params = {}) {
       vEn =
         `Under Migration Regulations 1994 Schedule 1 Item 1222 and LIN 26/102 (effective 2 October 2026), holders of Subclass ${curSub} are statutorily barred from making a valid onshore Subclass 500 Student visa application ` +
         "(applies to Subclasses 417, 462, 485, 482, 407, 400, 600, 601, 602, 651, 403 (specified stream), 426, 771, and 988). Consider direct skilled/sponsored/partner pathways or genuine offshore lodgement.";
-    } else if (item1240IneligibleBvOrUnlawful && !s48Applies) {
+    } else if (schedule1IneligibleBvOrUnlawful) {
+      const s48NoteKo = s48Applies && exempt ? " reg 2.12(s 48 예외) 해당 여부와 무관하게" : "";
+      const s48NoteEn = s48Applies && exempt ? " notwithstanding the reg 2.12 exemption to s 48" : "";
       vKo =
-        `Schedule 1 Item 1240(3)(b)에 따라 호주 내 Subclass 482(SID) 접수는 실질 비자 또는 브리징 비자 A(010)·B(020)·C(030) 소지자에게만 허용되므로 현재 상태(${curSub})에서는 호주 내 유효 접수가 불가합니다` +
-        "(해외 출국 후 접수 및 PIC 4014 입국 제한 여부 검토 필요).";
+        `${sch1Item}에 따라 호주 내 Subclass ${target} 접수는 유효한 실질 비자 또는 브리징 비자 A(010)·B(020)·C(030) 소지자에게만 허용되므로 현재 상태(${curSub})에서는${s48NoteKo} 호주 내 유효 접수(s 46)가 불가합니다` +
+        "(해외 출국 후 접수 및 PIC 4013/4014 입국 제한 여부 검토 필요).";
       vEn =
-        `Under Schedule 1 Item 1240(3)(b), onshore Subclass 482 (SID) lodgement requires holding a substantive visa or Bridging Visa A (010), B (020), or C (030); ` +
-        `current status (${curSub}) is ineligible for onshore lodgement (assess offshore lodgement and PIC 4014 exclusion risk).`;
+        `Under Migration Regulations 1994 ${sch1Item}, a valid onshore Subclass ${target} application (s 46) requires holding a substantive visa or Bridging Visa A (010), B (020), or C (030); ` +
+        `current status (${curSub}) is statutorily ineligible for onshore lodgement${s48NoteEn} (assess offshore lodgement and PIC 4013/4014 exclusion risk).`;
     } else if (!onshoreAllowed) {
       vKo =
         `호주 내 실질 비자 미보유 및 거절·취소 이력으로 Migration Act s 48 재접수 제한 대상에 해당하여 Subclass ${target} 호주 내 유효 접수 가능 여부를 면밀히 확인해야 합니다. ` +
@@ -724,7 +733,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
 
     return {
       calculator: calc,
-      statutory_basis: "Migration Act 1958 s 48; Migration Regulations 1994 reg 2.12, Schedule 1 Items 1222 & 1240(3)(b), Schedule 3 (3001/3003/3004); Waensila [2016] FCAFC 32",
+      statutory_basis: "Migration Act 1958 ss 46, 48; Migration Regulations 1994 reg 2.12, Schedule 1 Items 1114B(3)(d), 1137(4B)(c), 1138(3)(c), 1222, 1240(3)(b), 1241(3)(c), 1242(3)(c), Schedule 3 (3001/3003/3004); Waensila [2016] FCAFC 32",
       target_subclass: target,
       current_visa_subclass: curSub,
       s48_applies: s48Applies,
@@ -743,7 +752,8 @@ export function evaluateAuCalculator(calculator, params = {}) {
     const stream = String(p.applicant_stream || "standard_pr").trim();
     const lawfulDt = parseIsoDate(p.lawful_start_date, "2022-07-01");
     const prDt = parseIsoDate(p.pr_grant_date, "2025-07-01");
-    const appDt = parseIsoDate(p.application_date, "2026-10-30");
+    const brisbaneToday = new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Brisbane" }).format(new Date());
+    const appDt = parseIsoDate(p.application_date, brisbaneToday);
     const abs4y = Math.max(0, parseInt(p.absent_days_4yr || 0, 10) || 0);
     const abs12m = Math.max(0, parseInt(p.absent_days_last_12m || 0, 10) || 0);
 
@@ -808,16 +818,25 @@ export function evaluateAuCalculator(calculator, params = {}) {
     const safAud = stream.startsWith("482")
       ? (largeTurn ? 1800 : 1200) * years
       : largeTurn ? 5000 : 3000;
-    const age45FwhitMet = age < 45 || salary >= FWHIT_FY26_27_AUD;
+    const age45FwhitMet = stream === "186_de" ? age < 45 : age < 45 || salary >= FWHIT_FY26_27_AUD;
 
-    const ageNoteKo =
-      stream === "186_ens" && age >= 45
-        ? ` · 만 45세 이상 186 고소득 연령면제 기준(FWHIT A$${fmtComma(FWHIT_FY26_27_AUD)}) ${age45FwhitMet ? "충족" : "미달(DAMA 등 대안 검토)"}.`
-        : ".";
-    const ageNoteEn =
-      stream === "186_ens" && age >= 45
-        ? `; Age 45+ 186 FWHIT exemption (A$${fmtComma(FWHIT_FY26_27_AUD)}) ${age45FwhitMet ? "met" : "not met (check DAMA/medical/academic exemptions)"}.`
-        : ".";
+    let ageNoteKo = ".";
+    let ageNoteEn = ".";
+    if (stream === "186_de" && age >= 45) {
+      ageNoteKo =
+        ` · 주의: 186 Direct Entry(직접영주권) 트랙에는 고소득(FWHIT A$${fmtComma(FWHIT_FY26_27_AUD)} · LIN 19/216) 만 45세 이상 연령 면제가 전혀 적용되지 않습니다` +
+        "(FWHIT 면제는 482로 2년간 매년 FWHIT 이상 수령 후 전환하는 186 TRT 전용 · 대학 교수/연구직·벽지 의사·DAMA 등 별도 예외만 가능).";
+      ageNoteEn =
+        `; Warning: The FWHIT A$${fmtComma(FWHIT_FY26_27_AUD)} age 45+ exemption (LIN 19/216) NEVER applies to 186 Direct Entry ` +
+        "(it applies ONLY to 186 TRT after 2 years sponsored at >=FWHIT; check narrow academic/scientific/regional medical or DAMA exemptions).";
+    } else if ((stream === "186_ens" || stream === "186_trt") && age >= 45) {
+      ageNoteKo =
+        ` · 만 45세 이상 고소득 연령면제(FWHIT A$${fmtComma(FWHIT_FY26_27_AUD)} · LIN 19/216)는 오직 186 TRT 전환(직전 2년간 매년 FWHIT 이상 수령)에만 적용되며 186 Direct Entry에는 적용 불가 — ` +
+        `186 TRT 기준 ${age45FwhitMet ? "충족" : "미달(DAMA 등 대안 검토)"}.`;
+      ageNoteEn =
+        `; Under LIN 19/216, the A$${fmtComma(FWHIT_FY26_27_AUD)} FWHIT age 45+ exemption applies ONLY to 186 TRT (after 2 years at >=FWHIT) and NEVER to 186 Direct Entry — ` +
+        `186 TRT threshold ${age45FwhitMet ? "met" : "not met (check DAMA/medical/academic exemptions)"}.`;
+    }
 
     const vKo =
       salary <= 0
@@ -834,7 +853,7 @@ export function evaluateAuCalculator(calculator, params = {}) {
 
     return {
       calculator: calc,
-      statutory_basis: "Migration Regulations 1994 regs 2.72, 5.19; F2026L00874 (eff. 1 Jul 2026); SAF Charges Regulations 2018 (F2018L01092)",
+      statutory_basis: "Migration Regulations 1994 regs 2.72, 5.19; LIN 19/216 (186 Age Exemptions); F2026L00874 (eff. 1 Jul 2026); SAF Charges Regulations 2018 (F2018L01092)",
       visa_stream: stream,
       minimum_threshold_aud: minThresh,
       effective_floor_aud: effFloor,

@@ -52,7 +52,6 @@ export const BILINGUAL_SIGNAL_MAP = {
   "웨이터": ["waiter", "restaurant:0.75", "cafe:0.5", "hospitality:0.5"],
   "점장": ["cafe:0.75", "restaurant:0.75", "retail:0.75", "manager"],
   // DAMA-Specific Care, Agriculture, Logistics & Hospitality
-  "노인요양": ["aged", "carer", "disabled:0.75", "care:0.75"],
   "요양보호사": ["aged", "carer", "disabled:0.75", "care:0.75"],
   "간병인": ["carer", "aged", "disabled:0.75", "care:0.75"],
   "장애인돌봄": ["disabled", "carer", "aged:0.75", "care:0.75"],

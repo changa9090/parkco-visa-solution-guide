@@ -41,7 +41,14 @@ const AU_STUDY_PATTERNS =
   /(?<![\p{L}\p{N}_])(?:university\s+of\s+queensland|uq|qut|queensland\s+university\s+of\s+technology|griffith\s+university|university\s+of\s+sydney|unsw|university\s+of\s+new\s+south\s+wales|uts|macquarie\s+university|university\s+of\s+melbourne|monash\s+university|rmit|deakin\s+university|swinburne|la\s+trobe|university\s+of\s+western\s+australia|uwa|curtin\s+university|murdoch|university\s+of\s+adelaide|flinders\s+university|unisa|australian\s+national\s+university|anu|university\s+of\s+tasmania|charles\s+darwin\s+university|bond\s+university|torrens\s+university|tafe\s+(?:nsw|qld|queensland|victoria|sa|wa)|cricos)(?![\p{L}\p{N}_])|(?:호주\s*(?:대학교|대학원|유학|학위)|퀸즐랜드\s*대학교|시드니\s*대학교|멜버른\s*대학교|모나쉬)/iu;
 
 const AU_WORK_PATTERNS =
-  /(?<![\p{L}\p{N}_])(?:pty\s+ltd|sydney|melbourne|brisbane|perth|adelaide|gold\s+coast|canberra|hobart|darwin|nsw|qld|queensland|victoria|vic|wa|sa|tas|act|nt|abn|tfn)(?![\p{L}\p{N}_])|(?:시드니|멜버른|브리즈번|퍼스|애들레이드|골드코스트|캔버라|퀸즐랜드)/iu;
+  /(?<![\p{L}\p{N}_])(?:pty\s+ltd|sydney|melbourne|brisbane|perth|adelaide|gold\s+coast|canberra|hobart|darwin|nsw|qld|queensland|victoria|vic|wa|sa|tas|nt|abn|tfn)(?![\p{L}\p{N}_])|(?:시드니|멜버른|브리즈번|퍼스|애들레이드|골드코스트|캔버라|퀸즐랜드)/iu;
+
+const AU_ACT_CONTEXT_PATTERN =
+  /(?<![\p{L}\p{N}_])ACT(?![\p{L}\p{N}_])(?:\s*,?\s*(?:26\d{2}|29\d{2}|[Aa]ustralia)(?![\p{L}\p{N}_]))|(?<![\p{L}\p{N}_])(?:[Cc]anberra|[Aa]ustralia|26\d{2}|29\d{2})\s*,?\s*ACT(?![\p{L}\p{N}_])/u;
+
+function hasAuWorkPattern(text) {
+  return AU_WORK_PATTERNS.test(text) || AU_ACT_CONTEXT_PATTERN.test(text);
+}
 
 const OVERSEAS_WORK_PATTERNS =
   /(?<![\p{L}\p{N}_])(?:korea|seoul|busan|incheon|singapore|tokyo|london)(?![\p{L}\p{N}_])|(?:대한민국|한국|서울|부산|인천|경기|대전|대구)/iu;
@@ -702,7 +709,7 @@ function computeMergedWorkYears(text) {
     .split(/\r?\n/)
     .map((ln) => ln.trim())
     .filter(Boolean);
-  const headerAuHint = AU_WORK_PATTERNS.test(lines.slice(0, 4).join("\n"));
+  const headerAuHint = hasAuWorkPattern(lines.slice(0, 4).join("\n"));
 
   for (let idx = 0; idx < lines.length; idx++) {
     const line = lines[idx];
@@ -748,10 +755,10 @@ function computeMergedWorkYears(text) {
       const spanCtx = `${prevLine} ${line} ${nextLine}`;
 
       let locTag;
-      if (OVERSEAS_WORK_PATTERNS.test(spanCtx) && !AU_WORK_PATTERNS.test(line)) {
+      if (OVERSEAS_WORK_PATTERNS.test(spanCtx) && !hasAuWorkPattern(line)) {
         osIntervals.push([sIdx, eIdx]);
         locTag = "OS";
-      } else if (AU_WORK_PATTERNS.test(spanCtx) || (headerAuHint && !OVERSEAS_WORK_PATTERNS.test(spanCtx))) {
+      } else if (hasAuWorkPattern(spanCtx) || (headerAuHint && !OVERSEAS_WORK_PATTERNS.test(spanCtx))) {
         auIntervals.push([sIdx, eIdx]);
         locTag = "AU";
       } else {
@@ -780,7 +787,7 @@ function computeMergedWorkYears(text) {
       }
     }
     if (fallbackYrs > 0) {
-      const isAu = AU_WORK_PATTERNS.test(text) && !OVERSEAS_WORK_PATTERNS.test(text);
+      const isAu = hasAuWorkPattern(text) && !OVERSEAS_WORK_PATTERNS.test(text);
       return [fallbackYrs, isAu ? fallbackYrs : 0.0, isAu ? 0.0 : fallbackYrs, []];
     }
     return [0.0, 0.0, 0.0, []];
@@ -821,6 +828,31 @@ function detectQualification(text) {
 }
 
 function detectEnglishClue(text) {
+  const mPteClause = text.match(/(?<![\p{L}\p{N}_])pte(?:\s+academic)?([^\n]{0,140})/iu);
+  if (mPteClause) {
+    const clause = mPteClause[1];
+    const mL = clause.match(/(?<![A-Za-z0-9_])(?:listening|l)\s*[:=-]?\s*(\d{2})\b/i);
+    const mR = clause.match(/(?<![A-Za-z0-9_])(?:reading|r)\s*[:=-]?\s*(\d{2})\b/i);
+    const mW = clause.match(/(?<![A-Za-z0-9_])(?:writing|w)\s*[:=-]?\s*(\d{2})\b/i);
+    const mS = clause.match(/(?<![A-Za-z0-9_])(?:speaking|s)\s*[:=-]?\s*(\d{2})\b/i);
+    if (mL && mR && mW && mS) {
+      const lSc = parseInt(mL[1], 10);
+      const rSc = parseInt(mR[1], 10);
+      const wSc = parseInt(mW[1], 10);
+      const sSc = parseInt(mS[1], 10);
+      let tier = "below_threshold";
+      if (lSc >= 69 && rSc >= 70 && wSc >= 85 && sSc >= 88) tier = "superior";
+      else if (lSc >= 58 && rSc >= 59 && wSc >= 69 && sSc >= 76) tier = "proficient";
+      else if (lSc >= 47 && rSc >= 48 && wSc >= 51 && sSc >= 54) tier = "competent";
+      else if (lSc >= 33 && rSc >= 36 && wSc >= 29 && sSc >= 24) tier = "vocational_482";
+      return {
+        test: "PTE",
+        score_raw: `L${lSc} R${rSc} W${wSc} S${sSc}`,
+        tier_estimate: tier,
+      };
+    }
+  }
+
   const mPte = text.match(/(?<![\p{L}\p{N}_])pte(?:\s+academic)?[^\d\n]{0,25}(\d{2})(?![\p{L}\p{N}_])/iu);
   if (mPte) {
     const score = parseInt(mPte[1], 10);
@@ -950,7 +982,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
   }
 
   const [expYears, auYears, osYears, detectedSpans] = computeMergedWorkYears(cleanText);
-  const auWork = auYears > 0 || AU_WORK_PATTERNS.test(cleanText);
+  const auWork = auYears > 0 || hasAuWorkPattern(cleanText);
   const auStudy = AU_STUDY_PATTERNS.test(cleanText);
   const [qualification, mastersResearch] = detectQualification(cleanText);
   const englishClue = detectEnglishClue(cleanText);
@@ -1080,7 +1112,7 @@ export function analyzeResumeText(text, matcher, filename = "pasted_text.txt", l
     total_work_years_numeric: expYears,
     english_tier: engTierPrefill,
     naati_ccl: regClues.some((c) => c.includes("NAATI")),
-    professional_year: regClues.some((c) => c.includes("Professional Year")) && auStudy,
+    professional_year: regClues.some((c) => c.includes("Professional Year")),
   };
 
   return {

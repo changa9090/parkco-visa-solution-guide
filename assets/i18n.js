@@ -27,7 +27,9 @@
   const STATIC_EN_ENTRIES = [
     // Accessibility & Header
     { sel: ".skip-link", text: "Skip to main workspace" },
+    { sel: ".ecosystem-strip", attrs: { "aria-label": "Park & Co Legal & Visa Ecosystem Navigation" } },
     { sel: ".brand-lockup", attrs: { "aria-label": "Go to Park & Co Lawyers Visa Solution Guide home" } },
+    { sel: ".header-nav", attrs: { "aria-label": "Core Services Navigation" } },
     { sel: ".brand-logo", attrs: { alt: "Park & Co Lawyers Logo" } },
     { sel: ".brand-ko-name", text: "Australian Visa Solution Guide" },
     { sel: "#hdr-link-hub", text: "Legal & Visa Hub" },
@@ -142,8 +144,9 @@
     {
       sel: "#guide-section-desc",
       html:
-        "Explore 12 primary-source-verified chapters and 4 deterministic statutory calculators grounded in the Migration Act 1958 (Comp. 172), Migration Regulations 1994 (Comp. 289), FY2026–27 salary/VAC instruments, <strong>Ministerial Direction No. 123 (eff. 31 October 2026)</strong>, and ART s 367C on-the-papers reforms.",
+        "Explore 12 primary-source-verified chapters and 4 deterministic statutory calculators grounded in the Migration Act 1958 (Comp. 172), Migration Regulations 1994 (Comp. 290/291), FY2026–27 salary/VAC instruments, <strong>Ministerial Direction No. 123 (eff. 31 October 2026)</strong>, and ART s 367C on-the-papers reforms.",
     },
+    { sel: ".guide-toc-card", attrs: { "aria-label": "12-Chapter Master Guide Table of Contents" } },
     {
       sel: "#guide-official-cta",
       attrs: { href: "https://parklawyers.com.au/links/" },

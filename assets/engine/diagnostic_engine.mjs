@@ -139,7 +139,7 @@ export function calculateGsmPoints(payload = {}) {
       : 0;
   const pRegStudy = auStudyOk && Boolean(payload.regional_study) ? 5 : 0;
   const pNaati = Boolean(payload.naati_ccl) ? 5 : 0;
-  const pPy = auStudyOk && Boolean(payload.professional_year) ? 5 : 0;
+  const pPy = Boolean(payload.professional_year) ? 5 : 0;
   const pPartner = PARTNER_POINTS[partnerS] ?? 0;
 
   const pAuWork = AU_WORK_POINTS[auWorkB] ?? 0;

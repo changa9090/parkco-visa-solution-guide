@@ -2151,13 +2151,13 @@
     });
     qs("#diag-au-study")?.addEventListener("change", () => {
       if (!qs("#diag-au-study")?.checked) {
-        ["#diag-stem-research", "#diag-regional-study", "#diag-py"].forEach((sel) => {
+        ["#diag-stem-research", "#diag-regional-study"].forEach((sel) => {
           const el = qs(sel);
           if (el) el.checked = false;
         });
       }
     });
-    ["#diag-stem-research", "#diag-regional-study", "#diag-py"].forEach((sel) => {
+    ["#diag-stem-research", "#diag-regional-study"].forEach((sel) => {
       qs(sel)?.addEventListener("change", (ev) => {
         if (ev.target.checked && qs("#diag-au-study")) {
           qs("#diag-au-study").checked = true;
@@ -2287,8 +2287,14 @@
       if (sp.has("q") && qs("#sol-query-input")) {
         qs("#sol-query-input").value = (sp.get("q") || "").trim();
       }
+      if (sp.has("list") && qs("#sol-list-select")) {
+        qs("#sol-list-select").value = (sp.get("list") || "").trim();
+      }
       if (sp.has("visa") && qs("#sol-visa-select")) {
         qs("#sol-visa-select").value = (sp.get("visa") || "").trim();
+      }
+      if (!window.location.hash && (sp.has("q") || sp.has("list"))) {
+        switchModule("module-sol", false);
       }
       if ((sp.has("offer") || sp.has("sal") || sp.has("salary")) && qs("#diag-has-sponsor")) {
         const sal = Number(sp.get("sal") || sp.get("salary") || 0);

@@ -277,12 +277,12 @@
       "target_who_en": "International students leveraging CRICOS degrees or MLTSSL-aligned trade qualifications to build post-study work rights and PR.",
       "stages_ko": [
         "1단계 [500 학생비자($2,500) & GS 심사]: 진정한 유학생 요건(GS) 통과가 필수이며 호주 내 관광비자(600)·졸업생비자(485) 소지자의 호주 내 500 전환 접수는 법령상 제한됩니다.",
-        "2단계 [485 졸업생 비자($5,750) · 만 35세 상한 유의]: 과정 수료 후 6개월 내 접수 및 영어 IELTS 6.5/각 5.5(PTE 55·유효기간 12개월)를 충족해야 합니다. 학사·수업석사는 PHEW(2년) 스트림이며 연구석사·박사는 3년(만 50세 미만 허용)이고 기술·디플로마 과정(PVEW 18개월)은 반드시 MLTSSL 직종 연계 및 기술심사가 필요합니다.",
+        "2단계 [485 졸업생 비자($5,750) · 만 35세 상한 유의]: 과정 수료 후 6개월 내 접수 및 영어 IELTS 6.5/각 5.5 또는 PTE Overall 55(영역별 L40/R42/W41/S39 이상 · LIN 25/089 · 유효기간 12개월)를 충족해야 합니다. 학사·수업석사는 PHEW(2년) 스트림이며 연구석사·박사는 3년(만 50세 미만 허용)이고 기술·디플로마 과정(PVEW 18개월)은 반드시 MLTSSL 직종 연계 및 기술심사가 필요합니다.",
         "3단계 [485 기간 중 영주권 연계]: 485 체류 기간 동안 전공 관련 풀타임 1년 경력을 채워 482 SID로 전환하거나 기술심사·고득점 영어·주정부 거주 요건을 갖추어 190·491·189로 진행합니다."
       ],
       "stages_en": [
         "Stage 1 [500 Student ($2,500) & Genuine Student]: Pass GS scrutiny. Onshore 600 Visitor and 485 Graduate holders are legally barred from lodging Subclass 500 onshore (since 1 July 2024).",
-        "Stage 2 [485 Graduate ($5,750) · Age 35 Cap!]: Lodge within 6 months of completion with IELTS 6.5/5.5 (PTE 55, 12-month test validity!). Bachelor/Coursework Masters (PHEW 2 yrs), Masters by Research/PhD (3 yrs, under age 50), VET/Trade (PVEW 18 mos, must nominate an MLTSSL occupation!).",
+        "Stage 2 [485 Graduate ($5,750) · Age 35 Cap!]: Lodge within 6 months of completion with IELTS 6.5/5.5 or PTE Overall 55 (min L40/R42/W41/S39 under LIN 25/089, 12-month test validity!). Bachelor/Coursework Masters (PHEW 2 yrs), Masters by Research/PhD (3 yrs, under age 50), VET/Trade (PVEW 18 mos, must nominate an MLTSSL occupation!).",
         "Stage 3 [Post-Study Conversion]: Use 485 full work rights to accrue 1 year of skilled experience for 482 SID, or stack full skills assessment + Superior English for 189/190/491."
       ],
       "critical_traps_ko": [
@@ -494,8 +494,8 @@
       "subclasses_en": "Subclass 400 (Short Stay Specialist) · Subclass 408 (Temporary Activity / Research / Religious)",
       "title_ko": "단기 전문직 파견(400) & 특수활동·초청 연구·종교 비자(408)",
       "title_en": "Short Stay Specialist (400) & Temporary Activity / Research / Religious (408)",
-      "vac_fy26_27": "400 / 408 약 $415~$430+",
-      "vac_fy26_27_en": "400 / 408 ~$415–$430+",
+      "vac_fy26_27": "400 / 408 기본 AUD $535 (호주 내 408 STAC 대상 시 +$700 추가)",
+      "vac_fy26_27_en": "400 / 408 Base AUD $535 (+$700 STAC onshore if applicable for 408)",
       "summary_ko": "한국 본사 설비 설치·기술 자문 등 3~6개월 미만 단기 비상시 고숙련 업무(400)나 대학 박사후연구원(Postdoc)·종교 사역자·문화교류 초청(408) 등 특수 목적 비자입니다. 직접적인 영주권 비자는 아니나 향후 호주 경력·네트워크 형성의 출발점이 될 수 있습니다.",
       "summary_en": "Special-purpose temporary visas for short-term, non-ongoing highly specialised project work under 3–6 months (400) or university postdoctoral research, religious work, and invited cultural/sporting activities (408).",
       "key_criteria_ko": [
